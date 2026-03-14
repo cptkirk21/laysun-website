@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/logo.webp" type="image/webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Commercial artificial palm trees for hotels, resorts and restaurants. Queen palms and fan palms from 4–10 ft. Fire-rated, PE foliage, factory-direct.">
+  <title>Commercial Artificial Palm Trees — Hotel & Resort Specialist | LaySun</title>
+  <link rel="preload" as="font" href="fonts/Inter-400.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="images/project-hotel-pool-dubai.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Product grid ─────────────────────────────── */
+    .prod-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media(max-width:1100px){ .prod-grid { grid-template-columns: repeat(3,1fr); } }
+    @media(max-width:768px) { .prod-grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:480px) { .prod-grid { grid-template-columns: 1fr; } }
+
+    /* ── Product card ─────────────────────────────── */
+    .prod-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .prod-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .prod-card.hidden { display: none; }
+
+    .prod-card-img {
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      background: var(--cream-deep);
+    }
+    .prod-card-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+      display: block;
+    }
+    .prod-card:hover .prod-card-img img { transform: scale(1.04); }
+
+    .prod-card-body {
+      padding: 1rem 1.1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .prod-card-body h3 {
+      font-size: .95rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin: 0 0 .6rem;
+      color: var(--text);
+    }
+    .prod-sizes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .3rem;
+      margin-bottom: .9rem;
+    }
+    .prod-sizes span {
+      font-size: .72rem;
+      font-weight: 500;
+      background: var(--cream-deep);
+      color: var(--text-muted);
+      border-radius: 20px;
+      padding: .15rem .55rem;
+      white-space: nowrap;
+    }
+    .prod-cat-tag {
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      margin-bottom: .4rem;
+    }
+    .prod-quote-btn {
+      margin-top: auto;
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--tan);
+      text-decoration: none;
+    }
+    .prod-quote-btn:hover { text-decoration: underline; }
+
+    /* ── Related collections grid ─────────────────── */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media(max-width:768px) { .grid-3 { grid-template-columns: 1fr; } }
+
+    .coll-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .coll-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .coll-card-img {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      background: var(--cream-deep);
+    }
+    .coll-card-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+      display: block;
+    }
+    .coll-card:hover .coll-card-img img { transform: scale(1.04); }
+    .coll-card-body {
+      padding: 1rem 1.1rem 1.2rem;
+    }
+    .coll-card-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 .3rem;
+      color: var(--text);
+    }
+    .coll-card-body span {
+      font-size: .8rem;
+      color: var(--tan);
+      font-weight: 600;
+    }
+  
+    .page-hero-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+    }
+    .page-hero-overlay {
+      position: absolute; inset: 0;
+      background: rgba(15,35,15,.62);
+    }
+  </style>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://laysun.co/artificial-palm-trees">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LaySun">
+  <meta property="og:url" content="https://laysun.co/artificial-palm-trees">
+  <meta property="og:title" content="Commercial Artificial Palm Trees — Hotel & Resort Specialist | LaySun">
+  <meta property="og:description" content="Commercial artificial palm trees for hotels, resorts and restaurants. Queen palms and fan palms from 4–10 ft. Fire-rated, PE foliage, factory-direct.">
+  <meta property="og:image" content="https://laysun.co/images/prod-palm-queen-round.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Commercial Artificial Palm Trees — Hotel & Resort Specialist | LaySun">
+  <meta name="twitter:description" content="Commercial artificial palm trees for hotels, resorts and restaurants. Queen palms and fan palms from 4–10 ft. Fire-rated, PE foliage, factory-direct.">
+  <meta name="twitter:image" content="https://laysun.co/images/prod-palm-queen-round.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "url": "https://laysun.co/artificial-palm-trees",
+    "name": "Commercial Artificial Palm Trees — Hotel & Resort Specialist | LaySun",
+    "description": "Commercial artificial palm trees for hotels, resorts and restaurants. Queen palms and fan palms from 4–10 ft. Fire-rated, PE foliage, factory-direct.",
+    "publisher": { "@id": "https://laysun.co/#organization" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://laysun.co"},
+        {"@type":"ListItem","position":2,"name":"Products","item":"https://laysun.co/products"},
+        {"@type":"ListItem","position":3,"name":"Artificial Palm Trees","item":"https://laysun.co/artificial-palm-trees"}
+      ]
+    },
+    "hasPart": [
+      {"@type":"Product","name":"Queen Palm — Round Pot","image":"https://laysun.co/images/prod-palm-queen-round.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Queen Palm — White Pot","image":"https://laysun.co/images/prod-palm-queen-white.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Single-trunk Fan Palm","image":"https://laysun.co/images/prod-palm-fan-single.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Double-trunk Fan Palm","image":"https://laysun.co/images/prod-palm-fan-double.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo.webp" alt="LaySun logo" width="32" height="32" loading="eager"><span class="nav-logo-text">LaySun</span></a>
+    <button class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="systems.html">Systems</a></li>
+      <li><a href="manufacturing.html">Manufacturing</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Products <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="products.html">All Products</a></li><li><a href="artificial-olive-trees.html">Olive Trees</a></li><li><a href="artificial-palm-trees.html">Palm Trees</a></li><li><a href="artificial-fiddle-leaf-fig.html">Fiddle Leaf Fig</a></li><li><a href="artificial-flowering-trees.html">Flowering Trees</a></li></ul></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Policies <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-conditions.html">Terms &amp; Conditions</a></li><li><a href="shipping-policy.html">Shipping Policy</a></li><li><a href="returns-policy.html">Returns &amp; Refunds</a></li><li><a href="warranty-policy.html">Warranty</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li></ul></li><li><a href="quote.html" class="btn-nav">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <img src="images/project-hotel-pool-dubai.webp" alt="Artificial palm trees beside a luxury hotel pool" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <a href="products.html">Products</a> › <span>Artificial Palm Trees</span></div>
+    <h1>Commercial Artificial Palm Trees</h1>
+    <p class="lead">4 palm varieties from 4 to 10 ft — Queen Palms and Fan Palms purpose-built for hotel lobbies, resort pool areas, and large commercial atriums. NFPA 701 and EN 13501 fire-rated.</p>
+  </div>
+</header>
+
+<!-- INTRO CONTENT SECTION -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="max-width:760px;margin:0 auto;">
+      <h2>Artificial Palm Trees Built for Hospitality Environments</h2>
+      <p>The artificial palm tree is the defining plant of resort and hotel design — and the most demanding to execute convincingly at commercial scale. A real Queen Palm or Canary Island date palm in a hotel lobby requires specialist irrigation, regular frond removal, pest management, and a climate-controlled environment that most commercial interiors simply cannot provide. LaySun's commercial artificial palm tree range solves all of these problems: premium PE fronds moulded from botanical specimens, robust steel armature cores, and full fire certification for use in any public hospitality space. These are the artificial palm trees for hotel lobbies, resort pool decks, casino floors, cruise ship interiors, and large retail atriums across the USA, Europe, Middle East, and Southeast Asia.</p>
+
+      <h3>Queen Palm vs Fan Palm — Choosing the Right Style for Your Space</h3>
+      <p>The two primary commercial artificial palm tree styles serve different spatial requirements. Queen Palms — our most popular hotel lobby palm — feature graceful arching fronds and a slender trunk that reads as elegant and tropical without overwhelming mid-height spaces. At 4 to 7 ft, they work perfectly flanking reception desks, framing entrance corridors, or anchoring seating alcoves. The Queen Palm in a round pot and Queen Palm in a white pot offer distinct aesthetic choices: the round pot reads as more naturalistic and resort-like, while the white pot integrates with contemporary minimalist hotel interiors. Fan Palms, by contrast, are the statement piece for large-volume spaces. The single-trunk Fan Palm from 7 to 10 ft and the double-trunk Fan Palm at 8 to 9 ft are regularly specified for double-height hotel atriums, airport lounges, and shopping centre food courts where dramatic vertical impact is required.</p>
+
+      <h3>PE Foliage Quality in Tropical Species</h3>
+      <p>Tropical palm fronds are among the most technically demanding foliage to replicate convincingly in artificial form. The characteristic ribbed texture, the way light catches the underside of each pinnate leaflet, and the subtle colour graduation from base to tip all contribute to the believability of the final product. LaySun's commercial artificial palm trees use injection-moulded PE fronds taken from genuine botanical specimens. Each frond is individually wired and positioned by hand to replicate natural drape and asymmetry. Unlike flat PVC palm fronds that appear obviously synthetic under hospitality spot lighting, PE fronds hold their shape and colour year after year without fading or curling.</p>
+
+      <h3>Fire Certification for Hospitality and Resort Venues</h3>
+      <p>Commercial artificial palm trees in hotels, resorts, casinos, and restaurants must meet the fire certification requirements of the relevant jurisdiction. In the USA this means NFPA 701; in Europe EN 13501; in the Gulf Cooperation Council countries local civil defence fire codes that align with international standards. All LaySun commercial artificial palm trees carry NFPA 701, EN 13501, and GB 8624 B1 fire-retardant certification. Certificates are included with every commercial order. For outdoor pool areas and terrace applications, UV-stabilised PE fronds are available that resist colour fade under direct sunlight for a minimum of three years in full sun exposure.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT GRID -->
+<section class="section">
+  <div class="container">
+    <div class="section-hd" data-a>
+      <span class="eyebrow">4 Products</span>
+      <h2>Full Artificial Palm Tree Collection</h2>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card" data-cat="palm">
+        <div class="prod-card-img"><img src="images/prod-palm-queen-round.webp" alt="Queen Palm in round pot — artificial" loading="lazy"
+             srcset="images/prod-palm-queen-round-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Palm Tree</div>
+          <h3>Queen Palm — Round Pot</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="palm">
+        <div class="prod-card-img"><img src="images/prod-palm-queen-white.webp" alt="Queen Palm in white pot — artificial" loading="lazy"
+             srcset="images/prod-palm-queen-white-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Palm Tree</div>
+          <h3>Queen Palm — White Pot</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="palm">
+        <div class="prod-card-img"><img src="images/prod-palm-fan-single.webp" alt="Single-trunk Fan Palm — large artificial" loading="lazy"
+             srcset="images/prod-palm-fan-single-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Palm Tree</div>
+          <h3>Single-trunk Fan Palm</h3>
+          <div class="prod-sizes"><span>7 ft</span><span>8 ft</span><span>9 ft</span><span>10 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="palm">
+        <div class="prod-card-img"><img src="images/prod-palm-fan-double.webp" alt="Double-trunk Fan Palm — artificial 2025" loading="lazy"
+             srcset="images/prod-palm-fan-double-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Palm Tree</div>
+          <h3>Double-trunk Fan Palm</h3>
+          <div class="prod-sizes"><span>8 ft</span><span>9 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RELATED COLLECTIONS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-hd" data-a>
+      <span class="eyebrow">Browse More</span>
+      <h2>Other Collections</h2>
+    </div>
+    <div class="grid-3" style="margin-top:2rem;">
+      <a href="artificial-olive-trees.html" class="coll-card">
+        <div class="coll-card-img"><img src="images/prod-olive-ls-new.webp" alt="Commercial artificial olive trees" loading="lazy"></div>
+        <div class="coll-card-body"><h3>Artificial Olive Trees</h3><span>View Collection →</span></div>
+      </a>
+      <a href="artificial-fiddle-leaf-fig.html" class="coll-card">
+        <div class="coll-card-img"><img src="images/prod-flfig-curved.webp" alt="Commercial artificial fiddle leaf fig trees" loading="lazy"></div>
+        <div class="coll-card-body"><h3>Artificial Fiddle Leaf Fig Trees</h3><span>View Collection →</span></div>
+      </a>
+      <a href="artificial-flowering-trees.html" class="coll-card">
+        <div class="coll-card-img"><img src="images/prod-camellia-white.webp" alt="Commercial artificial flowering trees" loading="lazy"></div>
+        <div class="coll-card-body"><h3>Artificial Flowering Trees</h3><span>View Collection →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Need Artificial Palm Trees for a Commercial Project?</h2>
+    <p>We supply hotels, resorts, casinos, and hospitality groups worldwide. Factory-direct pricing, full NFPA 701 fire certification, and quotes returned within 24 hours.</p>
+    <div class="cta-btns">
+      <a href="quote.html" class="btn btn-tan btn-lg">Request a Quote</a>
+      <a href="contact.html" class="btn btn-white-outline btn-lg">Ask a Question</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-logo">LaySun</div><p class="footer-tagline">Fire-rated artificial plants for commercial spaces. Factory-direct worldwide.</p><div class="footer-social"><a href="https://www.linkedin.com/in/shawn-kirkpatrick-37a89281/" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a></div></div>
+      <div class="footer-col"><h5>Collections</h5><ul class="footer-links"><li><a href="artificial-olive-trees.html">Olive Trees</a></li><li><a href="artificial-palm-trees.html">Palm Trees</a></li><li><a href="artificial-fiddle-leaf-fig.html">Fiddle Leaf Fig</a></li><li><a href="artificial-flowering-trees.html">Flowering Trees</a></li></ul></div><div class="footer-col"><h5>Pages</h5><ul class="footer-links"><li><a href="systems.html">Systems</a></li><li><a href="manufacturing.html">Manufacturing</a></li><li><a href="products.html">Products</a></li><li><a href="projects.html">Projects</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+      <div class="footer-col"><h5>Support</h5><ul class="footer-links"><li><a href="quote.html">Request a Quote</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><div class="foot-contact"><span class="foot-contact-ic">✉️</span><a href="mailto:info@laysun.co" style="color:inherit;">info@laysun.co</a></div><div class="foot-contact"><span class="foot-contact-ic">💬</span><a href="https://wa.me/12138298485" target="_blank" rel="noopener" style="color:inherit;">WhatsApp: +1 213-829-8485</a></div></div>
+    </div>
+    <div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-conditions.html">Terms &amp; Conditions</a><a href="shipping-policy.html">Shipping Policy</a><a href="returns-policy.html">Returns &amp; Refunds</a><a href="warranty-policy.html">Warranty</a><a href="cookie-policy.html">Cookie Policy</a></div><div class="footer-bottom"><span>© 2026 LaySun. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<div class="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" aria-label="Previous">‹</button>
+  <button class="lb-nav lb-next" aria-label="Next">›</button>
+  <div class="lb-content">
+    <img class="lb-img" src="" alt="">
+    <div class="lb-ph"></div>
+    <p class="lb-caption"></p>
+  </div>
+</div>
+
+<button class="back-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

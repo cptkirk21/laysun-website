@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/logo.webp" type="image/webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Commercial artificial fiddle leaf fig trees for interior design, hotels and corporate offices. Curved trunk, wood trunk and multi-branch styles. Fire-rated.">
+  <title>Commercial Artificial Fiddle Leaf Fig Trees — Interior Design Specialist | LaySun</title>
+  <link rel="preload" as="font" href="fonts/Inter-400.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="images/solution-corporate.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Product grid ─────────────────────────────── */
+    .prod-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media(max-width:1100px){ .prod-grid { grid-template-columns: repeat(3,1fr); } }
+    @media(max-width:768px) { .prod-grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:480px) { .prod-grid { grid-template-columns: 1fr; } }
+
+    /* ── Product card ─────────────────────────────── */
+    .prod-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .prod-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .prod-card.hidden { display: none; }
+
+    .prod-card-img {
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      background: var(--cream-deep);
+    }
+    .prod-card-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+      display: block;
+    }
+    .prod-card:hover .prod-card-img img { transform: scale(1.04); }
+
+    .prod-card-body {
+      padding: 1rem 1.1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .prod-card-body h3 {
+      font-size: .95rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin: 0 0 .6rem;
+      color: var(--text);
+    }
+    .prod-sizes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .3rem;
+      margin-bottom: .9rem;
+    }
+    .prod-sizes span {
+      font-size: .72rem;
+      font-weight: 500;
+      background: var(--cream-deep);
+      color: var(--text-muted);
+      border-radius: 20px;
+      padding: .15rem .55rem;
+      white-space: nowrap;
+    }
+    .prod-cat-tag {
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      margin-bottom: .4rem;
+    }
+    .prod-quote-btn {
+      margin-top: auto;
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--tan);
+      text-decoration: none;
+    }
+    .prod-quote-btn:hover { text-decoration: underline; }
+
+    /* ── Sub-heading divider ──────────────────────── */
+    .grid-subheading {
+      grid-column: 1 / -1;
+      padding: 1.5rem 0 .5rem;
+      border-top: 1px solid var(--border);
+      margin-top: .5rem;
+    }
+    .grid-subheading:first-child {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .grid-subheading h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0;
+    }
+
+    /* ── Related collections grid ─────────────────── */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media(max-width:768px) { .grid-3 { grid-template-columns: 1fr; } }
+
+    .coll-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .coll-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .coll-card-img {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      background: var(--cream-deep);
+    }
+    .coll-card-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+      display: block;
+    }
+    .coll-card:hover .coll-card-img img { transform: scale(1.04); }
+    .coll-card-body {
+      padding: 1rem 1.1rem 1.2rem;
+    }
+    .coll-card-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 .3rem;
+      color: var(--text);
+    }
+    .coll-card-body span {
+      font-size: .8rem;
+      color: var(--tan);
+      font-weight: 600;
+    }
+  
+    .page-hero-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+    }
+    .page-hero-overlay {
+      position: absolute; inset: 0;
+      background: rgba(15,35,15,.62);
+    }
+  </style>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://laysun.co/artificial-fiddle-leaf-fig">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LaySun">
+  <meta property="og:url" content="https://laysun.co/artificial-fiddle-leaf-fig">
+  <meta property="og:title" content="Commercial Artificial Fiddle Leaf Fig Trees — Interior Design Specialist | LaySun">
+  <meta property="og:description" content="Commercial artificial fiddle leaf fig trees for interior design, hotels and corporate offices. Curved trunk, wood trunk and multi-branch styles. Fire-rated.">
+  <meta property="og:image" content="https://laysun.co/images/prod-flfig-curved.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Commercial Artificial Fiddle Leaf Fig Trees — Interior Design Specialist | LaySun">
+  <meta name="twitter:description" content="Commercial artificial fiddle leaf fig trees for interior design, hotels and corporate offices. Curved trunk, wood trunk and multi-branch styles. Fire-rated.">
+  <meta name="twitter:image" content="https://laysun.co/images/prod-flfig-curved.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "url": "https://laysun.co/artificial-fiddle-leaf-fig",
+    "name": "Commercial Artificial Fiddle Leaf Fig Trees — Interior Design Specialist | LaySun",
+    "description": "Commercial artificial fiddle leaf fig trees for interior design, hotels and corporate offices. Curved trunk, wood trunk and multi-branch styles. Fire-rated.",
+    "publisher": { "@id": "https://laysun.co/#organization" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://laysun.co"},
+        {"@type":"ListItem","position":2,"name":"Products","item":"https://laysun.co/products"},
+        {"@type":"ListItem","position":3,"name":"Artificial Fiddle Leaf Fig Trees","item":"https://laysun.co/artificial-fiddle-leaf-fig"}
+      ]
+    },
+    "hasPart": [
+      {"@type":"Product","name":"Curved Trunk Fiddle Leaf Fig","image":"https://laysun.co/images/prod-flfig-curved.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Real Wood Trunk Fiddle Leaf Fig","image":"https://laysun.co/images/prod-flfig-wood-trunk.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Multi-branch Fiddle Leaf Fig","image":"https://laysun.co/images/prod-flfig-multi-branch.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Large Head Mini Ficus","image":"https://laysun.co/images/prod-ficus-large-head.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Three-trunk Real Wood Ficus","image":"https://laysun.co/images/prod-ficus-three-trunk.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Two-trunk Real Wood Ficus","image":"https://laysun.co/images/prod-ficus-two-trunk.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Curved Trunk Ficus","image":"https://laysun.co/images/prod-ficus-curved.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Variegated White-edge Ficus","image":"https://laysun.co/images/prod-ficus-variegated.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo.webp" alt="LaySun logo" width="32" height="32" loading="eager"><span class="nav-logo-text">LaySun</span></a>
+    <button class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="systems.html">Systems</a></li>
+      <li><a href="manufacturing.html">Manufacturing</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Products <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="products.html">All Products</a></li><li><a href="artificial-olive-trees.html">Olive Trees</a></li><li><a href="artificial-palm-trees.html">Palm Trees</a></li><li><a href="artificial-fiddle-leaf-fig.html">Fiddle Leaf Fig</a></li><li><a href="artificial-flowering-trees.html">Flowering Trees</a></li></ul></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Policies <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-conditions.html">Terms &amp; Conditions</a></li><li><a href="shipping-policy.html">Shipping Policy</a></li><li><a href="returns-policy.html">Returns &amp; Refunds</a></li><li><a href="warranty-policy.html">Warranty</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li></ul></li><li><a href="quote.html" class="btn-nav">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <img src="images/solution-corporate.webp" alt="Artificial fiddle leaf fig trees in a corporate office lobby" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <a href="products.html">Products</a> › <span>Artificial Fiddle Leaf Fig Trees</span></div>
+    <h1>Commercial Artificial Fiddle Leaf Fig Trees</h1>
+    <p class="lead">4 styles from 5 to 8 ft — curved trunk, real wood trunk, multi-branch and large head ficus variants. The interior designer's statement tree, built for commercial environments with full fire certification.</p>
+  </div>
+</header>
+
+<!-- INTRO CONTENT SECTION -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="max-width:760px;margin:0 auto;">
+      <h2>The Interior Designer's Tree — Now Commercial Grade</h2>
+      <p>The commercial artificial fiddle leaf fig (Ficus lyrata) has become the most specified statement tree in contemporary hospitality and corporate interior design. Its large, glossy, violin-shaped leaves create a bold architectural silhouette that reads as intentional and sophisticated from across a room. Boutique hotels, design-led restaurants, high-end corporate reception areas, and luxury retail flagships all reach for the fiddle leaf fig when they need a single plant to anchor a space. The challenge has always been that real fiddle leaf figs are notoriously difficult to maintain: they demand precise humidity levels, consistent bright indirect light, and a near-complete absence of HVAC draughts — conditions that virtually no commercial interior can guarantee. LaySun's commercial artificial fiddle leaf fig trees deliver the full visual impact with zero maintenance and complete fire certification.</p>
+
+      <h3>Curved Trunk vs Real Wood Trunk — Styling for Your Space</h3>
+      <p>The curved trunk fiddle leaf fig is the most versatile commercial style. The graceful natural curve of the trunk replicates the phototropic lean of a living Ficus lyrata growing toward a light source, immediately suggesting authenticity. Available in 5, 6, and 7 ft, the curved trunk style works in any interior from boutique hotel rooms to corporate boardrooms. The real wood trunk variant takes realism a step further: an actual treated natural wood trunk is affixed to the internal steel armature, providing genuine wood grain texture, bark detail, and tactile authenticity that passes close inspection. This is the preferred specification for luxury hotel lobbies where guests may approach and touch the trees. The multi-branch fiddle leaf fig at 7 ft creates a fuller, more mature canopy that fills larger spaces — ideal for restaurant feature corners and corporate atriums. The large head mini ficus at 8 ft bridges the fiddle leaf and classic ficus aesthetics, delivering maximum canopy volume for double-height lobby applications.</p>
+
+      <h3>PE Foliage Quality and Leaf Size Realism for Artificial Ficus Lyrata</h3>
+      <p>The most critical element of a convincing commercial artificial fiddle leaf fig is the leaf. Real Ficus lyrata leaves grow to 12–18 inches in length with a distinctive wavy margin, prominent cream-coloured veining, and a waxy surface that catches light. LaySun's PE leaves are individually moulded from genuine Ficus lyrata botanical specimens at natural scale. Each leaf captures the correct surface texture, vein structure, and colour gradient from dark green at the leaf margin to lighter green at the midrib. PVC alternatives available from budget suppliers produce flat, shiny, obviously synthetic leaves at incorrect scale — a specification mistake that becomes immediately apparent to any guest with horticultural awareness.</p>
+
+      <h3>Fire Certification and Commercial Compliance</h3>
+      <p>All LaySun commercial artificial fiddle leaf fig trees and ficus trees are certified to NFPA 701 (USA), EN 13501 (Europe), and GB 8624 B1 (China). Fire-retardant additives are incorporated into the PE compound at the point of manufacture, not applied as a surface spray, which means the certification is permanent and will hold at every annual fire inspection. Test certificates are provided with every commercial order. For hotel and hospitality applications requiring documentation for building permit and occupancy certificate applications, we provide certificates in the format specified by your jurisdiction's authority. The steel armature base plates are pre-drilled for floor anchoring where required by local building codes. Custom configurations including bespoke heights, custom pot finishes, and paired or grouped tree arrangements are available with a 30–45 day factory lead time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT GRID -->
+<section class="section">
+  <div class="container">
+    <div class="section-hd" data-a>
+      <span class="eyebrow">8 Products</span>
+      <h2>Fiddle Leaf Fig &amp; Ficus Collection</h2>
+    </div>
+    <div class="prod-grid">
+
+      <div class="grid-subheading">
+        <h3>Fiddle Leaf Fig</h3>
+      </div>
+
+      <div class="prod-card" data-cat="fiddle">
+        <div class="prod-card-img"><img src="images/prod-flfig-curved.webp" alt="Curved Trunk Artificial Fiddle Leaf Fig series" loading="lazy"
+             srcset="images/prod-flfig-curved-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Fiddle Leaf Fig</div>
+          <h3>Curved Trunk Fiddle Leaf Fig</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="fiddle">
+        <div class="prod-card-img"><img src="images/prod-flfig-wood-trunk.webp" alt="Real Wood Trunk Artificial Fiddle Leaf Fig" loading="lazy"
+             srcset="images/prod-flfig-wood-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Fiddle Leaf Fig</div>
+          <h3>Real Wood Trunk Fiddle Leaf Fig</h3>
+          <div class="prod-sizes"><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="fiddle">
+        <div class="prod-card-img"><img src="images/prod-flfig-multi-branch.webp" alt="Multi-branch Artificial Fiddle Leaf Fig 2026" loading="lazy"
+             srcset="images/prod-flfig-multi-branch-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Fiddle Leaf Fig</div>
+          <h3>Multi-branch Fiddle Leaf Fig</h3>
+          <div class="prod-sizes"><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="fiddle">
+        <div class="prod-card-img"><img src="images/prod-ficus-large-head.webp" alt="Large Head Mini Ficus — artificial 8ft" loading="lazy"
+             srcset="images/prod-ficus-large-head-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Fiddle Leaf Fig</div>
+          <h3>Large Head Mini Ficus</h3>
+          <div class="prod-sizes"><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="grid-subheading">
+        <h3>Ficus</h3>
+      </div>
+
+      <div class="prod-card" data-cat="ficus">
+        <div class="prod-card-img"><img src="images/prod-ficus-three-trunk.webp" alt="Three-trunk Real Wood Artificial Ficus" loading="lazy"
+             srcset="images/prod-ficus-three-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Ficus</div>
+          <h3>Three-trunk Real Wood Ficus</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="ficus">
+        <div class="prod-card-img"><img src="images/prod-ficus-two-trunk.webp" alt="Two-trunk Real Wood Artificial Ficus in black square pot" loading="lazy"
+             srcset="images/prod-ficus-two-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Ficus</div>
+          <h3>Two-trunk Real Wood Ficus</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="ficus">
+        <div class="prod-card-img"><img src="images/prod-ficus-curved.webp" alt="Curved Trunk Artificial Ficus series" loading="lazy"
+             srcset="images/prod-ficus-curved-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Ficus</div>
+          <h3>Curved Trunk Ficus</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="ficus">
+        <div class="prod-card-img"><img src="images/prod-ficus-variegated.webp" alt="Variegated Artificial Ficus with white-edge leaves" loading="lazy"
+             srcset="images/prod-ficus-variegated-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Ficus</div>
+          <h3>Variegated White-edge Ficus</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RELATED COLLECTIONS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-hd" data-a>
+      <span class="eyebrow">Browse More</span>
+      <h2>Other Collections</h2>
+    </div>
+    <div class="grid-3" style="margin-top:2rem;">
+      <a href="artificial-olive-trees.html" class="coll-card">
+        <div class="coll-card-img"><img src="images/prod-olive-ls-new.webp" alt="Commercial artificial olive trees" loading="lazy"></div>
+        <div class="coll-card-body"><h3>Artificial Olive Trees</h3><span>View Collection →</span></div>
+      </a>
+      <a href="artificial-palm-trees.html" class="coll-card">
+        <div class="coll-card-img"><img src="images/prod-palm-queen-round.webp" alt="Commercial artificial palm trees" loading="lazy"></div>
+        <div class="coll-card-body"><h3>Artificial Palm Trees</h3><span>View Collection →</span></div>
+      </a>
+      <a href="artificial-flowering-trees.html" class="coll-card">
+        <div class="coll-card-img"><img src="images/prod-camellia-white.webp" alt="Commercial artificial flowering trees" loading="lazy"></div>
+        <div class="coll-card-body"><h3>Artificial Flowering Trees</h3><span>View Collection →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Need Fiddle Leaf Fig Trees for a Commercial Project?</h2>
+    <p>Specified by interior designers and FF&amp;E consultants worldwide. Factory-direct pricing, fire certification included, and quotes returned within 24 hours.</p>
+    <div class="cta-btns">
+      <a href="quote.html" class="btn btn-tan btn-lg">Request a Quote</a>
+      <a href="contact.html" class="btn btn-white-outline btn-lg">Ask a Question</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-logo">LaySun</div><p class="footer-tagline">Fire-rated artificial plants for commercial spaces. Factory-direct worldwide.</p><div class="footer-social"><a href="https://www.linkedin.com/in/shawn-kirkpatrick-37a89281/" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a></div></div>
+      <div class="footer-col"><h5>Collections</h5><ul class="footer-links"><li><a href="artificial-olive-trees.html">Olive Trees</a></li><li><a href="artificial-palm-trees.html">Palm Trees</a></li><li><a href="artificial-fiddle-leaf-fig.html">Fiddle Leaf Fig</a></li><li><a href="artificial-flowering-trees.html">Flowering Trees</a></li></ul></div><div class="footer-col"><h5>Pages</h5><ul class="footer-links"><li><a href="systems.html">Systems</a></li><li><a href="manufacturing.html">Manufacturing</a></li><li><a href="products.html">Products</a></li><li><a href="projects.html">Projects</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+      <div class="footer-col"><h5>Support</h5><ul class="footer-links"><li><a href="quote.html">Request a Quote</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><div class="foot-contact"><span class="foot-contact-ic">✉️</span><a href="mailto:info@laysun.co" style="color:inherit;">info@laysun.co</a></div><div class="foot-contact"><span class="foot-contact-ic">💬</span><a href="https://wa.me/12138298485" target="_blank" rel="noopener" style="color:inherit;">WhatsApp: +1 213-829-8485</a></div></div>
+    </div>
+    <div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-conditions.html">Terms &amp; Conditions</a><a href="shipping-policy.html">Shipping Policy</a><a href="returns-policy.html">Returns &amp; Refunds</a><a href="warranty-policy.html">Warranty</a><a href="cookie-policy.html">Cookie Policy</a></div><div class="footer-bottom"><span>© 2026 LaySun. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<div class="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" aria-label="Previous">‹</button>
+  <button class="lb-nav lb-next" aria-label="Next">›</button>
+  <div class="lb-content">
+    <img class="lb-img" src="" alt="">
+    <div class="lb-ph"></div>
+    <p class="lb-caption"></p>
+  </div>
+</div>
+
+<button class="back-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

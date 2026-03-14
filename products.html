@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/logo.webp" type="image/webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse LaySun's full range of commercial artificial trees — olive trees, palms, fiddle leaf figs, ficus, flowering trees and more. Factory-direct, fire-rated, available in US sizes.">
+  <title>Artificial Trees & Plant Catalogue — LaySun Commercial</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Product grid ─────────────────────────────── */
+    .prod-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media(max-width:1100px){ .prod-grid { grid-template-columns: repeat(3,1fr); } }
+    @media(max-width:768px) { .prod-grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:480px) { .prod-grid { grid-template-columns: 1fr; } }
+
+    /* ── Product card ─────────────────────────────── */
+    .prod-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .prod-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .prod-card.hidden { display: none; }
+
+    .prod-card-img {
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      background: var(--cream-deep);
+    }
+    .prod-card-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+      display: block;
+    }
+    .prod-card:hover .prod-card-img img { transform: scale(1.04); }
+
+    .prod-card-body {
+      padding: 1rem 1.1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .prod-card-body h3 {
+      font-size: .95rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin: 0 0 .6rem;
+      color: var(--text);
+    }
+    .prod-sizes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .3rem;
+      margin-bottom: .9rem;
+    }
+    .prod-sizes span {
+      font-size: .72rem;
+      font-weight: 500;
+      background: var(--cream-deep);
+      color: var(--text-muted);
+      border-radius: 20px;
+      padding: .15rem .55rem;
+      white-space: nowrap;
+    }
+    .prod-cat-tag {
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      margin-bottom: .4rem;
+    }
+    .prod-quote-btn {
+      margin-top: auto;
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--tan);
+      text-decoration: none;
+    }
+    .prod-quote-btn:hover { text-decoration: underline; }
+
+    /* ── Filter bar ───────────────────────────────── */
+    .filter-scroll {
+      overflow-x: auto;
+      padding-bottom: .25rem;
+      margin-bottom: .5rem;
+    }
+    .filter-scroll .filter-bar {
+      display: flex;
+      gap: .5rem;
+      white-space: nowrap;
+      min-width: max-content;
+    }
+
+    /* ── Count badge ─────────────────────────────── */
+    #prodCount {
+      font-size: .85rem;
+      color: var(--text-muted);
+      margin-top: .75rem;
+    }
+  </style>
+<script>window.addEventListener("load",function(){function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,o.onload=function(){window.trackingFunctions.onLoad({appId:"699435a6d52bb100156127ec"})},document.head.appendChild(o)}initApollo()});</script>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://laysun.co/products">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LaySun">
+  <meta property="og:url" content="https://laysun.co/products">
+  <meta property="og:title" content="Artificial Trees & Plant Catalogue — LaySun Commercial">
+  <meta property="og:description" content="Browse LaySun's full range of commercial artificial trees — olive trees, palms, fiddle leaf figs, ficus, flowering trees and more. Factory-direct, fire-rated, available in US sizes.">
+  <meta property="og:image" content="https://laysun.co/images/prod-olive-ls-new.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Artificial Trees & Plant Catalogue — LaySun Commercial">
+  <meta name="twitter:description" content="Browse LaySun's full range of commercial artificial trees — olive trees, palms, fiddle leaf figs, ficus, flowering trees and more. Factory-direct, fire-rated, available in US sizes.">
+  <meta name="twitter:image" content="https://laysun.co/images/prod-olive-ls-new.webp">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "url": "https://laysun.co/products",
+  "name": "Artificial Trees & Plant Catalogue — LaySun Commercial",
+  "description": "Browse LaySun's full range of commercial artificial trees — olive trees, palms, fiddle leaf figs, ficus, flowering trees and more.",
+  "publisher": {
+    "@id": "https://laysun.co/#organization"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://laysun.co"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products",
+        "item": "https://laysun.co/products"
+      }
+    ]
+  },
+  "hasPart": [
+    {
+      "@type": "Product",
+      "name": "Artificial Olive Trees",
+      "brand": {
+        "@id": "https://laysun.co/#organization"
+      },
+      "category": "Artificial Trees",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://laysun.co/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Artificial Palm Trees",
+      "brand": {
+        "@id": "https://laysun.co/#organization"
+      },
+      "category": "Artificial Trees",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://laysun.co/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Artificial Fiddle Leaf Fig Trees",
+      "brand": {
+        "@id": "https://laysun.co/#organization"
+      },
+      "category": "Artificial Trees",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://laysun.co/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Artificial Living Wall Panels",
+      "brand": {
+        "@id": "https://laysun.co/#organization"
+      },
+      "category": "Artificial Green Walls",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://laysun.co/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Artificial Flowering Trees",
+      "brand": {
+        "@id": "https://laysun.co/#organization"
+      },
+      "category": "Artificial Trees",
+      "offers": {
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@id": "https://laysun.co/#organization"
+        }
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo.webp" alt="LaySun logo" width="32" height="32" loading="eager"><span class="nav-logo-text">LaySun</span></a>
+    <button class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="systems.html">Systems</a></li>
+      <li><a href="manufacturing.html">Manufacturing</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Products <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="products.html">All Products</a></li><li><a href="artificial-olive-trees.html">Olive Trees</a></li><li><a href="artificial-palm-trees.html">Palm Trees</a></li><li><a href="artificial-fiddle-leaf-fig.html">Fiddle Leaf Fig</a></li><li><a href="artificial-flowering-trees.html">Flowering Trees</a></li></ul></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Policies <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-conditions.html">Terms &amp; Conditions</a></li><li><a href="shipping-policy.html">Shipping Policy</a></li><li><a href="returns-policy.html">Returns &amp; Refunds</a></li><li><a href="warranty-policy.html">Warranty</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li></ul></li><li><a href="quote.html" class="btn-nav">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>Products</span></div>
+    <h1>Product Catalogue</h1>
+    <p class="lead">60 product lines. Factory-direct. NFPA 701 &amp; EN 13501 fire-rated. Available in standard US sizes — request a quote on any item within 24 hours.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+
+    <!-- COLLECTION LINKS -->
+    <div style="margin-bottom:1.5rem;">
+      <p style="font-size:.8rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-muted);margin:0 0 .75rem;">Shop by Collection</p>
+      <div style="display:flex;flex-wrap:wrap;gap:.5rem;">
+        <a href="artificial-olive-trees.html" style="display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;font-weight:600;color:var(--text);background:var(--cream-deep);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;text-decoration:none;">Olive Trees →</a>
+        <a href="artificial-palm-trees.html" style="display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;font-weight:600;color:var(--text);background:var(--cream-deep);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;text-decoration:none;">Palm Trees →</a>
+        <a href="artificial-fiddle-leaf-fig.html" style="display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;font-weight:600;color:var(--text);background:var(--cream-deep);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;text-decoration:none;">Fiddle Leaf Fig &amp; Ficus →</a>
+        <a href="artificial-flowering-trees.html" style="display:inline-flex;align-items:center;gap:.35rem;font-size:.82rem;font-weight:600;color:var(--text);background:var(--cream-deep);border:1px solid var(--border);border-radius:20px;padding:.3rem .8rem;text-decoration:none;">Flowering Trees →</a>
+      </div>
+    </div>
+
+    <!-- FILTER BAR -->
+    <div class="filter-scroll">
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="olive">Olive Trees</button>
+        <button class="filter-btn" data-filter="palm">Palm Trees</button>
+        <button class="filter-btn" data-filter="fiddle">Fiddle Leaf Fig</button>
+        <button class="filter-btn" data-filter="ficus">Ficus</button>
+        <button class="filter-btn" data-filter="dracaena">Dracaena</button>
+        <button class="filter-btn" data-filter="flowering">Flowering Trees</button>
+        <button class="filter-btn" data-filter="other">Other Trees</button>
+      </div>
+    </div>
+    <div id="prodCount"></div>
+
+    <!-- PRODUCT GRID -->
+    <div class="prod-grid" id="prodGrid">
+
+      <!-- ═══════════ OLIVE TREES ═══════════ -->
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-ls-new.webp" alt="LS New Style Artificial Olive Tree — multiple sizes" loading="lazy"
+             srcset="images/prod-olive-ls-new-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>LS New Style Olive Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-ls-wood-trunk.webp" alt="LS Real Wood Trunk Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-ls-wood-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>LS Real Wood Trunk Olive Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-ls-old-stump.webp" alt="LS Old Stump Thick Trunk Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-ls-old-stump-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>LS Old Stump Thick Trunk Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-ls-wide-canopy.webp" alt="LS Wide Canopy Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-ls-wide-canopy-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>LS Wide Canopy Olive Tree</h3>
+          <div class="prod-sizes"><span>6 ft</span><span>7 ft</span><span>8 ft</span><span>9 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-ls-large-tree.webp" alt="LS Large Tree Artificial Olive — 9ft 10ft" loading="lazy"
+             srcset="images/prod-olive-ls-large-tree-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>LS Large Tree Olive</h3>
+          <div class="prod-sizes"><span>9 ft</span><span>10 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-multi-branch.webp" alt="Multi-branch Artificial Olive Tree series" loading="lazy"
+             srcset="images/prod-olive-multi-branch-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Multi-branch Olive Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-thick-double-fork.webp" alt="Thick Branch Double-fork Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-thick-double-fork-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Thick Branch Double-fork Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-fan-shape.webp" alt="Fan-shape Artificial Olive Tree in round pot" loading="lazy"
+             srcset="images/prod-olive-fan-shape-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Fan-shape Olive Tree — Round Pot</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-spherical.webp" alt="Spherical 3D Artificial Olive Tree series" loading="lazy"
+             srcset="images/prod-olive-spherical-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Spherical 3D Olive Tree</h3>
+          <div class="prod-sizes"><span>3 ft</span><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-large-head.webp" alt="Large Tree Head 3D Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-large-head-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Large Tree Head 3D Olive Tree</h3>
+          <div class="prod-sizes"><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-cross-black.webp" alt="Cross Black Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-cross-black-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Cross Black Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-double-fork-straight.webp" alt="Double-fork Straight Trunk Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-double-fork-straight-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Double-fork Straight Trunk Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-straight-black.webp" alt="Straight Black Artificial Olive Tree series" loading="lazy"
+             srcset="images/prod-olive-straight-black-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Straight Black Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-white-pot-fine.webp" alt="White Pot Fine Branch Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-white-pot-fine-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>White Pot Fine Branch Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-standard-678ft.webp" alt="Standard 6 7 8ft Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-standard-678ft-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Standard Olive Tree</h3>
+          <div class="prod-sizes"><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-white-pot.webp" alt="White Pot Artificial Olive Tree series" loading="lazy"
+             srcset="images/prod-olive-white-pot-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>White Pot Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-single-three-branch.webp" alt="Single Trunk Three-branch Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-single-three-branch-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Single Trunk Three-branch Olive Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-2025-thick-straight.webp" alt="2025 Thick Straight Trunk Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-2025-thick-straight-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>2025 Thick Straight Trunk Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-green-stem.webp" alt="Green Stem Multi-branch Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-green-stem-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Green Stem Multi-branch Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-velvet.webp" alt="Velvet Flock Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-velvet-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Velvet Flock Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <!-- ═══════════ PALM TREES ═══════════ -->
+
+      <div class="prod-card" data-cat="palm">
+        <div class="prod-card-img"><img src="images/prod-palm-queen-round.webp" alt="Queen Palm in round pot — artificial" loading="lazy"
+             srcset="images/prod-palm-queen-round-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Palm Tree</div>
+          <h3>Queen Palm — Round Pot</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="palm">
+        <div class="prod-card-img"><img src="images/prod-palm-queen-white.webp" alt="Queen Palm in white pot — artificial" loading="lazy"
+             srcset="images/prod-palm-queen-white-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Palm Tree</div>
+          <h3>Queen Palm — White Pot</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="palm">
+        <div class="prod-card-img"><img src="images/prod-palm-fan-single.webp" alt="Single-trunk Fan Palm — large artificial" loading="lazy"
+             srcset="images/prod-palm-fan-single-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Palm Tree</div>
+          <h3>Single-trunk Fan Palm</h3>
+          <div class="prod-sizes"><span>7 ft</span><span>8 ft</span><span>9 ft</span><span>10 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="palm">
+        <div class="prod-card-img"><img src="images/prod-palm-fan-double.webp" alt="Double-trunk Fan Palm — artificial 2025" loading="lazy"
+             srcset="images/prod-palm-fan-double-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Palm Tree</div>
+          <h3>Double-trunk Fan Palm</h3>
+          <div class="prod-sizes"><span>8 ft</span><span>9 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <!-- ═══════════ FIDDLE LEAF FIG ═══════════ -->
+
+      <div class="prod-card" data-cat="fiddle">
+        <div class="prod-card-img"><img src="images/prod-flfig-curved.webp" alt="Curved Trunk Artificial Fiddle Leaf Fig series" loading="lazy"
+             srcset="images/prod-flfig-curved-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Fiddle Leaf Fig</div>
+          <h3>Curved Trunk Fiddle Leaf Fig</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="fiddle">
+        <div class="prod-card-img"><img src="images/prod-flfig-wood-trunk.webp" alt="Real Wood Trunk Artificial Fiddle Leaf Fig" loading="lazy"
+             srcset="images/prod-flfig-wood-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Fiddle Leaf Fig</div>
+          <h3>Real Wood Trunk Fiddle Leaf Fig</h3>
+          <div class="prod-sizes"><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="fiddle">
+        <div class="prod-card-img"><img src="images/prod-flfig-multi-branch.webp" alt="Multi-branch Artificial Fiddle Leaf Fig 2026" loading="lazy"
+             srcset="images/prod-flfig-multi-branch-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Fiddle Leaf Fig</div>
+          <h3>Multi-branch Fiddle Leaf Fig</h3>
+          <div class="prod-sizes"><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="fiddle">
+        <div class="prod-card-img"><img src="images/prod-ficus-large-head.webp" alt="Large Head Mini Ficus — artificial 8ft" loading="lazy"
+             srcset="images/prod-ficus-large-head-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Fiddle Leaf Fig</div>
+          <h3>Large Head Mini Ficus</h3>
+          <div class="prod-sizes"><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <!-- ═══════════ FICUS ═══════════ -->
+
+      <div class="prod-card" data-cat="ficus">
+        <div class="prod-card-img"><img src="images/prod-ficus-three-trunk.webp" alt="Three-trunk Real Wood Artificial Ficus" loading="lazy"
+             srcset="images/prod-ficus-three-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Ficus</div>
+          <h3>Three-trunk Real Wood Ficus</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="ficus">
+        <div class="prod-card-img"><img src="images/prod-ficus-two-trunk.webp" alt="Two-trunk Real Wood Artificial Ficus in black square pot" loading="lazy"
+             srcset="images/prod-ficus-two-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Ficus</div>
+          <h3>Two-trunk Real Wood Ficus</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="ficus">
+        <div class="prod-card-img"><img src="images/prod-ficus-curved.webp" alt="Curved Trunk Artificial Ficus series" loading="lazy"
+             srcset="images/prod-ficus-curved-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Ficus</div>
+          <h3>Curved Trunk Ficus</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="ficus">
+        <div class="prod-card-img"><img src="images/prod-ficus-variegated.webp" alt="Variegated Artificial Ficus with white-edge leaves" loading="lazy"
+             srcset="images/prod-ficus-variegated-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Ficus</div>
+          <h3>Variegated White-edge Ficus</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <!-- ═══════════ DRACAENA ═══════════ -->
+
+      <div class="prod-card" data-cat="dracaena">
+        <div class="prod-card-img"><img src="images/prod-dracaena-two-trunk.webp" alt="Two-trunk Artificial Dracaena series" loading="lazy"
+             srcset="images/prod-dracaena-two-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Dracaena</div>
+          <h3>Two-trunk Dracaena</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="dracaena">
+        <div class="prod-card-img"><img src="images/prod-dracaena-large-leaf.webp" alt="Large-leaf Artificial Dracaena series" loading="lazy"
+             srcset="images/prod-dracaena-large-leaf-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Dracaena</div>
+          <h3>Large-leaf Dracaena</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="dracaena">
+        <div class="prod-card-img"><img src="images/prod-dracaena-multi-trunk.webp" alt="Multi-trunk Artificial Dracaena in round pot" loading="lazy"
+             srcset="images/prod-dracaena-multi-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Dracaena</div>
+          <h3>Multi-trunk Dracaena</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>5.5 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <!-- ═══════════ FLOWERING — CAMELLIA ═══════════ -->
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-camellia-red.webp" alt="Red Artificial Camellia Tree series" loading="lazy"
+             srcset="images/prod-camellia-red-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Camellia</div>
+          <h3>Red Camellia Tree</h3>
+          <div class="prod-sizes"><span>2.5 ft</span><span>3 ft</span><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-camellia-white.webp" alt="White Artificial Camellia Tree in square white pot" loading="lazy"
+             srcset="images/prod-camellia-white-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Camellia</div>
+          <h3>White Camellia Tree</h3>
+          <div class="prod-sizes"><span>4.5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-camellia-pink.webp" alt="Pink Artificial Camellia Tree" loading="lazy"
+             srcset="images/prod-camellia-pink-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Camellia</div>
+          <h3>Pink Camellia Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-camellia-yellow.webp" alt="Yellow Artificial Camellia Tree" loading="lazy"
+             srcset="images/prod-camellia-yellow-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Camellia</div>
+          <h3>Yellow Camellia Tree</h3>
+          <div class="prod-sizes"><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <!-- ═══════════ FLOWERING — HYDRANGEA ═══════════ -->
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-hydrangea-pink.webp" alt="Pink Artificial Hydrangea Tree" loading="lazy"
+             srcset="images/prod-hydrangea-pink-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Hydrangea</div>
+          <h3>Pink Hydrangea Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-hydrangea-purple.webp" alt="Purple Artificial Hydrangea Tree" loading="lazy"
+             srcset="images/prod-hydrangea-purple-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Hydrangea</div>
+          <h3>Purple Hydrangea Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-hydrangea-blue.webp" alt="Blue Artificial Hydrangea Tree" loading="lazy"
+             srcset="images/prod-hydrangea-blue-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Hydrangea</div>
+          <h3>Blue Hydrangea Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <!-- ═══════════ FLOWERING — BOUGAINVILLEA ═══════════ -->
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-bougainvillea-wood-trunk.webp" alt="Real Wood Trunk Artificial Bougainvillea" loading="lazy"
+             srcset="images/prod-bougainvillea-wood-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Bougainvillea</div>
+          <h3>Real Wood Trunk Bougainvillea</h3>
+          <div class="prod-sizes"><span>6 ft</span><span>7.5 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-bougainvillea-pink.webp" alt="Pink Artificial Bougainvillea series" loading="lazy"
+             srcset="images/prod-bougainvillea-pink-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Bougainvillea</div>
+          <h3>Pink Bougainvillea</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <!-- ═══════════ FLOWERING — CHERRY BLOSSOM ═══════════ -->
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-cherry-pink.webp" alt="Pink Artificial Cherry Blossom Tree series" loading="lazy"
+             srcset="images/prod-cherry-pink-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Cherry Blossom</div>
+          <h3>Pink Cherry Blossom Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-cherry-white.webp" alt="White Artificial Cherry Blossom Tree" loading="lazy"
+             srcset="images/prod-cherry-white-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Cherry Blossom</div>
+          <h3>White Cherry Blossom Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="flowering">
+        <div class="prod-card-img"><img src="images/prod-cherry-red.webp" alt="Red Artificial Cherry Blossom Tree" loading="lazy"
+             srcset="images/prod-cherry-red-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Cherry Blossom</div>
+          <h3>Red Cherry Blossom Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <!-- ═══════════ OTHER TREES ═══════════ -->
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-lemon.webp" alt="Artificial Lemon Tree with fruit" loading="lazy"
+             srcset="images/prod-other-lemon-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Lemon Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-apple.webp" alt="Artificial Apple Tree with fruit" loading="lazy"
+             srcset="images/prod-other-apple-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Apple Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-money-spiral.webp" alt="Spiral Trunk Artificial Money Tree" loading="lazy"
+             srcset="images/prod-other-money-spiral-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Spiral Trunk Money Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-money-multi.webp" alt="Multi-branch Artificial Money Tree" loading="lazy"
+             srcset="images/prod-other-money-multi-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Multi-branch Money Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-maple-green.webp" alt="Artificial Maple Tree with green leaves" loading="lazy"
+             srcset="images/prod-other-maple-green-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Maple Tree — Green</h3>
+          <div class="prod-sizes"><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-maple-yellow.webp" alt="Artificial Maple Tree with yellow autumn leaves" loading="lazy"
+             srcset="images/prod-other-maple-yellow-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Maple Tree — Autumn Yellow</h3>
+          <div class="prod-sizes"><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-andromeda.webp" alt="Artificial Andromeda / Pieris shrub tree" loading="lazy"
+             srcset="images/prod-other-andromeda-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Andromeda (Pieris)</h3>
+          <div class="prod-sizes"><span>2.5 ft</span><span>3 ft</span><span>3.5 ft</span><span>5 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-eucalyptus.webp" alt="Artificial Eucalyptus Tree" loading="lazy"
+             srcset="images/prod-other-eucalyptus-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Eucalyptus Tree</h3>
+          <div class="prod-sizes"><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-travelers-palm.webp" alt="Artificial Traveler's Palm" loading="lazy"
+             srcset="images/prod-other-travelers-palm-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Traveler's Palm</h3>
+          <div class="prod-sizes"><span>5 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-canna.webp" alt="Artificial Canna / Indian Shot plant" loading="lazy"
+             srcset="images/prod-other-canna-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Canna (Indian Shot)</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-begonia.webp" alt="Artificial Begonia Flowering Tree" loading="lazy"
+             srcset="images/prod-other-begonia-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Begonia Flowering Tree</h3>
+          <div class="prod-sizes"><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-spider-plant.webp" alt="Artificial Hanging Spider Plant Tree series" loading="lazy"
+             srcset="images/prod-other-spider-plant-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Hanging Spider Plant Tree</h3>
+          <div class="prod-sizes"><span>3 ft</span><span>4 ft</span><span>5 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="other">
+        <div class="prod-card-img"><img src="images/prod-other-agapanthus.webp" alt="Artificial Agapanthus / Sword Lily series" loading="lazy"
+             srcset="images/prod-other-agapanthus-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Other Trees</div>
+          <h3>Agapanthus (Sword Lily)</h3>
+          <div class="prod-sizes"><span>2.5 ft</span><span>4 ft</span><span>5 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+    </div><!-- /prod-grid -->
+
+  </div>
+</section>
+
+<!-- FIRE CERT CALLOUT -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="split">
+      <div class="split-text" data-a>
+        <span class="eyebrow">Fire Safety</span>
+        <h2>Every Product. Full Certification.</h2>
+        <p>All LaySun commercial products are NFPA 701 (USA), EN 13501 (Europe), and GB 8624 B1 (China) certified. Fire-retardant additives are blended into the PE compound at manufacture — not surface-sprayed — so certification holds at every annual inspection.</p>
+        <p>Test certificates are included with every commercial order, in the format required by your jurisdiction's fire inspector.</p>
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem;">
+          <span class="cert-badge">🇺🇸 NFPA 701 Certified</span>
+          <span class="cert-badge">🇪🇺 EN 13501 Rated</span>
+          <span class="cert-badge">🇨🇳 GB 8624 B1</span>
+        </div>
+      </div>
+      <div class="split-media" data-a>
+        <img src="images/blog-featured-nfpa701.webp" alt="Fire safety certificate with official red seal beside a green plant leaf"
+             srcset="images/blog-featured-nfpa701-400w.webp 400w, images/blog-featured-nfpa701-800w.webp 800w"
+             sizes="(max-width: 768px) 100vw, 33vw" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Don't See What You Need?</h2>
+    <p>We manufacture 600+ plant varieties. If it's not shown here, ask — we likely make it. Custom sizes, species, and configurations available factory-direct.</p>
+    <div class="cta-btns">
+      <a href="quote.html" class="btn btn-tan btn-lg">Request a Quote</a>
+      <a href="contact.html" class="btn btn-white-outline btn-lg">Ask a Question</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-logo">LaySun</div><p class="footer-tagline">Fire-rated artificial plants for commercial spaces. Factory-direct worldwide.</p><div class="footer-social"><a href="https://www.linkedin.com/in/shawn-kirkpatrick-37a89281/" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a></div></div>
+      <div class="footer-col"><h5>Collections</h5><ul class="footer-links"><li><a href="artificial-olive-trees.html">Olive Trees</a></li><li><a href="artificial-palm-trees.html">Palm Trees</a></li><li><a href="artificial-fiddle-leaf-fig.html">Fiddle Leaf Fig</a></li><li><a href="artificial-flowering-trees.html">Flowering Trees</a></li></ul></div><div class="footer-col"><h5>Pages</h5><ul class="footer-links"><li><a href="systems.html">Systems</a></li><li><a href="manufacturing.html">Manufacturing</a></li><li><a href="products.html">Products</a></li><li><a href="projects.html">Projects</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+      <div class="footer-col"><h5>Support</h5><ul class="footer-links"><li><a href="quote.html">Request a Quote</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><div class="foot-contact"><span class="foot-contact-ic">✉️</span><a href="mailto:info@laysun.co" style="color:inherit;">info@laysun.co</a></div><div class="foot-contact"><span class="foot-contact-ic">💬</span><a href="https://wa.me/12138298485" target="_blank" rel="noopener" style="color:inherit;">WhatsApp: +1 213-829-8485</a></div></div>
+    </div>
+    <div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-conditions.html">Terms &amp; Conditions</a><a href="shipping-policy.html">Shipping Policy</a><a href="returns-policy.html">Returns &amp; Refunds</a><a href="warranty-policy.html">Warranty</a><a href="cookie-policy.html">Cookie Policy</a></div><div class="footer-bottom"><span>© 2026 LaySun. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<div class="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" aria-label="Previous">‹</button>
+  <button class="lb-nav lb-next" aria-label="Next">›</button>
+  <div class="lb-content">
+    <img class="lb-img" src="" alt="">
+    <div class="lb-ph"></div>
+    <p class="lb-caption"></p>
+  </div>
+</div>
+
+<button class="back-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+<script>
+  // ── Product filter ────────────────────────────────────────────────────────
+  const filterBar  = document.getElementById('filterBar');
+  const cards      = document.querySelectorAll('.prod-card');
+  const countEl    = document.getElementById('prodCount');
+
+  function updateCount() {
+    const visible = [...cards].filter(c => !c.classList.contains('hidden')).length;
+    countEl.textContent = visible + ' products';
+  }
+
+  filterBar.addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    cards.forEach(card => {
+      card.classList.toggle('hidden', f !== 'all' && card.dataset.cat !== f);
+    });
+    updateCount();
+  });
+
+  updateCount();
+</script>
+</body>
+</html>

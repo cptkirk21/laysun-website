@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/logo.webp" type="image/webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Commercial artificial olive trees in 20 styles from 3–10 ft. PE foliage, real wood trunk options, NFPA 701 fire-rated. Factory-direct worldwide.">
+  <title>Commercial Artificial Olive Trees — 20 Styles, 3–10 ft | LaySun</title>
+  <link rel="preload" as="font" href="fonts/Inter-400.woff2" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="images/indoor-trees-office.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Product grid ─────────────────────────────── */
+    .prod-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    @media(max-width:1100px){ .prod-grid { grid-template-columns: repeat(3,1fr); } }
+    @media(max-width:768px) { .prod-grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:480px) { .prod-grid { grid-template-columns: 1fr; } }
+
+    /* ── Product card ─────────────────────────────── */
+    .prod-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .prod-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .prod-card.hidden { display: none; }
+
+    .prod-card-img {
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      background: var(--cream-deep);
+    }
+    .prod-card-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+      display: block;
+    }
+    .prod-card:hover .prod-card-img img { transform: scale(1.04); }
+
+    .prod-card-body {
+      padding: 1rem 1.1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .prod-card-body h3 {
+      font-size: .95rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin: 0 0 .6rem;
+      color: var(--text);
+    }
+    .prod-sizes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .3rem;
+      margin-bottom: .9rem;
+    }
+    .prod-sizes span {
+      font-size: .72rem;
+      font-weight: 500;
+      background: var(--cream-deep);
+      color: var(--text-muted);
+      border-radius: 20px;
+      padding: .15rem .55rem;
+      white-space: nowrap;
+    }
+    .prod-cat-tag {
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      margin-bottom: .4rem;
+    }
+    .prod-quote-btn {
+      margin-top: auto;
+      display: inline-block;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--tan);
+      text-decoration: none;
+    }
+    .prod-quote-btn:hover { text-decoration: underline; }
+
+    /* ── Related collections grid ─────────────────── */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media(max-width:768px) { .grid-3 { grid-template-columns: 1fr; } }
+
+    .coll-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .coll-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .coll-card-img {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      background: var(--cream-deep);
+    }
+    .coll-card-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+      display: block;
+    }
+    .coll-card:hover .coll-card-img img { transform: scale(1.04); }
+    .coll-card-body {
+      padding: 1rem 1.1rem 1.2rem;
+    }
+    .coll-card-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0 .3rem;
+      color: var(--text);
+    }
+    .coll-card-body span {
+      font-size: .8rem;
+      color: var(--tan);
+      font-weight: 600;
+    }
+  
+    .page-hero-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+    }
+    .page-hero-overlay {
+      position: absolute; inset: 0;
+      background: rgba(15,35,15,.62);
+    }
+  </style>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://laysun.co/artificial-olive-trees">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LaySun">
+  <meta property="og:url" content="https://laysun.co/artificial-olive-trees">
+  <meta property="og:title" content="Commercial Artificial Olive Trees — 20 Styles, 3–10 ft | LaySun">
+  <meta property="og:description" content="Commercial artificial olive trees in 20 styles from 3–10 ft. PE foliage, real wood trunk options, NFPA 701 fire-rated. Factory-direct worldwide.">
+  <meta property="og:image" content="https://laysun.co/images/prod-olive-ls-new.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Commercial Artificial Olive Trees — 20 Styles, 3–10 ft | LaySun">
+  <meta name="twitter:description" content="Commercial artificial olive trees in 20 styles from 3–10 ft. PE foliage, real wood trunk options, NFPA 701 fire-rated. Factory-direct worldwide.">
+  <meta name="twitter:image" content="https://laysun.co/images/prod-olive-ls-new.webp">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "url": "https://laysun.co/artificial-olive-trees",
+    "name": "Commercial Artificial Olive Trees — 20 Styles, 3–10 ft | LaySun",
+    "description": "Commercial artificial olive trees in 20 styles from 3–10 ft. PE foliage, real wood trunk options, NFPA 701 fire-rated. Factory-direct worldwide.",
+    "publisher": { "@id": "https://laysun.co/#organization" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://laysun.co"},
+        {"@type":"ListItem","position":2,"name":"Products","item":"https://laysun.co/products"},
+        {"@type":"ListItem","position":3,"name":"Artificial Olive Trees","item":"https://laysun.co/artificial-olive-trees"}
+      ]
+    },
+    "hasPart": [
+      {"@type":"Product","name":"LS New Style Olive Tree","image":"https://laysun.co/images/prod-olive-ls-new.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"LS Real Wood Trunk Olive Tree","image":"https://laysun.co/images/prod-olive-ls-wood-trunk.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"LS Old Stump Thick Trunk Olive Tree","image":"https://laysun.co/images/prod-olive-ls-old-stump.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"LS Wide Canopy Olive Tree","image":"https://laysun.co/images/prod-olive-ls-wide-canopy.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"LS Large Tree Olive","image":"https://laysun.co/images/prod-olive-ls-large-tree.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Multi-branch Olive Tree","image":"https://laysun.co/images/prod-olive-multi-branch.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Thick Branch Double-fork Olive Tree","image":"https://laysun.co/images/prod-olive-thick-double-fork.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Fan-shape Olive Tree — Round Pot","image":"https://laysun.co/images/prod-olive-fan-shape.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Spherical 3D Olive Tree","image":"https://laysun.co/images/prod-olive-spherical.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Large Tree Head 3D Olive Tree","image":"https://laysun.co/images/prod-olive-large-head.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Cross Black Olive Tree","image":"https://laysun.co/images/prod-olive-cross-black.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Double-fork Straight Trunk Olive Tree","image":"https://laysun.co/images/prod-olive-double-fork-straight.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Straight Black Olive Tree","image":"https://laysun.co/images/prod-olive-straight-black.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"White Pot Fine Branch Olive Tree","image":"https://laysun.co/images/prod-olive-white-pot-fine.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Standard Olive Tree","image":"https://laysun.co/images/prod-olive-standard-678ft.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"White Pot Olive Tree","image":"https://laysun.co/images/prod-olive-white-pot.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Single Trunk Three-branch Olive Tree","image":"https://laysun.co/images/prod-olive-single-three-branch.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"2025 Thick Straight Trunk Olive Tree","image":"https://laysun.co/images/prod-olive-2025-thick-straight.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Green Stem Multi-branch Olive Tree","image":"https://laysun.co/images/prod-olive-green-stem.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}},
+      {"@type":"Product","name":"Velvet Flock Olive Tree","image":"https://laysun.co/images/prod-olive-velvet.webp","brand":{"@id":"https://laysun.co/#organization"},"offers":{"@type":"Offer","availability":"https://schema.org/InStock","seller":{"@id":"https://laysun.co/#organization"}}}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="images/logo.webp" alt="LaySun logo" width="32" height="32" loading="eager"><span class="nav-logo-text">LaySun</span></a>
+    <button class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="systems.html">Systems</a></li>
+      <li><a href="manufacturing.html">Manufacturing</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Products <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="products.html">All Products</a></li><li><a href="artificial-olive-trees.html">Olive Trees</a></li><li><a href="artificial-palm-trees.html">Palm Trees</a></li><li><a href="artificial-fiddle-leaf-fig.html">Fiddle Leaf Fig</a></li><li><a href="artificial-flowering-trees.html">Flowering Trees</a></li></ul></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Policies <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-conditions.html">Terms &amp; Conditions</a></li><li><a href="shipping-policy.html">Shipping Policy</a></li><li><a href="returns-policy.html">Returns &amp; Refunds</a></li><li><a href="warranty-policy.html">Warranty</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li></ul></li><li><a href="quote.html" class="btn-nav">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<header class="page-hero">
+  <img src="images/indoor-trees-office.webp" alt="Artificial olive trees in a bright commercial office atrium" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;">
+  <div class="page-hero-overlay"></div>
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <a href="products.html">Products</a> › <span>Artificial Olive Trees</span></div>
+    <h1>Commercial Artificial Olive Trees</h1>
+    <p class="lead">20 styles from 3 to 10 ft. Premium PE foliage, natural wood trunk options, and spherical 3D canopies. Every tree is fire-rated to NFPA 701 and EN 13501 — factory-direct, shipped worldwide.</p>
+  </div>
+</header>
+
+<!-- INTRO CONTENT SECTION -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="max-width:760px;margin:0 auto;">
+      <h2>Why Artificial Olive Trees Dominate Commercial Interiors</h2>
+      <p>The commercial artificial olive tree has become the defining statement plant of the decade — and for good reason. Hotels, upscale restaurants, corporate headquarters, and retail flagships across North America, Europe, and the Middle East specify artificial olive trees above every other species. Their silvery-green foliage, gnarled trunks, and Mediterranean character communicate warmth and sophistication without the maintenance burden of a living plant. Unlike a real olive tree, a commercial-grade artificial olive tree never drops leaves onto polished floors, never requires irrigation systems, and never wilts under the stress of an HVAC draft or low-light interior.</p>
+
+      <h3>PE Foliage vs PVC — Why Material Choice Matters for Olive Trees</h3>
+      <p>Not all artificial olive tree foliage is equal. PVC leaves are flat, shiny, and obviously synthetic up close — acceptable for budget residential use but immediately visible as fake in a high-end commercial environment. LaySun's commercial artificial olive trees use PE (polyethylene) foliage moulded directly from botanical specimens. Each leaf captures the characteristic dusty silver-green underside and slight curl of a genuine olive leaf. When lit by warm hospitality lighting at 3–4 metres away, PE olive foliage is indistinguishable from the real thing. The PE compound also incorporates fire-retardant additives at the manufacturing stage — not surface-sprayed — so the fire certification remains valid for the life of the product.</p>
+
+      <h3>Trunk Styles for Every Commercial Setting</h3>
+      <p>Trunk selection is as important as foliage quality in a commercial artificial olive tree. LaySun offers four primary trunk constructions: the real natural wood trunk (harvested, treated, and affixed to the steel armature) for the most organic appearance; the old stump thick trunk style for a dramatic, aged Mediterranean look suited to luxury hotel lobbies; the straight black trunk for contemporary minimalist restaurants and corporate offices; and the white pot presentation that integrates with modern interior design schemes. For large commercial atriums requiring trees above 8 ft, the wide canopy and large tree head options provide the visual volume needed to fill double-height spaces. The 9 ft and 10 ft large tree variants are frequently specified for hotel check-in lobbies, airport lounges, and shopping centre anchor points.</p>
+
+      <h3>Fire Rating, Certification, and Commercial Compliance</h3>
+      <p>Every LaySun commercial artificial olive tree meets NFPA 701 (USA), EN 13501 (Europe), and GB 8624 B1 (China) fire-retardant standards. Test certificates are provided with every commercial order in the format required by your jurisdiction's fire inspector. This is particularly important for fake olive trees specified in commercial settings — most US municipalities, UK fire authorities, and European hospitality licensing bodies require documented fire certification for any artificial plants used in public-facing spaces. Fire-retardant additives are blended into the PE compound at manufacture, not surface-sprayed after the fact, ensuring the rating holds through annual inspections. Customisation options include custom pot finishes, bespoke trunk heights, specific canopy diameter requirements, and multi-tree configurations for corridors and planted zones. All custom specifications are accommodated at the factory with a typical lead time of 30–45 days.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT GRID -->
+<section class="section">
+  <div class="container">
+    <div class="section-hd" data-a>
+      <span class="eyebrow">20 Products</span>
+      <h2>Full Artificial Olive Tree Collection</h2>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-ls-new.webp" alt="LS New Style Artificial Olive Tree — multiple sizes" loading="lazy"
+             srcset="images/prod-olive-ls-new-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>LS New Style Olive Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-ls-wood-trunk.webp" alt="LS Real Wood Trunk Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-ls-wood-trunk-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>LS Real Wood Trunk Olive Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-ls-old-stump.webp" alt="LS Old Stump Thick Trunk Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-ls-old-stump-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>LS Old Stump Thick Trunk Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-ls-wide-canopy.webp" alt="LS Wide Canopy Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-ls-wide-canopy-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>LS Wide Canopy Olive Tree</h3>
+          <div class="prod-sizes"><span>6 ft</span><span>7 ft</span><span>8 ft</span><span>9 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-ls-large-tree.webp" alt="LS Large Tree Artificial Olive — 9ft 10ft" loading="lazy"
+             srcset="images/prod-olive-ls-large-tree-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>LS Large Tree Olive</h3>
+          <div class="prod-sizes"><span>9 ft</span><span>10 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-multi-branch.webp" alt="Multi-branch Artificial Olive Tree series" loading="lazy"
+             srcset="images/prod-olive-multi-branch-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Multi-branch Olive Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-thick-double-fork.webp" alt="Thick Branch Double-fork Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-thick-double-fork-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Thick Branch Double-fork Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-fan-shape.webp" alt="Fan-shape Artificial Olive Tree in round pot" loading="lazy"
+             srcset="images/prod-olive-fan-shape-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Fan-shape Olive Tree — Round Pot</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-spherical.webp" alt="Spherical 3D Artificial Olive Tree series" loading="lazy"
+             srcset="images/prod-olive-spherical-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Spherical 3D Olive Tree</h3>
+          <div class="prod-sizes"><span>3 ft</span><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-large-head.webp" alt="Large Tree Head 3D Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-large-head-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Large Tree Head 3D Olive Tree</h3>
+          <div class="prod-sizes"><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-cross-black.webp" alt="Cross Black Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-cross-black-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Cross Black Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-double-fork-straight.webp" alt="Double-fork Straight Trunk Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-double-fork-straight-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Double-fork Straight Trunk Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-straight-black.webp" alt="Straight Black Artificial Olive Tree series" loading="lazy"
+             srcset="images/prod-olive-straight-black-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Straight Black Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-white-pot-fine.webp" alt="White Pot Fine Branch Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-white-pot-fine-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>White Pot Fine Branch Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-standard-678ft.webp" alt="Standard 6 7 8ft Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-standard-678ft-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Standard Olive Tree</h3>
+          <div class="prod-sizes"><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-white-pot.webp" alt="White Pot Artificial Olive Tree series" loading="lazy"
+             srcset="images/prod-olive-white-pot-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>White Pot Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-single-three-branch.webp" alt="Single Trunk Three-branch Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-single-three-branch-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Single Trunk Three-branch Olive Tree</h3>
+          <div class="prod-sizes"><span>4 ft</span><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-2025-thick-straight.webp" alt="2025 Thick Straight Trunk Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-2025-thick-straight-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>2025 Thick Straight Trunk Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span><span>8 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-green-stem.webp" alt="Green Stem Multi-branch Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-green-stem-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Green Stem Multi-branch Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span><span>7 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+      <div class="prod-card" data-cat="olive">
+        <div class="prod-card-img"><img src="images/prod-olive-velvet.webp" alt="Velvet Flock Artificial Olive Tree" loading="lazy"
+             srcset="images/prod-olive-velvet-400w.webp 400w"
+             sizes="(max-width: 768px) 50vw, 25vw"></div>
+        <div class="prod-card-body">
+          <div class="prod-cat-tag">Olive Tree</div>
+          <h3>Velvet Flock Olive Tree</h3>
+          <div class="prod-sizes"><span>5 ft</span><span>6 ft</span></div>
+          <a href="quote.html" class="prod-quote-btn">Request Quote →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RELATED COLLECTIONS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section-hd" data-a>
+      <span class="eyebrow">Browse More</span>
+      <h2>Other Collections</h2>
+    </div>
+    <div class="grid-3" style="margin-top:2rem;">
+      <a href="artificial-palm-trees.html" class="coll-card">
+        <div class="coll-card-img"><img src="images/prod-palm-queen-round.webp" alt="Commercial artificial palm trees" loading="lazy"></div>
+        <div class="coll-card-body"><h3>Artificial Palm Trees</h3><span>View Collection →</span></div>
+      </a>
+      <a href="artificial-fiddle-leaf-fig.html" class="coll-card">
+        <div class="coll-card-img"><img src="images/prod-flfig-curved.webp" alt="Commercial artificial fiddle leaf fig trees" loading="lazy"></div>
+        <div class="coll-card-body"><h3>Artificial Fiddle Leaf Fig Trees</h3><span>View Collection →</span></div>
+      </a>
+      <a href="artificial-flowering-trees.html" class="coll-card">
+        <div class="coll-card-img"><img src="images/prod-camellia-white.webp" alt="Commercial artificial flowering trees" loading="lazy"></div>
+        <div class="coll-card-body"><h3>Artificial Flowering Trees</h3><span>View Collection →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Need Artificial Olive Trees for a Commercial Project?</h2>
+    <p>We supply hotels, restaurants, corporate offices, and retail spaces worldwide. Factory-direct pricing, fire certification included, and quotes returned within 24 hours.</p>
+    <div class="cta-btns">
+      <a href="quote.html" class="btn btn-tan btn-lg">Request a Quote</a>
+      <a href="contact.html" class="btn btn-white-outline btn-lg">Ask a Question</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-logo">LaySun</div><p class="footer-tagline">Fire-rated artificial plants for commercial spaces. Factory-direct worldwide.</p><div class="footer-social"><a href="https://www.linkedin.com/in/shawn-kirkpatrick-37a89281/" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a></div></div>
+      <div class="footer-col"><h5>Collections</h5><ul class="footer-links"><li><a href="artificial-olive-trees.html">Olive Trees</a></li><li><a href="artificial-palm-trees.html">Palm Trees</a></li><li><a href="artificial-fiddle-leaf-fig.html">Fiddle Leaf Fig</a></li><li><a href="artificial-flowering-trees.html">Flowering Trees</a></li></ul></div><div class="footer-col"><h5>Pages</h5><ul class="footer-links"><li><a href="systems.html">Systems</a></li><li><a href="manufacturing.html">Manufacturing</a></li><li><a href="products.html">Products</a></li><li><a href="projects.html">Projects</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+      <div class="footer-col"><h5>Support</h5><ul class="footer-links"><li><a href="quote.html">Request a Quote</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><div class="foot-contact"><span class="foot-contact-ic">✉️</span><a href="mailto:info@laysun.co" style="color:inherit;">info@laysun.co</a></div><div class="foot-contact"><span class="foot-contact-ic">💬</span><a href="https://wa.me/12138298485" target="_blank" rel="noopener" style="color:inherit;">WhatsApp: +1 213-829-8485</a></div></div>
+    </div>
+    <div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-conditions.html">Terms &amp; Conditions</a><a href="shipping-policy.html">Shipping Policy</a><a href="returns-policy.html">Returns &amp; Refunds</a><a href="warranty-policy.html">Warranty</a><a href="cookie-policy.html">Cookie Policy</a></div><div class="footer-bottom"><span>© 2026 LaySun. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<div class="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" aria-label="Previous">‹</button>
+  <button class="lb-nav lb-next" aria-label="Next">›</button>
+  <div class="lb-content">
+    <img class="lb-img" src="" alt="">
+    <div class="lb-ph"></div>
+    <p class="lb-caption"></p>
+  </div>
+</div>
+
+<button class="back-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
