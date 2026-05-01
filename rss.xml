@@ -1,1 +1,91 @@
-PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8cnNzIHhtbG5zOmF0b209Imh0dHA6Ly93d3cudzMub3JnLzIwMDUvQXRvbSIgdmVyc2lvbj0iMi4wIj4KICA8Y2hhbm5lbD4KICAgIDx0aXRsZT5MYXlTdW4gQmxvZyAtIENvbW1lcmNpYWwgQXJ0aWZpY2lhbCBQbGFudHMgJiBUcmVlczwvdGl0bGU+CiAgICA8bGluaz5odHRwczovL2xheXN1bi5jby9ibG9nPC9saW5rPgogICAgPGRlc2NyaXB0aW9uPkluc2lnaHRzIG9uIGFydGlmaWNpYWwgcGxhbnRzIGZvciBjb21tZXJjaWFsIHNwYWNlcyDigJQgZGVzaWduIHRyZW5kcywgZmlyZSBzYWZldHksIG1hdGVyaWFsIGd1aWRlcywgYW5kIGluc3RhbGxhdGlvbiBhZHZpY2UuPC9kZXNjcmlwdGlvbj4KICAgIDxsYW5ndWFnZT5lbi11czwvbGFuZ3VhZ2U+CiAgICA8bGFzdEJ1aWxkRGF0ZT5GcmksIDAxIE1heSAyMDI2IDExOjIwOjA1ICswMDAwPC9sYXN0QnVpbGREYXRlPgogICAgPGF0b206bGluayBocmVmPSJodHRwczovL2xheXN1bi5jby9yc3MueG1sIiByZWw9InNlbGYiIHR5cGU9ImFwcGxpY2F0aW9uL3Jzcyt4bWwiLz4KICAgIDxpdGVtPgogICAgICA8dGl0bGU+VGVzdCBCbG9nIFBvc3Q6IExheVN1biBBdXRvbWF0aW9uIFdvcmtmbG93IFZlcmlmaWNhdGlvbjwvdGl0bGU+CiAgICAgIDxsaW5rPmh0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctYXV0b21hdGlvbi10ZXN0PC9saW5rPgogICAgICA8ZGVzY3JpcHRpb24+VGVzdGluZyB0aGUgY29tcGxldGUgYmxvZyBhdXRvbWF0aW9uIHdvcmtmbG93IGZyb20gR2l0SHViIGNvbW1pdHMgdG8gQ2xvdWRmbGFyZSBkZXBsb3ltZW50LiBWZXJpZnlpbmcgaW1hZ2Ugb3B0aW1pemF0aW9uIHN0YW5kYXJkcywgdmlzdWFsIHN0cmF0ZWd5LCBhbmQgY3Jvc3MtcGxhdGZvcm0gY29udGVudCBkaXN0cmlidXRpb24uPC9kZXNjcmlwdGlvbj4KICAgICAgPHB1YkRhdGU+RnJpLCAwMSBNYXkgMjAyNiAxMToyMDowNSArMDAwMDwvcHViRGF0ZT4KICAgICAgPGd1aWQ+aHR0cHM6Ly9sYXlzdW4uY28vYmxvZy1hdXRvbWF0aW9uLXRlc3Q8L2d1aWQ+CiAgICAgIDxndWlkIGlzUGVybWFMaW5rPSJ0cnVlIi8+CiAgICA8L2l0ZW0+CiAgICA8aXRlbT4KICAgICAgPHRpdGxlPk5GUEUgNzAxIEV4cGxhaW5lZDogV2hhdCBIb3RlbCBEZXNpZ25lcnMgTmVlZCB0byBLbm93IEFib3V0IEFydGlmaWNpYWwgUGxhbnQgRmlyZSBDb2RlczwvdGl0bGU+CiAgICAgIDxsaW5rPmh0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctbmZwYTcwMTwvbGluaz4KICAgICAgPGRlc2NyaXB0aW9uPklmIHlvdSdyZSBzcGVjaWZ5aW5nIGFydGlmaWNpYWwgcGxhbnRzIGZvciBhIGhvdGVsIG9yIGNvbW1lcmNpYWwgcHJvcGVydHkgaW4gdGhlIFVuaXRlZCBTdGF0ZXMsIE5GUEUgNzAxIGlzIG5vbi1uZWdvdGlhYmxlLiBIZXJlJ3Mgd2hhdCBpdCBtZWFucywgaG93IHRvIHZlcmlmeSBjb21wbGlhbmNlLCBhbmQgd2hhdCBxdWVzdGlvbnMgdG8gYXNrIHlvdXIgc3VwcGxpZXIuPC9kZXNjcmlwdGlvbj4KICAgICAgPHB1YkRhdGU+VHVlLCAxNCBKYW4gMjAyNSAwMDowMDowMCArMDAwMDwvcHViRGF0ZT4KICAgICAgPGd1aWQ+aHR0cHM6Ly9sYXlzdW4uY28vYmxvZy1uZnBhNzAxPC9ndWlkPgogICAgICA8Z3VpZCBpc1Blcm1hTGluaz0idHJ1ZSIvPgogICAgPC9pdGVtPgogICAgPGl0ZW0+CiAgICAgIDx0aXRsZT41IEFydGlmaWNpYWwgUGxhbnQgVHJlbmRzIERvbWluYXRpbmcgSG90ZWwgTG9iYmllcyBpbiAyMDI1PC90aXRsZT4KICAgICAgPGxpbms+aHR0cHM6Ly9sYXlzdW4uY28vYmxvZy1ob3RlbC10cmVuZHMtMjAyNTwvbGluaz4KICAgICAgPGRlc2NyaXB0aW9uPkZyb20gb3ZlcnNpemVkIHN0YXRlbWVudCBwYWxtcyB0byBmdWxsLWNlaWxpbmcgaGFuZ2luZyBpbnN0YWxsYXRpb25zLCBoZXJlIGFyZSB0aGUgYXJ0aWZpY2lhbCBwbGFudCB0cmVuZHMgb3VyIGhvdGVsIGNsaWVudHMgYXJlIHJlcXVlc3RpbmcgbW9zdCB0aGlzIHllYXIuPC9kZXNjcmlwdGlvbj4KICAgICAgPHB1YkRhdGU+VGh1LCAwNiBNYXIgMjAyNSAwMDowMDowMCArMDAwMDwvcHViRGF0ZT4KICAgICAgPGd1aWQ+aHR0cHM6Ly9sYXlzdW4uY28vYmxvZy1ob3RlbC10cmVuZHMtMjAyNTwvZ3VpZD4KICAgICAgPGd1aWQgaXNQZXJtYUxpbms9InRydWUiLz4KICAgIDwvaXRlbT4KICAgIDxpdGVtPgogICAgICA8dGl0bGU+V2h5IFJlc3RhdXJhbnRzIEFyZSBJbnN0YWxsaW5nIEFydGlmaWNpYWwgR3JlZW4gV2FsbHMgKEFuZCBIb3cgdG8gR2V0IEl0IFJpZ2h0KTwvdGl0bGU+CiAgICAgIDxsaW5rPmh0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctcmVzdGF1cmFudC1ncmVlbi13YWxsczwvbGluaz4KICAgICAgPGRlc2NyaXB0aW9uPkFydGlmaWNpYWwgZ3JlZW4gd2FsbHMgYXJlIHRyYW5zZm9ybWluZyByZXN0YXVyYW50IGF0bW9zcGhlcmVzIHdoaWxlIGVsaW1pbmF0aW5nIG1haW50ZW5hbmNlIGhlYWRhY2hlcy4gTGVhcm4gdGhlIGRlc2lnbiBjb25zaWRlcmF0aW9ucywgZmlyZSBzYWZldHkgcmVxdWlyZW1lbnRzLCBhbmQgaW5zdGFsbGF0aW9uIGJlc3QgcHJhY3RpY2VzLjwvZGVzY3JpcHRpb24+CiAgICAgIDxwdWJEYXRlPk1vbiwgMTAgRmViIDIwMjUgMDA6MDA6MDAgKzAwMDA8L3B1YkRhdGU+CiAgICAgIDxndWlkPmh0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctcmVzdGF1cmFudC1ncmVlbi13YWxsczwvZ3VpZD4KICAgICAgPGd1aWQgaXNQZXJtYUxpbms9InRydWUiLz4KICAgIDwvaXRlbT4KICAgIDxpdGVtPgogICAgICA8dGl0bGU+UEUgdnMgUFZDOiBXaGljaCBBcnRpZmljaWFsIFBsYW50IE1hdGVyaWFsIExhc3RzIExvbmdlciBPdXRkb29ycz88L3RpdGxlPgogICAgICA8bGluaz5odHRwczovL2xheXN1bi5jby9ibG9nLXBlLXZzLXB2YzwvbGluaz4KICAgICAgPGRlc2NyaXB0aW9uPlVuZGVyc3RhbmRpbmcgdGhlIGRpZmZlcmVuY2UgYmV0d2VlbiBwb2x5ZXRoeWxlbmUgKFBFKSBhbmQgcG9seXZpbnlsIGNobG9yaWRlIChQQ1YpIGlzIGNydWNpYWwgZm9yIG91dGRvb3IgYXJ0aWZpY2lhbCBwbGFudHMuIFdlIGJyZWFrIGRvd24gVFYgcmVzaXN0YW5jZSwgZHVyYWJpbGl0eSwgYW5kIHJlYWwtd29ybGQgcGVyZm9ybWFuY2UuPC9kZXNjcmlwdGlvbj4KICAgICAgPHB1YkRhdGU+V2VkLCAxNSBKYW4gMjAyNSAwMDowMDowMCArMDAwMDwvcHViRGF0ZT4KICAgICAgPGd1aWQ+aHR0cHM6Ly9sYXlzdW4uY28vYmxvZy1wZS12cy1wdmM8L2d1aWQ+CiAgICAgIDxndWlkIGlzUGVybWFMaW5rPSJ0cnVlIi8+CiAgICA8L2l0ZW0+CiAgICA8aXRlbT4KICAgICAgPHRpdGxlPkJpb3BoaWxpYyBEZXNpZ246IEhvdyBBcnRpZmljaWFsIFBsYW50cyBTdXBwb3J0IFdlbGxuZXNzIGluIENvbW1lcmNpYWwgU3BhY2VzPC90aXRsZT4KICAgICAgPGxpbms+aHR0cHM6Ly9sYXlzdW4uY28vYmxvZy1iaW9waGlsaWMtZGVzaWduPC9saW5rPgogICAgICA8ZGVzY3JpcHRpb24+QmlvcGhpbGljIGRlc2lnbiBjb25uZWN0cyBwZW9wbGUgd2l0aCBuYXR1cmUgdG8gcmVkdWNlIHN0cmVzcyBhbmQgaW1wcm92ZSB3ZWxsYmVpbmcuIERpc2NvdmVyIGhvdyBhcnRpZmljaWFsIHBsYW50cyBjYW4gYWNoaWV2ZSB0aGVzZSBiZW5lZml0cyB3aXRob3V0IHRoZSBtYWludGVuYW5jZSBjaGFsbGVuZ2VzIG9mIGxpdmUgcGxhbnRzLjwvZGVzY3JpcHRpb24+CiAgICAgIDxwdWJEYXRlPkZyaSwgMjAgRGVjIDIwMjQgMDA6MDA6MDAgKzAwMDA8L3B1YkRhdGU+CiAgICAgIDxndWlkPmh0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctYmlvcGhpbGljLWRlc2lnbjwvZ3VpZD4KICAgICAgPGd1aWQgaXNQZXJtYUxpbms9InRydWUiLz4KICAgIDwvaXRlbT4KICAgIDxpdGVtPgogICAgICA8dGl0bGU+VGhlIFVsdGltYXRlIEd1aWRlIHRvIE91dGRvb3IgQXJ0aWZpY2lhbCBQbGFudCBVViBSYXRpbmdzPC90aXRsZT4KICAgICAgPGxpbms+aHR0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctb3V0ZG9vci11di1ndWlkZTwvbGluaz4KICAgICAgPGRlc2NyaXB0aW9uPk5vdCBhbGwgYXJ0aWZpY2lhbCBwbGFudHMgYXJlIGNyZWF0ZWQgZXF1YWwgZm9yIG91dGRvb3IgdXNlLiBMZWFybiBob3cgdG8gaW50ZXJwcmV0IFVWIHJhdGluZ3MsIHVuZGVyc3RhbmQgYWNjZWxlcmF0ZWQgdGVzdGluZywgYW5kIHNlbGVjdCBwbGFudHMgdGhhdCB3b24ndCBmYWRlIG9yIGRldGVyaW9yYXRlLjwvZGVzY3JpcHRpb24+CiAgICAgIDxwdWJEYXRlPk1vbiwgMjUgTm92IDIwMjQgMDA6MDA6MDAgKzAwMDA8L3B1YkRhdGU+CiAgICAgIDxndWlkPmh0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctb3V0ZG9vci11di1ndWlkZTwvZ3VpZD4KICAgICAgPGd1aWQgaXNQZXJtYUxpbms9InRydWUiLz4KICAgIDwvaXRlbT4KICAgIDxpdGVtPgogICAgICA8dGl0bGU+U3BlY2lmeWluZyBBcnRpZmljaWFsIFBsYW50czogVGhlIENvbXBsZXRlIFByb2N1cmVtZW50IENoZWNrbGlzdDwvdGl0bGU+CiAgICAgIDxsaW5rPmh0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctc3BlY2lmeWluZy1jaGVja2xpc3Q8L2xpbms+CiAgICAgIDxZGVzY3JpcHRpb24+RnJvbSBmaXJlIHJhdGluZ3MgdG8gbWF0ZXJpYWwgc3BlY2lmaWNhdGlvbnMsIHRoaXMgY29tcHJlaGVuc2l2ZSBjaGVja2xpc3QgZW5zdXJlcyB5b3UgYXNrIHRoZSByaWdodCBxdWVzdGlvbnMgd2hlbiBwcm9jdXJpbmcgYXJ0aWZpY2lhbCBwbGFudHMgZm9yIGNvbW1lcmNpYWwgcHJvamVjdHMuPC9kZXNjcmlwdGlvbj4KICAgICAgPHB1YkRhdGU+VGh1LCAzMCBPY3QgMjAyNCAwMDowMDowMCArMDAwMDwvcHViRGF0ZT4KICAgICAgPGd1aWQ+aHR0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctc3BlY2lmeWluZy1jaGVja2xpc3Q8L2d1aWQ+CiAgICAgIDxndWlkIGlzUGVybWFMaW5rPSJ0cnVlIi8+CiAgICA8L2l0ZW0+CiAgICA8aXRlbT4KICAgICAgPHRpdGxlPkpvam8ncyBSaXZlcnNpZGUgUm9vZnRvcDogVHJhbnNmb3JtaW5nIE91dGRvb3IgRGluaW5nIHdpdGggQXJ0aWZpY2lhbCBHcmVlbmVyeTwvdGl0bGU+CiAgICAgIDxsaW5rPmh0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctam9qb3Mtcml2ZXJzaWRlLXJvb2Z0b3A8L2xpbms+CiAgICAgIDxZGVzY3JpcHRpb24+Q2FzZSBzdHVkeTogSG93IEpvam8ncyBSaXZlcnNpZGUgdHJhbnNmb3JtZWQgdGhlaXIgcm9vZnRvcCBkaW5pbmcgZXhwZXJpZW5jZSB3aXRoIGN1c3RvbSBhcnRpZmljaWFsIG9saXZlIHRyZWVzIGFuZCBncmVlbiB3YWxscyB0aGF0IHdpdGhzdGFuZCB3ZWF0aGVyIHdoaWxlIG1haW50YWluaW5nIGVsZWdhbmNlLjwvZGVzY3JpcHRpb24+CiAgICAgIDxwdWJEYXRlPlR1ZSwgMDggT2N0IDIwMjQgMDA6MDA6MDAgKzAwMDA8L3B1YkRhdGU+CiAgICAgIDxndWlkPmh0dHBzOi8vbGF5c3VuLmNvL2Jsb2ctam9qb3Mtcml2ZXJzaWRlLXJvb2Z0b3A8L2d1aWQ+CiAgICAgIDxndWlkIGlzUGVybWFMaW5rPSJ0cnVlIi8+CiAgICA8L2l0ZW0+CiAgPC9jaGFubmVsPgo8L3Jzcz4K
+<?xml version="1.0" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>LaySun Blog - Commercial Artificial Plants & Trees</title>
+    <link>https://laysun.co/blog</link>
+    <description>Insights on artificial plants for commercial spaces — design trends, fire safety, material guides, and installation advice.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 May 2026 11:33:16 +0000</lastBuildDate>
+    <atom:link href="https://laysun.co/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Commercial Artificial Plant Trends 2026: What Hotels, Offices, & Restaurants Are Asking For</title>
+      <link>https://laysun.co/blog-commercial-artificial-plant-trends-2026</link>
+      <description>Discover the top commercial artificial plant trends for 2026. From biophilic design integration to custom green walls, learn what hotels, offices, and restaurants are demanding this year.</description>
+      <pubDate>Fri, 01 May 2026 11:33:16 +0000</pubDate>
+      <guid>https://laysun.co/blog-commercial-artificial-plant-trends-2026</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>Test Blog Post: LaySun Automation Workflow Verification</title>
+      <link>https://laysun.co/blog-automation-test</link>
+      <description>Testing the complete blog automation workflow from GitHub commits to Cloudflare deployment. Verifying image optimization standards, visual strategy, and cross-platform content distribution.</description>
+      <pubDate>Fri, 01 May 2026 11:20:05 +00000</pubDate>
+      <guid>htttps://laysun.co/blog-automation-test</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>NFPE 701 Explained: What Hotel Designers Need to Know About Artificial Plant Fire Codes</title>
+      <link>https://laysun.co/blog-nfpa701</link>
+      <description>If you're specifying artificial plants for a hotel or commercial property in the United States, NFPE 701 is non-negotiable. Here's what it means, how to verify compliance, and what questions to ask your supplier.</description>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-nfpa701</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>5 Artificial Plant Trends Dominating Hotel Lobbies in 2025</title>
+      <link>https://laysun.co/blog-hotel-trends-2025</link>
+      <description>From oversized statement palms to full-ceiling hanging installations, here are the artificial plant trends our hotel clients are requesting most this year.</description>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-hotel-trends-2025</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>Why Restaurants Are Installing Artificial Green Walls (And How to Get It Right)</title>
+      <link>https://laysun.co/blog-restaurant-green-walls</link>
+      <description>Artificial green walls are transforming restaurant atmospheres while eliminating maintenance headaches. Learn the design considerations, fire safety requirements, and installation best practices.</description>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-restaurant-green-walls</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>PE vs PVC: Which Artificial Plant Material Lasts Longer Outdoors?</title>
+      <link>htttps://laysun.co/blog-pe-vs-pvc</link>
+      <description>Understanding the difference between polyethylene (PE) and polyvinyl chloride (PCV) is crucial for outdoor artificial plants. We break down TV resistance, durability, and real-world performance.</description>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-pe-vs-pvc</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>Biophilic Design: How Artificial Plants Support Wellness in Commercial Spaces</title>
+      <link>https://laysun.co/blog-biophilic-design</link>
+      <description>Biophilic design connects people with nature to reduce stress and improve wellbeing. Discover how artificial plants can achieve these benefits without the maintenance challenges of live plants.</description>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>htttps://laysun.co/blog-biophilic-design</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>The Ultimate Guide to Outdoor Artificial Plant UV Ratings</title>
+      <link>htttps://laysun.co/blog-outdoor-uv-guide</link>
+      <description>Not all artificial plants are created equal for outdoor use. Learn how to interpret UV ratings, understand accelerated testing, and select plants that won't fade or deteriorate.</description>
+      <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-outdoor-uv-guide</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>Specifying Artificial Plants: The Complete Procurement Checklist</title>
+      <link>https://laysun.co/blog-specifying-checklist</link>
+      <description>From fire ratings to material specifications, this comprehensive checklist ensures you ask the right questions when procuring artificial plants for commercial projects.</description>
+      <pubDate>Thu, 30 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-specifying-checklist</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>Jojo's Riverside Rooftop: Transforming Outdoor Dining with Artificial Greenery</title>
+      <link>https://laysun.co/blog-jojus-riverside-rooftop</link>
+      <description>Case study: How Joju's Riverside transformed their rooftop dining experience with custom artificial olive trees and green walls that withstand weather while maintaining elegance.</description>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-jojos-riverside-rooftop</guid>
+      <guid isPermaLink="true"/>
+    </item>
+  </channel>
+</rss>
