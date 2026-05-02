@@ -163,74 +163,76 @@
 <script src="js/main.js"></script>
 <script>
 // Dynamic blog rendering from blog-index.json
-fetch('https://raw.githubusercontent.com/cptkirk21/laysun-website/main/blog-index.json')
-  .then(response => response.json())
-  .then(data => {
-    const featuredPostContainer = document.getElementById('featured-post');
-    const blogGrid = document.getElementById('blog-grid');
-    
-    // Sort posts by date (newest first)
-    const sortedPosts = data.posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-    
-    // Find and render featured post (newest post)
-    const featuredPost = sortedPosts[0];
-    if (featuredPost) {
-      featuredPostContainer.innerHTML = `
-        <div class="split" style="margin-bottom:4rem;" data-a>
-          <div class="split-media">
-            <img src="${featuredPost.image}" alt="${featuredPost.title}"
-                 srcset="${featuredPost.image.replace('.webp', '-400w.webp')} 400w, ${featuredPost.image.replace('.webp', '-800w.webp')} 800w"
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('https://raw.githubusercontent.com/cptkirk21/laysun-website/main/blog-index.json')
+    .then(response => response.json())
+    .then(data => {
+      const featuredPostContainer = document.getElementById('featured-post');
+      const blogGrid = document.getElementById('blog-grid');
+      
+      // Sort posts by date (newest first)
+      const sortedPosts = data.posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+      
+      // Find and render featured post (newest post)
+      const featuredPost = sortedPosts[0];
+      if (featuredPost) {
+        featuredPostContainer.innerHTML = `
+          <div class="split" style="margin-bottom:4rem;" data-a>
+            <div class="split-media">
+              <img src="${featuredPost.image}" alt="${featuredPost.title}"
+                   srcset="${featuredPost.image.replace('.webp', '-400w.webp')} 400w, ${featuredPost.image.replace('.webp', '-800w.webp')} 800w"
+                   sizes="(max-width: 768px) 100vw, 33vw" loading="lazy">
+            </div>
+            <div class="split-text">
+              <div class="blog-meta">
+                <span class="cat">${featuredPost.category}</span>
+                <span>•</span>
+                <span>${featuredPost.date}</span>
+                <span>•</span>
+                <span>${featuredPost.readTime}</span>
+              </div>
+              <h2 style="font-size:clamp(1.5rem,3vw,2rem);margin-bottom:1rem;">${featuredPost.title}</h2>
+              <p>${featuredPost.description}</p>
+              <a href="blog-${featuredPost.slug}.html" class="btn btn-primary mt-3">Read Article →</a>
+            </div>
+          </div>
+        `;
+      }
+      
+      // Render remaining posts (excluding featured)
+      sortedPosts.slice(1).forEach(post => {
+        const blogCard = document.createElement('a');
+        blogCard.href = `blog-${post.slug}.html`;
+        blogCard.className = 'blog-card';
+        blogCard.setAttribute('data-a', '');
+        
+        blogCard.innerHTML = `
+          <div class="blog-card-img">
+            <img src="${post.image}" alt="${post.title}"
+                 srcset="${post.image.replace('.webp', '-400w.webp')} 400w, ${post.image.replace('.webp', '-800w.webp')} 800w"
                  sizes="(max-width: 768px) 100vw, 33vw" loading="lazy">
           </div>
-          <div class="split-text">
+          <div class="blog-body">
             <div class="blog-meta">
-              <span class="cat">${featuredPost.category}</span>
+              <span class="cat">${post.category}</span>
               <span>•</span>
-              <span>${featuredPost.date}</span>
-              <span>•</span>
-              <span>${featuredPost.readTime}</span>
+              <span>${post.date}</span>
             </div>
-            <h2 style="font-size:clamp(1.5rem,3vw,2rem);margin-bottom:1rem;">${featuredPost.title}</h2>
-            <p>${featuredPost.description}</p>
-            <a href="blog-${featuredPost.slug}.html" class="btn btn-primary mt-3">Read Article →</a>
+            <h3>${post.title}</h3>
+            <p>${post.description}</p>
+            <span class="card-link">Read more →</span>
           </div>
-        </div>
-      `;
-    }
-    
-    // Render remaining posts (excluding featured)
-    sortedPosts.slice(1).forEach(post => {
-      const blogCard = document.createElement('a');
-      blogCard.href = `blog-${post.slug}.html`;
-      blogCard.className = 'blog-card';
-      blogCard.setAttribute('data-a', '');
-      
-      blogCard.innerHTML = `
-        <div class="blog-card-img">
-          <img src="${post.image}" alt="${post.title}"
-               srcset="${post.image.replace('.webp', '-400w.webp')} 400w, ${post.image.replace('.webp', '-800w.webp')} 800w"
-               sizes="(max-width: 768px) 100vw, 33vw" loading="lazy">
-        </div>
-        <div class="blog-body">
-          <div class="blog-meta">
-            <span class="cat">${post.category}</span>
-            <span>•</span>
-            <span>${post.date}</span>
-          </div>
-          <h3>${post.title}</h3>
-          <p>${post.description}</p>
-          <span class="card-link">Read more →</span>
-        </div>
-      `;
-      
-      blogGrid.appendChild(blogCard);
+        `;
+        
+        blogGrid.appendChild(blogCard);
+      });
+    })
+    .catch(error => {
+      console.error('Error loading blog posts:', error);
+      document.getElementById('featured-post').innerHTML = '<p>Unable to load featured post. Please try again later.</p>';
+      document.getElementById('blog-grid').innerHTML = '<p>Unable to load blog posts. Please try again later.</p>';
     });
-  })
-  .catch(error => {
-    console.error('Error loading blog posts:', error);
-    document.getElementById('featured-post').innerHTML = '<p>Unable to load featured post. Please try again later.</p>';
-    document.getElementById('blog-grid').innerHTML = '<p>Unable to load blog posts. Please try again later.</p>';
-  });
+});
 </script>
 </body>
 </html>
