@@ -1,4 +1,7 @@
 {
+  "featured": {
+    "slug": "do-outdoor-artificial-plants-fade-in-sunlight"
+  },
   "posts": [
     {
       "title": "Do Outdoor Artificial Plants Fade in Sunlight?",
@@ -26,74 +29,59 @@
       "date": "6 Mar 2025",
       "category": "Design",
       "readTime": "6 min read",
-      "image": "https://laysun.co/images/blog-hotel-trends.webp",
-      "description": "From oversized statement palms to full-ceiling hanging installations, here are the artificial plant trends our hotel clients are requesting most this year.",
+      "image": "https://laysun.co/images/blog-featured-hotel-trends.webp",
+      "description": "From oversized fiddle leaf figs to living walls, discover the artificial plant trends transforming hotel lobbies and creating memorable guest experiences.",
       "featured": false
     },
     {
       "title": "How Green Walls Increased This Restaurant's Revenue by 22%",
-      "slug": "restaurant-green-walls",
-      "date": "28 Nov 2024",
-      "category": "Restaurants",
+      "slug": "green-walls-revenue",
+      "date": "22 Feb 2025",
+      "category": "Case Study",
       "readTime": "7 min read",
-      "image": "https://laysun.co/images/blog-restaurant-green-wall.webp",
-      "description": "A case study showing how a single green wall installation transformed dwell time, social media mentions, and covers per evening at a Sydney restaurant.",
+      "image": "https://laysun.co/images/blog-featured-green-walls.webp",
+      "description": "A case study showing how strategic artificial plant installations transformed a restaurant's ambiance and directly impacted customer spending.",
       "featured": false
     },
     {
       "title": "PE vs PVC: Why Material Matters in Artificial Plants",
       "slug": "pe-vs-pvc",
-      "date": "9 Feb 2025",
-      "category": "Manufacturing",
-      "readTime": "8 min read",
-      "image": "https://laysun.co/images/blog-pe-vs-pvc.webp",
-      "description": "Not all artificial plant materials are equal. Here's the definitive guide to why PE (polyethylene) is the commercial standard — and what to look for when evaluating suppliers.",
+      "date": "18 Jan 2025",
+      "category": "Materials",
+      "readTime": "9 min read",
+      "image": "https://laysun.co/images/blog-featured-pe-vs-pvc.webp",
+      "description": "Understanding the difference between polyethylene and polyvinyl chloride in artificial plants - durability, safety, and cost considerations for commercial projects.",
       "featured": false
     },
     {
       "title": "Biophilic Design on a Budget: Artificial Plants in Corporate Offices",
       "slug": "biophilic-design",
-      "date": "17 Aug 2024",
-      "category": "Biophilic Design",
-      "readTime": "7 min read",
-      "image": "https://laysun.co/images/blog-biophilic-office.webp",
-      "description": "The research is clear — nature in the workplace improves focus, reduces stress, and lowers absenteeism. Here's how to achieve biophilic design without live plant maintenance costs.",
+      "date": "30 Dec 2024",
+      "category": "Design",
+      "readTime": "5 min read",
+      "image": "https://laysun.co/images/blog-featured-biophilic.webp",
+      "description": "How artificial plants can deliver the benefits of biophilic design without the maintenance costs and infrastructure requirements of living plants.",
       "featured": false
     },
     {
       "title": "Outdoor Artificial Plants: UV Rating Guide for Terrace & Pool Installations",
-      "slug": "outdoor-uv-guide",
-      "date": "3 Oct 2024",
+      "slug": "uv-rating-guide",
+      "date": "12 Nov 2024",
       "category": "Outdoor",
-      "readTime": "9 min read",
-      "image": "https://laysun.co/images/blog-outdoor-uv.webp",
-      "description": "Not all artificial plants are suitable for outdoor use. This guide explains UV ratings, expected lifespan, and what to look for when specifying outdoor commercial installations.",
+      "readTime": "10 min read",
+      "image": "https://laysun.co/images/blog-featured-uv-rating.webp",
+      "description": "A comprehensive guide to UV ratings, material specifications, and installation best practices for artificial plants in high-sun exposure areas.",
       "featured": false
     },
     {
       "title": "How to Specify Artificial Plants: A Checklist for Interior Designers",
-      "slug": "specifying-checklist",
-      "date": "22 May 2024",
-      "category": "Procurement",
-      "readTime": "10 min read",
-      "image": "https://laysun.co/images/blog-specifying-checklist.webp",
-      "description": "A practical checklist covering fire certification, material grade, sizing, vessel options, and supplier vetting — everything you need to specify artificial plants with confidence.",
+      "slug": "specification-checklist",
+      "date": "28 Oct 2024",
+      "category": "Professional",
+      "readTime": "12 min read",
+      "image": "https://laysun.co/images/blog-featured-specification.webp",
+      "description": "A professional checklist covering material specifications, fire ratings, installation requirements, and maintenance considerations for artificial plant projects.",
       "featured": false
     }
-  ],
-  "r2_migration": {
-    "status": "prepared",
-    "bucket_name": "laysun-blog-images",
-    "image_url_template": "https://pub-{bucket-id}.r2.dev/{image-name}",
-    "migration_ready": true,
-    "images_uploaded": [
-      "blog-outdoor-uv.webp",
-      "blog-featured-nfpa701.webp",
-      "blog-hotel-trends.webp", 
-      "blog-restaurant-green-wall.webp",
-      "blog-pe-vs-pvc.webp",
-      "blog-biophilic-office.webp",
-      "blog-specifying-checklist.webp"
-    ]
-  }
+  ]
 }
