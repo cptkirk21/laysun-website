@@ -80,5 +80,20 @@
       "description": "A practical checklist covering fire certification, material grade, sizing, vessel options, and supplier vetting — everything you need to specify artificial plants with confidence.",
       "featured": false
     }
-  ]
+  ],
+  "r2_migration": {
+    "status": "prepared",
+    "bucket_name": "laysun-blog-images",
+    "image_url_template": "https://pub-{bucket-id}.r2.dev/{image-name}",
+    "migration_ready": true,
+    "images_uploaded": [
+      "blog-outdoor-uv.webp",
+      "blog-featured-nfpa701.webp",
+      "blog-hotel-trends.webp", 
+      "blog-restaurant-green-wall.webp",
+      "blog-pe-vs-pvc.webp",
+      "blog-biophilic-office.webp",
+      "blog-specifying-checklist.webp"
+    ]
+  }
 }
