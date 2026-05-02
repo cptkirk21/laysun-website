@@ -1,8 +1,9 @@
 /* ================================================
    LAYSUN.CO — BLOG INDEX RENDERER
    Fetches blog-index.json and populates:
-     #featured-post  — the hero split section
-     #blog-grid      — the card grid
+     #featured-post   — the hero split section
+     #blog-grid       — the card grid (paginated)
+     #blog-pagination — page buttons
    Falls back silently to hardcoded HTML if fetch fails.
    CSP-safe: no eval(), no inline handlers.
    ================================================ */
@@ -10,7 +11,11 @@
 (function () {
   'use strict';
 
-  var JSON_URL = 'blog-index.json';
+  var JSON_URL      = 'blog-index.json';
+  var POSTS_PER_PAGE = 6;
+
+  var allGridPosts = [];
+  var currentPage  = 1;
 
   /* Escape text for insertion into HTML attribute or content */
   function esc(str) {
@@ -32,7 +37,6 @@
     var el = document.getElementById('featured-post');
     if (!el || !post) return;
 
-    /* Image side */
     var media = document.createElement('div');
     media.className = 'split-media';
     var img = document.createElement('img');
@@ -41,7 +45,6 @@
     img.loading = 'lazy';
     media.appendChild(img);
 
-    /* Text side */
     var text = document.createElement('div');
     text.className = 'split-text';
 
@@ -139,37 +142,88 @@
     });
   }
 
+  /* Render one page of the grid */
+  function renderPage(page) {
+    currentPage = page;
+
+    var start     = (page - 1) * POSTS_PER_PAGE;
+    var pagePosts = allGridPosts.slice(start, start + POSTS_PER_PAGE);
+
+    var gridEl = document.getElementById('blog-grid');
+    if (!gridEl) return;
+
+    gridEl.innerHTML = '';
+    pagePosts.forEach(function (post) {
+      gridEl.appendChild(buildCard(post));
+    });
+    observeCards(gridEl);
+
+    renderPagination();
+  }
+
+  /* Render pagination buttons into #blog-pagination */
+  function renderPagination() {
+    var paginationEl = document.getElementById('blog-pagination');
+    if (!paginationEl) return;
+
+    var totalPages = Math.ceil(allGridPosts.length / POSTS_PER_PAGE);
+
+    if (totalPages <= 1) {
+      paginationEl.style.display = 'none';
+      return;
+    }
+
+    paginationEl.style.display = '';
+
+    var inner = document.createElement('div');
+    inner.style.cssText = 'display:inline-flex;gap:.5rem;align-items:center;';
+
+    for (var i = 1; i <= totalPages; i++) {
+      var btn = document.createElement('button');
+      btn.className  = 'filter-btn' + (i === currentPage ? ' active' : '');
+      btn.style.cssText = 'width:40px;height:40px;padding:0;border-radius:50%;';
+      btn.textContent   = String(i);
+
+      /* IIFE to capture correct page number in closure */
+      (function (pageNum) {
+        btn.addEventListener('click', function () {
+          renderPage(pageNum);
+          var gridEl = document.getElementById('blog-grid');
+          if (gridEl) {
+            gridEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      }(i));
+
+      inner.appendChild(btn);
+    }
+
+    paginationEl.innerHTML = '';
+    paginationEl.appendChild(inner);
+  }
+
   /* Main render — called after successful JSON fetch */
   function render(data) {
     var posts = Array.isArray(data.posts) ? data.posts : [];
 
-    var featured   = null;
-    var gridPosts  = [];
+    var featured = null;
+    allGridPosts = [];
 
     posts.forEach(function (p) {
       if (p.featured && !featured) {
         featured = p;
       } else {
-        gridPosts.push(p);
+        allGridPosts.push(p);
       }
     });
 
-    /* Fall back to first post if none explicitly marked featured */
     if (!featured && posts.length) {
-      featured  = posts[0];
-      gridPosts = posts.slice(1);
+      featured     = posts[0];
+      allGridPosts = posts.slice(1);
     }
 
     renderFeatured(featured);
-
-    var gridEl = document.getElementById('blog-grid');
-    if (gridEl && gridPosts.length) {
-      gridEl.innerHTML = '';
-      gridPosts.forEach(function (post) {
-        gridEl.appendChild(buildCard(post));
-      });
-      observeCards(gridEl);
-    }
+    renderPage(1);
   }
 
   /* Boot — wait for DOM then fetch */
