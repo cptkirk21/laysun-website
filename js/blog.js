@@ -222,6 +222,11 @@
       allGridPosts = posts.slice(1);
     }
 
+    /* Sort grid posts newest-first */
+    allGridPosts.sort(function (a, b) {
+      return new Date(b.date) - new Date(a.date);
+    });
+
     renderFeatured(featured);
     renderPage(1);
   }
