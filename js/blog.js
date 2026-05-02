@@ -206,26 +206,13 @@
   function render(data) {
     var posts = Array.isArray(data.posts) ? data.posts : [];
 
-    var featured = null;
-    allGridPosts = [];
-
-    posts.forEach(function (p) {
-      if (p.featured && !featured) {
-        featured = p;
-      } else {
-        allGridPosts.push(p);
-      }
-    });
-
-    if (!featured && posts.length) {
-      featured     = posts[0];
-      allGridPosts = posts.slice(1);
-    }
-
-    /* Sort grid posts newest-first */
-    allGridPosts.sort(function (a, b) {
+    /* Sort everything newest-first, then auto-feature the top post */
+    posts.sort(function (a, b) {
       return new Date(b.date) - new Date(a.date);
     });
+
+    var featured = posts[0] || null;
+    allGridPosts = posts.slice(1);
 
     renderFeatured(featured);
     renderPage(1);
