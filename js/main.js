@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── FORMS ────────────────────────────────────────
   const FORM_KEYS = {
     contact: '6841019e-539b-419e-acdb-954a225d2523',
-    quote:   'da6a2a6e-1d41-469c-a844-24b99ce78b60'
+    quote:   '541362ee-d784-449a-af0d-6a604fe8b0f7'
   };
 
   document.querySelectorAll('form[data-form]').forEach(form => {
