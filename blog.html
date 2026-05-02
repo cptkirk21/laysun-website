@@ -27,7 +27,7 @@
   <meta property="og:url" content="https://laysun.co/blog">
   <meta property="og:title" content="Blog — Commercial Artificial Plant Insights & Design Guides | LaySun">
   <meta property="og:description" content="LaySun Blog — insights on artificial plants for commercial spaces, design trends, fire safety, and hospitality greenery.">
-  <meta property="og:image" content="https://laysun.co/images/blog-hotel-trends.webp">
+  <meta property="og:image" content="https://laysun.co/images/blog-outdoor-fade.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -35,7 +35,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Blog — Commercial Artificial Plant Insights & Design Guides | LaySun">
   <meta name="twitter:description" content="LaySun Blog — insights on artificial plants for commercial spaces, design trends, fire safety, and hospitality greenery.">
-  <meta name="twitter:image" content="https://laysun.co/images/blog-hotel-trends.webp">
+  <meta name="twitter:image" content="https://laysun.co/images/blog-outdoor-fade.webp">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -101,25 +101,9 @@
 <section class="section">
   <div class="container">
 
-    <!-- FEATURED POST -->
-    <div class="split" style="margin-bottom:4rem;" data-a>
-      <div class="split-media">
-        <img src="images/blog-featured-nfpa701.webp" alt="Fire safety certification document with official red seal and a green plant leaf beside it"
-             srcset="images/blog-featured-nfpa701-400w.webp 400w, images/blog-featured-nfpa701-800w.webp 800w"
-             sizes="(max-width: 768px) 100vw, 33vw" loading="lazy">
-      </div>
-      <div class="split-text">
-        <div class="blog-meta">
-          <span class="cat">Fire Safety</span>
-          <span>•</span>
-          <span>14 Jan 2025</span>
-          <span>•</span>
-          <span>8 min read</span>
-        </div>
-        <h2 style="font-size:clamp(1.5rem,3vw,2rem);margin-bottom:1rem;">NFPA 701 Explained: What Hotel Designers Need to Know About Artificial Plant Fire Codes</h2>
-        <p>If you're specifying artificial plants for a hotel or commercial property in the United States, NFPA 701 is non-negotiable. Here's what it means, how to verify compliance, and what questions to ask your supplier.</p>
-        <a href="blog-nfpa701.html" class="btn btn-primary mt-3">Read Article →</a>
-      </div>
+    <!-- FEATURED POST (Dynamic) -->
+    <div id="featured-post">
+      <!-- Featured post will be dynamically loaded here -->
     </div>
 
     <!-- BLOG GRID -->
@@ -182,43 +166,69 @@
 fetch('blog-index.json')
   .then(response => response.json())
   .then(data => {
+    const featuredPostContainer = document.getElementById('featured-post');
     const blogGrid = document.getElementById('blog-grid');
     
     // Sort posts by date (newest first)
     const sortedPosts = data.posts.sort((a, b) => new Date(b.date) - new Date(a.date));
     
-    // Render all posts except the featured one
-    sortedPosts.forEach(post => {
-      if (!post.featured) {
-        const blogCard = document.createElement('a');
-        blogCard.href = `blog-${post.slug}.html`;
-        blogCard.className = 'blog-card';
-        blogCard.setAttribute('data-a', '');
-        
-        blogCard.innerHTML = `
-          <div class="blog-card-img">
-            <img src="${post.image}" alt="${post.title}"
-                 srcset="${post.image.replace('.webp', '-400w.webp')} 400w, ${post.image.replace('.webp', '-800w.webp')} 800w"
+    // Find and render featured post (newest post)
+    const featuredPost = sortedPosts[0];
+    if (featuredPost) {
+      featuredPostContainer.innerHTML = `
+        <div class="split" style="margin-bottom:4rem;" data-a>
+          <div class="split-media">
+            <img src="${featuredPost.image}" alt="${featuredPost.title}"
+                 srcset="${featuredPost.image.replace('.webp', '-400w.webp')} 400w, ${featuredPost.image.replace('.webp', '-800w.webp')} 800w"
                  sizes="(max-width: 768px) 100vw, 33vw" loading="lazy">
           </div>
-          <div class="blog-body">
+          <div class="split-text">
             <div class="blog-meta">
-              <span class="cat">${post.category}</span>
+              <span class="cat">${featuredPost.category}</span>
               <span>•</span>
-              <span>${post.date}</span>
+              <span>${featuredPost.date}</span>
+              <span>•</span>
+              <span>${featuredPost.readTime}</span>
             </div>
-            <h3>${post.title}</h3>
-            <p>${post.description}</p>
-            <span class="card-link">Read more →</span>
+            <h2 style="font-size:clamp(1.5rem,3vw,2rem);margin-bottom:1rem;">${featuredPost.title}</h2>
+            <p>${featuredPost.description}</p>
+            <a href="blog-${featuredPost.slug}.html" class="btn btn-primary mt-3">Read Article →</a>
           </div>
-        `;
-        
-        blogGrid.appendChild(blogCard);
-      }
+        </div>
+      `;
+    }
+    
+    // Render remaining posts (excluding featured)
+    sortedPosts.slice(1).forEach(post => {
+      const blogCard = document.createElement('a');
+      blogCard.href = `blog-${post.slug}.html`;
+      blogCard.className = 'blog-card';
+      blogCard.setAttribute('data-a', '');
+      
+      blogCard.innerHTML = `
+        <div class="blog-card-img">
+          <img src="${post.image}" alt="${post.title}"
+               srcset="${post.image.replace('.webp', '-400w.webp')} 400w, ${post.image.replace('.webp', '-800w.webp')} 800w"
+               sizes="(max-width: 768px) 100vw, 33vw" loading="lazy">
+        </div>
+        <div class="blog-body">
+          <div class="blog-meta">
+            <span class="cat">${post.category}</span>
+            <span>•</span>
+            <span>${post.date}</span>
+          </div>
+          <h3>${post.title}</h3>
+          <p>${post.description}</p>
+          <span class="card-link">Read more →</span>
+        </div>
+      `;
+      
+      blogGrid.appendChild(blogCard);
     });
   })
   .catch(error => {
     console.error('Error loading blog posts:', error);
+    document.getElementById('featured-post').innerHTML = '<p>Unable to load featured post. Please try again later.</p>';
     document.getElementById('blog-grid').innerHTML = '<p>Unable to load blog posts. Please try again later.</p>';
   });
 </script>
