@@ -163,7 +163,7 @@
 <script src="js/main.js"></script>
 <script>
 // Dynamic blog rendering from blog-index.json
-fetch('blog-index.json')
+fetch('https://raw.githubusercontent.com/cptkirk21/laysun-website/main/blog-index.json')
   .then(response => response.json())
   .then(data => {
     const featuredPostContainer = document.getElementById('featured-post');
