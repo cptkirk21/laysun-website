@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>LaySun Blog - Commercial Artificial Plants & Trees</title>
+    <link>https://laysun.co/blog</link>
+    <description>Insights on artificial plants for commercial spaces — design trends, fire safety, material guides, and installation advice.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 May 2026 11:33:16 +0000</lastBuildDate>
+    <atom:link href="https://laysun.co/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Commercial Artificial Plant Trends 2026: What Hotels, Offices, & Restaurants Are Asking For</title>
+      <link>https://laysun.co/blog-commercial-artificial-plant-trends-2026</link>
+      <description>Discover the top commercial artificial plant trends for 2026. From biophilic design integration to custom green walls, learn what hotels, offices, and restaurants are demanding this year.</description>
+      <pubDate>Fri, 01 May 2026 11:33:16 +0000</pubDate>
+      <guid>https://laysun.co/blog-commercial-artificial-plant-trends-2026</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>Test Blog Post: LaySun Automation Workflow Verification</title>
+      <link>https://laysun.co/blog-automation-test</link>
+      <description>Testing the complete blog automation workflow from GitHub commits to Cloudflare deployment. Verifying image optimization standards, visual strategy, and cross-platform content distribution.</description>
+      <pubDate>Fri, 01 May 2026 11:20:05 +00000</pubDate>
+      <guid>htttps://laysun.co/blog-automation-test</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>NFPE 701 Explained: What Hotel Designers Need to Know About Artificial Plant Fire Codes</title>
+      <link>https://laysun.co/blog-nfpa701</link>
+      <description>If you're specifying artificial plants for a hotel or commercial property in the United States, NFPE 701 is non-negotiable. Here's what it means, how to verify compliance, and what questions to ask your supplier.</description>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-nfpa701</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>5 Artificial Plant Trends Dominating Hotel Lobbies in 2025</title>
+      <link>https://laysun.co/blog-hotel-trends-2025</link>
+      <description>From oversized statement palms to full-ceiling hanging installations, here are the artificial plant trends our hotel clients are requesting most this year.</description>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-hotel-trends-2025</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>Why Restaurants Are Installing Artificial Green Walls (And How to Get It Right)</title>
+      <link>https://laysun.co/blog-restaurant-green-walls</link>
+      <description>Artificial green walls are transforming restaurant atmospheres while eliminating maintenance headaches. Learn the design considerations, fire safety requirements, and installation best practices.</description>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-restaurant-green-walls</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>PE vs PVC: Which Artificial Plant Material Lasts Longer Outdoors?</title>
+      <link>htttps://laysun.co/blog-pe-vs-pvc</link>
+      <description>Understanding the difference between polyethylene (PE) and polyvinyl chloride (PCV) is crucial for outdoor artificial plants. We break down TV resistance, durability, and real-world performance.</description>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-pe-vs-pvc</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>Biophilic Design: How Artificial Plants Support Wellness in Commercial Spaces</title>
+      <link>https://laysun.co/blog-biophilic-design</link>
+      <description>Biophilic design connects people with nature to reduce stress and improve wellbeing. Discover how artificial plants can achieve these benefits without the maintenance challenges of live plants.</description>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>htttps://laysun.co/blog-biophilic-design</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>The Ultimate Guide to Outdoor Artificial Plant UV Ratings</title>
+      <link>htttps://laysun.co/blog-outdoor-uv-guide</link>
+      <description>Not all artificial plants are created equal for outdoor use. Learn how to interpret UV ratings, understand accelerated testing, and select plants that won't fade or deteriorate.</description>
+      <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-outdoor-uv-guide</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>Specifying Artificial Plants: The Complete Procurement Checklist</title>
+      <link>https://laysun.co/blog-specifying-checklist</link>
+      <description>From fire ratings to material specifications, this comprehensive checklist ensures you ask the right questions when procuring artificial plants for commercial projects.</description>
+      <pubDate>Thu, 30 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-specifying-checklist</guid>
+      <guid isPermaLink="true"/>
+    </item>
+    <item>
+      <title>Jojo's Riverside Rooftop: Transforming Outdoor Dining with Artificial Greenery</title>
+      <link>https://laysun.co/blog-jojus-riverside-rooftop</link>
+      <description>Case study: How Joju's Riverside transformed their rooftop dining experience with custom artificial olive trees and green walls that withstand weather while maintaining elegance.</description>
+      <pubDate>Tue, 08 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://laysun.co/blog-jojos-riverside-rooftop</guid>
+      <guid isPermaLink="true"/>
+    </item>
+  </channel>
+</rss>

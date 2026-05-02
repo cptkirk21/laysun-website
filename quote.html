@@ -93,261 +93,106 @@
 <header class="page-hero">
   <div class="container">
     <div class="breadcrumb"><a href="index.html">Home</a> › <span>Request a Quote</span></div>
-    <h1>Request a Quote</h1>
-    <p class="lead">Fill in the details below and we'll send a tailored quote with product recommendations and pricing within 24 hours.</p>
+    <h1>Get a Custom Quote</h1>
+    <p class="lead">Tell us a little about your project and we'll send personalized pricing and expert recommendations within 24 hours.</p>
   </div>
 </header>
 
 <section class="section">
   <div class="container" style="max-width:860px;">
-    <div class="form-card" data-a>
 
-      <form data-form="quote" novalidate>
+    <!-- Trust badges -->
+    <div class="quote-trust-badges">
+      <span class="quote-badge">🔒 Secure &amp; Private</span>
+      <span class="quote-badge">⏱️ 24-Hour Response</span>
+      <span class="quote-badge">💬 No Sales Pressure</span>
+    </div>
 
-        <!-- SECTION 1: CONTACT -->
-        <p class="form-sec-title">1 — Your Contact Details</p>
+    <div class="quote-layout">
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="q-name">Full Name <span class="req">*</span></label>
-            <input type="text" id="q-name" name="name" placeholder="Jane Smith" required>
-          </div>
-          <div class="form-group">
-            <label for="q-company">Company / Organisation <span class="req">*</span></label>
-            <input type="text" id="q-company" name="company" placeholder="Hilton Hotels" required>
-          </div>
-        </div>
+      <!-- Form column -->
+      <div class="quote-form-col">
+        <div class="form-card" data-a>
+          <p style="font-size:.95rem;color:var(--text-muted);margin-bottom:1.75rem;">Get personalized pricing and expert recommendations — just share a few details and we'll handle the rest.</p>
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="q-email">Email Address <span class="req">*</span></label>
-            <input type="email" id="q-email" name="email" placeholder="jane@company.com" required>
-          </div>
-          <div class="form-group">
-            <label for="q-phone">Phone / WhatsApp</label>
-            <input type="tel" id="q-phone" name="phone" placeholder="+1 555 000 0000">
-          </div>
-        </div>
+          <form data-form="quote" novalidate>
 
-        <div class="form-row">
-          <div class="form-group">
-            <label for="q-country">Country <span class="req">*</span></label>
-            <select id="q-country" name="country" required>
-              <option value="" disabled selected>Select country…</option>
-              <option>United States</option>
-              <option>United Kingdom</option>
-              <option>United Arab Emirates</option>
-              <option>Singapore</option>
-              <option>Australia</option>
-              <option>Canada</option>
-              <option>France</option>
-              <option>Germany</option>
-              <option>Hong Kong</option>
-              <option>Japan</option>
-              <option>New Zealand</option>
-              <option>Saudi Arabia</option>
-              <option>South Africa</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="q-role">Your Role</label>
-            <select id="q-role" name="role">
-              <option value="" disabled selected>Select role…</option>
-              <option>Hotel / Resort Owner or Manager</option>
-              <option>Interior Designer / Decorator</option>
-              <option>Architect</option>
-              <option>Restaurant Owner / Manager</option>
-              <option>Corporate Facilities Manager</option>
-              <option>Procurement / Purchasing Manager</option>
-              <option>Contractor / Installer</option>
-              <option>Event Planner</option>
-              <option>Retailer / Reseller</option>
-              <option>Other</option>
-            </select>
+            <div class="form-group">
+              <label for="q-name">Full Name <span class="req">*</span></label>
+              <input type="text" id="q-name" name="name" placeholder="Jane Smith" required>
+            </div>
+
+            <div class="form-group">
+              <label for="q-email">Email Address <span class="req">*</span></label>
+              <input type="email" id="q-email" name="email" placeholder="jane@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="q-company">Company / Organisation</label>
+              <input type="text" id="q-company" name="company" placeholder="Hilton Hotels">
+            </div>
+
+            <div class="form-group">
+              <label for="q-phone">Phone / WhatsApp</label>
+              <input type="tel" id="q-phone" name="phone" placeholder="+1 555 000 0000">
+            </div>
+
+            <div class="form-group">
+              <label for="q-desc">Project Description</label>
+              <textarea id="q-desc" name="description" rows="4" placeholder="e.g. Hotel lobby with 3 large statement trees around 10ft tall, plus a green feature wall behind reception. Looking for fire-rated options for a UAE property."></textarea>
+              <p class="hint">No details yet? No problem — just submit and we'll ask the right questions.</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;font-size:1.05rem;">
+              Get My Custom Quote →
+            </button>
+
+            <p class="hint text-c mt-2" style="font-size:.8rem;">🔒 Your details are kept private and never shared with third parties.</p>
+
+            <div class="quote-alt-cta">
+              <span>Prefer to talk?</span>
+              <a href="https://calendar.app.google/jhRWYdJ3EFQeUjdJ9" target="_blank" rel="noopener" class="quote-consult-link">Schedule a free 15-minute consultation →</a>
+            </div>
+
+          </form>
+
+          <div class="form-success" data-success="quote">
+            <div class="success-icon">🌿</div>
+            <h3>Quote Request Received!</h3>
+            <p>Thank you — our team will review your project and reply within 24 hours with recommendations and pricing.</p>
+            <p style="font-size:.9rem;margin-top:.5rem;">In the meantime, browse our <a href="projects.html" style="color:var(--green);font-weight:600;">project gallery</a> for inspiration.</p>
           </div>
         </div>
-
-        <!-- SECTION 2: PROJECT -->
-        <p class="form-sec-title">2 — Project Details</p>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="q-venue">Venue / Facility Type <span class="req">*</span></label>
-            <select id="q-venue" name="venue" required>
-              <option value="" disabled selected>Select venue type…</option>
-              <option>Hotel — Luxury / 5-Star</option>
-              <option>Hotel — Mid-Scale</option>
-              <option>Resort / Spa</option>
-              <option>Restaurant / Fine Dining</option>
-              <option>Café / Casual Dining</option>
-              <option>Corporate Office</option>
-              <option>Retail Store / Showroom</option>
-              <option>Shopping Mall / Atrium</option>
-              <option>Healthcare / Hospital</option>
-              <option>Wellness / Fitness</option>
-              <option>Residential — High End</option>
-              <option>Event / Temporary Installation</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="q-location">Project Location / City <span class="req">*</span></label>
-            <input type="text" id="q-location" name="location" placeholder="e.g. Los Angeles, CA" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="q-desc">Project Description <span class="req">*</span></label>
-          <textarea id="q-desc" name="description" rows="4" placeholder="Briefly describe the space and what you're looking to achieve. e.g. 'Hotel lobby — looking for 3 large statement trees, approx 10ft, and a green feature wall behind reception.'" required></textarea>
-        </div>
-
-        <!-- SECTION 3: PRODUCT REQUIREMENTS -->
-        <p class="form-sec-title">3 — Product Requirements</p>
-
-        <div class="form-group">
-          <label>Systems Required (select all that apply)</label>
-          <div class="check-grid mt-2">
-            <label class="check-item"><input type="checkbox" name="systems" value="trees"> <span>Indoor Trees / Palms</span></label>
-            <label class="check-item"><input type="checkbox" name="systems" value="walls"> <span>Living / Green Walls</span></label>
-            <label class="check-item"><input type="checkbox" name="systems" value="potted"> <span>Potted Collections</span></label>
-            <label class="check-item"><input type="checkbox" name="systems" value="hedges"> <span>Hedges / Topiary</span></label>
-            <label class="check-item"><input type="checkbox" name="systems" value="floral"> <span>Floral Arrangements</span></label>
-            <label class="check-item"><input type="checkbox" name="systems" value="custom"> <span>Custom / Bespoke</span></label>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="q-species">Preferred Species / Style</label>
-            <input type="text" id="q-species" name="species" placeholder="e.g. Olive tree, Fiddle Leaf Fig, Tropical mix">
-            <p class="hint">Leave blank if unsure — we'll recommend based on your space.</p>
-          </div>
-          <div class="form-group">
-            <label for="q-qty">Approximate Quantity</label>
-            <input type="number" id="q-qty" name="quantity" min="1" placeholder="e.g. 4">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="q-height">Height / Size Required</label>
-            <select id="q-height" name="height">
-              <option value="" disabled selected>Select approximate size…</option>
-              <option>Tabletop / Desktop (under 2ft)</option>
-              <option>Small — 2–4 ft</option>
-              <option>Medium — 4–6 ft</option>
-              <option>Large — 6–9 ft</option>
-              <option>Extra Large — 9–12 ft</option>
-              <option>Statement — 12 ft+</option>
-              <option>Wall panel coverage (sq ft / sq m)</option>
-              <option>Mixed sizes needed</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="q-wallsize">Wall Area (if applicable)</label>
-            <input type="text" id="q-wallsize" name="wall_size" placeholder="e.g. 12ft wide × 9ft tall">
-            <p class="hint">For green wall or hedge panel projects.</p>
-          </div>
-        </div>
-
-        <!-- SECTION 4: FIRE & SPECS -->
-        <p class="form-sec-title">4 — Technical Requirements</p>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="q-fire">Fire Certification Required</label>
-            <select id="q-fire" name="fire_cert">
-              <option value="" disabled selected>Select requirement…</option>
-              <option>NFPA 701 (USA)</option>
-              <option>EN 13501 (Europe)</option>
-              <option>GB 8624 B1 (China)</option>
-              <option>Other / Let LaySun advise</option>
-              <option>Not required / unsure</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="q-install">Installation Required?</label>
-            <select id="q-install" name="installation">
-              <option value="" disabled selected>Select…</option>
-              <option>No — supply only, we'll install</option>
-              <option>Yes — please include installation</option>
-              <option>Unsure — please advise</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- SECTION 5: BUDGET & TIMELINE -->
-        <p class="form-sec-title">5 — Budget &amp; Timeline</p>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="q-budget">Approximate Budget (USD)</label>
-            <select id="q-budget" name="budget">
-              <option value="" disabled selected>Select budget range…</option>
-              <option>Under $2,000</option>
-              <option>$2,000 – $5,000</option>
-              <option>$5,000 – $15,000</option>
-              <option>$15,000 – $30,000</option>
-              <option>$30,000 – $60,000</option>
-              <option>$60,000+</option>
-              <option>Flexible / let LaySun advise</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="q-timeline">Required By / Timeline</label>
-            <select id="q-timeline" name="timeline">
-              <option value="" disabled selected>Select timeline…</option>
-              <option>ASAP — urgent</option>
-              <option>Within 4 weeks</option>
-              <option>4–8 weeks</option>
-              <option>2–3 months</option>
-              <option>3–6 months</option>
-              <option>Flexible / no rush</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- SECTION 6: EXTRAS -->
-        <p class="form-sec-title">6 — Anything Else</p>
-
-        <div class="form-group">
-          <label for="q-notes">Additional Notes or Requests</label>
-          <textarea id="q-notes" name="notes" rows="4" placeholder="e.g. We have specific planter colours to match, or we'd like to see samples first, or we have architectural drawings to share…"></textarea>
-        </div>
-
-        <div class="form-group">
-          <label for="q-source">How did you hear about LaySun?</label>
-          <select id="q-source" name="source">
-            <option value="" disabled selected>Select…</option>
-            <option>Google Search</option>
-            <option>Referral from a colleague / client</option>
-            <option>Trade show / exhibition</option>
-            <option>Instagram / Social Media</option>
-            <option>Pinterest</option>
-            <option>LinkedIn</option>
-            <option>Industry directory</option>
-            <option>Other</option>
-          </select>
-        </div>
-
-        <div style="background:var(--cream-alt);border-radius:var(--radius-m);padding:1.25rem;margin-bottom:1.5rem;">
-          <p style="font-size:.88rem;margin:0;"><strong>What happens next?</strong> Our team reviews your request and replies within 24 hours (Mon–Fri) with product recommendations, images, and a detailed price quote. For large projects we may request a brief call to ensure accuracy.</p>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
-          Submit Quote Request →
-        </button>
-
-        <p class="hint text-c mt-2">We respond within 24 hours. Your details are kept private and never shared.</p>
-      </form>
-
-      <div class="form-success" data-success="quote">
-        <div class="success-icon">🌿</div>
-        <h3>Quote Request Received!</h3>
-        <p>Thank you — our team will review your project details and reply within 24 hours with recommendations and pricing.</p>
-        <p style="font-size:.9rem;margin-top:.5rem;">In the meantime, feel free to browse our <a href="projects.html" style="color:var(--green);font-weight:600;">project gallery</a> for inspiration.</p>
       </div>
+
+      <!-- Testimonials column -->
+      <div class="quote-testi-col">
+        <div class="testi-card" data-a style="margin-bottom:1.5rem;">
+          <p class="testi-text">"LaySun made the whole process effortless. We described our hotel lobby and they came back with exact product recommendations, pricing, and fire cert documentation within a day. Exceptional service."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">🏨</div>
+            <div>
+              <div class="testi-name">Michael R.</div>
+              <div class="testi-role">General Manager, Luxury Hotel — Dubai</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" data-a>
+          <p class="testi-text">"We've spec'd LaySun products into three restaurant fit-outs now. The quote process is quick, the quality is outstanding, and the team actually understands commercial interiors."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">🌿</div>
+            <div>
+              <div class="testi-name">Sarah L.</div>
+              <div class="testi-role">Interior Designer — Singapore</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--cream-alt);border-radius:var(--radius-m);padding:1.25rem;margin-top:1.5rem;">
+          <p style="font-size:.85rem;margin:0;line-height:1.65;"><strong>What happens next?</strong> Our team reviews your request and replies within 24 hours (Mon–Fri) with product recommendations, images, and a detailed price quote. For larger projects we may suggest a brief call to ensure accuracy.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
