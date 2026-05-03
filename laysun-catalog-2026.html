@@ -231,7 +231,87 @@
     .prod-card { break-inside: avoid; }
     .catalog-footer { padding: 20px 54px; }
     a { color: #b8936a !important; }
+    .lb-overlay { display: none !important; }
   }
+
+  /* ── Lightbox ─────────────────────────────────────────────── */
+  .prod-img-wrap { cursor: zoom-in; }
+  .lb-overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(20, 20, 20, 0.92);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px 64px;
+  }
+  .lb-overlay.active { display: flex; }
+  .lb-img-frame {
+    max-width: min(88vw, 820px);
+    max-height: 76vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .lb-img-frame img {
+    max-width: 100%;
+    max-height: 76vh;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 12px 60px rgba(0,0,0,0.6);
+    display: block;
+  }
+  .lb-caption {
+    margin-top: 18px;
+    text-align: center;
+  }
+  .lb-caption-sku {
+    font-size: 10px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  .lb-caption-name {
+    font-size: 15px;
+    color: #fff;
+    font-family: Georgia, serif;
+  }
+  .lb-caption-counter {
+    font-size: 11px;
+    color: rgba(255,255,255,0.35);
+    margin-top: 6px;
+  }
+  .lb-close {
+    position: fixed;
+    top: 20px; right: 28px;
+    background: none; border: none;
+    color: rgba(255,255,255,0.7);
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: color .15s;
+  }
+  .lb-close:hover { color: #fff; }
+  .lb-arrow {
+    position: fixed;
+    top: 50%; transform: translateY(-50%);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.75);
+    font-size: 28px;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 8px;
+    line-height: 1;
+    transition: background .15s, color .15s;
+  }
+  .lb-arrow:hover { background: rgba(255,255,255,0.18); color: #fff; }
+  .lb-prev { left: 16px; }
+  .lb-next { right: 16px; }
 </style>
 </head>
 <body>
@@ -1086,6 +1166,69 @@
     <p>© 2026 LaySun. All prices USD FOB Dongguan. Subject to change without notice.</p>
   </div>
 </div>
+
+
+<!-- LIGHTBOX -->
+<div class="lb-overlay" id="lb" role="dialog" aria-modal="true" aria-label="Product image viewer">
+  <button class="lb-close" id="lb-close" aria-label="Close">&#x2715;</button>
+  <button class="lb-arrow lb-prev" id="lb-prev" aria-label="Previous image">&#8249;</button>
+  <div class="lb-img-frame">
+    <img id="lb-img" src="" alt="">
+  </div>
+  <div class="lb-caption">
+    <div class="lb-caption-sku" id="lb-sku"></div>
+    <div class="lb-caption-name" id="lb-name"></div>
+    <div class="lb-caption-counter" id="lb-counter"></div>
+  </div>
+  <button class="lb-arrow lb-next" id="lb-next" aria-label="Next image">&#8250;</button>
+</div>
+
+<script>
+(function () {
+  const imgs = Array.from(document.querySelectorAll('.prod-img-wrap img'));
+  const overlay  = document.getElementById('lb');
+  const lbImg    = document.getElementById('lb-img');
+  const lbName   = document.getElementById('lb-name');
+  const lbSku    = document.getElementById('lb-sku');
+  const lbCtr    = document.getElementById('lb-counter');
+  let current = 0;
+
+  function show(i) {
+    current = ((i % imgs.length) + imgs.length) % imgs.length;
+    const img  = imgs[current];
+    const card = img.closest('.prod-card');
+    lbImg.src  = img.src;
+    lbImg.alt  = img.alt;
+    lbName.textContent = card ? card.querySelector('h3').textContent : img.alt;
+    lbSku.textContent  = card ? card.querySelector('.sku').textContent : '';
+    lbCtr.textContent  = (current + 1) + ' / ' + imgs.length;
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  imgs.forEach(function (img, i) {
+    img.parentElement.addEventListener('click', function () { show(i); });
+  });
+
+  document.getElementById('lb-close').addEventListener('click', close);
+  document.getElementById('lb-prev').addEventListener('click', function () { show(current - 1); });
+  document.getElementById('lb-next').addEventListener('click', function () { show(current + 1); });
+
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+
+  document.addEventListener('keydown', function (e) {
+    if (!overlay.classList.contains('active')) return;
+    if (e.key === 'Escape')     close();
+    if (e.key === 'ArrowLeft')  show(current - 1);
+    if (e.key === 'ArrowRight') show(current + 1);
+  });
+})();
+</script>
 
 </body>
 </html>
