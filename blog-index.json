@@ -1,84 +1,12 @@
-{
-  "posts": [
-    {
-      "slug": "nfpa701",
-      "title": "NFPA 701 Explained: What Hotel Designers Need to Know About Artificial Plant Fire Codes",
-      "description": "If you're specifying artificial plants for a hotel or commercial property in the United States, NFPA 701 is non-negotiable. Here's what it means, how to verify compliance, and what questions to ask your supplier.",
-      "date": "14 Jan 2025",
-      "category": "Fire Safety",
-      "readTime": "8 min read",
-      "image": "images/blog-featured-nfpa701.webp",
-      "featured": true
-    },
-    {
-      "slug": "hotel-trends-2025",
-      "title": "5 Artificial Plant Trends Dominating Hotel Lobbies in 2025",
-      "description": "From oversized statement palms to full-ceiling hanging installations, here are the artificial plant trends our hotel clients are requesting most this year.",
-      "date": "6 Mar 2025",
-      "category": "Design",
-      "readTime": "6 min read",
-      "image": "images/blog-hotel-trends.webp",
-      "featured": false
-    },
-    {
-      "slug": "restaurant-green-walls",
-      "title": "How Green Walls Increased This Restaurant's Revenue by 22%",
-      "description": "A case study showing how a single green wall installation transformed dwell time, social media mentions, and covers per evening at a Sydney restaurant.",
-      "date": "28 Nov 2024",
-      "category": "Case Study",
-      "readTime": "7 min read",
-      "image": "images/blog-restaurant-green-wall.webp",
-      "featured": false
-    },
-    {
-      "slug": "pe-vs-pvc",
-      "title": "PE vs PVC: Why Material Matters in Artificial Plants",
-      "description": "Not all artificial plant materials are equal. Here's the definitive guide to why PE (polyethylene) is the commercial standard — and what to look for when evaluating suppliers.",
-      "date": "9 Feb 2025",
-      "category": "Manufacturing",
-      "readTime": "9 min read",
-      "image": "images/blog-pe-vs-pvc.webp",
-      "featured": false
-    },
-    {
-      "slug": "biophilic-design",
-      "title": "Biophilic Design on a Budget: Artificial Plants in Corporate Offices",
-      "description": "The research is clear — nature in the workplace improves focus, reduces stress, and lowers absenteeism. Here's how to achieve biophilic design without live plant maintenance costs.",
-      "date": "17 Aug 2024",
-      "category": "Biophilic Design",
-      "readTime": "5 min read",
-      "image": "images/blog-biophilic-office.webp",
-      "featured": false
-    },
-    {
-      "slug": "outdoor-uv-guide",
-      "title": "Outdoor Artificial Plants: UV Rating Guide for Terrace & Pool Installations",
-      "description": "Not all artificial plants are suitable for outdoor use. This guide explains UV ratings, expected lifespan, and what to look for when specifying outdoor commercial installations.",
-      "date": "3 Oct 2024",
-      "category": "Outdoor",
-      "readTime": "10 min read",
-      "image": "images/blog-outdoor-uv.webp",
-      "featured": false
-    },
-    {
-      "slug": "specifying-checklist",
-      "title": "How to Specify Artificial Plants: A Checklist for Interior Designers",
-      "description": "A practical checklist covering fire certification, material grade, sizing, vessel options, and supplier vetting — everything you need to specify artificial plants with confidence.",
-      "date": "22 May 2024",
-      "category": "Procurement",
-      "readTime": "12 min read",
-      "image": "images/blog-specifying-checklist.webp",
-      "featured": false
-    },
-    {
-      "slug": "jojos-riverside-rooftop",
-      "title": "Elevating Outdoor Hospitality: A Site Visit to JoJo's Riverside Rooftop",
-      "description": "A site visit to JoJo's Riverside Rooftop exploring lighting, faux greenery, and durable design for wind-exposed rooftop environments with skyline views.",
-      "date": "14 Mar 2026",
-      "category": "Outdoor Hospitality",
-      "readTime": "6 min read",
-      "image": "images/blog-jojos-rooftop-1.webp",
-      "featured": false
-    }
-  ]
-}
+[
+  {
+    "slug": "are-artificial-plants-fire-safe",
+    "title": "Are artificial plants fire safe for commercial buildings?",
+    "description": "Yes, artificial plants can be fire safe for commercial buildings when they meet NFPA 701 standards. Learn about fire safety compliance requirements for hotels, offices, and commercial properties.",
+    "date": "2026-05-03",
+    "category": "Commercial Safety",
+    "readTime": "6 min",
+    "featuredImage": "/images/blog-fire-safety-hero.webp",
+    "featured": true
+  }
+]
