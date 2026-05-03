@@ -26,7 +26,7 @@ const products = [
     sku: 'LS-PALM-QP-ROUND', collection: 'Artificial Palm Trees',
     name: 'Commercial Artificial Queen Palm Tree — Round Pot',
     sizes: '5 ft, 6 ft, 7 ft', moq: 1, leadTime: '15–30 days',
-    p1: '149.00', p2: '119.00', p3: '92.00',
+    p1: '129.00', p2: '103.00', p3: '80.00',
     material: 'Injection-moulded PE foliage, steel armature, fibreglass trunk, round ceramic-look pot',
     desc: 'Premium artificial Queen Palm purpose-built for hotel lobbies, resort pool areas and commercial atriums. Botanical-specimen PE fronds, individually hand-positioned for natural drape. Full NFPA 701 fire certification included. Factory-direct from Dongguan.',
     image: `${BASE_URL}/images/prod-palm-queen-round.webp`,
@@ -37,7 +37,7 @@ const products = [
     sku: 'LS-PALM-QP-WHITE', collection: 'Artificial Palm Trees',
     name: 'Commercial Artificial Queen Palm Tree — White Pot',
     sizes: '4 ft, 5 ft, 6 ft', moq: 1, leadTime: '15–30 days',
-    p1: '149.00', p2: '119.00', p3: '92.00',
+    p1: '119.00', p2: '95.00', p3: '74.00',
     material: 'Injection-moulded PE foliage, steel armature, fibreglass trunk, white ceramic-look pot',
     desc: 'Contemporary white-pot Queen Palm for minimalist hotel lobbies and corporate reception areas. Same premium PE foliage and steel armature as our classic round-pot model. NFPA 701 certified.',
     image: `${BASE_URL}/images/prod-palm-queen-white.webp`,
@@ -48,7 +48,7 @@ const products = [
     sku: 'LS-PALM-FAN-SINGLE', collection: 'Artificial Palm Trees',
     name: 'Commercial Artificial Single-trunk Fan Palm Tree',
     sizes: '7 ft, 8 ft, 9 ft, 10 ft', moq: 1, leadTime: '20–35 days',
-    p1: '149.00', p2: '119.00', p3: '92.00',
+    p1: '199.00', p2: '159.00', p3: '122.00',
     material: 'PE fan fronds, steel armature, textured fibreglass trunk, weighted planter base',
     desc: 'Large-format single-trunk fan palm for double-height atriums, airport lounges, casino floors and shopping centre food courts. Available 7–10 ft with UV-stabilised PE foliage for outdoor pool deck applications. NFPA 701 certified.',
     image: `${BASE_URL}/images/prod-palm-fan-single.webp`,
@@ -59,7 +59,7 @@ const products = [
     sku: 'LS-PALM-FAN-DOUBLE', collection: 'Artificial Palm Trees',
     name: 'Commercial Artificial Double-trunk Fan Palm Tree',
     sizes: '8 ft, 9 ft', moq: 1, leadTime: '20–35 days',
-    p1: '149.00', p2: '119.00', p3: '92.00',
+    p1: '269.00', p2: '215.00', p3: '166.00',
     material: 'PE fan fronds, dual steel armature cores, textured fibreglass trunks, weighted base',
     desc: 'Statement double-trunk fan palm for landmark hospitality installations — resort lobbies, casino atriums, luxury retail. Dual-trunk configuration adds dramatic visual impact at 8–9 ft. NFPA 701 certified.',
     image: `${BASE_URL}/images/prod-palm-fan-double.webp`,
@@ -83,7 +83,7 @@ const products = [
     sku: 'LS-OLIVE-WOOD-TRUNK', collection: 'Artificial Olive Trees',
     name: 'LS Real Wood Trunk Artificial Olive Tree',
     sizes: '4 ft, 5 ft, 6 ft, 7 ft, 8 ft', moq: 1, leadTime: '20–30 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '115.00', p2: '92.00', p3: '71.00',
     material: 'PE foliage, natural preserved wood trunk, steel wire branches, decorative pot',
     desc: 'Authentic real wood trunk gives unmatched realism for high-end hospitality and luxury retail. Natural dried and preserved timber trunk with PE olive foliage. Popular for boutique hotels and designer interiors.',
     image: `${BASE_URL}/images/prod-olive-ls-wood-trunk.webp`,
@@ -94,7 +94,7 @@ const products = [
     sku: 'LS-OLIVE-OLD-STUMP', collection: 'Artificial Olive Trees',
     name: 'LS Old Stump Thick Trunk Artificial Olive Tree',
     sizes: '5 ft, 6 ft, 7 ft, 8 ft', moq: 1, leadTime: '20–30 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '105.00', p2: '84.00', p3: '65.00',
     material: 'PE foliage, thick fibreglass old-stump trunk with texture detail, heavy planter base',
     desc: 'Aged thick-trunk olive tree with a distinctive old-world character. Heavy stump-style base and gnarled trunk detail make this a standout piece for Mediterranean-themed hospitality and upscale dining.',
     image: `${BASE_URL}/images/prod-olive-ls-old-stump.webp`,
@@ -105,7 +105,7 @@ const products = [
     sku: 'LS-OLIVE-WIDE-CANOPY', collection: 'Artificial Olive Trees',
     name: 'LS Wide Canopy Artificial Olive Tree',
     sizes: '6 ft, 7 ft, 8 ft, 9 ft', moq: 1, leadTime: '20–30 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '135.00', p2: '108.00', p3: '84.00',
     material: 'Dense PE foliage, extended steel armature frame, fibreglass trunk, large planter',
     desc: 'Extra-wide canopy for spacious commercial environments — hotel atriums, airport lounges, corporate reception halls. Wide-spreading branch architecture fills large open volumes effectively.',
     image: `${BASE_URL}/images/prod-olive-ls-wide-canopy.webp`,
@@ -116,7 +116,7 @@ const products = [
     sku: 'LS-OLIVE-LARGE-TREE', collection: 'Artificial Olive Trees',
     name: 'LS Large Tree Artificial Olive — 9–10 ft',
     sizes: '9 ft, 10 ft', moq: 1, leadTime: '25–40 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '179.00', p2: '143.00', p3: '111.00',
     material: 'High-density PE foliage, reinforced steel armature, large fibreglass trunk, weighted base',
     desc: 'Flagship large-format olive tree at 9–10 ft for landmark hotel lobbies and major commercial installations. Reinforced frame for stability. Custom sizing and pot finishes available on request.',
     image: `${BASE_URL}/images/prod-olive-ls-large-tree.webp`,
@@ -138,7 +138,7 @@ const products = [
     sku: 'LS-OLIVE-THICK-FORK', collection: 'Artificial Olive Trees',
     name: 'Thick Branch Double-fork Artificial Olive Tree',
     sizes: '5 ft, 6 ft, 7 ft, 8 ft', moq: 1, leadTime: '15–25 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '99.00', p2: '79.00', p3: '61.00',
     material: 'PE foliage, thick double-fork steel frame, fibreglass trunk, planter',
     desc: 'Bold double-forked trunk silhouette with heavy branches — strong architectural character for modern commercial interiors. Popular with interior designers specifying statement trees.',
     image: `${BASE_URL}/images/prod-olive-thick-double-fork.webp`,
@@ -149,7 +149,7 @@ const products = [
     sku: 'LS-OLIVE-FAN-SHAPE', collection: 'Artificial Olive Trees',
     name: 'Fan-shape Artificial Olive Tree — Round Pot',
     sizes: '5 ft, 6 ft, 7 ft, 8 ft', moq: 1, leadTime: '15–25 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '99.00', p2: '79.00', p3: '61.00',
     material: 'PE foliage, fan-spread steel armature, fibreglass trunk, round planter pot',
     desc: 'Fan-spread canopy trained to a flat, graphic silhouette — suits narrow corridors, wall-adjacent placement and retail shop-in-shop displays. Pairs well with picture-frame lighting.',
     image: `${BASE_URL}/images/prod-olive-fan-shape.webp`,
@@ -160,7 +160,7 @@ const products = [
     sku: 'LS-OLIVE-SPHERICAL', collection: 'Artificial Olive Trees',
     name: 'Spherical 3D Canopy Artificial Olive Tree',
     sizes: '3 ft, 4 ft, 5 ft, 6 ft, 7 ft, 8 ft', moq: 1, leadTime: '20–30 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '109.00', p2: '87.00', p3: '68.00',
     material: 'Dense PE foliage, spherical wire cage armature, fibreglass trunk, planter',
     desc: 'Perfect globe canopy — a contemporary topiary-style olive tree for high-end retail, luxury hotel lobbies and event design. Six sizes from 3–8 ft for multiple applications.',
     image: `${BASE_URL}/images/prod-olive-spherical.webp`,
@@ -171,7 +171,7 @@ const products = [
     sku: 'LS-OLIVE-LARGE-HEAD', collection: 'Artificial Olive Trees',
     name: 'Large Tree Head 3D Artificial Olive Tree',
     sizes: '6 ft, 7 ft, 8 ft', moq: 1, leadTime: '20–30 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '125.00', p2: '100.00', p3: '78.00',
     material: 'Dense PE foliage, large 3D wire-frame head, fibreglass trunk, planter',
     desc: 'Oversized dense-canopy olive tree with a dramatic round head — visually dominant for hotel atrium centerpieces and major retail installations.',
     image: `${BASE_URL}/images/prod-olive-large-head.webp`,
@@ -182,7 +182,7 @@ const products = [
     sku: 'LS-OLIVE-CROSS-BLACK', collection: 'Artificial Olive Trees',
     name: 'Cross Black Artificial Olive Tree',
     sizes: '5 ft, 6 ft, 7 ft', moq: 1, leadTime: '15–25 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '99.00', p2: '79.00', p3: '61.00',
     material: 'PE foliage, cross-branch steel frame, dark fibreglass trunk, planter',
     desc: 'Distinctive cross-branched trunk architecture with a dark finish — bold contemporary aesthetic for designer hotel bars, high-end restaurants and exclusive retail.',
     image: `${BASE_URL}/images/prod-olive-cross-black.webp`,
@@ -204,7 +204,7 @@ const products = [
     sku: 'LS-OLIVE-STRAIGHT-BLACK', collection: 'Artificial Olive Trees',
     name: 'Straight Black Artificial Olive Tree',
     sizes: '5 ft, 6 ft, 7 ft, 8 ft', moq: 1, leadTime: '15–25 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '99.00', p2: '79.00', p3: '61.00',
     material: 'PE foliage, straight steel frame, black-finish fibreglass trunk, planter',
     desc: 'Architectural straight-trunk olive with matte black trunk finish — a premium choice for contemporary hotel interiors, corporate HQ lobbies and boutique retail.',
     image: `${BASE_URL}/images/prod-olive-straight-black.webp`,
@@ -259,7 +259,7 @@ const products = [
     sku: 'LS-OLIVE-2025-THICK', collection: 'Artificial Olive Trees',
     name: '2025 Thick Straight Trunk Artificial Olive Tree',
     sizes: '5 ft, 6 ft, 7 ft, 8 ft', moq: 1, leadTime: '15–25 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '109.00', p2: '87.00', p3: '68.00',
     material: 'PE foliage, thick straight fibreglass trunk, steel wire branches, planter',
     desc: 'New 2025 model with an extra-thick straight trunk for a more mature, established appearance. High demand from luxury hotel designers specifying updated interiors.',
     image: `${BASE_URL}/images/prod-olive-2025-thick-straight.webp`,
@@ -281,7 +281,7 @@ const products = [
     sku: 'LS-OLIVE-VELVET', collection: 'Artificial Olive Trees',
     name: 'Velvet Flock Artificial Olive Tree',
     sizes: '5 ft, 6 ft', moq: 1, leadTime: '20–30 days',
-    p1: '89.00', p2: '71.00', p3: '55.00',
+    p1: '119.00', p2: '95.00', p3: '74.00',
     material: 'Velvet-flock coated foliage, steel wire branches, fibreglass trunk, planter',
     desc: 'Unique velvet-flocked foliage finish for a tactile, ultra-realistic leaf texture. Preferred for close-contact display contexts — boutique hotel reception, luxury retail pop-up, event design.',
     image: `${BASE_URL}/images/prod-olive-velvet.webp`,
@@ -305,7 +305,7 @@ const products = [
     sku: 'LS-FLF-WOOD-TRUNK', collection: 'Artificial Fiddle Leaf Fig & Ficus',
     name: 'Commercial Artificial Real Wood Trunk Fiddle Leaf Fig Tree',
     sizes: '6 ft', moq: 1, leadTime: '20–30 days',
-    p1: '79.00', p2: '63.00', p3: '49.00',
+    p1: '109.00', p2: '87.00', p3: '68.00',
     material: 'Large PE fiddle leaf fig leaves, natural preserved wood trunk, planter base',
     desc: 'Natural wood trunk gives unrivalled authenticity for premium hospitality interiors. Preserved timber trunk with hand-placed PE leaves — a top specification for luxury boutique hotels and designer showrooms.',
     image: `${BASE_URL}/images/prod-flfig-wood-trunk.webp`,
@@ -316,7 +316,7 @@ const products = [
     sku: 'LS-FLF-MULTI', collection: 'Artificial Fiddle Leaf Fig & Ficus',
     name: 'Commercial Artificial Multi-branch Fiddle Leaf Fig Tree',
     sizes: '7 ft', moq: 1, leadTime: '20–30 days',
-    p1: '79.00', p2: '63.00', p3: '49.00',
+    p1: '119.00', p2: '95.00', p3: '74.00',
     material: 'PE fiddle leaf fig leaves, multi-stem steel armature, weighted planter',
     desc: 'Multi-stem fiddle leaf fig with a full, lush silhouette — more dramatic visual impact than single-stem. Popular for hotel lounge areas and large corporate reception spaces.',
     image: `${BASE_URL}/images/prod-flfig-multi-branch.webp`,
@@ -327,7 +327,7 @@ const products = [
     sku: 'LS-FICUS-LARGE-HEAD', collection: 'Artificial Fiddle Leaf Fig & Ficus',
     name: 'Commercial Artificial Large Head Mini Ficus Tree',
     sizes: '8 ft', moq: 1, leadTime: '20–30 days',
-    p1: '79.00', p2: '63.00', p3: '49.00',
+    p1: '129.00', p2: '103.00', p3: '80.00',
     material: 'Dense PE ficus leaves, large-head wire armature, fibreglass trunk, planter',
     desc: 'Oversized dense-canopy ficus with a proportionally large head — a bold statement piece for hotel atriums and large-volume commercial spaces at 8 ft.',
     image: `${BASE_URL}/images/prod-ficus-large-head.webp`,
@@ -338,7 +338,7 @@ const products = [
     sku: 'LS-FICUS-THREE-TRUNK', collection: 'Artificial Fiddle Leaf Fig & Ficus',
     name: 'Commercial Artificial Three-trunk Real Wood Ficus Tree',
     sizes: '5 ft, 6 ft', moq: 1, leadTime: '20–30 days',
-    p1: '79.00', p2: '63.00', p3: '49.00',
+    p1: '139.00', p2: '111.00', p3: '86.00',
     material: 'PE ficus leaves, three natural wood trunks, planter base',
     desc: 'Three-stem real wood ficus — dramatic multi-trunk configuration for high-impact hotel lobby installations. Natural wood trunks provide authentic texture and warmth.',
     image: `${BASE_URL}/images/prod-ficus-three-trunk.webp`,
@@ -349,7 +349,7 @@ const products = [
     sku: 'LS-FICUS-TWO-TRUNK', collection: 'Artificial Fiddle Leaf Fig & Ficus',
     name: 'Commercial Artificial Two-trunk Real Wood Ficus Tree',
     sizes: '5 ft, 6 ft', moq: 1, leadTime: '20–30 days',
-    p1: '79.00', p2: '63.00', p3: '49.00',
+    p1: '119.00', p2: '95.00', p3: '74.00',
     material: 'PE ficus leaves, twin natural wood trunks, planter base',
     desc: 'Twin natural wood trunk ficus for a balanced, organic composition. Widely used in hotel room lobbies, spa reception and premium co-working environments.',
     image: `${BASE_URL}/images/prod-ficus-two-trunk.webp`,
@@ -371,7 +371,7 @@ const products = [
     sku: 'LS-FICUS-VARIEGATED', collection: 'Artificial Fiddle Leaf Fig & Ficus',
     name: 'Commercial Artificial Variegated White-edge Ficus Tree',
     sizes: '5 ft, 6 ft, 7 ft', moq: 1, leadTime: '20–30 days',
-    p1: '79.00', p2: '63.00', p3: '49.00',
+    p1: '95.00', p2: '76.00', p3: '59.00',
     material: 'Variegated PE ficus leaves (green with white edges), steel armature, fibreglass trunk, planter',
     desc: 'Distinctive white-edged variegated ficus — a design-forward choice for boutique hotels, contemporary retail and creative workspaces. Unusual variegated colouring attracts social media attention.',
     image: `${BASE_URL}/images/prod-ficus-variegated.webp`,
@@ -395,7 +395,7 @@ const products = [
     sku: 'LS-FLOWER-CAMELLIA-WHITE', collection: 'Artificial Flowering Trees',
     name: 'Commercial Artificial White Camellia Tree',
     sizes: '4.5 ft, 6 ft', moq: 1, leadTime: '15–25 days',
-    p1: '45.00', p2: '36.00', p3: '28.00',
+    p1: '48.00', p2: '38.00', p3: '30.00',
     material: 'Silk/PE white camellia blooms, wire branch frame, fibreglass trunk, decorative pot',
     desc: 'Elegant white camellia tree — a perennial choice for luxury hotel lobbies, bridal events and high-end retail displays. Clean and timeless in white.',
     image: `${BASE_URL}/images/prod-camellia-white.webp`,
@@ -417,7 +417,7 @@ const products = [
     sku: 'LS-FLOWER-CAMELLIA-YELLOW', collection: 'Artificial Flowering Trees',
     name: 'Commercial Artificial Yellow Camellia Tree',
     sizes: '6 ft', moq: 1, leadTime: '15–25 days',
-    p1: '45.00', p2: '36.00', p3: '28.00',
+    p1: '48.00', p2: '38.00', p3: '30.00',
     material: 'Silk/PE yellow camellia blooms, wire branch frame, fibreglass trunk, decorative pot',
     desc: 'Bold yellow camellia tree for sunny, energetic commercial interiors — restaurant entrances, retail shopfronts and event installations requiring a warm colour accent.',
     image: `${BASE_URL}/images/prod-camellia-yellow.webp`,
@@ -428,7 +428,7 @@ const products = [
     sku: 'LS-FLOWER-HYDRANGEA-PINK', collection: 'Artificial Flowering Trees',
     name: 'Commercial Artificial Pink Hydrangea Tree',
     sizes: '5 ft', moq: 1, leadTime: '15–25 days',
-    p1: '45.00', p2: '36.00', p3: '28.00',
+    p1: '55.00', p2: '44.00', p3: '34.00',
     material: 'Silk/PE pink hydrangea clusters, wire branch frame, fibreglass trunk, decorative pot',
     desc: 'Lush pink hydrangea ball tree — a popular choice for luxury wedding venues, boutique hotel lobbies and spa reception areas.',
     image: `${BASE_URL}/images/prod-hydrangea-pink.webp`,
@@ -439,7 +439,7 @@ const products = [
     sku: 'LS-FLOWER-HYDRANGEA-PURPLE', collection: 'Artificial Flowering Trees',
     name: 'Commercial Artificial Purple Hydrangea Tree',
     sizes: '4 ft', moq: 1, leadTime: '15–25 days',
-    p1: '45.00', p2: '36.00', p3: '28.00',
+    p1: '55.00', p2: '44.00', p3: '34.00',
     material: 'Silk/PE purple hydrangea clusters, wire branch frame, fibreglass trunk, decorative pot',
     desc: 'Rich purple hydrangea tree — luxurious accent for high-end event design, boutique hotel lobbies and upscale dining.',
     image: `${BASE_URL}/images/prod-hydrangea-purple.webp`,
@@ -450,7 +450,7 @@ const products = [
     sku: 'LS-FLOWER-HYDRANGEA-BLUE', collection: 'Artificial Flowering Trees',
     name: 'Commercial Artificial Blue Hydrangea Tree',
     sizes: '5 ft', moq: 1, leadTime: '15–25 days',
-    p1: '45.00', p2: '36.00', p3: '28.00',
+    p1: '55.00', p2: '44.00', p3: '34.00',
     material: 'Silk/PE blue hydrangea clusters, wire branch frame, fibreglass trunk, decorative pot',
     desc: 'Cool blue hydrangea tree — a calming presence for spa interiors, healthcare lobbies and contemporary hotel reception areas.',
     image: `${BASE_URL}/images/prod-hydrangea-blue.webp`,
@@ -461,7 +461,7 @@ const products = [
     sku: 'LS-FLOWER-BOUG-WOOD', collection: 'Artificial Flowering Trees',
     name: 'Commercial Artificial Real Wood Trunk Bougainvillea Tree',
     sizes: '6 ft, 7.5 ft, 8 ft', moq: 1, leadTime: '20–35 days',
-    p1: '45.00', p2: '36.00', p3: '28.00',
+    p1: '95.00', p2: '76.00', p3: '59.00',
     material: 'Silk bougainvillea bracts, natural preserved wood trunk with vine texture, planter base',
     desc: 'Magnificent bougainvillea tree with a genuine natural wood trunk — dripping with silk bracts. A dramatic centrepiece for resort lobbies, Mediterranean-themed restaurants and outdoor terrace displays.',
     image: `${BASE_URL}/images/prod-bougainvillea-wood-trunk.webp`,
@@ -472,7 +472,7 @@ const products = [
     sku: 'LS-FLOWER-BOUG-PINK', collection: 'Artificial Flowering Trees',
     name: 'Commercial Artificial Pink Bougainvillea Tree',
     sizes: '5 ft, 6 ft, 7 ft', moq: 1, leadTime: '15–25 days',
-    p1: '45.00', p2: '36.00', p3: '28.00',
+    p1: '65.00', p2: '52.00', p3: '40.00',
     material: 'Silk pink bougainvillea bracts, steel wire trunk with vine texture, planter base',
     desc: 'Vivid pink bougainvillea tree for outdoor-feel commercial interiors, resort pools, restaurant terraces and tropical-themed retail displays. UV-stabilised version available.',
     image: `${BASE_URL}/images/prod-bougainvillea-pink.webp`,
@@ -483,7 +483,7 @@ const products = [
     sku: 'LS-FLOWER-CHERRY-PINK', collection: 'Artificial Flowering Trees',
     name: 'Commercial Artificial Pink Cherry Blossom Tree',
     sizes: '4 ft, 5 ft, 6 ft', moq: 1, leadTime: '15–25 days',
-    p1: '45.00', p2: '36.00', p3: '28.00',
+    p1: '55.00', p2: '44.00', p3: '34.00',
     material: 'Silk/polyester pink cherry blossom blooms, twisted branch wire frame, planter base',
     desc: 'Classic pink cherry blossom tree — the #1 event and retail flowering tree worldwide. Stunning in Japanese restaurant entrances, hotel lobbies for seasonal display and wedding venue design.',
     image: `${BASE_URL}/images/prod-cherry-pink.webp`,
@@ -494,7 +494,7 @@ const products = [
     sku: 'LS-FLOWER-CHERRY-WHITE', collection: 'Artificial Flowering Trees',
     name: 'Commercial Artificial White Cherry Blossom Tree',
     sizes: '5 ft, 6 ft', moq: 1, leadTime: '15–25 days',
-    p1: '45.00', p2: '36.00', p3: '28.00',
+    p1: '55.00', p2: '44.00', p3: '34.00',
     material: 'Silk/polyester white cherry blossom blooms, twisted branch wire frame, planter base',
     desc: 'Pure white cherry blossom tree — an elegant neutral-toned choice for luxury hotel lobbies, bridal events, minimalist retail and any interior requiring understated floral impact.',
     image: `${BASE_URL}/images/prod-cherry-white.webp`,
@@ -505,7 +505,7 @@ const products = [
     sku: 'LS-FLOWER-CHERRY-RED', collection: 'Artificial Flowering Trees',
     name: 'Commercial Artificial Red Cherry Blossom Tree',
     sizes: '5 ft, 6 ft', moq: 1, leadTime: '15–25 days',
-    p1: '45.00', p2: '36.00', p3: '28.00',
+    p1: '55.00', p2: '44.00', p3: '34.00',
     material: 'Silk/polyester deep red cherry blossom blooms, twisted branch wire frame, planter base',
     desc: 'Dramatic deep-red cherry blossom tree — bold and striking for hotel event spaces, Asian-theme restaurant design, CNY display and luxury retail.',
     image: `${BASE_URL}/images/prod-cherry-red.webp`,
@@ -554,22 +554,33 @@ const CSV_HEADERS = [
   'Product Image URL', 'Product Page URL', 'Keywords'
 ];
 
+function csvSizeToSkuSuffix(size) {
+  return size.trim().replace(/\./g, '-').replace(/\s+ft$/i, 'FT').replace(/\s+/g, '-').toUpperCase();
+}
+
 const csvRows = [CSV_HEADERS.join(',')];
+let csvRowCount = 0;
 for (const p of products) {
   const meta = collectionMeta[p.collection] || {};
-  csvRows.push([
-    p.sku, p.name, meta.alibabaCategory || '', p.collection,
-    p.desc,
-    p.sizes, p.material, CERTS,
-    p.p1, p.p2, p.p3,
-    p.moq, SUPPLY, p.leadTime,
-    ORIGIN, BRAND, PORT, PAYMENT, PACKAGING,
-    p.image, p.url, p.keywords
-  ].map(csvEscape).join(','));
+  const sizeList = p.sizes.split(',').map(s => s.trim()).filter(Boolean);
+  for (const size of sizeList) {
+    const variantSku = `${p.sku}-${csvSizeToSkuSuffix(size)}`;
+    const variantTitle = `${p.name} – ${size}`;
+    csvRows.push([
+      variantSku, variantTitle, meta.alibabaCategory || '', p.collection,
+      p.desc,
+      size, p.material, CERTS,
+      p.p1, p.p2, p.p3,
+      p.moq, SUPPLY, p.leadTime,
+      ORIGIN, BRAND, PORT, PAYMENT, PACKAGING,
+      p.image, p.url, p.keywords
+    ].map(csvEscape).join(','));
+    csvRowCount++;
+  }
 }
 
 fs.writeFileSync('laysun-catalog-2026.csv', csvRows.join('\n'), 'utf8');
-console.log(`✓ CSV written: laysun-catalog-2026.csv (${products.length} products)`);
+console.log(`✓ CSV written: laysun-catalog-2026.csv (${csvRowCount} size variants across ${products.length} products)`);
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 2. GENERATE HTML CATALOG (print → Save as PDF in Chrome)
@@ -577,18 +588,33 @@ console.log(`✓ CSV written: laysun-catalog-2026.csv (${products.length} produc
 
 const collections = [...new Set(products.map(p => p.collection))];
 
+function sizeToSkuSuffix(size) {
+  // "5 ft" → "5FT", "2.5 ft" → "2-5FT", "10 ft" → "10FT"
+  return size.trim().replace(/\./g, '-').replace(/\s+ft$/i, 'FT').replace(/\s+/g, '-').toUpperCase();
+}
+
 function productGrid(collectionName) {
   return products
     .filter(p => p.collection === collectionName)
-    .map(p => `
-      <div class="prod-card">
+    .map(p => {
+      const sizeList = p.sizes.split(',').map(s => s.trim()).filter(Boolean);
+      const skuRows = sizeList.map(size => {
+        const suffix = sizeToSkuSuffix(size);
+        const variantSku = `${p.sku}-${suffix}`;
+        return `<tr><td class="sku-size">${size}</td><td class="sku-code">${variantSku}</td></tr>`;
+      }).join('');
+      const firstSku = sizeList.length ? `${p.sku}-${sizeToSkuSuffix(sizeList[0])}` : p.sku;
+      return `
+      <div class="prod-card" data-sku="${firstSku}">
         <div class="prod-img-wrap">
           <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'">
         </div>
         <div class="prod-body">
-          <div class="sku">${p.sku}</div>
           <h3>${p.name}</h3>
-          <div class="sizes">${p.sizes}</div>
+          <table class="sku-variants">
+            <thead><tr><th>Size</th><th>SKU</th></tr></thead>
+            <tbody>${skuRows}</tbody>
+          </table>
           <div class="price-line">From <strong>$${p.p3}</strong> / unit (100+ units)</div>
           <div class="price-tiers">
             <span>1–9: $${p.p1}</span>
@@ -596,7 +622,8 @@ function productGrid(collectionName) {
             <span>100+: $${p.p3}</span>
           </div>
         </div>
-      </div>`).join('');
+      </div>`;
+    }).join('');
 }
 
 function pricingTable(name) {
@@ -811,25 +838,47 @@ const html = `<!DOCTYPE html>
     display: block;
   }
   .prod-body { padding: 12px 14px 14px; }
-  .sku {
-    font-size: 9px;
-    color: #5a6050;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-  }
   .prod-body h3 {
     font-size: 12px;
     font-family: 'Inter', Arial, sans-serif;
     font-weight: 600;
     color: #1e1e1e;
     line-height: 1.3;
-    margin-bottom: 6px;
-  }
-  .sizes {
-    font-size: 10px;
-    color: #5a6050;
     margin-bottom: 8px;
+  }
+  .sku-variants {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 8px;
+    font-size: 10px;
+  }
+  .sku-variants thead tr {
+    background: #1e3520;
+    color: #fff;
+  }
+  .sku-variants thead th {
+    padding: 3px 6px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 9px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .sku-variants tbody tr:nth-child(even) { background: #f0e9dc; }
+  .sku-variants tbody tr:nth-child(odd) { background: #faf6ef; }
+  .sku-size {
+    padding: 3px 6px;
+    color: #3a4a3a;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .sku-code {
+    padding: 3px 6px;
+    font-family: 'Courier New', monospace;
+    color: #1e3520;
+    font-weight: 700;
+    font-size: 9.5px;
+    letter-spacing: 0.04em;
   }
   .price-line { font-size: 12px; color: #1e1e1e; margin-bottom: 4px; }
   .price-tiers {
@@ -932,6 +981,58 @@ ${sectionsHTML}
     <p>© 2026 LaySun. All prices USD FOB Dongguan. Subject to change without notice.</p>
   </div>
 </div>
+
+<!-- LIGHTBOX -->
+<div id="lb-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.82);z-index:9999;align-items:center;justify-content:center;flex-direction:column;">
+  <button id="lb-close" style="position:absolute;top:18px;right:24px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;line-height:1;">&#x2715;</button>
+  <button id="lb-prev" style="position:absolute;left:18px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.15);border:none;color:#fff;font-size:28px;cursor:pointer;padding:10px 14px;border-radius:6px;">&#8592;</button>
+  <button id="lb-next" style="position:absolute;right:18px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.15);border:none;color:#fff;font-size:28px;cursor:pointer;padding:10px 14px;border-radius:6px;">&#8594;</button>
+  <img id="lb-img" src="" alt="" style="max-width:88vw;max-height:78vh;border-radius:6px;box-shadow:0 8px 40px rgba(0,0,0,0.6);object-fit:contain;">
+  <div id="lb-caption" style="margin-top:14px;color:#fff;font-size:13px;text-align:center;max-width:600px;line-height:1.5;"></div>
+</div>
+
+<script>
+(function() {
+  var overlay = document.getElementById('lb-overlay');
+  var lbImg = document.getElementById('lb-img');
+  var lbCaption = document.getElementById('lb-caption');
+  var cards = [];
+  var current = 0;
+
+  function openAt(idx) {
+    current = idx;
+    var card = cards[idx];
+    var img = card.querySelector('img');
+    var name = card.querySelector('h3') ? card.querySelector('h3').textContent : '';
+    var sku = card.dataset.sku || '';
+    lbImg.src = img ? img.src : '';
+    lbImg.alt = name;
+    lbCaption.innerHTML = '<strong>' + name + '</strong>' + (sku ? '<br><span style="font-family:monospace;color:#b8936a;font-size:12px;">' + sku + '</span>' : '');
+    overlay.style.display = 'flex';
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    cards = Array.from(document.querySelectorAll('.prod-card'));
+    cards.forEach(function(card, i) {
+      var wrap = card.querySelector('.prod-img-wrap');
+      if (wrap) {
+        wrap.style.cursor = 'zoom-in';
+        wrap.addEventListener('click', function() { openAt(i); });
+      }
+    });
+    document.getElementById('lb-close').addEventListener('click', function() { overlay.style.display = 'none'; });
+    document.getElementById('lb-prev').addEventListener('click', function() { openAt((current - 1 + cards.length) % cards.length); });
+    document.getElementById('lb-next').addEventListener('click', function() { openAt((current + 1) % cards.length); });
+    overlay.addEventListener('click', function(e) { if (e.target === overlay) overlay.style.display = 'none'; });
+    document.addEventListener('keydown', function(e) {
+      if (overlay.style.display === 'none') return;
+      if (e.key === 'Escape') overlay.style.display = 'none';
+      if (e.key === 'ArrowLeft') openAt((current - 1 + cards.length) % cards.length);
+      if (e.key === 'ArrowRight') openAt((current + 1) % cards.length);
+    });
+  });
+})();
+</script>
 
 </body>
 </html>`;
