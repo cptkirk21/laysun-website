@@ -1,4 +1,4 @@
-/* ================================================
+/* ===================================================
    LAYSUN.CO — BLOG INDEX RENDERER
    Fetches blog-index.json and populates:
      #featured-post   — the hero split section
@@ -6,16 +6,16 @@
      #blog-pagination — page buttons
    Falls back silently to hardcoded HTML if fetch fails.
    CSP-safe: no eval(), no inline handlers.
-   ================================================ */
+   =================================================== */
 
 (function () {
   'use strict';
 
-  var JSON_URL      = 'blog-index.json';
+  var JSON_URL       = 'blog-index.json';
   var POSTS_PER_PAGE = 6;
 
-  var allGridPosts = [];
-  var currentPage  = 1;
+  var allGridPosts   = [];
+  var currentPage    = 1;
 
   /* Escape text for insertion into HTML attribute or content */
   function esc(str) {
@@ -40,7 +40,7 @@
     var media = document.createElement('div');
     media.className = 'split-media';
     var img = document.createElement('img');
-    img.src     = post.image || '';
+    img.src     = post.featuredImage || '';
     img.alt     = post.title || '';
     img.loading = 'lazy';
     media.appendChild(img);
@@ -52,10 +52,10 @@
     meta.className = 'blog-meta';
     meta.innerHTML =
       '<span class="cat">' + esc(post.category) + '</span>' +
-      '<span>·</span>' +
+      '<span>•</span>' +
       '<span>' + esc(post.date) + '</span>' +
       (post.readTime
-        ? '<span>·</span><span>' + esc(post.readTime) + '</span>'
+        ? '<span>•</span><span>' + esc(post.readTime) + '</span>'
         : '');
 
     var h2 = document.createElement('h2');
@@ -90,7 +90,7 @@
     var imgWrap = document.createElement('div');
     imgWrap.className = 'blog-card-img';
     var img = document.createElement('img');
-    img.src     = post.image || '';
+    img.src     = post.featuredImage || '';
     img.alt     = post.title || '';
     img.loading = 'lazy';
     imgWrap.appendChild(img);
@@ -102,7 +102,7 @@
     meta.className = 'blog-meta';
     meta.innerHTML =
       '<span class="cat">' + esc(post.category) + '</span>' +
-      '<span>·</span>' +
+      '<span>•</span>' +
       '<span>' + esc(post.date) + '</span>';
 
     var h3 = document.createElement('h3');
