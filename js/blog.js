@@ -40,7 +40,7 @@
     var media = document.createElement('div');
     media.className = 'split-media';
     var img = document.createElement('img');
-    img.src     = post.featuredImage || '';
+    img.src     = post.image || '';
     img.alt     = post.title || '';
     img.loading = 'lazy';
     media.appendChild(img);
@@ -90,7 +90,7 @@
     var imgWrap = document.createElement('div');
     imgWrap.className = 'blog-card-img';
     var img = document.createElement('img');
-    img.src     = post.featuredImage || '';
+    img.src     = post.image || '';
     img.alt     = post.title || '';
     img.loading = 'lazy';
     imgWrap.appendChild(img);
