@@ -42,7 +42,7 @@
     var imgWrap = document.createElement('div');
     imgWrap.className = 'blog-card-img';
     var img = document.createElement('img');
-    img.src      = post.image || '';
+    img.src      = post.featuredImage || '';
     img.alt      = post.title || '';
     img.loading = 'lazy';
     imgWrap.appendChild(img);
@@ -155,8 +155,9 @@
   }
 
   /* Main render — called after successful JSON fetch */
-  function render(data) {
-    var posts = Array.isArray(data.posts) ? data.posts : [];
+  function render(posts) {
+    /* blog-index.json returns raw array, not object with posts property */
+    posts = Array.isArray(posts) ? posts : [];
 
     /* Sort everything newest-first, then use ALL posts for grid */
     posts.sort(function (a, b) {
