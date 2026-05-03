@@ -32,18 +32,66 @@
     return 'blog-' + String(slug).replace(/[^a-z0-9-]/gi, '') + '.html';
   }
 
+  /* Render the featured post into #featured-post */
+  function renderFeatured(post) {
+    var el = document.getElementById('featured-post');
+    if (!el || !post) return;
+
+    var media = document.createElement('div');
+    media.className = 'split-media';
+    var img = document.createElement('img');
+    img.src     = post.featuredImage || '';
+    img.alt     = post.title || '';
+    img.loading = 'lazy';
+    media.appendChild(img);
+
+    var text = document.createElement('div');
+    text.className = 'split-text';
+
+    var meta = document.createElement('div');
+    meta.className = 'blog-meta';
+    meta.innerHTML =
+      '<span class="cat">' + esc(post.category) + '</span>' +
+      '<span>•</span>' +
+      '<span>' + esc(post.date) + '</span>' +
+      (post.readTime
+        ? '<span>•</span><span>' + esc(post.readTime) + '</span>'
+        : '');
+
+    var h2 = document.createElement('h2');
+    h2.style.cssText = 'font-size:clamp(1.5rem,3vw,2rem);margin-bottom:1rem;';
+    h2.textContent = post.title || '';
+
+    var p = document.createElement('p');
+    p.textContent = post.description || '';
+
+    var a = document.createElement('a');
+    a.href      = postHref(post.slug);
+    a.className = 'btn btn-primary mt-3';
+    a.textContent = 'Read Article →';
+
+    text.appendChild(meta);
+    text.appendChild(h2);
+    text.appendChild(p);
+    text.appendChild(a);
+
+    el.innerHTML = '';
+    el.appendChild(media);
+    el.appendChild(text);
+  }
+
   /* Build a single blog card element */
   function buildCard(post) {
     var a = document.createElement('a');
-    a.href       = postHref(post.slug);
+    a.href      = postHref(post.slug);
     a.className = 'blog-card';
     a.setAttribute('data-a', '');
 
     var imgWrap = document.createElement('div');
     imgWrap.className = 'blog-card-img';
     var img = document.createElement('img');
-    img.src      = post.featuredImage || '';
-    img.alt      = post.title || '';
+    img.src     = post.featuredImage || '';
+    img.alt     = post.title || '';
     img.loading = 'lazy';
     imgWrap.appendChild(img);
 
@@ -134,7 +182,7 @@
       var btn = document.createElement('button');
       btn.className  = 'filter-btn' + (i === currentPage ? ' active' : '');
       btn.style.cssText = 'width:40px;height:40px;padding:0;border-radius:50%;';
-      btn.textContent    = String(i);
+      btn.textContent   = String(i);
 
       /* IIFE to capture correct page number in closure */
       (function (pageNum) {
@@ -155,16 +203,18 @@
   }
 
   /* Main render — called after successful JSON fetch */
-  function render(posts) {
-    /* blog-index.json returns raw array, not object with posts property */
-    posts = Array.isArray(posts) ? posts : [];
+  function render(data) {
+    var posts = Array.isArray(data.posts) ? data.posts : [];
 
-    /* Sort everything newest-first, then use ALL posts for grid */
+    /* Sort everything newest-first, then auto-feature the top post */
     posts.sort(function (a, b) {
       return new Date(b.date) - new Date(a.date);
     });
 
-    allGridPosts = posts;
+    var featured = posts[0] || null;
+    allGridPosts = posts.slice(1);
+
+    renderFeatured(featured);
     renderPage(1);
   }
 
