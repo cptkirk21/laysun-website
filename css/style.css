@@ -124,8 +124,8 @@ p { color: var(--text-muted); line-height: 1.8; }
 .nav-links a:hover,.nav-links a.active { color: var(--green); background: rgba(45,90,61,.08); }
 .nav-links .btn-nav {
   background: var(--green); color: var(--white) !important;
-  padding: .32rem .85rem; border-radius: var(--radius-pill); margin-left: .5rem;
-  font-size: .8rem !important; font-weight: 600 !important;
+  padding: .28rem .85rem; border-radius: var(--radius-pill); margin-left: .5rem;
+  font-size: .78rem !important; font-weight: 600 !important; line-height: 1.2;
 }
 .nav-links .btn-nav:hover { background: var(--green-mid) !important; }
 .nav-burger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
