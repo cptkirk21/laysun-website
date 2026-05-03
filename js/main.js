@@ -190,6 +190,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const id  = form.getAttribute('data-form');
     const key = FORM_KEYS[id];
 
+    if (id === 'subscribe') {
+      form.addEventListener('submit', async e => {
+        e.preventDefault();
+        const btn     = form.querySelector('[type=submit]');
+        const msg     = document.querySelector(`[data-success="${id}"]`);
+        const origTxt = btn.textContent;
+        btn.textContent = 'Subscribing…';
+        btn.disabled = true;
+        try {
+          const email = form.querySelector('[name=email]').value;
+          const res   = await fetch('https://api.convertkit.com/v3/forms/9398084/subscribe', {
+            method:  'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body:    JSON.stringify({ api_key: 'rJtKYH-kcfTaznsUFZKNRw', email })
+          });
+          const json = await res.json();
+          if (json.subscription) {
+            form.style.display = 'none';
+            if (msg) msg.classList.add('show');
+          } else {
+            throw new Error(json.message || 'Subscription failed');
+          }
+        } catch {
+          btn.textContent = origTxt;
+          btn.disabled = false;
+          alert('Sorry, something went wrong. Please email us directly at info@laysun.co');
+        }
+      });
+      return;
+    }
+
     if (!key) {
       form.addEventListener('submit', e => {
         e.preventDefault();

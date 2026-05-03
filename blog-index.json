@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "are-artificial-plants-fire-safe",
+      "title": "Are Artificial Plants Fire Safe for Commercial Buildings?",
+      "description": "Yes, artificial plants can be fire safe for commercial buildings when they meet NFPA 701 standards. Learn about fire safety compliance requirements for hotels, offices, and commercial properties.",
+      "date": "3 May 2026",
+      "category": "Commercial Safety",
+      "readTime": "6 min read",
+      "image": "images/blog-fire-safety-hero.webp",
+      "featured": false
+    },
+    {
       "slug": "nfpa701",
       "title": "NFPA 701 Explained: What Hotel Designers Need to Know About Artificial Plant Fire Codes",
       "description": "If you're specifying artificial plants for a hotel or commercial property in the United States, NFPA 701 is non-negotiable. Here's what it means, how to verify compliance, and what questions to ask your supplier.",
