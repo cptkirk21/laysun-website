@@ -27,6 +27,11 @@
   <url><loc>https://laysun.co/blog-biophilic-design</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://laysun.co/blog-outdoor-uv-guide</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://laysun.co/blog-specifying-checklist</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laysun.co/blog-jojos-riverside-rooftop</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://laysun.co/blog-do-outdoor-artificial-plants-fade-in-sunlight</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Resources -->
+  <url><loc>https://laysun.co/laysun-catalog-2026</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
 
   <!-- Policies -->
   <url><loc>https://laysun.co/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
