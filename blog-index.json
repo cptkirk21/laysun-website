@@ -8,5 +8,75 @@
     "readTime": "6 min",
     "featuredImage": "/images/blog-fire-safety-hero.webp",
     "featured": true
+  },
+  {
+    "slug": "nfpa701",
+    "title": "NFPA 701 Explained: What Hotel Designers Need to Know About Artificial Plant Fire Codes",
+    "description": "If you're specifying artificial plants for a hotel or commercial property in the United States, NFPA 701 is non-negotiable. Here's what it means, how to verify compliance, and what questions to ask your supplier.",
+    "date": "2025-01-14",
+    "category": "Fire Safety",
+    "readTime": "8 min",
+    "featuredImage": "/images/blog-featured-nfpa701.webp",
+    "featured": true
+  },
+  {
+    "slug": "hotel-trends-2025",
+    "title": "5 Artificial Plant Trends Dominating Hotel Lobbies in 2025",
+    "description": "From oversized statement palms to full-ceiling hanging installations, here are the artificial plant trends our hotel clients are requesting most this year.",
+    "date": "2025-03-06",
+    "category": "Design",
+    "readTime": "5 min",
+    "featuredImage": "/images/blog-hotel-trends.webp",
+    "featured": false
+  },
+  {
+    "slug": "restaurant-green-walls",
+    "title": "How Green Walls Increased This Restaurant's Revenue by 22%",
+    "description": "A case study showing how a single green wall installation transformed dwell time, social media mentions, and covers per evening at a Sydney restaurant.",
+    "date": "2024-11-28",
+    "category": "Restaurants",
+    "readTime": "7 min",
+    "featuredImage": "/images/blog-restaurant-green-wall.webp",
+    "featured": false
+  },
+  {
+    "slug": "pe-vs-pvc",
+    "title": "PE vs PVC: Why Material Matters in Artificial Plants",
+    "description": "Not all artificial plant materials are equal. Here's the definitive guide to why PE (polyethylene) is the commercial standard — and what to look for when evaluating suppliers.",
+    "date": "2025-02-09",
+    "category": "Manufacturing",
+    "readTime": "6 min",
+    "featuredImage": "/images/blog-pe-vs-pvc.webp",
+    "featured": false
+  },
+  {
+    "slug": "biophilic-design",
+    "title": "Biophilic Design on a Budget: Artificial Plants in Corporate Offices",
+    "description": "The research is clear — nature in the workplace improves focus, reduces stress, and lowers absenteeism. Here's how to achieve biophilic design without live plant maintenance costs.",
+    "date": "2024-08-17",
+    "category": "Biophilic Design",
+    "readTime": "8 min",
+    "featuredImage": "/images/blog-biophilic-office.webp",
+    "featured": false
+  },
+  {
+    "slug": "outdoor-uv-guide",
+    "title": "Outdoor Artificial Plants: UV Rating Guide for Terrace & Pool Installations",
+    "description": "Not all artificial plants are suitable for outdoor use. This guide explains UV ratings, expected lifespan, and what to look for when specifying outdoor commercial installations.",
+    "date": "2024-10-03",
+    "category": "Outdoor",
+    "readTime": "7 min",
+    "featuredImage": "/images/blog-outdoor-uv.webp",
+    "featured": false
+  },
+  {
+    "slug": "specifying-checklist",
+    "title": "How to Specify Artificial Plants: A Checklist for Interior Designers",
+    "description": "A practical checklist covering fire certification, material grade, sizing, vessel options, and supplier vetting — everything you need to specify artificial plants with confidence.",
+    "date": "2024-05-22",
+    "category": "Procurement",
+    "readTime": "9 min",
+    "featuredImage": "/images/blog-specifying-checklist.webp",
+    "featured": false
   }
 ]
