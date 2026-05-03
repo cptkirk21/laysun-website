@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LaySun — Commercial Artificial Plants & Trees | Catalogue 2026</title>
+<style>
+  /* ── Base ─────────────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #faf6ef;
+    color: #1e1e1e;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  a { color: #b8936a; }
+  h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; color: #1e3520; }
+
+  /* ── Cover ────────────────────────────────────────────────── */
+  .cover {
+    min-height: 100vh;
+    background: #1e3520;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 72px;
+    page-break-after: always;
+  }
+  .cover-brand {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+  .cover-tagline {
+    font-size: 18px;
+    color: #b8936a;
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin-bottom: 48px;
+  }
+  .cover-title {
+    font-size: 36px;
+    font-family: Georgia, serif;
+    color: #e5dccf;
+    line-height: 1.2;
+    max-width: 600px;
+    margin-bottom: 16px;
+  }
+  .cover-subtitle {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 64px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .cover-divider { width: 60px; height: 3px; background: #b8936a; margin-bottom: 48px; }
+  .cover-stats {
+    display: flex;
+    gap: 48px;
+    margin-bottom: 64px;
+  }
+  .cover-stat-num {
+    font-size: 36px;
+    font-family: Georgia, serif;
+    color: #fff;
+    line-height: 1;
+  }
+  .cover-stat-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+  }
+  .cover-contact {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 32px;
+    width: 100%;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  .cover-contact-item { color: rgba(255,255,255,0.6); font-size: 12px; }
+  .cover-contact-item strong { color: #fff; display: block; }
+
+  /* ── Specs bar ────────────────────────────────────────────── */
+  .specs-bar {
+    background: #2d5a3d;
+    padding: 28px 72px;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    page-break-after: always;
+  }
+  .spec-item { color: rgba(255,255,255,0.7); font-size: 12px; }
+  .spec-item strong { color: #fff; display: block; font-size: 13px; margin-bottom: 2px; }
+
+  /* ── Collection sections ──────────────────────────────────── */
+  .collection-section { padding: 56px 72px 48px; }
+  .page-break { page-break-before: always; }
+
+  .section-header {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e5dccf;
+  }
+  .section-number {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    color: #e5dccf;
+    line-height: 1;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: -4px;
+  }
+  .section-header h2 { font-size: 28px; color: #1e3520; margin-bottom: 6px; }
+  .section-desc { color: #5a6050; font-size: 12.5px; max-width: 720px; }
+
+  /* ── Pricing table ────────────────────────────────────────── */
+  .price-table {
+    width: 100%;
+    max-width: 480px;
+    border-collapse: collapse;
+    margin: 20px 0 8px;
+    font-size: 12px;
+  }
+  .price-table th {
+    background: #e5dccf;
+    padding: 8px 14px;
+    text-align: left;
+    font-weight: 600;
+    color: #1e3520;
+  }
+  .price-table td { border: 1px solid #ddd5c2; padding: 8px 14px; }
+  .price-table tr.alt td { background: #f0e9dc; }
+  .price-note {
+    font-size: 11px;
+    color: #5a6050;
+    margin-bottom: 28px;
+    max-width: 600px;
+  }
+
+  /* ── Product grid ─────────────────────────────────────────── */
+  .prod-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .prod-card {
+    background: #fff;
+    border: 1px solid #ddd5c2;
+    border-radius: 10px;
+    overflow: hidden;
+    break-inside: avoid;
+  }
+  .prod-img-wrap {
+    aspect-ratio: 1/1;
+    background: #e5dccf;
+    overflow: hidden;
+  }
+  .prod-img-wrap img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .prod-body { padding: 12px 14px 14px; }
+  .sku {
+    font-size: 9px;
+    color: #5a6050;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .prod-body h3 {
+    font-size: 12px;
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 600;
+    color: #1e1e1e;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+  .sizes {
+    font-size: 10px;
+    color: #5a6050;
+    margin-bottom: 8px;
+  }
+  .price-line { font-size: 12px; color: #1e1e1e; margin-bottom: 4px; }
+  .price-tiers {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .price-tiers span {
+    font-size: 9.5px;
+    background: #f0e9dc;
+    color: #5a6050;
+    border-radius: 20px;
+    padding: 2px 7px;
+  }
+
+  /* ── Footer strip ─────────────────────────────────────────── */
+  .catalog-footer {
+    background: #1e3520;
+    padding: 28px 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .catalog-footer-brand { font-family: Georgia, serif; font-size: 22px; color: #fff; }
+  .catalog-footer p { font-size: 11px; color: rgba(255,255,255,0.5); }
+  .catalog-footer a { color: #b8936a; }
+
+  /* ── Print ────────────────────────────────────────────────── */
+  @media print {
+    body { background: #fff; font-size: 12px; }
+    .cover { min-height: 297mm; padding: 60px 54px; }
+    .collection-section { padding: 40px 54px 36px; }
+    .specs-bar { padding: 20px 54px; }
+    .prod-grid { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .prod-card { break-inside: avoid; }
+    .catalog-footer { padding: 20px 54px; }
+    a { color: #b8936a !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <div class="cover-brand">LaySun</div>
+  <div class="cover-tagline">Fire-rated artificial plants — factory-direct worldwide</div>
+  <div class="cover-title">Commercial Artificial Plants &amp; Trees</div>
+  <div class="cover-subtitle">Product Catalogue 2026 &nbsp;·&nbsp; B2B Factory-Direct Pricing</div>
+  <div class="cover-divider"></div>
+  <div class="cover-stats">
+    <div>
+      <div class="cover-stat-num">44</div>
+      <div class="cover-stat-label">Products</div>
+    </div>
+    <div>
+      <div class="cover-stat-num">4</div>
+      <div class="cover-stat-label">Collections</div>
+    </div>
+    <div>
+      <div class="cover-stat-num">3</div>
+      <div class="cover-stat-label">Fire Certifications</div>
+    </div>
+    <div>
+      <div class="cover-stat-num">15+</div>
+      <div class="cover-stat-label">Years Manufacturing</div>
+    </div>
+  </div>
+  <div class="cover-contact">
+    <div class="cover-contact-item"><strong>Website</strong>laysun.co</div>
+    <div class="cover-contact-item"><strong>Email</strong>info@laysun.co</div>
+    <div class="cover-contact-item"><strong>WhatsApp</strong>+1 213-829-8485</div>
+    <div class="cover-contact-item"><strong>Factory</strong>No. 25 Qiaofeng Road, Qishi Town, Dongguan, Guangdong, China</div>
+  </div>
+</div>
+
+<!-- SPECS BAR -->
+<div class="specs-bar">
+  <div class="spec-item"><strong>Fire Certifications</strong>NFPA 701 · EN 13501 · GB 8624 B1</div>
+  <div class="spec-item"><strong>Foliage Material</strong>Injection-moulded PE &amp; Silk</div>
+  <div class="spec-item"><strong>MOQ</strong>1 unit (no minimum order)</div>
+  <div class="spec-item"><strong>Lead Time</strong>15–40 days (custom: +1–2 weeks)</div>
+  <div class="spec-item"><strong>Supply Ability</strong>2,000 pcs / month</div>
+  <div class="spec-item"><strong>Port</strong>Guangzhou / Shenzhen</div>
+  <div class="spec-item"><strong>Payment</strong>T/T · L/C · PayPal · Western Union</div>
+  <div class="spec-item"><strong>Customisation</strong>OEM/ODM — pot, size, colour, fire rating</div>
+</div>
+
+
+  <section class="collection-section">
+    <div class="section-header">
+      <div class="section-number">01</div>
+      <div>
+        <h2>Artificial Palm Trees</h2>
+        <p class="section-desc">4 palm varieties — Queen Palms and Fan Palms — purpose-built for hotel lobbies, resort pool areas and large commercial atriums. Available 4–10 ft. NFPA 701, EN 13501 and GB 8624 B1 fire certified.</p>
+      </div>
+    </div>
+    
+    <table class="price-table">
+      <thead><tr><th>Order Quantity</th><th>Unit Price (USD, FOB Dongguan)</th></tr></thead>
+      <tbody>
+        <tr><td>1 – 9 units</td><td><strong>From $149.00</strong></td></tr>
+        <tr class="alt"><td>10 – 99 units</td><td><strong>From $119.00</strong></td></tr>
+        <tr><td>100+ units</td><td><strong>From $92.00</strong></td></tr>
+      </tbody>
+    </table>
+    <p class="price-note">Prices are starting rates for standard sizes. Larger formats, real wood trunk and premium styles quoted on request. Shipping, import duties and inland freight are additional.</p>
+    <div class="prod-grid">
+      
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-palm-queen-round.webp" alt="Commercial Artificial Queen Palm Tree — Round Pot" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-PALM-QP-ROUND</div>
+          <h3>Commercial Artificial Queen Palm Tree — Round Pot</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$92.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $149.00</span>
+            <span>10–99: $119.00</span>
+            <span>100+: $92.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-palm-queen-white.webp" alt="Commercial Artificial Queen Palm Tree — White Pot" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-PALM-QP-WHITE</div>
+          <h3>Commercial Artificial Queen Palm Tree — White Pot</h3>
+          <div class="sizes">4 ft, 5 ft, 6 ft</div>
+          <div class="price-line">From <strong>$92.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $149.00</span>
+            <span>10–99: $119.00</span>
+            <span>100+: $92.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-palm-fan-single.webp" alt="Commercial Artificial Single-trunk Fan Palm Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-PALM-FAN-SINGLE</div>
+          <h3>Commercial Artificial Single-trunk Fan Palm Tree</h3>
+          <div class="sizes">7 ft, 8 ft, 9 ft, 10 ft</div>
+          <div class="price-line">From <strong>$92.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $149.00</span>
+            <span>10–99: $119.00</span>
+            <span>100+: $92.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-palm-fan-double.webp" alt="Commercial Artificial Double-trunk Fan Palm Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-PALM-FAN-DOUBLE</div>
+          <h3>Commercial Artificial Double-trunk Fan Palm Tree</h3>
+          <div class="sizes">8 ft, 9 ft</div>
+          <div class="price-line">From <strong>$92.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $149.00</span>
+            <span>10–99: $119.00</span>
+            <span>100+: $92.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="collection-section page-break">
+    <div class="section-header">
+      <div class="section-number">02</div>
+      <div>
+        <h2>Artificial Olive Trees</h2>
+        <p class="section-desc">20 olive tree styles from 3–10 ft. Standard, real wood trunk, spherical 3D, wide canopy, velvet flock and more. The most comprehensive commercial artificial olive tree range available factory-direct worldwide.</p>
+      </div>
+    </div>
+    
+    <table class="price-table">
+      <thead><tr><th>Order Quantity</th><th>Unit Price (USD, FOB Dongguan)</th></tr></thead>
+      <tbody>
+        <tr><td>1 – 9 units</td><td><strong>From $89.00</strong></td></tr>
+        <tr class="alt"><td>10 – 99 units</td><td><strong>From $71.00</strong></td></tr>
+        <tr><td>100+ units</td><td><strong>From $55.00</strong></td></tr>
+      </tbody>
+    </table>
+    <p class="price-note">Prices are starting rates for standard sizes. Larger formats, real wood trunk and premium styles quoted on request. Shipping, import duties and inland freight are additional.</p>
+    <div class="prod-grid">
+      
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-ls-new.webp" alt="LS New Style Commercial Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-LS-NEW</div>
+          <h3>LS New Style Commercial Artificial Olive Tree</h3>
+          <div class="sizes">4 ft, 5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-ls-wood-trunk.webp" alt="LS Real Wood Trunk Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-WOOD-TRUNK</div>
+          <h3>LS Real Wood Trunk Artificial Olive Tree</h3>
+          <div class="sizes">4 ft, 5 ft, 6 ft, 7 ft, 8 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-ls-old-stump.webp" alt="LS Old Stump Thick Trunk Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-OLD-STUMP</div>
+          <h3>LS Old Stump Thick Trunk Artificial Olive Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft, 8 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-ls-wide-canopy.webp" alt="LS Wide Canopy Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-WIDE-CANOPY</div>
+          <h3>LS Wide Canopy Artificial Olive Tree</h3>
+          <div class="sizes">6 ft, 7 ft, 8 ft, 9 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-ls-large-tree.webp" alt="LS Large Tree Artificial Olive — 9–10 ft" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-LARGE-TREE</div>
+          <h3>LS Large Tree Artificial Olive — 9–10 ft</h3>
+          <div class="sizes">9 ft, 10 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-multi-branch.webp" alt="Multi-branch Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-MULTI-BRANCH</div>
+          <h3>Multi-branch Artificial Olive Tree</h3>
+          <div class="sizes">4 ft, 5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-thick-double-fork.webp" alt="Thick Branch Double-fork Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-THICK-FORK</div>
+          <h3>Thick Branch Double-fork Artificial Olive Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft, 8 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-fan-shape.webp" alt="Fan-shape Artificial Olive Tree — Round Pot" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-FAN-SHAPE</div>
+          <h3>Fan-shape Artificial Olive Tree — Round Pot</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft, 8 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-spherical.webp" alt="Spherical 3D Canopy Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-SPHERICAL</div>
+          <h3>Spherical 3D Canopy Artificial Olive Tree</h3>
+          <div class="sizes">3 ft, 4 ft, 5 ft, 6 ft, 7 ft, 8 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-large-head.webp" alt="Large Tree Head 3D Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-LARGE-HEAD</div>
+          <h3>Large Tree Head 3D Artificial Olive Tree</h3>
+          <div class="sizes">6 ft, 7 ft, 8 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-cross-black.webp" alt="Cross Black Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-CROSS-BLACK</div>
+          <h3>Cross Black Artificial Olive Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-double-fork-straight.webp" alt="Double-fork Straight Trunk Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-FORK-STRAIGHT</div>
+          <h3>Double-fork Straight Trunk Artificial Olive Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-straight-black.webp" alt="Straight Black Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-STRAIGHT-BLACK</div>
+          <h3>Straight Black Artificial Olive Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft, 8 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-white-pot-fine.webp" alt="White Pot Fine Branch Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-WHITE-POT-FINE</div>
+          <h3>White Pot Fine Branch Artificial Olive Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-standard-678ft.webp" alt="Standard Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-STANDARD</div>
+          <h3>Standard Artificial Olive Tree</h3>
+          <div class="sizes">6 ft, 7 ft, 8 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-white-pot.webp" alt="White Pot Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-WHITE-POT</div>
+          <h3>White Pot Artificial Olive Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-single-three-branch.webp" alt="Single Trunk Three-branch Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-SINGLE-3BRANCH</div>
+          <h3>Single Trunk Three-branch Artificial Olive Tree</h3>
+          <div class="sizes">4 ft, 5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-2025-thick-straight.webp" alt="2025 Thick Straight Trunk Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-2025-THICK</div>
+          <h3>2025 Thick Straight Trunk Artificial Olive Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft, 8 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-green-stem.webp" alt="Green Stem Multi-branch Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-GREEN-STEM</div>
+          <h3>Green Stem Multi-branch Artificial Olive Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-olive-velvet.webp" alt="Velvet Flock Artificial Olive Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-OLIVE-VELVET</div>
+          <h3>Velvet Flock Artificial Olive Tree</h3>
+          <div class="sizes">5 ft, 6 ft</div>
+          <div class="price-line">From <strong>$55.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $89.00</span>
+            <span>10–99: $71.00</span>
+            <span>100+: $55.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="collection-section page-break">
+    <div class="section-header">
+      <div class="section-number">03</div>
+      <div>
+        <h2>Artificial Fiddle Leaf Fig & Ficus</h2>
+        <p class="section-desc">8 fiddle leaf fig and ficus varieties — curved trunk, real wood trunk, multi-branch and variegated styles. 4–8 ft. The top-specified artificial tree for hotel lobbies and corporate offices globally.</p>
+      </div>
+    </div>
+    
+    <table class="price-table">
+      <thead><tr><th>Order Quantity</th><th>Unit Price (USD, FOB Dongguan)</th></tr></thead>
+      <tbody>
+        <tr><td>1 – 9 units</td><td><strong>From $79.00</strong></td></tr>
+        <tr class="alt"><td>10 – 99 units</td><td><strong>From $63.00</strong></td></tr>
+        <tr><td>100+ units</td><td><strong>From $49.00</strong></td></tr>
+      </tbody>
+    </table>
+    <p class="price-note">Prices are starting rates for standard sizes. Larger formats, real wood trunk and premium styles quoted on request. Shipping, import duties and inland freight are additional.</p>
+    <div class="prod-grid">
+      
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-flfig-curved.webp" alt="Commercial Artificial Curved Trunk Fiddle Leaf Fig Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLF-CURVED</div>
+          <h3>Commercial Artificial Curved Trunk Fiddle Leaf Fig Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$49.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $79.00</span>
+            <span>10–99: $63.00</span>
+            <span>100+: $49.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-flfig-wood-trunk.webp" alt="Commercial Artificial Real Wood Trunk Fiddle Leaf Fig Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLF-WOOD-TRUNK</div>
+          <h3>Commercial Artificial Real Wood Trunk Fiddle Leaf Fig Tree</h3>
+          <div class="sizes">6 ft</div>
+          <div class="price-line">From <strong>$49.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $79.00</span>
+            <span>10–99: $63.00</span>
+            <span>100+: $49.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-flfig-multi-branch.webp" alt="Commercial Artificial Multi-branch Fiddle Leaf Fig Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLF-MULTI</div>
+          <h3>Commercial Artificial Multi-branch Fiddle Leaf Fig Tree</h3>
+          <div class="sizes">7 ft</div>
+          <div class="price-line">From <strong>$49.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $79.00</span>
+            <span>10–99: $63.00</span>
+            <span>100+: $49.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-ficus-large-head.webp" alt="Commercial Artificial Large Head Mini Ficus Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FICUS-LARGE-HEAD</div>
+          <h3>Commercial Artificial Large Head Mini Ficus Tree</h3>
+          <div class="sizes">8 ft</div>
+          <div class="price-line">From <strong>$49.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $79.00</span>
+            <span>10–99: $63.00</span>
+            <span>100+: $49.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-ficus-three-trunk.webp" alt="Commercial Artificial Three-trunk Real Wood Ficus Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FICUS-THREE-TRUNK</div>
+          <h3>Commercial Artificial Three-trunk Real Wood Ficus Tree</h3>
+          <div class="sizes">5 ft, 6 ft</div>
+          <div class="price-line">From <strong>$49.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $79.00</span>
+            <span>10–99: $63.00</span>
+            <span>100+: $49.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-ficus-two-trunk.webp" alt="Commercial Artificial Two-trunk Real Wood Ficus Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FICUS-TWO-TRUNK</div>
+          <h3>Commercial Artificial Two-trunk Real Wood Ficus Tree</h3>
+          <div class="sizes">5 ft, 6 ft</div>
+          <div class="price-line">From <strong>$49.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $79.00</span>
+            <span>10–99: $63.00</span>
+            <span>100+: $49.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-ficus-curved.webp" alt="Commercial Artificial Curved Trunk Ficus Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FICUS-CURVED</div>
+          <h3>Commercial Artificial Curved Trunk Ficus Tree</h3>
+          <div class="sizes">4 ft, 5 ft, 6 ft</div>
+          <div class="price-line">From <strong>$49.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $79.00</span>
+            <span>10–99: $63.00</span>
+            <span>100+: $49.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-ficus-variegated.webp" alt="Commercial Artificial Variegated White-edge Ficus Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FICUS-VARIEGATED</div>
+          <h3>Commercial Artificial Variegated White-edge Ficus Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$49.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $79.00</span>
+            <span>10–99: $63.00</span>
+            <span>100+: $49.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="collection-section page-break">
+    <div class="section-header">
+      <div class="section-number">04</div>
+      <div>
+        <h2>Artificial Flowering Trees</h2>
+        <p class="section-desc">12 flowering tree varieties — camellia, hydrangea, bougainvillea and cherry blossom in multiple colours. 2.5–8 ft. Premium silk and PE blooms for events, hospitality and retail.</p>
+      </div>
+    </div>
+    
+    <table class="price-table">
+      <thead><tr><th>Order Quantity</th><th>Unit Price (USD, FOB Dongguan)</th></tr></thead>
+      <tbody>
+        <tr><td>1 – 9 units</td><td><strong>From $45.00</strong></td></tr>
+        <tr class="alt"><td>10 – 99 units</td><td><strong>From $36.00</strong></td></tr>
+        <tr><td>100+ units</td><td><strong>From $28.00</strong></td></tr>
+      </tbody>
+    </table>
+    <p class="price-note">Prices are starting rates for standard sizes. Larger formats, real wood trunk and premium styles quoted on request. Shipping, import duties and inland freight are additional.</p>
+    <div class="prod-grid">
+      
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-camellia-red.webp" alt="Commercial Artificial Red Camellia Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-CAMELLIA-RED</div>
+          <h3>Commercial Artificial Red Camellia Tree</h3>
+          <div class="sizes">2.5 ft, 3 ft, 4 ft, 5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-camellia-white.webp" alt="Commercial Artificial White Camellia Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-CAMELLIA-WHITE</div>
+          <h3>Commercial Artificial White Camellia Tree</h3>
+          <div class="sizes">4.5 ft, 6 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-camellia-pink.webp" alt="Commercial Artificial Pink Camellia Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-CAMELLIA-PINK</div>
+          <h3>Commercial Artificial Pink Camellia Tree</h3>
+          <div class="sizes">4 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-camellia-yellow.webp" alt="Commercial Artificial Yellow Camellia Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-CAMELLIA-YELLOW</div>
+          <h3>Commercial Artificial Yellow Camellia Tree</h3>
+          <div class="sizes">6 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-hydrangea-pink.webp" alt="Commercial Artificial Pink Hydrangea Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-HYDRANGEA-PINK</div>
+          <h3>Commercial Artificial Pink Hydrangea Tree</h3>
+          <div class="sizes">5 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-hydrangea-purple.webp" alt="Commercial Artificial Purple Hydrangea Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-HYDRANGEA-PURPLE</div>
+          <h3>Commercial Artificial Purple Hydrangea Tree</h3>
+          <div class="sizes">4 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-hydrangea-blue.webp" alt="Commercial Artificial Blue Hydrangea Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-HYDRANGEA-BLUE</div>
+          <h3>Commercial Artificial Blue Hydrangea Tree</h3>
+          <div class="sizes">5 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-bougainvillea-wood-trunk.webp" alt="Commercial Artificial Real Wood Trunk Bougainvillea Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-BOUG-WOOD</div>
+          <h3>Commercial Artificial Real Wood Trunk Bougainvillea Tree</h3>
+          <div class="sizes">6 ft, 7.5 ft, 8 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-bougainvillea-pink.webp" alt="Commercial Artificial Pink Bougainvillea Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-BOUG-PINK</div>
+          <h3>Commercial Artificial Pink Bougainvillea Tree</h3>
+          <div class="sizes">5 ft, 6 ft, 7 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-cherry-pink.webp" alt="Commercial Artificial Pink Cherry Blossom Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-CHERRY-PINK</div>
+          <h3>Commercial Artificial Pink Cherry Blossom Tree</h3>
+          <div class="sizes">4 ft, 5 ft, 6 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-cherry-white.webp" alt="Commercial Artificial White Cherry Blossom Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-CHERRY-WHITE</div>
+          <h3>Commercial Artificial White Cherry Blossom Tree</h3>
+          <div class="sizes">5 ft, 6 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="prod-card">
+        <div class="prod-img-wrap">
+          <img src="https://laysun.co/images/prod-cherry-red.webp" alt="Commercial Artificial Red Cherry Blossom Tree" loading="lazy" onerror="this.style.display='none'">
+        </div>
+        <div class="prod-body">
+          <div class="sku">LS-FLOWER-CHERRY-RED</div>
+          <h3>Commercial Artificial Red Cherry Blossom Tree</h3>
+          <div class="sizes">5 ft, 6 ft</div>
+          <div class="price-line">From <strong>$28.00</strong> / unit (100+ units)</div>
+          <div class="price-tiers">
+            <span>1–9: $45.00</span>
+            <span>10–99: $36.00</span>
+            <span>100+: $28.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+<div class="catalog-footer">
+  <div>
+    <div class="catalog-footer-brand">LaySun</div>
+    <p>No. 25 Qiaofeng Road, Qishi Town, Dongguan, Guangdong, China</p>
+  </div>
+  <div style="text-align:right;">
+    <p><a href="https://laysun.co">laysun.co</a> &nbsp;|&nbsp; info@laysun.co &nbsp;|&nbsp; WhatsApp: +1 213-829-8485</p>
+    <p>© 2026 LaySun. All prices USD FOB Dongguan. Subject to change without notice.</p>
+  </div>
+</div>
+
+</body>
+</html>
