@@ -14,10 +14,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="NFPA 701 fire-rated artificial plants for hotels, restaurants & commercial spaces. Factory-direct from LaySun — fire-safe, zero maintenance, indistinguishable from real.">
   <title>NFPA 701 Fire-Rated Artificial Plants for Commercial Spaces | LaySun</title>
+  <!-- Preload first hero slide so it paints immediately -->
+  <link rel="preload" as="image" href="/images/hero-airport.webp" fetchpriority="high">
+  <!-- style.css loads synchronously — page has too much above-fold styled content for async to help -->
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="preload" as="style" href="/css/fonts.css" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/css/fonts.css"></noscript>
-  <link rel="preload" as="style" href="/css/style.css" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
   <script>window.addEventListener("load",function(){function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,o.onload=function(){window.trackingFunctions.onLoad({appId:"699435a6d52bb100156127ec"})},document.head.appendChild(o)}initApollo()});</script>
   <link rel="canonical" href="https://laysun.co/fire-safe-artificial-plants">
   <meta property="og:type" content="website">
@@ -281,7 +283,7 @@
     </div>
   </div>
 
-  <div class="slider-slide" style="background-image:url(/images/indoor-trees-office.webp)">
+  <div class="slider-slide" data-bg="/images/indoor-trees-office.webp" style="background-image:none">
     <div class="container slide-content">
       <span class="slide-kw">commercial artificial plants fire safety</span>
       <h1 class="slide-title">Commercial Fire Safety: Office Buildings &amp; Corporate Spaces</h1>
@@ -289,7 +291,7 @@
     </div>
   </div>
 
-  <div class="slider-slide" style="background-image:url(/images/factory-fire-treatment.webp)">
+  <div class="slider-slide" data-bg="/images/factory-fire-treatment.webp" style="background-image:none">
     <div class="container slide-content">
       <span class="slide-kw">NFPA 701 artificial plants certified</span>
       <h1 class="slide-title">NFPA 701 Compliance: Third-Party Fire Testing at Our Factory</h1>
@@ -862,7 +864,9 @@
     slides[cur].classList.remove('active');
     dots[cur].classList.remove('active');
     cur = (n + slides.length) % slides.length;
-    slides[cur].classList.add('active');
+    var s = slides[cur];
+    if (s.dataset.bg) { s.style.backgroundImage = 'url(' + s.dataset.bg + ')'; delete s.dataset.bg; }
+    s.classList.add('active');
     dots[cur].classList.add('active');
   }
 
