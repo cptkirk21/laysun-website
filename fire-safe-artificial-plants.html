@@ -147,29 +147,81 @@
     .calc-wrap { background:#fff; border-radius:var(--radius-xl); box-shadow:var(--shadow-l); overflow:hidden; display:grid; grid-template-columns:1fr 1fr; }
     .calc-inputs { padding:2.5rem; background:var(--green-dark); }
     .calc-inputs h3 { color:#fff; margin-bottom:1.5rem; }
-    .calc-field { margin-bottom:1.5rem; }
-    .calc-label { display:block; font-size:.8rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.65); margin-bottom:.6rem; }
-    .calc-select, .calc-input { width:100%; padding:.7rem 1rem; border-radius:var(--radius-m); border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.1); color:#fff; font-size:.95rem; font-family:var(--font-sans); appearance:none; -webkit-appearance:none; }
-    .calc-select option { background:var(--green-dark); color:#fff; }
-    .calc-range { width:100%; accent-color:var(--tan); }
-    .calc-range-val { display:block; text-align:right; font-size:.85rem; color:rgba(255,255,255,.7); margin-top:.3rem; }
-    .calc-btn { width:100%; background:var(--tan); color:#fff; border:none; border-radius:var(--radius-pill); padding:.9rem; font-size:1rem; font-weight:700; cursor:pointer; transition:background var(--ease); margin-top:.5rem; font-family:var(--font-sans); }
+    .calc-field { margin-bottom:1.4rem; }
+    .calc-label { display:block; font-size:.75rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:rgba(255,255,255,.6); margin-bottom:.5rem; }
+    .calc-select { width:100%; padding:.65rem 1rem; border-radius:var(--radius-m); border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.1); color:#fff; font-size:.92rem; font-family:var(--font-sans); appearance:none; -webkit-appearance:none; }
+    .calc-select option { background:#1e3520; color:#fff; }
+    .calc-range { width:100%; accent-color:var(--tan); cursor:pointer; }
+    .calc-range-row { display:flex; justify-content:space-between; align-items:center; margin-top:.3rem; }
+    .calc-range-val { font-size:.85rem; color:rgba(255,255,255,.8); font-weight:600; }
+    .calc-range-max { font-size:.75rem; color:rgba(255,255,255,.4); }
+    .calc-btn { width:100%; background:var(--tan); color:#fff; border:none; border-radius:var(--radius-pill); padding:.9rem; font-size:1rem; font-weight:700; cursor:pointer; transition:background var(--ease); margin-top:.75rem; font-family:var(--font-sans); }
     .calc-btn:hover { background:#a07a55; }
-    .calc-output { padding:2.5rem; display:flex; flex-direction:column; justify-content:center; }
-    .calc-output h3 { color:var(--green-dark); margin-bottom:1.5rem; }
-    .calc-result-item { display:flex; justify-content:space-between; align-items:center; padding:1rem 0; border-bottom:1px solid var(--cream-deep); }
+    .calc-btn:disabled { opacity:.5; cursor:not-allowed; }
+    /* Output panel */
+    .calc-output { padding:2rem 2.5rem; display:flex; flex-direction:column; min-height:420px; }
+    .calc-placeholder { text-align:center; color:var(--text-muted); margin:auto; }
+    .calc-placeholder-icon { font-size:3rem; margin-bottom:1rem; opacity:.35; }
+    /* Tabs */
+    .calc-tabs { display:flex; border-bottom:2px solid var(--cream-deep); margin-bottom:1.25rem; gap:0; flex-shrink:0; }
+    .calc-tab { padding:.55rem .9rem; font-size:.78rem; font-weight:700; cursor:pointer; border:none; border-bottom:2px solid transparent; margin-bottom:-2px; color:var(--text-muted); transition:all var(--ease); background:none; font-family:var(--font-sans); letter-spacing:.03em; white-space:nowrap; }
+    .calc-tab.active { color:var(--green); border-bottom-color:var(--green); }
+    .calc-tab:hover:not(.active) { color:var(--green-dark); }
+    .calc-panel { display:none; flex:1; overflow:auto; }
+    .calc-panel.active { display:block; }
+    /* Result rows */
+    .calc-result-item { display:flex; justify-content:space-between; align-items:baseline; padding:.7rem 0; border-bottom:1px solid var(--cream-deep); gap:.5rem; }
     .calc-result-item:last-child { border-bottom:none; }
-    .calc-result-lbl { font-size:.88rem; color:var(--text-muted); }
-    .calc-result-val { font-weight:700; color:var(--green-dark); font-size:1rem; }
-    .calc-result-val.val-pass { color:#16a34a; }
-    .calc-result-val.val-fail { color:#dc2626; }
-    .calc-result-val.val-warn { color:#d97706; }
-    .calc-placeholder { text-align:center; color:var(--text-muted); }
-    .calc-placeholder-icon { font-size:3rem; margin-bottom:1rem; opacity:.4; }
-    @media(max-width:720px){
+    .calc-result-lbl { font-size:.85rem; color:var(--text-muted); }
+    .calc-result-val { font-weight:700; color:var(--green-dark); font-size:.95rem; text-align:right; }
+    .val-pass { color:#16a34a; }
+    .val-fail { color:#dc2626; }
+    .val-warn { color:#d97706; }
+    /* Cost bars */
+    .cost-line { margin-bottom:1rem; }
+    .cost-line-hd { display:flex; justify-content:space-between; font-size:.83rem; margin-bottom:.35rem; }
+    .cost-line-label { color:var(--text-muted); }
+    .cost-line-val { font-weight:700; color:var(--green-dark); }
+    .cost-bar-bg { background:var(--cream-deep); border-radius:var(--radius-pill); height:7px; }
+    .cost-bar-fill { background:var(--green); border-radius:var(--radius-pill); height:7px; transition:width .6s ease; }
+    .cost-total { background:var(--green-dark); color:#fff; border-radius:var(--radius-m); padding:.9rem 1rem; display:flex; justify-content:space-between; align-items:center; margin-top:1rem; }
+    .cost-total-lbl { font-size:.82rem; color:rgba(255,255,255,.7); }
+    .cost-total-val { font-family:var(--font-serif); font-size:1.35rem; font-weight:700; color:#fff; }
+    /* Timeline */
+    .timeline { position:relative; padding-left:1.5rem; }
+    .timeline::before { content:''; position:absolute; left:5px; top:.7rem; bottom:.7rem; width:2px; background:var(--cream-deep); }
+    .tl-phase { position:relative; padding:.5rem 0 .5rem .75rem; }
+    .tl-phase::before { content:''; position:absolute; left:-1rem; top:.9rem; width:10px; height:10px; border-radius:50%; background:var(--tan); border:2px solid #fff; box-shadow:0 0 0 2px var(--tan); }
+    .tl-phase-name { font-size:.88rem; font-weight:700; color:var(--green-dark); }
+    .tl-phase-dur { font-size:.78rem; color:var(--tan); font-weight:600; }
+    .tl-phase-desc { font-size:.8rem; color:var(--text-muted); margin-top:.1rem; }
+    .tl-total { background:var(--cream); border-radius:var(--radius-m); padding:.75rem 1rem; margin-top:1rem; display:flex; justify-content:space-between; align-items:center; }
+    .tl-total-lbl { font-size:.82rem; color:var(--text-muted); }
+    .tl-total-val { font-weight:700; color:var(--green); font-size:.95rem; }
+    /* ROI */
+    .roi-highlight { background:linear-gradient(135deg,var(--green-dark),var(--green-mid)); border-radius:var(--radius-l); padding:1.25rem; text-align:center; margin-bottom:1rem; }
+    .roi-amount { font-family:var(--font-serif); font-size:2rem; font-weight:700; color:#fff; line-height:1; }
+    .roi-label { font-size:.75rem; color:rgba(255,255,255,.65); margin-top:.3rem; text-transform:uppercase; letter-spacing:.08em; }
+    .roi-grid { display:grid; grid-template-columns:1fr 1fr; gap:.75rem; margin-bottom:1rem; }
+    .roi-card { background:var(--cream); border-radius:var(--radius-m); padding:.75rem; text-align:center; }
+    .roi-card-val { font-family:var(--font-serif); font-size:1.15rem; font-weight:700; color:var(--green); }
+    .roi-card-lbl { font-size:.72rem; color:var(--text-muted); margin-top:.15rem; }
+    /* Case match */
+    .calc-case-match { border:1px solid var(--border); border-radius:var(--radius-m); padding:.85rem; display:flex; gap:.75rem; align-items:center; margin-top:1rem; }
+    .calc-case-thumb { width:52px; height:52px; border-radius:var(--radius-s); object-fit:cover; flex-shrink:0; }
+    .calc-case-text p { font-size:.75rem; color:var(--text-muted); margin-bottom:.1rem; }
+    .calc-case-text strong { font-size:.85rem; color:var(--green-dark); }
+    /* Download btn */
+    .calc-download { display:flex; align-items:center; justify-content:center; gap:.5rem; width:100%; margin-top:1rem; padding:.65rem; border:2px solid var(--border); border-radius:var(--radius-pill); font-size:.83rem; font-weight:600; color:var(--text-muted); cursor:pointer; background:none; font-family:var(--font-sans); transition:all var(--ease); flex-shrink:0; }
+    .calc-download:hover { border-color:var(--green); color:var(--green); }
+    /* Region detected badge */
+    .region-detected { display:inline-flex; align-items:center; gap:.35rem; font-size:.72rem; color:rgba(255,255,255,.55); margin-top:.4rem; }
+    .region-dot { width:6px; height:6px; border-radius:50%; background:#4ade80; flex-shrink:0; }
+    @media(max-width:820px){
       .calc-wrap { grid-template-columns:1fr; }
       .calc-inputs { padding:2rem 1.5rem; }
-      .calc-output { padding:2rem 1.5rem; }
+      .calc-output { padding:1.75rem 1.5rem; min-height:auto; }
+      .calc-tabs { overflow-x:auto; }
     }
 
     /* ── CASE STUDIES ────────────────────────────── */
@@ -506,12 +558,14 @@
     <div class="section-hd" data-a>
       <span class="eyebrow">Interactive Tool</span>
       <h2>Fire Safety Compliance Calculator</h2>
-      <p>Enter your building details to see your compliance requirements and estimated cost impact.</p>
+      <p>Enter your project details for an instant compliance summary, cost estimate, delivery timeline, and ROI analysis.</p>
     </div>
 
     <div class="calc-wrap">
+      <!-- INPUTS -->
       <div class="calc-inputs">
-        <h3>Your Building Details</h3>
+        <h3>Your Project Details</h3>
+
         <div class="calc-field">
           <label class="calc-label" for="calc-type">Building Type</label>
           <select class="calc-select" id="calc-type">
@@ -524,23 +578,77 @@
             <option value="event">Event Venue</option>
           </select>
         </div>
+
         <div class="calc-field">
-          <label class="calc-label" for="calc-sqft">Floor Area (sq ft)</label>
-          <input type="range" class="calc-range" id="calc-sqft" min="500" max="50000" step="500" value="5000">
-          <span class="calc-range-val" id="calc-sqft-val">5,000 sq ft</span>
+          <label class="calc-label" for="calc-region">
+            Your Region
+            <span class="region-detected" id="region-detected" style="display:none">
+              <span class="region-dot"></span><span id="region-detected-text"></span>
+            </span>
+          </label>
+          <select class="calc-select" id="calc-region">
+            <option value="">Select region…</option>
+            <option value="na">North America (USA / Canada)</option>
+            <option value="eu">Europe (EU / UK)</option>
+            <option value="de">Germany / DACH</option>
+            <option value="me">Middle East</option>
+            <option value="ap">Asia Pacific</option>
+            <option value="other">Other / International</option>
+          </select>
         </div>
+
         <div class="calc-field">
           <label class="calc-label" for="calc-plants">Number of Plants</label>
           <input type="range" class="calc-range" id="calc-plants" min="1" max="200" step="1" value="20">
-          <span class="calc-range-val" id="calc-plants-val">20 plants</span>
+          <div class="calc-range-row">
+            <span class="calc-range-val" id="calc-plants-val">20 plants</span>
+            <span class="calc-range-max">max 200</span>
+          </div>
         </div>
-        <button class="calc-btn" id="calc-go">Calculate My Requirements →</button>
+
+        <div class="calc-field">
+          <label class="calc-label" for="calc-sqft">Floor Area (sq ft)</label>
+          <input type="range" class="calc-range" id="calc-sqft" min="500" max="50000" step="500" value="5000">
+          <div class="calc-range-row">
+            <span class="calc-range-val" id="calc-sqft-val">5,000 sq ft</span>
+            <span class="calc-range-max">max 50k</span>
+          </div>
+        </div>
+
+        <button class="calc-btn" id="calc-go">Calculate My Project →</button>
       </div>
 
-      <div class="calc-output" id="calc-output">
-        <div class="calc-placeholder">
+      <!-- OUTPUT -->
+      <div class="calc-output" id="calc-output-wrap">
+        <div class="calc-placeholder" id="calc-placeholder">
           <div class="calc-placeholder-icon">🧮</div>
-          <p>Fill in your building details and click Calculate to see your compliance requirements.</p>
+          <p>Select your building type and region, then click Calculate.</p>
+        </div>
+
+        <div id="calc-results" style="display:none;display:flex;flex-direction:column;height:100%;">
+          <!-- Tabs -->
+          <div class="calc-tabs">
+            <button class="calc-tab active" data-tab="compliance">📋 Compliance</button>
+            <button class="calc-tab" data-tab="cost">💰 Cost</button>
+            <button class="calc-tab" data-tab="timeline">📅 Timeline</button>
+            <button class="calc-tab" data-tab="roi">📈 ROI</button>
+          </div>
+
+          <!-- Compliance Panel -->
+          <div class="calc-panel active" id="panel-compliance"></div>
+
+          <!-- Cost Panel -->
+          <div class="calc-panel" id="panel-cost"></div>
+
+          <!-- Timeline Panel -->
+          <div class="calc-panel" id="panel-timeline"></div>
+
+          <!-- ROI Panel -->
+          <div class="calc-panel" id="panel-roi"></div>
+
+          <!-- Case study match + download -->
+          <div id="calc-case-match-wrap"></div>
+          <button class="calc-download" id="calc-download">⬇ Download Calculation Report</button>
         </div>
       </div>
     </div>
@@ -930,49 +1038,237 @@
   });
 
 
-  /* ── CALCULATOR ───────────────────────────── */
-  var sqftInput  = document.getElementById('calc-sqft');
-  var sqftVal    = document.getElementById('calc-sqft-val');
+  /* ── CALCULATOR ENGINE ────────────────────── */
+  var CALC = {
+    risk:    { hotel:'High', restaurant:'High', office:'Medium', retail:'Medium', healthcare:'Very High', event:'High' },
+    cert: {
+      na:    { hotel:'NFPA 701', restaurant:'NFPA 701', office:'NFPA 701', retail:'NFPA 701', healthcare:'NFPA 701', event:'NFPA 701' },
+      eu:    { hotel:'EN 13501 Class B', restaurant:'EN 13501 Class B', office:'EN 13501 Class B', retail:'EN 13501 Class B', healthcare:'EN 13501 Class A', event:'EN 13501 Class B' },
+      de:    { hotel:'B1 DIN 4102', restaurant:'B1 DIN 4102', office:'B1 DIN 4102', retail:'B1 DIN 4102', healthcare:'B1 + EN 13501', event:'B1 DIN 4102' },
+      me:    { hotel:'NFPA 701', restaurant:'NFPA 701', office:'NFPA 701 / BS 5852', retail:'NFPA 701', healthcare:'NFPA 701', event:'NFPA 701' },
+      ap:    { hotel:'NFPA 701 / Local', restaurant:'NFPA 701 / Local', office:'NFPA 701 / Local', retail:'NFPA 701 / Local', healthcare:'NFPA 701 / Local', event:'NFPA 701' },
+      other: { hotel:'NFPA 701 (recommend)', restaurant:'NFPA 701 (recommend)', office:'NFPA 701 (recommend)', retail:'NFPA 701 (recommend)', healthcare:'NFPA 701 (recommend)', event:'NFPA 701 (recommend)' }
+    },
+    unitCost: { hotel:[220,380], restaurant:[140,260], office:[160,290], retail:[110,210], healthcare:[160,290], event:[90,190] },
+    certCost: { na:[350,600], eu:[450,750], de:[500,850], me:[400,700], ap:[350,650], other:[300,600] },
+    shipCost: [18,35],
+    insBase:  { hotel:[4000,9000], restaurant:[1800,4500], office:[2500,6000], retail:[3000,7000], healthcare:[5000,12000], event:[1200,3500] },
+    timeline: {
+      phases: function(n) {
+        var mfg = n <= 20 ? '1–2 weeks' : n <= 60 ? '2–3 weeks' : n <= 120 ? '3–5 weeks' : '5–8 weeks';
+        var test = '1 week';
+        var ship = '1–2 weeks';
+        return [
+          { name:'Order Confirmation', dur:'1–2 days',  desc:'Quote approved, PO issued' },
+          { name:'Manufacturing',      dur:mfg,         desc:'Hand-shaping, fire-retardant treatment' },
+          { name:'Fire Testing',       dur:test,        desc:'Third-party NFPA 701 / B1 test' },
+          { name:'QC & Packaging',     dur:'2–4 days',  desc:'Inspection, export crating' },
+          { name:'Shipping',           dur:ship,        desc:'Air freight or sea (by volume)' }
+        ];
+      },
+      total: function(n) {
+        if (n <= 20)  return '3–4 weeks';
+        if (n <= 60)  return '4–6 weeks';
+        if (n <= 120) return '6–9 weeks';
+        return '8–12 weeks';
+      }
+    },
+    cases: {
+      hotel:      { label:'5-Star Hotel Chain — Los Angeles', img:'/images/project-case-study-hotel-la-400w.webp', detail:'200 plants, NFPA 701, zero inspector issues' },
+      restaurant: { label:'Restaurant Fit-Out — Dubai',       img:'/images/project-restaurant-dubai-400w.webp',    detail:'60 plants, NFPA 701, 2-week delivery' },
+      office:     { label:'Corporate HQ — Singapore',         img:'/images/project-corporate-singapore-400w.webp', detail:'85 plants, B1 + EN 13501, 1st inspection pass' },
+      retail:     { label:'Mall Atrium — Shanghai',            img:'/images/project-mall-atrium-shanghai-400w.webp',detail:'Custom 8m trees, Class B, 3-day approval' },
+      healthcare: { label:'Hospital Lobby — Toronto',          img:'/images/project-hospital-lobby-toronto-400w.webp', detail:'45 plants, NFPA 701, healthcare-grade cert' },
+      event:      { label:'Resort Pool — Maldives',            img:'/images/project-resort-pool-maldives-400w.webp', detail:'120 UV + fire-rated palms, NFPA 701' }
+    }
+  };
+
+  function fmt(n) { return '$' + Math.round(n).toLocaleString(); }
+  function rng(lo, hi) { return fmt(lo) + ' – ' + fmt(hi); }
+  function pct(v, max) { return Math.min(100, Math.round(v / max * 100)) + '%'; }
+
+  /* Live slider labels */
+  var sqftInput   = document.getElementById('calc-sqft');
+  var sqftVal     = document.getElementById('calc-sqft-val');
   var plantsInput = document.getElementById('calc-plants');
-  var plantsVal  = document.getElementById('calc-plants-val');
+  var plantsVal   = document.getElementById('calc-plants-val');
+  sqftInput.addEventListener('input',   function(){ sqftVal.textContent   = Number(this.value).toLocaleString() + ' sq ft'; });
+  plantsInput.addEventListener('input', function(){ plantsVal.textContent = this.value + ' plants'; });
 
-  sqftInput.addEventListener('input', function() {
-    sqftVal.textContent = Number(sqftInput.value).toLocaleString() + ' sq ft';
-  });
-  plantsInput.addEventListener('input', function() {
-    plantsVal.textContent = plantsInput.value + ' plants';
+  /* IP geo — try to pre-select region */
+  fetch('https://ipapi.co/json/')
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      var map = { US:'na', CA:'na', GB:'eu', FR:'eu', ES:'eu', IT:'eu', NL:'eu', AU:'ap', SG:'ap', JP:'ap', CN:'ap', AE:'me', SA:'me', QA:'me', DE:'de', AT:'de', CH:'de' };
+      var code = d.country_code;
+      var val  = map[code] || (d.continent_code === 'EU' ? 'eu' : null);
+      if (val) {
+        document.getElementById('calc-region').value = val;
+        document.getElementById('region-detected').style.display = 'inline-flex';
+        document.getElementById('region-detected-text').textContent = 'Auto-detected: ' + d.country_name;
+      }
+    }).catch(function(){});
+
+  /* Tab switching */
+  document.querySelectorAll('.calc-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.calc-tab').forEach(function(t){ t.classList.remove('active'); });
+      document.querySelectorAll('.calc-panel').forEach(function(p){ p.classList.remove('active'); });
+      tab.classList.add('active');
+      document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+    });
   });
 
+  /* Main calculate */
   document.getElementById('calc-go').addEventListener('click', function() {
     var type   = document.getElementById('calc-type').value;
-    var sqft   = parseInt(sqftInput.value);
+    var region = document.getElementById('calc-region').value;
     var plants = parseInt(plantsInput.value);
-    if (!type) { alert('Please select a building type.'); return; }
+    var sqft   = parseInt(sqftInput.value);
+    if (!type)   { alert('Please select a building type.'); return; }
+    if (!region) { alert('Please select your region.'); return; }
 
-    var stdMap = {
-      hotel: 'NFPA 701', restaurant: 'NFPA 701',
-      office: 'NFPA 701 / EN 13501', retail: 'NFPA 701 / EN 13501',
-      healthcare: 'NFPA 701 + B1', event: 'NFPA 701'
-    };
-    var riskMap = {
-      hotel: 'High', restaurant: 'High', office: 'Medium',
-      retail: 'Medium', healthcare: 'Very High', event: 'High'
-    };
-    var savings = Math.round((sqft * 0.04 + plants * 12) / 100) * 100;
-    var cert    = stdMap[type]  || 'NFPA 701';
-    var risk    = riskMap[type] || 'Medium';
-    var riskClass = risk === 'Very High' || risk === 'High' ? 'val-fail' : 'val-warn';
-    var compliance = plants >= 1 ? 'Required' : 'Not Required';
+    var typeLbl  = document.getElementById('calc-type').options[document.getElementById('calc-type').selectedIndex].text;
+    var certReq  = CALC.cert[region][type];
+    var risk     = CALC.risk[type];
+    var riskCls  = (risk === 'High' || risk === 'Very High') ? 'val-fail' : 'val-warn';
 
-    document.getElementById('calc-output').innerHTML =
-      '<h3>Your Compliance Summary</h3>' +
-      '<div class="calc-result-item"><span class="calc-result-lbl">Building Type</span><span class="calc-result-val">' + document.getElementById('calc-type').options[document.getElementById('calc-type').selectedIndex].text + '</span></div>' +
-      '<div class="calc-result-item"><span class="calc-result-lbl">Fire Risk Level</span><span class="calc-result-val ' + riskClass + '">' + risk + '</span></div>' +
-      '<div class="calc-result-item"><span class="calc-result-lbl">Required Certificate</span><span class="calc-result-val val-pass">' + cert + '</span></div>' +
-      '<div class="calc-result-item"><span class="calc-result-lbl">Certification Status</span><span class="calc-result-val val-fail">Action Required</span></div>' +
-      '<div class="calc-result-item"><span class="calc-result-lbl">Est. Compliance Benefit</span><span class="calc-result-val val-pass">$' + savings.toLocaleString() + '+/yr</span></div>' +
-      '<a href="quote.html" class="btn btn-tan" style="margin-top:1.5rem;width:100%;justify-content:center;">Get Certified Plants →</a>';
+    /* Cost */
+    var uc   = CALC.unitCost[type];
+    var cc   = CALC.certCost[region];
+    var sc   = CALC.shipCost;
+    var pLo  = uc[0] * plants,  pHi  = uc[1] * plants;
+    var cLo  = cc[0],           cHi  = cc[1];
+    var sLo  = sc[0] * plants,  sHi  = sc[1] * plants;
+    var tLo  = pLo + cLo + sLo, tHi  = pHi + cHi + sHi;
+    var maxC = tHi;
+
+    /* Insurance savings */
+    var ib    = CALC.insBase[type];
+    var scale = Math.min(2, 0.5 + plants / 60);
+    var iLo   = Math.round(ib[0] * scale / 100) * 100;
+    var iHi   = Math.round(ib[1] * scale / 100) * 100;
+    var roi3Lo = iLo * 3 - tHi;
+    var roi3Hi = iHi * 3 - tLo;
+    var payback = (tLo / iHi).toFixed(1);
+
+    /* Compliance panel */
+    document.getElementById('panel-compliance').innerHTML =
+      ri('Building Type',    typeLbl) +
+      ri('Region',           document.getElementById('calc-region').options[document.getElementById('calc-region').selectedIndex].text) +
+      ri('Fire Risk Level',  '<span class="'+riskCls+'">'+risk+'</span>') +
+      ri('Required Standard','<span class="val-pass">'+certReq+'</span>') +
+      ri('Plants Requiring Cert', plants + ' of ' + plants) +
+      ri('Compliance Status','<span class="val-fail">Action Required</span>') +
+      '<a href="quote.html" class="btn btn-tan btn-sm" style="margin-top:1.25rem;display:inline-flex;">Get Certified Quote →</a>';
+
+    /* Cost panel */
+    document.getElementById('panel-cost').innerHTML =
+      costLine('Plants (' + plants + ' units)',       pLo,  pHi,  maxC) +
+      costLine('Fire Certification',                  cLo,  cHi,  maxC) +
+      costLine('Shipping & Export Crating',           sLo,  sHi,  maxC) +
+      '<div class="cost-total"><span class="cost-total-lbl">Estimated Project Total</span><span class="cost-total-val">' + rng(tLo, tHi) + '</span></div>' +
+      '<p style="font-size:.75rem;color:var(--text-muted);margin-top:.5rem;">Factory-direct pricing — no distributor markup. Final quote provided within 24hrs.</p>';
+
+    /* Timeline panel */
+    var phases = CALC.timeline.phases(plants);
+    var tlHtml = '<div class="timeline">';
+    phases.forEach(function(p){
+      tlHtml += '<div class="tl-phase"><div class="tl-phase-name">' + p.name + ' <span class="tl-phase-dur">— ' + p.dur + '</span></div><div class="tl-phase-desc">' + p.desc + '</div></div>';
+    });
+    tlHtml += '</div><div class="tl-total"><span class="tl-total-lbl">Total Estimated Delivery</span><span class="tl-total-val">' + CALC.timeline.total(plants) + '</span></div>';
+    document.getElementById('panel-timeline').innerHTML = tlHtml;
+
+    /* ROI panel */
+    document.getElementById('panel-roi').innerHTML =
+      '<div class="roi-highlight"><div class="roi-amount">' + rng(iLo, iHi) + '</div><div class="roi-label">Estimated Annual Insurance Savings</div></div>' +
+      '<div class="roi-grid">' +
+        '<div class="roi-card"><div class="roi-card-val">' + payback + ' yrs</div><div class="roi-card-lbl">Est. Payback Period</div></div>' +
+        '<div class="roi-card"><div class="roi-card-val">' + (roi3Lo > 0 ? fmt(roi3Lo) : 'Break-even') + '</div><div class="roi-card-lbl">3-Year Net Return</div></div>' +
+      '</div>' +
+      ri('Annual Insurance Reduction', rng(iLo, iHi)) +
+      ri('Based On', typeLbl + ' · ' + plants + ' plants') +
+      '<p style="font-size:.73rem;color:var(--text-muted);margin-top:.75rem;">Insurance estimates based on industry averages for fire-code-compliant commercial properties. Actual savings vary by insurer and policy.</p>';
+
+    /* Case study match */
+    var cs = CALC.cases[type] || CALC.cases.hotel;
+    var caseHtml = '<img src="' + cs.img + '" class="calc-case-thumb" alt="Similar project: ' + cs.label + '" onerror="this.style.display=\'none\'">' +
+      '<div class="calc-case-text"><p>Similar project</p><strong>' + cs.label + '</strong><p style="margin-top:.2rem;">' + cs.detail + '</p></div>';
+    document.getElementById('calc-case-match-wrap').innerHTML = '<div class="calc-case-match">' + caseHtml + '</div>';
+
+    /* Show results */
+    document.getElementById('calc-placeholder').style.display = 'none';
+    var res = document.getElementById('calc-results');
+    res.style.display = 'flex';
+    res.style.flexDirection = 'column';
+    res.style.height = '100%';
+
+    /* Reset to compliance tab */
+    document.querySelectorAll('.calc-tab').forEach(function(t){ t.classList.remove('active'); });
+    document.querySelectorAll('.calc-panel').forEach(function(p){ p.classList.remove('active'); });
+    document.querySelector('[data-tab="compliance"]').classList.add('active');
+    document.getElementById('panel-compliance').classList.add('active');
   });
+
+  /* Download report */
+  document.getElementById('calc-download').addEventListener('click', function() {
+    var type   = document.getElementById('calc-type').value;
+    var region = document.getElementById('calc-region').value;
+    if (!type || document.getElementById('calc-results').style.display === 'none') {
+      alert('Please run the calculator first.'); return;
+    }
+    var typeLbl   = document.getElementById('calc-type').options[document.getElementById('calc-type').selectedIndex].text;
+    var regionLbl = document.getElementById('calc-region').options[document.getElementById('calc-region').selectedIndex].text;
+    var plants = plantsInput.value, sqft = sqftInput.value;
+    var certReq = CALC.cert[region][type];
+    var w = window.open('', '_blank', 'width=800,height=900');
+    w.document.write('<!DOCTYPE html><html><head><meta charset="UTF-8"><title>LaySun Fire Safety Report</title>' +
+      '<style>body{font-family:Georgia,serif;max-width:680px;margin:2rem auto;padding:0 1.5rem;color:#1e1e1e;}' +
+      'h1{color:#1e3520;font-size:1.6rem;border-bottom:3px solid #b8936a;padding-bottom:.5rem;}' +
+      'h2{color:#2d5a3d;font-size:1.1rem;margin-top:1.5rem;}' +
+      'table{width:100%;border-collapse:collapse;margin:.75rem 0;}td{padding:.5rem .75rem;border-bottom:1px solid #e5dccf;font-size:.92rem;}' +
+      'td:first-child{color:#5a6050;}td:last-child{font-weight:600;text-align:right;}' +
+      '.badge{display:inline-block;background:#dcfce7;color:#16a34a;padding:.2rem .6rem;border-radius:4px;font-size:.8rem;font-weight:700;}' +
+      '.footer{margin-top:2rem;padding-top:1rem;border-top:1px solid #ddd;font-size:.78rem;color:#888;}' +
+      '@media print{body{margin:0;}}</style></head><body>' +
+      '<h1>🔥 Fire Safety Compliance Report</h1>' +
+      '<p style="color:#5a6050;font-size:.88rem;">Generated ' + new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'}) + ' · LaySun Commercial Plants · laysun.co</p>' +
+      '<h2>Project Summary</h2>' +
+      '<table><tr><td>Building Type</td><td>' + typeLbl + '</td></tr>' +
+      '<tr><td>Region</td><td>' + regionLbl + '</td></tr>' +
+      '<tr><td>Number of Plants</td><td>' + plants + '</td></tr>' +
+      '<tr><td>Floor Area</td><td>' + Number(sqft).toLocaleString() + ' sq ft</td></tr></table>' +
+      '<h2>Compliance Requirements</h2>' +
+      '<table><tr><td>Required Fire Standard</td><td><span class="badge">' + certReq + '</span></td></tr>' +
+      '<tr><td>Fire Risk Level</td><td>' + CALC.risk[type] + '</td></tr>' +
+      '<tr><td>Compliance Status</td><td style="color:#dc2626;">Action Required</td></tr></table>' +
+      '<h2>Cost Estimate</h2>' +
+      (function(){
+        var uc=CALC.unitCost[type],cc=CALC.certCost[region],sc=CALC.shipCost,p=parseInt(plants);
+        var pLo=uc[0]*p,pHi=uc[1]*p,cLo=cc[0],cHi=cc[1],sLo=sc[0]*p,sHi=sc[1]*p;
+        return '<table><tr><td>Plants</td><td>' + rng(pLo,pHi) + '</td></tr>' +
+               '<tr><td>Certification</td><td>' + rng(cLo,cHi) + '</td></tr>' +
+               '<tr><td>Shipping</td><td>' + rng(sLo,sHi) + '</td></tr>' +
+               '<tr style="font-weight:700;"><td>Total Estimate</td><td>' + rng(pLo+cLo+sLo,pHi+cHi+sHi) + '</td></tr></table>';
+      })() +
+      '<h2>Delivery Timeline</h2><table>' +
+      CALC.timeline.phases(parseInt(plants)).map(function(p){ return '<tr><td>'+p.name+'</td><td>'+p.dur+'</td></tr>'; }).join('') +
+      '<tr style="font-weight:700;"><td>Total</td><td>' + CALC.timeline.total(parseInt(plants)) + '</td></tr></table>' +
+      '<div class="footer">This report is an estimate based on typical project parameters. Contact LaySun for a binding quote: info@laysun.co · +1 213-829-8485</div>' +
+      '<script>window.onload=function(){window.print();}<\/script></body></html>');
+    w.document.close();
+  });
+
+  /* Helpers */
+  function ri(lbl, val) {
+    return '<div class="calc-result-item"><span class="calc-result-lbl">'+lbl+'</span><span class="calc-result-val">'+val+'</span></div>';
+  }
+  function costLine(lbl, lo, hi, max) {
+    return '<div class="cost-line">' +
+      '<div class="cost-line-hd"><span class="cost-line-label">'+lbl+'</span><span class="cost-line-val">'+rng(lo,hi)+'</span></div>' +
+      '<div class="cost-bar-bg"><div class="cost-bar-fill" style="width:'+pct(hi,max)+'"></div></div>' +
+    '</div>';
+  }
 
 
   /* ── FAQ ACCORDION ────────────────────────── */
