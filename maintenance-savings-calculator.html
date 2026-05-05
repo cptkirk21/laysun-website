@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDVC02Y28"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YJDVC02Y28');
+  </script>
+  <meta charset="UTF-8">
+  <link rel="icon" href="images/logo.webp" type="image/webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate your maintenance cost savings with our free ROI calculator. Compare artificial vs real plants for hotels, offices, and commercial spaces.">
+  <title>Free Maintenance Savings Calculator for Commercial Artificial Plants | LaySun</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>window.addEventListener("load",function(){function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,o.onload=function(){window.trackingFunctions.onLoad({appId:"699435a6d52bb100156127ec"})},document.head.appendChild(o)}initApollo()});</script>
+
+  <link rel="canonical" href="https://laysun.co/maintenance-savings-calculator">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LaySun">
+  <meta property="og:url" content="https://laysun.co/maintenance-savings-calculator">
+  <meta property="og:title" content="Free Maintenance Savings Calculator for Commercial Artificial Plants | LaySun">
+  <meta property="og:description" content="Calculate your maintenance cost savings with our free ROI calculator. Compare artificial vs real plants for hotels, offices, and commercial spaces.">
+  <meta property="og:image" content="https://laysun.co/images/hero-airport.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Maintenance Savings Calculator | LaySun">
+  <meta name="twitter:description" content="Calculate your ROI switching from real to artificial plants. Free calculator for hotels, offices, and commercial spaces.">
+  <meta name="twitter:image" content="https://laysun.co/images/hero-airport.webp">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://laysun.co/maintenance-savings-calculator#webpage",
+  "url": "https://laysun.co/maintenance-savings-calculator",
+  "name": "Free Maintenance Savings Calculator for Commercial Artificial Plants | LaySun",
+  "description": "Calculate your maintenance cost savings with our free ROI calculator. Compare artificial vs real plants for hotels, offices, and commercial spaces.",
+  "publisher": {"@id": "https://laysun.co/#organization"},
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://laysun.co"},
+      {"@type":"ListItem","position":2,"name":"Resources","item":"https://laysun.co/maintenance-savings-calculator"},
+      {"@type":"ListItem","position":3,"name":"Maintenance Savings Calculator","item":"https://laysun.co/maintenance-savings-calculator"}
+    ]
+  }
+}
+</script>
+
+  <style>
+    /* ── CALCULATOR ────────────────────────────────── */
+    .calc-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    @media (max-width: 720px) {
+      .calc-wrap { grid-template-columns: 1fr; }
+    }
+    .calc-panel {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-l);
+      padding: 2rem;
+    }
+    .calc-panel h3 {
+      font-size: 1rem;
+      color: var(--green-dark);
+      margin-bottom: 1.5rem;
+      padding-bottom: .75rem;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .calc-field { margin-bottom: 1.25rem; }
+    .calc-field label {
+      display: block;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-bottom: .4rem;
+    }
+    .calc-field select,
+    .calc-field input[type=number] {
+      width: 100%;
+      padding: .65rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: .95rem;
+      font-family: var(--font-sans);
+      color: var(--text);
+      background: #fafaf8;
+      transition: border var(--ease);
+      appearance: none;
+    }
+    .calc-field select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23888' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+    }
+    .calc-field select:focus,
+    .calc-field input[type=number]:focus {
+      outline: none;
+      border-color: var(--green);
+      background: #fff;
+    }
+    .calc-field .hint {
+      font-size: .77rem;
+      color: var(--text-muted);
+      margin-top: .3rem;
+    }
+    .input-prefix {
+      position: relative;
+    }
+    .input-prefix span {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: .95rem;
+      pointer-events: none;
+    }
+    .input-prefix input { padding-left: 1.75rem; }
+
+    /* Results panel */
+    .results-panel {
+      background: var(--green-dark);
+      color: #fff;
+      border-radius: var(--radius-l);
+      padding: 2rem;
+    }
+    .results-panel h3 {
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: .75rem;
+      border-bottom: 2px solid rgba(255,255,255,.15);
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .result-empty {
+      text-align: center;
+      padding: 2rem 0;
+      color: rgba(255,255,255,.4);
+      font-size: .9rem;
+    }
+    .result-empty .result-empty-icon {
+      font-size: 2.5rem;
+      display: block;
+      margin-bottom: .75rem;
+      opacity: .4;
+    }
+    .result-rows { display: none; }
+    .result-rows.show { display: block; }
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .65rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+      font-size: .9rem;
+    }
+    .result-row:last-child { border-bottom: none; }
+    .result-row .r-label { color: rgba(255,255,255,.7); }
+    .result-row .r-val {
+      font-weight: 700;
+      color: #fff;
+      font-size: .95rem;
+    }
+    .result-total {
+      background: rgba(255,255,255,.1);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .result-total .rt-label {
+      font-size: .8rem;
+      color: rgba(255,255,255,.6);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: .25rem;
+    }
+    .result-total .rt-val {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      color: #fff;
+      line-height: 1.1;
+    }
+    .result-total .rt-sub {
+      font-size: .78rem;
+      color: rgba(255,255,255,.5);
+      margin-top: .25rem;
+    }
+    .result-highlight {
+      background: var(--tan);
+      border-radius: var(--radius);
+      padding: 1rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .result-highlight .rh-label {
+      font-size: .78rem;
+      color: rgba(255,255,255,.75);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .result-highlight .rh-val {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 700;
+    }
+    .result-disclaimer {
+      font-size: .73rem;
+      color: rgba(255,255,255,.35);
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+
+    /* ── GATE FORM ─────────────────────────────────── */
+    .gate-card {
+      background: var(--green-dark);
+      color: #fff;
+      border-radius: var(--radius-l);
+      padding: 2.5rem;
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .gate-card .eyebrow { color: var(--tan-light); }
+    .gate-card h2 { color: #fff; margin: .5rem 0 .75rem; }
+    .gate-card p { color: rgba(255,255,255,.75); font-size: .95rem; margin-bottom: 1.5rem; }
+    .gate-card .form-group { margin-bottom: 1rem; text-align: left; }
+    .gate-card label { display: block; font-size: .82rem; font-weight: 600; color: rgba(255,255,255,.7); margin-bottom: .35rem; letter-spacing: .04em; text-transform: uppercase; }
+    .gate-card input[type=email] {
+      width: 100%;
+      padding: .75rem 1rem;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--radius-pill);
+      background: rgba(255,255,255,.1);
+      color: #fff;
+      font-size: .95rem;
+      font-family: var(--font-sans);
+      transition: border var(--ease);
+    }
+    .gate-card input[type=email]::placeholder { color: rgba(255,255,255,.4); }
+    .gate-card input[type=email]:focus { outline: none; border-color: var(--tan); }
+    .gate-card .privacy-note { font-size: .78rem; color: rgba(255,255,255,.45); margin-top: .75rem; }
+
+    /* ── GUIDE STYLES ──────────────────────────────── */
+    [data-success="subscribe"] { display: none; }
+    [data-success="subscribe"].show { display: block; }
+    .guide-section-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-l);
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .guide-section-card h3 {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      font-size: 1.1rem;
+      margin-bottom: 1.25rem;
+      color: var(--green-dark);
+    }
+    .guide-section-card h3 .gs-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: var(--tan);
+      color: #fff;
+      font-size: .8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .guide-items { list-style: none; padding: 0; margin: 0; }
+    .guide-items li {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      padding: .55rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: .93rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .guide-items li:last-child { border-bottom: none; }
+    .guide-items li::before {
+      content: '→';
+      color: var(--tan);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: .05rem;
+    }
+    .case-study-card {
+      background: var(--cream-alt);
+      border-left: 4px solid var(--tan);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .case-study-card .cs-tag {
+      font-size: .75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--tan);
+      margin-bottom: .35rem;
+    }
+    .case-study-card .cs-stat {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      color: var(--green-dark);
+      line-height: 1.1;
+      margin-bottom: .25rem;
+    }
+    .case-study-card p {
+      font-size: .88rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: var(--tan);
+      color: #fff;
+      padding: .65rem 1.5rem;
+      border-radius: var(--radius-pill);
+      font-size: .9rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      font-family: var(--font-sans);
+      transition: background var(--ease);
+      text-decoration: none;
+    }
+    .print-btn:hover { background: #a07a55; }
+    .guide-unlocked-header {
+      text-align: center;
+      padding: 2.5rem 0 1.5rem;
+    }
+    .guide-unlocked-header .success-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: #dcfce7;
+      color: #15803d;
+      border: 1px solid #86efac;
+      padding: .4rem 1rem;
+      border-radius: var(--radius-pill);
+      font-size: .85rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* ── PRINT ─────────────────────────────────────── */
+    @media print {
+      nav, footer, .cta-banner, .page-hero, .gate-section,
+      .calc-section, .catalog-strip, .back-top, .lightbox,
+      .print-hide, .breadcrumb, .stats-bar, .why-section { display: none !important; }
+      [data-success="subscribe"] { display: block !important; }
+      body { background: #fff; color: #000; }
+      .container { max-width: 100%; padding: 0 1rem; }
+      .guide-section-card { border: 1px solid #ccc; page-break-inside: avoid; }
+      .print-btn { display: none !important; }
+      .guide-unlocked-header { padding-top: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.webp" alt="LaySun logo" width="32" height="32" loading="eager">
+      <span class="nav-logo-text">LaySun</span>
+    </a>
+    <button class="nav-burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="systems.html">Systems</a></li>
+      <li><a href="manufacturing.html">Manufacturing</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Products <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="products.html">All Products</a></li><li><a href="artificial-olive-trees.html">Olive Trees</a></li><li><a href="artificial-palm-trees.html">Palm Trees</a></li><li><a href="artificial-fiddle-leaf-fig.html">Fiddle Leaf Fig</a></li><li><a href="artificial-flowering-trees.html">Flowering Trees</a></li></ul></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Resources <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="laysun-catalog-2026.html">Catalog</a></li><li><a href="nfpa701-checklist.html">NFPA 701 Checklist</a></li><li><a href="maintenance-savings-calculator.html" class="active">Savings Calculator</a></li></ul></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-dropdown-wrap"><button class="nav-dropdown-toggle">Policies <span class="nav-dd-arrow">▾</span></button><ul class="nav-dropdown-menu"><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-conditions.html">Terms &amp; Conditions</a></li><li><a href="shipping-policy.html">Shipping Policy</a></li><li><a href="returns-policy.html">Returns &amp; Refunds</a></li><li><a href="warranty-policy.html">Warranty</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li></ul></li>
+      <li><a href="quote.html" class="btn-nav">Get a Quote</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <a href="#">Resources</a> › <span>Savings Calculator</span></div>
+    <h1>Maintenance Savings Calculator</h1>
+    <p class="lead">See exactly how much your commercial space could save by switching from real to artificial plants. Enter your current costs below — results update instantly.</p>
+  </div>
+</header>
+
+<!-- CALCULATOR -->
+<section class="section calc-section">
+  <div class="container">
+
+    <div class="calc-wrap">
+
+      <!-- Inputs -->
+      <div class="calc-panel">
+        <h3>📋 Your Space Details</h3>
+
+        <div class="calc-field">
+          <label for="space-type">Space Type</label>
+          <select id="space-type" oninput="calculateSavings()">
+            <option value="hotel">Hotel / Hospitality</option>
+            <option value="office">Office / Corporate</option>
+            <option value="restaurant">Restaurant / F&amp;B</option>
+            <option value="healthcare">Healthcare Facility</option>
+            <option value="retail">Retail / Shopping</option>
+            <option value="other">Other Commercial</option>
+          </select>
+        </div>
+
+        <div class="calc-field">
+          <label for="num-plants">Number of Plants</label>
+          <input type="number" id="num-plants" min="1" max="10000" placeholder="e.g. 20" oninput="calculateSavings()">
+          <p class="hint">Count trees, topiaries, planters, and arrangements</p>
+        </div>
+
+        <div class="calc-field">
+          <label for="monthly-maint">Monthly Maintenance Spend</label>
+          <div class="input-prefix">
+            <span>$</span>
+            <input type="number" id="monthly-maint" min="0" placeholder="e.g. 800" oninput="calculateSavings()">
+          </div>
+          <p class="hint">Watering, pruning, fertilizer, pest control</p>
+        </div>
+
+        <div class="calc-field">
+          <label for="staff-hours">Staff Hours / Month on Plants</label>
+          <input type="number" id="staff-hours" min="0" placeholder="e.g. 12" oninput="calculateSavings()">
+          <p class="hint">Watering rounds, trimming, rearranging, disposal</p>
+        </div>
+
+      </div>
+
+      <!-- Results -->
+      <div class="results-panel">
+        <h3>💰 Estimated Annual Savings</h3>
+
+        <div class="result-empty" id="calc-empty">
+          <span class="result-empty-icon">🌿</span>
+          Enter your space details to see your savings estimate
+        </div>
+
+        <div class="result-rows" id="calc-results">
+          <div class="result-row">
+            <span class="r-label">Maintenance Labor</span>
+            <span class="r-val" id="r-labor">—</span>
+          </div>
+          <div class="result-row">
+            <span class="r-label">Water &amp; Utilities</span>
+            <span class="r-val" id="r-water">—</span>
+          </div>
+          <div class="result-row">
+            <span class="r-label">Plant Replacements</span>
+            <span class="r-val" id="r-replacement">—</span>
+          </div>
+          <div class="result-row">
+            <span class="r-label">Maintenance Contracts</span>
+            <span class="r-val" id="r-maint">—</span>
+          </div>
+
+          <div class="result-total">
+            <div class="rt-label">Total Annual Savings</div>
+            <div class="rt-val" id="r-annual">—</div>
+            <div class="rt-sub">estimated per year</div>
+          </div>
+
+          <div class="result-highlight">
+            <div class="rh-label">5-Year Total Savings</div>
+            <div class="rh-val" id="r-fiveyear">—</div>
+          </div>
+
+          <p class="result-disclaimer">Estimates based on industry averages. Actual savings vary by location, vendor, and existing contracts. Download the full guide for detailed calculations.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY SWITCH -->
+<section class="section section--alt why-section">
+  <div class="container">
+    <div class="section-hd" data-a>
+      <span class="eyebrow">The Business Case</span>
+      <h2>Why Commercial Spaces Are Making the Switch</h2>
+    </div>
+    <div class="grid-3">
+      <div class="feat-card" data-a>
+        <div class="feat-icon">💸</div>
+        <h3>65–85% Cost Reduction</h3>
+        <p>Industry average maintenance savings after switching to high-quality artificial plants. The biggest gains come from eliminating watering staff time and plant replacement cycles.</p>
+      </div>
+      <div class="feat-card" data-a>
+        <div class="feat-icon">⏱️</div>
+        <h3>Zero Recurring Labor</h3>
+        <p>Real plants require daily or weekly attention. Quality artificial plants need only occasional dusting — freeing facilities staff for higher-value tasks.</p>
+      </div>
+      <div class="feat-card" data-a>
+        <div class="feat-icon">📈</div>
+        <h3>ROI Inside 18 Months</h3>
+        <p>Most commercial spaces recover their full investment in LaySun artificial plants within 12–18 months through eliminated maintenance costs alone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL GATE -->
+<section class="section gate-section">
+  <div class="container">
+    <div class="gate-card" data-a>
+      <span class="eyebrow">Free Download</span>
+      <h2>Get the Complete Savings Guide</h2>
+      <p>Enter your email to unlock our full maintenance savings analysis — including industry benchmarks, case studies, 5-year projections, and a custom calculation worksheet.</p>
+
+      <form data-form="subscribe" novalidate>
+        <div class="form-group">
+          <label for="ck-email">Work Email</label>
+          <input type="email" id="ck-email" name="email" placeholder="you@company.com" required>
+        </div>
+        <button type="submit" class="btn btn-tan btn-lg" style="width:100%;">Send Me the Guide →</button>
+      </form>
+
+      <p class="privacy-note">Your email is safe with us. We'll send occasional industry updates and resources.</p>
+    </div>
+
+    <!-- FULL GUIDE (revealed after subscribe) -->
+    <div data-success="subscribe">
+      <div class="guide-unlocked-header">
+        <div class="success-badge">✓ Unlocked — Commercial Artificial Plant Savings Guide</div>
+        <h2 style="margin-bottom:.5rem;">Complete Maintenance Savings Analysis</h2>
+        <p style="color:var(--text-muted);margin-bottom:1.25rem;">Print or save as PDF using the button below.</p>
+        <button class="print-btn" onclick="window.print()">🖨 Print / Save as PDF</button>
+      </div>
+
+      <div style="max-width:760px;margin:2rem auto 0;">
+
+        <div class="guide-section-card">
+          <h3><span class="gs-num">1</span> Cost Comparison Analysis</h3>
+          <ul class="guide-items">
+            <li><strong>Real Plants — recurring costs:</strong> Labor (watering, pruning, fertilizing), replacement plants every 1–3 years, pest control, soil and fertilizer, specialist maintenance contracts</li>
+            <li><strong>Artificial Plants — ongoing costs:</strong> Occasional dusting or professional cleaning (1–2× per year), zero water, zero fertilizer, zero replacement cycles</li>
+            <li><strong>Industry average:</strong> 65–85% total maintenance cost reduction in year one, rising to 90%+ from year three as replacement costs compound</li>
+            <li><strong>Hidden savings:</strong> Reduced facilities management time, no seasonal replanting, no plant-related insurance claims or liability</li>
+          </ul>
+        </div>
+
+        <div class="guide-section-card">
+          <h3><span class="gs-num">2</span> ROI Calculation by Space Type</h3>
+          <ul class="guide-items">
+            <li><strong>Hotel Spaces:</strong> Lobby and event plants typically cost $8,000–$15,000/year to maintain. Artificial equivalent: $400–$800/year cleaning. Average 3-year ROI: 280%</li>
+            <li><strong>Office Buildings:</strong> 20-plant installation saves approximately $6,000–$12,000 annually vs. a live-plant maintenance contract. Payback period: 12–18 months</li>
+            <li><strong>Retail Spaces:</strong> Seasonal real plant programs cost $15,000–$40,000/year at scale. Artificial plants eliminate seasonal cycles entirely — savings compound annually</li>
+            <li><strong>Healthcare Facilities:</strong> Infection control requirements often make real plants problematic. Switching eliminates maintenance entirely while meeting hygiene standards</li>
+          </ul>
+        </div>
+
+        <div class="guide-section-card">
+          <h3><span class="gs-num">3</span> Implementation Guide</h3>
+          <ul class="guide-items">
+            <li><strong>Phased transition:</strong> Replace highest-maintenance areas first (lobbies, reception, F&amp;B) to maximize early ROI before moving to lower-traffic zones</li>
+            <li><strong>Staff transition:</strong> Reallocate plant-care hours to higher-value tasks. Document time savings from week one to build internal ROI case</li>
+            <li><strong>Maintenance schedule:</strong> Quarterly light dusting, semi-annual professional clean, annual inspection — total time under 2 hours per 20 plants</li>
+            <li><strong>Budget allocation:</strong> Treat as capital expenditure (not recurring OpEx). Most finance teams approve faster when framed as a cost-elimination project</li>
+          </ul>
+        </div>
+
+        <div class="guide-section-card">
+          <h3><span class="gs-num">4</span> Case Studies</h3>
+
+          <div class="case-study-card">
+            <div class="cs-tag">Hotel Chain — 5 Properties</div>
+            <div class="cs-stat">$47,000 saved annually</div>
+            <p>Replaced live lobby and restaurant plants across 5 mid-scale hotels. Eliminated weekly maintenance contracts and seasonal replacement costs. Full ROI in 14 months.</p>
+          </div>
+
+          <div class="case-study-card">
+            <div class="cs-tag">Corporate Office — 3 Floors</div>
+            <div class="cs-stat">78% maintenance reduction</div>
+            <p>120 plants across reception, meeting rooms, and open-plan areas. Facilities team saved 18 hours/month. Annual saving: $22,400 vs. prior live-plant contract.</p>
+          </div>
+
+          <div class="case-study-card">
+            <div class="cs-tag">Shopping Mall — Common Areas</div>
+            <div class="cs-stat">$12,000 seasonal savings</div>
+            <p>Eliminated twice-yearly seasonal plant replacement program. Artificial trees and planters in 8 atrium locations now require one annual clean at $1,200 total.</p>
+          </div>
+        </div>
+
+        <div class="guide-section-card">
+          <h3><span class="gs-num">5</span> Custom Calculation Worksheet</h3>
+          <ul class="guide-items">
+            <li><strong>Step 1 — Current annual cost:</strong> (Monthly maintenance $) × 12 + (Staff hours/month × hourly rate × 12) + (Number of plants × avg replacement cost/year)</li>
+            <li><strong>Step 2 — Projected artificial cost:</strong> (Number of plants × average LaySun unit cost) + (Annual cleaning budget: ~$40/plant)</li>
+            <li><strong>Step 3 — Annual savings:</strong> Step 1 total − Step 2 ongoing costs</li>
+            <li><strong>Step 4 — Payback period:</strong> Step 2 purchase cost ÷ Step 3 annual savings = years to break even</li>
+            <li><strong>Step 5 — 5-year net gain:</strong> (Step 3 × 5) − Step 2 purchase cost = total 5-year value</li>
+          </ul>
+        </div>
+
+        <div style="text-align:center;margin-top:2rem;" class="print-hide">
+          <button class="print-btn" onclick="window.print()">🖨 Print / Save as PDF</button>
+        </div>
+
+        <p style="text-align:center;font-size:.82rem;color:var(--text-muted);margin-top:1.5rem;" class="print-hide">
+          Guide prepared by LaySun Commercial Solutions · <a href="mailto:info@laysun.co">info@laysun.co</a> · <a href="https://wa.me/12138298485" target="_blank" rel="noopener">+1 213-829-8485</a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner print-hide">
+  <div class="container">
+    <h2>Ready to Reduce Maintenance Costs by Up to 85%?</h2>
+    <p>Factory-direct pricing. NFPA 701 certified. Ships worldwide. Most commercial projects pay back in under 18 months.</p>
+    <div class="cta-btns">
+      <a href="quote.html" class="btn btn-tan btn-lg">Get a Custom Quote</a>
+      <a href="products.html" class="btn btn-white-outline btn-lg">Browse Products</a>
+    </div>
+  </div>
+</section>
+
+<div class="catalog-strip print-hide">
+  <div class="container">
+    <div class="catalog-strip-inner">
+      <div>
+        <span class="eyebrow">2026 Product Catalog</span>
+        <h3>44 Products · Full SKU Specs · B2B Pricing</h3>
+        <p>Browse every size, SKU variant and volume price tier — ready to share with your team or include in your quote request.</p>
+      </div>
+      <a href="laysun-catalog-2026.html" class="btn btn-tan btn-lg" style="white-space:nowrap;flex-shrink:0;">Download Catalog →</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer print-hide">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-logo">LaySun</div><p class="footer-tagline">Fire-rated artificial plants for commercial spaces. Factory-direct worldwide.</p><div class="footer-social"><a href="https://www.linkedin.com/in/shawn-kirkpatrick-37a89281/" aria-label="LinkedIn" target="_blank" rel="noopener">💼</a></div></div>
+      <div class="footer-col"><h5>Collections</h5><ul class="footer-links"><li><a href="artificial-olive-trees.html">Olive Trees</a></li><li><a href="artificial-palm-trees.html">Palm Trees</a></li><li><a href="artificial-fiddle-leaf-fig.html">Fiddle Leaf Fig</a></li><li><a href="artificial-flowering-trees.html">Flowering Trees</a></li></ul></div>
+      <div class="footer-col"><h5>Pages</h5><ul class="footer-links"><li><a href="systems.html">Systems</a></li><li><a href="manufacturing.html">Manufacturing</a></li><li><a href="projects.html">Projects</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul class="footer-links"><li><a href="laysun-catalog-2026.html">2026 Product Catalog</a></li><li><a href="nfpa701-checklist.html">NFPA 701 Checklist</a></li><li><a href="maintenance-savings-calculator.html">Savings Calculator</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><div class="foot-contact"><span class="foot-contact-ic">✉️</span><a href="mailto:info@laysun.co" style="color:inherit;">info@laysun.co</a></div><div class="foot-contact"><span class="foot-contact-ic">💬</span><a href="https://wa.me/12138298485" target="_blank" rel="noopener" style="color:inherit;">WhatsApp: +1 213-829-8485</a></div></div>
+    </div>
+    <div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-conditions.html">Terms &amp; Conditions</a><a href="shipping-policy.html">Shipping Policy</a><a href="returns-policy.html">Returns &amp; Refunds</a><a href="warranty-policy.html">Warranty</a><a href="cookie-policy.html">Cookie Policy</a></div>
+    <div class="footer-bottom"><span>© 2026 LaySun. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<button class="back-top" aria-label="Back to top">↑</button>
+
+<div class="lightbox" role="dialog" aria-modal="true">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <button class="lb-nav lb-prev" aria-label="Previous">‹</button>
+  <button class="lb-nav lb-next" aria-label="Next">›</button>
+  <div class="lb-content">
+    <img class="lb-img" src="" alt="">
+    <div class="lb-ph"></div>
+    <p class="lb-caption"></p>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  const LABOR_RATES = { hotel: 24, office: 22, restaurant: 20, healthcare: 26, retail: 19, other: 22 };
+  const REPLACEMENT_PER_PLANT = { hotel: 38, office: 30, restaurant: 35, healthcare: 28, retail: 42, other: 30 };
+  const WATER_PER_PLANT = { hotel: 52, office: 44, restaurant: 48, healthcare: 40, retail: 38, other: 44 };
+
+  function fmt(n) {
+    return '$' + Math.round(n).toLocaleString('en-US');
+  }
+
+  function calculateSavings() {
+    const type        = document.getElementById('space-type').value;
+    const numPlants   = Math.max(0, parseFloat(document.getElementById('num-plants').value) || 0);
+    const monthlyMaint = Math.max(0, parseFloat(document.getElementById('monthly-maint').value) || 0);
+    const staffHours  = Math.max(0, parseFloat(document.getElementById('staff-hours').value) || 0);
+
+    if (numPlants === 0 && monthlyMaint === 0 && staffHours === 0) {
+      document.getElementById('calc-empty').style.display = 'block';
+      document.getElementById('calc-results').classList.remove('show');
+      return;
+    }
+
+    const laborRate    = LABOR_RATES[type];
+    const laborSaved   = staffHours * laborRate * 12 * 0.80;
+    const waterSaved   = numPlants * WATER_PER_PLANT[type] * 0.90;
+    const replSaved    = numPlants * REPLACEMENT_PER_PLANT[type];
+    const maintSaved   = monthlyMaint * 12 * 0.75;
+    const totalAnnual  = laborSaved + waterSaved + replSaved + maintSaved;
+    const fiveYear     = totalAnnual * 5 * 0.92;
+
+    document.getElementById('r-labor').textContent       = fmt(laborSaved);
+    document.getElementById('r-water').textContent       = fmt(waterSaved);
+    document.getElementById('r-replacement').textContent = fmt(replSaved);
+    document.getElementById('r-maint').textContent       = fmt(maintSaved);
+    document.getElementById('r-annual').textContent      = fmt(totalAnnual);
+    document.getElementById('r-fiveyear').textContent    = fmt(fiveYear);
+
+    document.getElementById('calc-empty').style.display = 'none';
+    document.getElementById('calc-results').classList.add('show');
+  }
+</script>
+</body>
+</html>
