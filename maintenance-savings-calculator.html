@@ -395,6 +395,22 @@
       margin-bottom: 1rem;
     }
 
+    /* ── MOBILE ────────────────────────────────────── */
+    @media (max-width: 600px) {
+      .calc-wrap { gap: 1.25rem; }
+      .calc-panel,
+      .results-panel { padding: 1.25rem; border-radius: var(--radius); }
+      .gate-card { padding: 1.5rem; border-radius: var(--radius); }
+      .guide-section-card { padding: 1.25rem; border-radius: var(--radius); }
+      .guide-unlocked-header { padding: 1.5rem 0 1rem; }
+      .guide-unlocked-header .success-badge { white-space: normal; text-align: center; justify-content: center; }
+      .result-total .rt-val { font-size: 1.6rem; }
+      .result-highlight .rh-val { font-size: 1.3rem; }
+      .print-btn { width: 100%; justify-content: center; }
+      .case-study-card { padding: 1rem 1.25rem; }
+      .case-study-card .cs-stat { font-size: 1.25rem; }
+    }
+
     /* ── PRINT ─────────────────────────────────────── */
     @media print {
       nav, footer, .cta-banner, .page-hero, .gate-section,

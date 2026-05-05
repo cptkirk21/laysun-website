@@ -184,6 +184,16 @@
     }
     .print-btn:hover { background: #a07a55; }
 
+    /* ── MOBILE ────────────────────────────────────── */
+    @media (max-width: 600px) {
+      .cl-section-card { padding: 1.25rem; border-radius: var(--radius); }
+      .gate-card { padding: 1.5rem; border-radius: var(--radius); }
+      .checklist-unlocked-header { padding: 1.5rem 0 1rem; }
+      .checklist-unlocked-header .success-badge { white-space: normal; text-align: center; justify-content: center; }
+      .print-btn { width: 100%; justify-content: center; }
+      .cl-items li { font-size: .88rem; }
+    }
+
     /* ── PRINT STYLES ──────────────────────────────── */
     @media print {
       nav, footer, .cta-banner, .page-hero, .gate-section,
