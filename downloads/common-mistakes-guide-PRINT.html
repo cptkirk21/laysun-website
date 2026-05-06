@@ -132,7 +132,7 @@
     color: var(--text-muted);
     font-family: var(--sans);
   }
-  .page-footer .foot-logo { height: 18px; width: auto; object-fit: contain; }
+  .page-footer .foot-logo { height: 20px; width: auto; object-fit: contain; mix-blend-mode: multiply; }
 
   /* ────────────────────────────────────────────────────── */
   /*  PAGE 1 — COVER                                        */
@@ -149,11 +149,14 @@
     gap: 10px;
   }
   #cover .logo-mark {
-    width: 40px; height: 40px;
+    width: 44px; height: 44px;
+    background: var(--cream);
+    border-radius: 10px;
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
+    padding: 4px;
   }
-  #cover .logo-mark img { width: 40px; height: 40px; object-fit: contain; filter: brightness(0) invert(1); }
+  #cover .logo-mark img { width: 36px; height: 36px; object-fit: contain; mix-blend-mode: multiply; }
   #cover .logo-text {
     font-family: var(--serif);
     font-size: 18pt;
@@ -676,10 +679,13 @@
     justify-content: space-between;
   }
   #cta-page .cta-bottom .foot-logo {
-    height: 32px;
+    height: 28px;
     width: auto;
     object-fit: contain;
-    filter: brightness(0) invert(1);
+    background: var(--cream);
+    border-radius: 8px;
+    padding: 4px 8px;
+    mix-blend-mode: multiply;
   }
   #cta-page .cta-bottom .tagline {
     font-size: 8.5pt;
