@@ -39,11 +39,11 @@
   /* ── PAGE WRAPPER ────────────────────────────────────── */
   .page {
     width: 8.5in;
-    min-height: 11in;
     position: relative;
-    overflow: hidden;
     page-break-after: always;
     break-after: page;
+    page-break-inside: avoid;
+    break-inside: avoid;
   }
   .page:last-child { page-break-after: avoid; break-after: avoid; }
 
@@ -117,24 +117,22 @@
 
   /* ── PAGE FOOTER ─────────────────────────────────────── */
   .page-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     height: 36px;
-    background: var(--green-dark);
+    background: var(--cream-deep);
+    border-top: 1px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 48px;
+    margin-top: 24px;
   }
   .page-footer span {
     font-size: 7.5pt;
-    color: rgba(255,255,255,.5);
+    color: var(--text-muted);
     font-family: var(--sans);
   }
-  .page-footer .brand { color: var(--tan-light); font-weight: 600; }
-  .page-footer .foot-logo { height: 18px; width: auto; object-fit: contain; filter: brightness(0) invert(1); opacity: .7; }
+  .page-footer .foot-logo { height: 18px; width: auto; object-fit: contain; }
 
   /* ────────────────────────────────────────────────────── */
   /*  PAGE 1 — COVER                                        */
@@ -285,7 +283,7 @@
   /* ────────────────────────────────────────────────────── */
   #intro {
     background: var(--cream);
-    padding: 64px 64px 90px;
+    padding: 48px 64px 0;
   }
   #intro .intro-header { margin-bottom: 36px; }
   #intro .intro-header h2 {
@@ -385,7 +383,7 @@
     background: var(--cream);
     display: flex;
     flex-direction: column;
-    padding: 0 0 36px;
+    padding: 0;
   }
   .mistake-page .mp-hero {
     position: relative;
@@ -468,7 +466,7 @@
     background: var(--green);
     border-radius: 10px;
     padding: 16px 24px;
-    margin-top: 20px;
+    margin: 20px 48px 24px;
     display: flex;
     align-items: center;
     gap: 14px;
@@ -495,7 +493,7 @@
   /* ────────────────────────────────────────────────────── */
   #roadmap {
     background: var(--cream);
-    padding: 56px 64px 90px;
+    padding: 48px 64px 0;
   }
   #roadmap .rm-header { margin-bottom: 36px; }
   #roadmap .rm-header h2 {
@@ -698,8 +696,6 @@
   /* ── PRINT OVERRIDES ─────────────────────────────────── */
   @media print {
     body { width: 8.5in; }
-    .page { page-break-after: always; break-after: page; }
-    .page:last-child { page-break-after: avoid; break-after: avoid; }
     a { text-decoration: none !important; }
   }
 </style>
@@ -758,7 +754,7 @@
 <!-- ═══════════════════════════════════════════════════════
      PAGE 2 — INTRODUCTION
 ═══════════════════════════════════════════════════════ -->
-<div class="page" id="intro" style="padding-bottom: 90px;">
+<div class="page" id="intro">
   <div class="intro-header">
     <span class="eyebrow">Introduction</span>
     <h2>Why Most Facilities Are Getting Their Plant Investment Wrong</h2>
