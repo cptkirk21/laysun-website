@@ -134,6 +134,7 @@
     font-family: var(--sans);
   }
   .page-footer .brand { color: var(--tan-light); font-weight: 600; }
+  .page-footer .foot-logo { height: 18px; width: auto; object-fit: contain; filter: brightness(0) invert(1); opacity: .7; }
 
   /* ────────────────────────────────────────────────────── */
   /*  PAGE 1 — COVER                                        */
@@ -150,13 +151,11 @@
     gap: 10px;
   }
   #cover .logo-mark {
-    width: 36px; height: 36px;
-    background: var(--tan);
-    border-radius: 8px;
+    width: 40px; height: 40px;
     display: flex; align-items: center; justify-content: center;
     flex-shrink: 0;
   }
-  #cover .logo-mark svg { width: 20px; height: 20px; }
+  #cover .logo-mark img { width: 40px; height: 40px; object-fit: contain; filter: brightness(0) invert(1); }
   #cover .logo-text {
     font-family: var(--serif);
     font-size: 18pt;
@@ -639,6 +638,7 @@
     padding: 22px 18px;
     text-align: center;
   }
+  #cta-page a:hover .cta-card { background: rgba(255,255,255,.13); border-color: rgba(184,147,106,.5); }
   #cta-page .cta-card .ic { font-size: 22pt; display: block; margin-bottom: 8px; }
   #cta-page .cta-card h5 {
     font-family: var(--sans);
@@ -677,11 +677,11 @@
     align-items: center;
     justify-content: space-between;
   }
-  #cta-page .cta-bottom .brand {
-    font-family: var(--serif);
-    font-size: 16pt;
-    font-weight: 700;
-    color: #fff;
+  #cta-page .cta-bottom .foot-logo {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
   }
   #cta-page .cta-bottom .tagline {
     font-size: 8.5pt;
@@ -712,10 +712,7 @@
 <div class="page" id="cover">
   <div class="cover-top">
     <div class="logo-mark">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
-        <path d="M12 2C6 2 3 7 3 12s4 8 9 10c5-2 9-5 9-10S18 2 12 2z"/>
-        <path d="M12 12V22M8 8c1 2 4 3 4 3M16 8c-1 2-4 3-4 3"/>
-      </svg>
+      <img src="laysun-logo.png" alt="LaySun logo">
     </div>
     <span class="logo-text">LaySun</span>
   </div>
@@ -810,7 +807,7 @@
   </div>
 
   <div class="page-footer">
-    <span class="brand">LaySun</span>
+    <img src="laysun-logo.png" alt="LaySun" class="foot-logo">
     <span>3 Most Common Plant Investment Mistakes Commercial Facilities Make</span>
     <span>Page 2</span>
   </div>
@@ -871,14 +868,14 @@
     <div class="action-strip">
       <span class="ic">📊</span>
       <div class="txt">
-        <h5>Use LaySun's Maintenance Savings Calculator</h5>
-        <p>Input your current plant count, cleaning frequency, and average plant age to calculate your 3-year savings opportunity. Available at laysun.co/maintenance-savings-calculator</p>
+        <h5><a href="https://laysun.co/maintenance-savings-calculator" style="color:#fff;text-decoration:underline;">Use LaySun's Maintenance Savings Calculator →</a></h5>
+        <p>Input your current plant count, cleaning frequency, and average plant age to calculate your 3-year savings opportunity.</p>
       </div>
     </div>
   </div>
 
   <div class="page-footer">
-    <span class="brand">LaySun</span>
+    <img src="laysun-logo.png" alt="LaySun" class="foot-logo">
     <span>3 Most Common Plant Investment Mistakes Commercial Facilities Make</span>
     <span>Page 3</span>
   </div>
@@ -939,14 +936,14 @@
     <div class="action-strip">
       <span class="ic">☀️</span>
       <div class="txt">
-        <h5>Download the LaySun UV Protection Guide</h5>
-        <p>Covers UV rating methods, how to evaluate supplier claims, and a room-by-room specification guide for commercial environments. Available at laysun.co/uv-protection-guide</p>
+        <h5><a href="https://laysun.co/uv-protection-guide" style="color:#fff;text-decoration:underline;">Download the LaySun UV Protection Guide →</a></h5>
+        <p>Covers UV rating methods, how to evaluate supplier claims, and a room-by-room specification guide for commercial environments.</p>
       </div>
     </div>
   </div>
 
   <div class="page-footer">
-    <span class="brand">LaySun</span>
+    <img src="laysun-logo.png" alt="LaySun" class="foot-logo">
     <span>3 Most Common Plant Investment Mistakes Commercial Facilities Make</span>
     <span>Page 4</span>
   </div>
@@ -1007,14 +1004,14 @@
     <div class="action-strip">
       <span class="ic">📋</span>
       <div class="txt">
-        <h5>Download the NFPA 701 Compliance Checklist</h5>
-        <p>A practical checklist for verifying fire compliance on any artificial plant order — including questions to ask your supplier and red flags to watch for. Available at laysun.co/nfpa701-checklist</p>
+        <h5><a href="https://laysun.co/nfpa701-checklist" style="color:#fff;text-decoration:underline;">Download the NFPA 701 Compliance Checklist →</a></h5>
+        <p>A practical checklist for verifying fire compliance on any artificial plant order — including questions to ask your supplier and red flags to watch for.</p>
       </div>
     </div>
   </div>
 
   <div class="page-footer">
-    <span class="brand">LaySun</span>
+    <img src="laysun-logo.png" alt="LaySun" class="foot-logo">
     <span>3 Most Common Plant Investment Mistakes Commercial Facilities Make</span>
     <span>Page 5</span>
   </div>
@@ -1090,7 +1087,7 @@
   </div>
 
   <div class="page-footer">
-    <span class="brand">LaySun</span>
+    <img src="laysun-logo.png" alt="LaySun" class="foot-logo">
     <span>3 Most Common Plant Investment Mistakes Commercial Facilities Make</span>
     <span>Page 6</span>
   </div>
@@ -1107,21 +1104,27 @@
     <p class="cta-sub">LaySun's commercial plant specialists work with facility managers, procurement teams, and designers to specify compliant, cost-effective plant programs — factory direct, with full documentation.</p>
 
     <div class="cta-cards">
-      <div class="cta-card">
-        <span class="ic">📅</span>
-        <h5>Book a Free Consultation</h5>
-        <p>30-minute call with a LaySun commercial specialist. We'll review your current program and identify quick wins.</p>
-      </div>
-      <div class="cta-card">
-        <span class="ic">📊</span>
-        <h5>Run Your ROI Calculation</h5>
-        <p>Use our interactive Maintenance Savings Calculator to quantify your 3-year cost reduction opportunity.</p>
-      </div>
-      <div class="cta-card">
-        <span class="ic">✅</span>
-        <h5>Request a Compliance Audit</h5>
-        <p>Send us your current plant list and we'll identify compliance gaps and provide NFPA 701 alternatives.</p>
-      </div>
+      <a href="https://laysun.co/quote" style="text-decoration:none;">
+        <div class="cta-card">
+          <span class="ic">📅</span>
+          <h5>Book a Free Consultation</h5>
+          <p>30-minute call with a LaySun commercial specialist. We'll review your current program and identify quick wins.</p>
+        </div>
+      </a>
+      <a href="https://laysun.co/maintenance-savings-calculator" style="text-decoration:none;">
+        <div class="cta-card">
+          <span class="ic">📊</span>
+          <h5>Run Your ROI Calculation</h5>
+          <p>Use our interactive Maintenance Savings Calculator to quantify your 3-year cost reduction opportunity.</p>
+        </div>
+      </a>
+      <a href="https://laysun.co/quote" style="text-decoration:none;">
+        <div class="cta-card">
+          <span class="ic">✅</span>
+          <h5>Request a Compliance Audit</h5>
+          <p>Send us your current plant list and we'll identify compliance gaps and provide NFPA 701 alternatives.</p>
+        </div>
+      </a>
     </div>
 
     <a class="cta-url" href="https://laysun.co/quote">laysun.co/quote</a>
@@ -1129,7 +1132,7 @@
   </div>
 
   <div class="cta-bottom">
-    <span class="brand">LaySun</span>
+    <img src="laysun-logo.png" alt="LaySun" class="foot-logo">
     <span class="tagline">Fire-Rated Artificial Plants · Factory Direct Worldwide · Founded 2011</span>
     <div class="links">
       <a href="https://laysun.co/products">Products</a>
