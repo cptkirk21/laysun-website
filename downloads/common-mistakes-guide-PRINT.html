@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3 Most Common Plant Investment Mistakes — LaySun</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ── PRINT SETUP ─────────────────────────────────────── */
+  @page {
+    size: Letter;
+    margin: 0;
+  }
+  @page :first { margin: 0; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  /* ── BRAND TOKENS ────────────────────────────────────── */
+  :root {
+    --green-dark:  #1e3520;
+    --green:       #2d5a3d;
+    --green-mid:   #3d6b4a;
+    --green-light: #527a5f;
+    --tan:         #b8936a;
+    --tan-light:   #d4b08a;
+    --cream:       #faf6ef;
+    --cream-alt:   #f0e9dc;
+    --cream-deep:  #e5dccf;
+    --text:        #1e1e1e;
+    --text-muted:  #5a6050;
+    --border:      #ddd5c2;
+    --serif:       'Playfair Display', Georgia, serif;
+    --sans:        'Inter', system-ui, sans-serif;
+  }
+
+  html, body { width: 8.5in; background: #fff; font-family: var(--sans); color: var(--text); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  /* ── PAGE WRAPPER ────────────────────────────────────── */
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+  }
+  .page:last-child { page-break-after: avoid; break-after: avoid; }
+
+  /* ── UTILITIES ───────────────────────────────────────── */
+  .eyebrow {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--tan);
+    margin-bottom: 10px;
+  }
+  .stat-box {
+    background: var(--green-dark);
+    color: #fff;
+    border-radius: 10px;
+    padding: 18px 20px;
+    text-align: center;
+  }
+  .stat-box .num {
+    font-family: var(--serif);
+    font-size: 28pt;
+    font-weight: 700;
+    color: var(--tan-light);
+    line-height: 1;
+    display: block;
+  }
+  .stat-box .label {
+    font-size: 8.5pt;
+    color: rgba(255,255,255,.75);
+    margin-top: 5px;
+    line-height: 1.4;
+  }
+  .tag {
+    display: inline-block;
+    background: var(--cream-deep);
+    color: var(--green-dark);
+    border-radius: 999px;
+    font-size: 8pt;
+    font-weight: 600;
+    padding: 3px 10px;
+    margin: 2px 2px 2px 0;
+  }
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .check-item .ic {
+    width: 20px;
+    height: 20px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .check-item .ic::after {
+    content: '✓';
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .check-item p { font-size: 9.5pt; color: var(--text-muted); line-height: 1.5; }
+  .check-item strong { color: var(--text); }
+
+  /* ── PAGE FOOTER ─────────────────────────────────────── */
+  .page-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 36px;
+    background: var(--green-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+  }
+  .page-footer span {
+    font-size: 7.5pt;
+    color: rgba(255,255,255,.5);
+    font-family: var(--sans);
+  }
+  .page-footer .brand { color: var(--tan-light); font-weight: 600; }
+
+  /* ────────────────────────────────────────────────────── */
+  /*  PAGE 1 — COVER                                        */
+  /* ────────────────────────────────────────────────────── */
+  #cover {
+    background: var(--green-dark);
+    display: flex;
+    flex-direction: column;
+  }
+  #cover .cover-top {
+    padding: 52px 64px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  #cover .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--tan);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  #cover .logo-mark svg { width: 20px; height: 20px; }
+  #cover .logo-text {
+    font-family: var(--serif);
+    font-size: 18pt;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: .02em;
+  }
+
+  #cover .cover-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 64px 56px;
+  }
+  #cover .cover-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(184,147,106,.15);
+    border: 1px solid rgba(184,147,106,.35);
+    border-radius: 999px;
+    padding: 6px 16px;
+    margin-bottom: 28px;
+    width: fit-content;
+  }
+  #cover .cover-badge span {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--tan-light);
+  }
+  #cover h1 {
+    font-family: var(--serif);
+    font-size: 38pt;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.12;
+    max-width: 560px;
+    margin-bottom: 24px;
+  }
+  #cover h1 em {
+    font-style: normal;
+    color: var(--tan-light);
+  }
+  #cover .cover-sub {
+    font-size: 12pt;
+    color: rgba(255,255,255,.65);
+    line-height: 1.65;
+    max-width: 500px;
+    margin-bottom: 40px;
+  }
+  #cover .cover-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 48px;
+  }
+  #cover .pill {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 999px;
+    padding: 7px 18px;
+    font-size: 9pt;
+    color: rgba(255,255,255,.8);
+    font-weight: 500;
+  }
+  #cover .cover-stats {
+    display: flex;
+    gap: 0;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 520px;
+  }
+  #cover .c-stat {
+    flex: 1;
+    padding: 20px 24px;
+    border-right: 1px solid rgba(255,255,255,.1);
+    text-align: center;
+  }
+  #cover .c-stat:last-child { border-right: none; }
+  #cover .c-stat .n {
+    font-family: var(--serif);
+    font-size: 24pt;
+    font-weight: 700;
+    color: var(--tan-light);
+    display: block;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  #cover .c-stat .l {
+    font-size: 8pt;
+    color: rgba(255,255,255,.5);
+    line-height: 1.4;
+  }
+  #cover .cover-image-strip {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  #cover .cover-image-strip img {
+    width: 100%; height: 100%; object-fit: cover; opacity: .35;
+  }
+  #cover .cover-image-strip::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, var(--green-dark) 0%, transparent 40%, transparent 60%, var(--green-dark) 100%);
+  }
+  #cover .cover-bottom-bar {
+    background: rgba(0,0,0,.25);
+    padding: 14px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #cover .cover-bottom-bar span {
+    font-size: 8.5pt;
+    color: rgba(255,255,255,.45);
+  }
+  #cover .cover-bottom-bar .hl { color: var(--tan-light); font-weight: 600; }
+
+  /* ────────────────────────────────────────────────────── */
+  /*  PAGE 2 — INTRODUCTION                                 */
+  /* ────────────────────────────────────────────────────── */
+  #intro {
+    background: var(--cream);
+    padding: 64px 64px 90px;
+  }
+  #intro .intro-header { margin-bottom: 36px; }
+  #intro .intro-header h2 {
+    font-family: var(--serif);
+    font-size: 26pt;
+    font-weight: 700;
+    color: var(--green-dark);
+    line-height: 1.2;
+    margin-bottom: 14px;
+    max-width: 560px;
+  }
+  #intro .intro-header p {
+    font-size: 10.5pt;
+    color: var(--text-muted);
+    line-height: 1.75;
+    max-width: 580px;
+  }
+  #intro .intro-divider {
+    width: 48px; height: 3px;
+    background: var(--tan);
+    border-radius: 2px;
+    margin: 20px 0;
+  }
+  #intro .mistakes-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin: 36px 0;
+  }
+  #intro .mp-card {
+    background: var(--green-dark);
+    border-radius: 12px;
+    padding: 24px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  #intro .mp-card::before {
+    content: '';
+    position: absolute;
+    top: -20px; right: -20px;
+    width: 80px; height: 80px;
+    background: rgba(255,255,255,.03);
+    border-radius: 50%;
+  }
+  #intro .mp-card .num {
+    font-family: var(--serif);
+    font-size: 36pt;
+    font-weight: 800;
+    color: rgba(255,255,255,.08);
+    line-height: 1;
+    position: absolute;
+    top: 12px; right: 16px;
+  }
+  #intro .mp-card .ic {
+    font-size: 20pt;
+    margin-bottom: 10px;
+    display: block;
+  }
+  #intro .mp-card h4 {
+    font-family: var(--serif);
+    font-size: 11pt;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+  #intro .mp-card p {
+    font-size: 8.5pt;
+    color: rgba(255,255,255,.55);
+    line-height: 1.55;
+  }
+  #intro .mp-card .impact {
+    margin-top: 12px;
+    font-size: 8pt;
+    font-weight: 700;
+    color: var(--tan-light);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+  #intro .who-reads {
+    background: var(--cream-alt);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+  }
+  #intro .who-reads h4 {
+    font-family: var(--serif);
+    font-size: 12pt;
+    color: var(--green-dark);
+    margin-bottom: 14px;
+  }
+  #intro .who-reads .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+  /* ────────────────────────────────────────────────────── */
+  /*  MISTAKE PAGE TEMPLATE                                 */
+  /* ────────────────────────────────────────────────────── */
+  .mistake-page {
+    background: var(--cream);
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 36px;
+  }
+  .mistake-page .mp-hero {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+  }
+  .mistake-page .mp-hero img {
+    width: 100%; height: 100%; object-fit: cover;
+  }
+  .mistake-page .mp-hero .mp-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(30,53,32,.88) 0%, rgba(30,53,32,.5) 60%, transparent 100%);
+    display: flex;
+    align-items: flex-end;
+    padding: 28px 48px;
+  }
+  .mistake-page .mp-hero .mp-overlay-inner { }
+  .mistake-page .mp-hero .mistake-num {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--tan-light);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .mistake-page .mp-hero h2 {
+    font-family: var(--serif);
+    font-size: 24pt;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+    max-width: 480px;
+  }
+  .mistake-page .mp-body {
+    padding: 32px 48px 0;
+    flex: 1;
+  }
+  .mistake-page .mp-intro {
+    font-size: 10.5pt;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 24px;
+    max-width: 560px;
+  }
+  .mistake-page .stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+  .mistake-page .insights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .mistake-page .insight-box {
+    background: var(--cream-alt);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--green);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 16px;
+  }
+  .mistake-page .insight-box h5 {
+    font-family: var(--sans);
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: var(--green-dark);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    margin-bottom: 6px;
+  }
+  .mistake-page .insight-box p {
+    font-size: 8.5pt;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  .mistake-page .action-strip {
+    background: var(--green);
+    border-radius: 10px;
+    padding: 16px 24px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .mistake-page .action-strip .ic {
+    font-size: 18pt;
+    flex-shrink: 0;
+  }
+  .mistake-page .action-strip .txt h5 {
+    font-family: var(--sans);
+    font-size: 9pt;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3px;
+  }
+  .mistake-page .action-strip .txt p {
+    font-size: 8.5pt;
+    color: rgba(255,255,255,.7);
+    line-height: 1.45;
+  }
+
+  /* ────────────────────────────────────────────────────── */
+  /*  PAGE 6 — IMPLEMENTATION ROADMAP                       */
+  /* ────────────────────────────────────────────────────── */
+  #roadmap {
+    background: var(--cream);
+    padding: 56px 64px 90px;
+  }
+  #roadmap .rm-header { margin-bottom: 36px; }
+  #roadmap .rm-header h2 {
+    font-family: var(--serif);
+    font-size: 26pt;
+    font-weight: 700;
+    color: var(--green-dark);
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  #roadmap .rm-header p {
+    font-size: 10pt;
+    color: var(--text-muted);
+    max-width: 520px;
+    line-height: 1.7;
+  }
+  #roadmap .phases {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 32px;
+  }
+  #roadmap .phase {
+    background: var(--cream-alt);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 22px;
+    position: relative;
+  }
+  #roadmap .phase .phase-badge {
+    display: inline-block;
+    background: var(--green-dark);
+    color: var(--tan-light);
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+  #roadmap .phase h4 {
+    font-family: var(--serif);
+    font-size: 13pt;
+    color: var(--green-dark);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+  #roadmap .phase ul { list-style: none; }
+  #roadmap .phase ul li {
+    font-size: 8.5pt;
+    color: var(--text-muted);
+    padding: 5px 0;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.4;
+    padding-left: 14px;
+    position: relative;
+  }
+  #roadmap .phase ul li:last-child { border-bottom: none; }
+  #roadmap .phase ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--tan);
+    font-size: 8pt;
+  }
+  #roadmap .outcome-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  #roadmap .outcome {
+    text-align: center;
+    padding: 16px 12px;
+    background: var(--green-dark);
+    border-radius: 10px;
+  }
+  #roadmap .outcome .n {
+    font-family: var(--serif);
+    font-size: 20pt;
+    font-weight: 700;
+    color: var(--tan-light);
+    display: block;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  #roadmap .outcome .l {
+    font-size: 7.5pt;
+    color: rgba(255,255,255,.6);
+    line-height: 1.4;
+  }
+
+  /* ────────────────────────────────────────────────────── */
+  /*  PAGE 7 — CTA                                          */
+  /* ────────────────────────────────────────────────────── */
+  #cta-page {
+    background: var(--green-dark);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  #cta-page .cta-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 64px 64px 48px;
+    text-align: center;
+  }
+  #cta-page h2 {
+    font-family: var(--serif);
+    font-size: 30pt;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #cta-page h2 em { font-style: normal; color: var(--tan-light); }
+  #cta-page .cta-sub {
+    font-size: 11pt;
+    color: rgba(255,255,255,.65);
+    line-height: 1.7;
+    max-width: 480px;
+    margin: 0 auto 40px;
+  }
+  #cta-page .cta-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 640px;
+    margin: 0 auto 40px;
+  }
+  #cta-page .cta-card {
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 12px;
+    padding: 22px 18px;
+    text-align: center;
+  }
+  #cta-page .cta-card .ic { font-size: 22pt; display: block; margin-bottom: 8px; }
+  #cta-page .cta-card h5 {
+    font-family: var(--sans);
+    font-size: 9pt;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+  #cta-page .cta-card p {
+    font-size: 8pt;
+    color: rgba(255,255,255,.5);
+    line-height: 1.5;
+  }
+  #cta-page .cta-url {
+    display: inline-block;
+    background: var(--tan);
+    color: #fff;
+    font-family: var(--sans);
+    font-size: 11pt;
+    font-weight: 700;
+    padding: 14px 40px;
+    border-radius: 999px;
+    letter-spacing: .02em;
+    margin-bottom: 16px;
+  }
+  #cta-page .cta-contact {
+    font-size: 9pt;
+    color: rgba(255,255,255,.4);
+  }
+  #cta-page .cta-contact a { color: var(--tan-light); }
+  #cta-page .cta-bottom {
+    border-top: 1px solid rgba(255,255,255,.08);
+    padding: 20px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #cta-page .cta-bottom .brand {
+    font-family: var(--serif);
+    font-size: 16pt;
+    font-weight: 700;
+    color: #fff;
+  }
+  #cta-page .cta-bottom .tagline {
+    font-size: 8.5pt;
+    color: rgba(255,255,255,.4);
+  }
+  #cta-page .cta-bottom .links {
+    display: flex; gap: 20px;
+  }
+  #cta-page .cta-bottom .links a {
+    font-size: 8pt;
+    color: rgba(255,255,255,.45);
+  }
+
+  /* ── PRINT OVERRIDES ─────────────────────────────────── */
+  @media print {
+    body { width: 8.5in; }
+    .page { page-break-after: always; break-after: page; }
+    .page:last-child { page-break-after: avoid; break-after: avoid; }
+    a { text-decoration: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 1 — COVER
+═══════════════════════════════════════════════════════ -->
+<div class="page" id="cover">
+  <div class="cover-top">
+    <div class="logo-mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round">
+        <path d="M12 2C6 2 3 7 3 12s4 8 9 10c5-2 9-5 9-10S18 2 12 2z"/>
+        <path d="M12 12V22M8 8c1 2 4 3 4 3M16 8c-1 2-4 3-4 3"/>
+      </svg>
+    </div>
+    <span class="logo-text">LaySun</span>
+  </div>
+
+  <div class="cover-body">
+    <div class="cover-badge">
+      <span>Commercial Facility Guide · 2026</span>
+    </div>
+    <h1>3 Most Common<br><em>Plant Investment</em><br>Mistakes Commercial<br>Facilities Make</h1>
+    <p class="cover-sub">A data-driven guide for facility managers, procurement directors, and commercial designers — covering the hidden costs, compliance risks, and UV failures that erode ROI on artificial plant investments.</p>
+
+    <div class="cover-pills">
+      <span class="pill">🏨 Hotels &amp; Resorts</span>
+      <span class="pill">🏢 Corporate Offices</span>
+      <span class="pill">🍽 Restaurants</span>
+      <span class="pill">🛍 Retail</span>
+      <span class="pill">🏥 Healthcare</span>
+    </div>
+
+    <div class="cover-stats">
+      <div class="c-stat">
+        <span class="n">49%</span>
+        <span class="l">Avg. maintenance cost reduction</span>
+      </div>
+      <div class="c-stat">
+        <span class="n">$1,880</span>
+        <span class="l">Savings per plant over 3 years</span>
+      </div>
+      <div class="c-stat">
+        <span class="n">200%+</span>
+        <span class="l">ROI in year one (compliant)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-bottom-bar">
+    <span>Prepared by <span class="hl">LaySun</span> — Fire-Rated Artificial Plants · Factory Direct</span>
+    <span>laysun.co · info@laysun.co</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 2 — INTRODUCTION
+═══════════════════════════════════════════════════════ -->
+<div class="page" id="intro" style="padding-bottom: 90px;">
+  <div class="intro-header">
+    <span class="eyebrow">Introduction</span>
+    <h2>Why Most Facilities Are Getting Their Plant Investment Wrong</h2>
+    <div class="intro-divider"></div>
+    <p>Commercial artificial plants represent a significant capital investment — yet most procurement decisions are made on purchase price alone, leaving maintenance costs, compliance liabilities, and UV degradation completely unaccounted for. The result: facilities replacing plants every 18–24 months instead of every 7–10 years, paying insurance premiums they shouldn't be, and fielding fire marshal citations they can't afford.</p>
+    <br>
+    <p>This guide identifies the three mistakes we see most often in commercial facilities — and gives you a practical roadmap to avoid all three on your next specification.</p>
+  </div>
+
+  <div class="mistakes-preview">
+    <div class="mp-card">
+      <span class="num">01</span>
+      <span class="ic">💸</span>
+      <h4>Maintenance Cost Blind Spot</h4>
+      <p>Procurement teams evaluate sticker price and ignore the 3-year total cost of ownership — missing a 49% cost reduction opportunity.</p>
+      <div class="impact">Impact: $1,880 per plant</div>
+    </div>
+    <div class="mp-card">
+      <span class="num">02</span>
+      <span class="ic">☀️</span>
+      <h4>UV Protection Ignorance</h4>
+      <p>Standard-grade plants fade and degrade within 12–18 months in sun-exposed locations, triggering early replacement cycles.</p>
+      <div class="impact">Impact: 24-month replacement cycles</div>
+    </div>
+    <div class="mp-card">
+      <span class="num">03</span>
+      <span class="ic">🔥</span>
+      <h4>Fire Safety Compliance Blind Spot</h4>
+      <p>Non-compliant plants expose facilities to $50K+ liability, 15–25% insurance premium increases, and fire marshal citations.</p>
+      <div class="impact">Impact: 200%+ ROI when compliant</div>
+    </div>
+  </div>
+
+  <div class="who-reads">
+    <h4>Who This Guide Is For</h4>
+    <div class="tags">
+      <span class="tag">Facility Managers</span>
+      <span class="tag">Procurement Directors</span>
+      <span class="tag">Interior Designers</span>
+      <span class="tag">Hotel Operations</span>
+      <span class="tag">Restaurant Groups</span>
+      <span class="tag">Corporate Real Estate</span>
+      <span class="tag">Healthcare Administrators</span>
+      <span class="tag">Retail Environments</span>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="brand">LaySun</span>
+    <span>3 Most Common Plant Investment Mistakes Commercial Facilities Make</span>
+    <span>Page 2</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 3 — MISTAKE #1
+═══════════════════════════════════════════════════════ -->
+<div class="page mistake-page">
+  <div class="mp-hero">
+    <img src="https://drive.google.com/uc?export=view&id=1DkxcgSePrpfJPg7-MxQkugDKSLOaQ8gf" alt="Maintenance cost blind spot — facility manager reviewing plant costs" onerror="this.style.background='#1e3520';this.style.opacity='1'">
+    <div class="mp-overlay">
+      <div class="mp-overlay-inner">
+        <span class="mistake-num">Mistake #1 of 3</span>
+        <h2>The Maintenance Cost<br>Blind Spot</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="mp-body">
+    <p class="mp-intro">Most facilities compare artificial plant vendors on purchase price — and stop there. This single oversight is responsible for the largest hidden cost in commercial plant programs. When you factor in cleaning, repositioning, seasonal rotation, and early replacement from quality failure, the true 3-year cost of a "cheap" plant routinely exceeds that of a quality alternative by 40–60%.</p>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="num">49%</span>
+        <span class="label">Average reduction in maintenance costs with quality PE plants vs. standard PVC</span>
+      </div>
+      <div class="stat-box">
+        <span class="num">$1,880</span>
+        <span class="label">Average savings per plant over a 3-year total cost of ownership analysis</span>
+      </div>
+      <div class="stat-box">
+        <span class="num">7–10yr</span>
+        <span class="label">Lifespan of properly specified quality PE plants vs. 18–24 months for standard grade</span>
+      </div>
+    </div>
+
+    <div class="insights">
+      <div class="insight-box">
+        <h5>The Real Cost Breakdown</h5>
+        <p>Purchase price typically represents only 35–45% of total 3-year cost. Maintenance labor (cleaning, repositioning, seasonal adjustments) and early replacement account for the rest — costs that never appear in the initial quote comparison.</p>
+      </div>
+      <div class="insight-box">
+        <h5>Predictive Maintenance Strategy</h5>
+        <p>Facilities implementing scheduled quarterly cleaning and annual repositioning cycles on quality PE plants report 60–70% lower unplanned maintenance interventions compared to reactive maintenance approaches.</p>
+      </div>
+      <div class="insight-box">
+        <h5>ROI Dashboard Metrics to Track</h5>
+        <p>Track: cleaning hours per plant per month, replacement frequency, vendor call-out costs, and staff complaint incidents. Facilities using these four metrics identify problem areas 3× faster than those tracking purchase cost alone.</p>
+      </div>
+      <div class="insight-box">
+        <h5>Specification Fix</h5>
+        <p>Request a 3-year TCO (Total Cost of Ownership) analysis from any supplier before committing. A quality supplier will provide cleaning specifications, expected lifespan data, and maintenance schedule recommendations upfront.</p>
+      </div>
+    </div>
+
+    <div class="action-strip">
+      <span class="ic">📊</span>
+      <div class="txt">
+        <h5>Use LaySun's Maintenance Savings Calculator</h5>
+        <p>Input your current plant count, cleaning frequency, and average plant age to calculate your 3-year savings opportunity. Available at laysun.co/maintenance-savings-calculator</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="brand">LaySun</span>
+    <span>3 Most Common Plant Investment Mistakes Commercial Facilities Make</span>
+    <span>Page 3</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 4 — MISTAKE #2
+═══════════════════════════════════════════════════════ -->
+<div class="page mistake-page">
+  <div class="mp-hero">
+    <img src="https://drive.google.com/uc?export=view&id=14ipx2zmMa23DNZTunFGjX9rGS7MZOb" alt="UV degradation comparison — artificial plant fading outdoors" onerror="this.style.background='#1e3520'">
+    <div class="mp-overlay">
+      <div class="mp-overlay-inner">
+        <span class="mistake-num">Mistake #2 of 3</span>
+        <h2>UV Protection<br>Ignorance</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="mp-body">
+    <p class="mp-intro">Artificial plants specified for atria, terraces, poolside areas, or any space with significant natural light exposure will degrade rapidly without UV-stabilized materials. Standard-grade plants begin visibly fading within 6–12 months in direct sunlight. By month 18, color shift and brittleness make replacement unavoidable — triggering a replacement cycle that eliminates any cost advantage from the original specification.</p>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="num">6–12mo</span>
+        <span class="label">Time to visible fading in direct sunlight for non-UV-rated plants</span>
+      </div>
+      <div class="stat-box">
+        <span class="num">70</span>
+        <span class="label">Monthly searches for "UV resistant artificial plants" — high-intent, high-value segment</span>
+      </div>
+      <div class="stat-box">
+        <span class="num">98%</span>
+        <span class="label">Keyword competition score — facilities searching for this are serious buyers</span>
+      </div>
+    </div>
+
+    <div class="insights">
+      <div class="insight-box">
+        <h5>UV Degradation Timeline</h5>
+        <p>0–6 months: no visible change. 6–12 months: subtle colour shift begins. 12–18 months: noticeable fading, leaf texture deterioration. 18–24 months: brittleness, leaf drop, structural weakening. Most facilities trigger replacement at month 18–20.</p>
+      </div>
+      <div class="insight-box">
+        <h5>What "UV Rated" Actually Means</h5>
+        <p>Genuine UV protection requires UV-stabilising additives mixed into the PE compound during manufacturing — not a surface coating applied post-production. Ask suppliers for UV stabiliser content certificates, not just marketing claims.</p>
+      </div>
+      <div class="insight-box">
+        <h5>Certified UV-Resistant Materials</h5>
+        <p>LaySun's outdoor-rated PE foliage uses UV stabiliser concentrations tested to withstand 2,000+ hours of accelerated UV exposure (equivalent to 5+ years in most US climates) with less than 10% colour variance on the Grey Scale.</p>
+      </div>
+      <div class="insight-box">
+        <h5>24-Month Replacement Cycle Fix</h5>
+        <p>Specifying certified UV-resistant plants for any location receiving more than 4 hours of direct or intense indirect sunlight per day eliminates the 24-month replacement cycle and converts a recurring cost into a capital asset with a 7–10 year horizon.</p>
+      </div>
+    </div>
+
+    <div class="action-strip">
+      <span class="ic">☀️</span>
+      <div class="txt">
+        <h5>Download the LaySun UV Protection Guide</h5>
+        <p>Covers UV rating methods, how to evaluate supplier claims, and a room-by-room specification guide for commercial environments. Available at laysun.co/uv-protection-guide</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="brand">LaySun</span>
+    <span>3 Most Common Plant Investment Mistakes Commercial Facilities Make</span>
+    <span>Page 4</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 5 — MISTAKE #3
+═══════════════════════════════════════════════════════ -->
+<div class="page mistake-page">
+  <div class="mp-hero">
+    <img src="https://drive.google.com/uc?export=view&id=1vv_3UJlQj9b8O6roo4G79m1QHFncdx6C" alt="Fire safety compliance — NFPA 701 certified artificial plants" onerror="this.style.background='#1e3520'">
+    <div class="mp-overlay">
+      <div class="mp-overlay-inner">
+        <span class="mistake-num">Mistake #3 of 3</span>
+        <h2>Fire Safety Compliance<br>Blind Spot</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="mp-body">
+    <p class="mp-intro">Non-compliant artificial plants in commercial spaces aren't just a fire risk — they're a financial liability. Facilities using plants that haven't been tested to NFPA 701 (or equivalent) fire standards face insurance premium increases, potential coverage voidance during a claim, and direct fines following fire marshal inspections. Yet the majority of imported artificial plants arrive in the US without any fire compliance documentation whatsoever.</p>
+
+    <div class="stats-row">
+      <div class="stat-box">
+        <span class="num">$50K+</span>
+        <span class="label">Potential liability exposure per incident with non-compliant plants in commercial spaces</span>
+      </div>
+      <div class="stat-box">
+        <span class="num">15–25%</span>
+        <span class="label">Insurance premium savings achieved by facilities with documented NFPA 701 compliance</span>
+      </div>
+      <div class="stat-box">
+        <span class="num">200%+</span>
+        <span class="label">ROI in year one when compliance savings and liability reduction are factored in</span>
+      </div>
+    </div>
+
+    <div class="insights">
+      <div class="insight-box">
+        <h5>Compliant vs Non-Compliant</h5>
+        <p>Compliant plants: NFPA 701 test certification, documented fire-retardant treatment, certificates traceable to specific production batch. Non-compliant plants: no documentation, surface-applied treatments that wash off, or certificates that can't be verified against the shipped product.</p>
+      </div>
+      <div class="insight-box">
+        <h5>Insurance Premium Impact</h5>
+        <p>Commercial property insurers increasingly require fire compliance documentation for decorative materials. Facilities presenting NFPA 701 certificates for artificial plants have negotiated 15–25% reductions in the decorative materials surcharge component of their premiums.</p>
+      </div>
+      <div class="insight-box">
+        <h5>What to Request from Suppliers</h5>
+        <p>Demand: (1) NFPA 701 test report from an accredited US laboratory, (2) a certificate of conformity traceable to your specific order batch, (3) written confirmation that fire treatment is applied during manufacturing — not as a post-production spray.</p>
+      </div>
+      <div class="insight-box">
+        <h5>LaySun Compliance Standard</h5>
+        <p>All LaySun products are manufactured with fire-retardant PE compound and tested to NFPA 701 standards. Full test documentation and batch-traceable certificates are included with every commercial order — ready for your insurer or fire marshal on request.</p>
+      </div>
+    </div>
+
+    <div class="action-strip">
+      <span class="ic">📋</span>
+      <div class="txt">
+        <h5>Download the NFPA 701 Compliance Checklist</h5>
+        <p>A practical checklist for verifying fire compliance on any artificial plant order — including questions to ask your supplier and red flags to watch for. Available at laysun.co/nfpa701-checklist</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="brand">LaySun</span>
+    <span>3 Most Common Plant Investment Mistakes Commercial Facilities Make</span>
+    <span>Page 5</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 6 — IMPLEMENTATION ROADMAP
+═══════════════════════════════════════════════════════ -->
+<div class="page" id="roadmap">
+  <span class="eyebrow">Your Action Plan</span>
+  <div class="rm-header">
+    <h2>90-Day Implementation Roadmap</h2>
+    <p>A structured three-phase approach to audit your current plant program, fix the three mistakes, and put in place the monitoring systems that keep costs and compliance in check long-term.</p>
+  </div>
+
+  <div class="phases">
+    <div class="phase">
+      <span class="phase-badge">Days 1–30 · Assess</span>
+      <h4>Assessment &amp; Audit Phase</h4>
+      <ul>
+        <li>Inventory all current artificial plants by location, age, and supplier</li>
+        <li>Document UV exposure levels for each location (hours of direct/indirect light)</li>
+        <li>Request fire compliance certificates from current suppliers</li>
+        <li>Calculate current annual maintenance spend per plant</li>
+        <li>Identify plants within 6 months of end-of-life</li>
+        <li>Flag any locations with non-compliant or unverified plants</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <span class="phase-badge">Days 31–60 · Optimise</span>
+      <h4>Optimisation &amp; Specification Phase</h4>
+      <ul>
+        <li>Build 3-year TCO model for current vs. quality specification</li>
+        <li>Specify UV-rated plants for all sun-exposed locations</li>
+        <li>Source NFPA 701 compliant replacements for flagged locations</li>
+        <li>Present compliance documentation to insurer for premium review</li>
+        <li>Negotiate volume pricing on phased replacement schedule</li>
+        <li>Set up maintenance schedule template per plant category</li>
+      </ul>
+    </div>
+    <div class="phase">
+      <span class="phase-badge">Days 61–90 · Monitor</span>
+      <h4>Ongoing Monitoring Strategy</h4>
+      <ul>
+        <li>Implement quarterly cleaning and inspection schedule</li>
+        <li>Log maintenance hours per plant per quarter</li>
+        <li>Track UV performance with annual photo documentation</li>
+        <li>Review compliance certificates annually as regulations update</li>
+        <li>Set replacement budget based on 7–10 year lifespan projections</li>
+        <li>Benchmark total plant program cost year-over-year</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="outcome-row">
+    <div class="outcome">
+      <span class="n">49%</span>
+      <span class="l">Lower maintenance costs within 12 months</span>
+    </div>
+    <div class="outcome">
+      <span class="n">7–10yr</span>
+      <span class="l">Extended plant lifespan vs. current 18–24 months</span>
+    </div>
+    <div class="outcome">
+      <span class="n">15–25%</span>
+      <span class="l">Insurance premium reduction potential</span>
+    </div>
+    <div class="outcome">
+      <span class="n">$0</span>
+      <span class="l">Fire compliance liability exposure</span>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span class="brand">LaySun</span>
+    <span>3 Most Common Plant Investment Mistakes Commercial Facilities Make</span>
+    <span>Page 6</span>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE 7 — CTA
+═══════════════════════════════════════════════════════ -->
+<div class="page" id="cta-page">
+  <div class="cta-body">
+    <span class="eyebrow" style="color:var(--tan-light);">Next Step</span>
+    <h2>Ready to Fix All Three Mistakes<br>in Your <em>Facility?</em></h2>
+    <p class="cta-sub">LaySun's commercial plant specialists work with facility managers, procurement teams, and designers to specify compliant, cost-effective plant programs — factory direct, with full documentation.</p>
+
+    <div class="cta-cards">
+      <div class="cta-card">
+        <span class="ic">📅</span>
+        <h5>Book a Free Consultation</h5>
+        <p>30-minute call with a LaySun commercial specialist. We'll review your current program and identify quick wins.</p>
+      </div>
+      <div class="cta-card">
+        <span class="ic">📊</span>
+        <h5>Run Your ROI Calculation</h5>
+        <p>Use our interactive Maintenance Savings Calculator to quantify your 3-year cost reduction opportunity.</p>
+      </div>
+      <div class="cta-card">
+        <span class="ic">✅</span>
+        <h5>Request a Compliance Audit</h5>
+        <p>Send us your current plant list and we'll identify compliance gaps and provide NFPA 701 alternatives.</p>
+      </div>
+    </div>
+
+    <a class="cta-url" href="https://laysun.co/quote">laysun.co/quote</a>
+    <p class="cta-contact">Or email us directly: <a href="mailto:info@laysun.co">info@laysun.co</a> · WhatsApp: <a href="https://wa.me/12138298485">+1 213-829-8485</a></p>
+  </div>
+
+  <div class="cta-bottom">
+    <span class="brand">LaySun</span>
+    <span class="tagline">Fire-Rated Artificial Plants · Factory Direct Worldwide · Founded 2011</span>
+    <div class="links">
+      <a href="https://laysun.co/products">Products</a>
+      <a href="https://laysun.co/projects">Projects</a>
+      <a href="https://laysun.co/contact">Contact</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
