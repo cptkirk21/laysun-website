@@ -188,17 +188,30 @@
   </div>
 </footer>
 <button class="back-top" aria-label="Back to top">↑</button>
-<script src="js/main.js"></script>
-
-
-<!-- Analytics (deferred to body bottom so they don't compete with LCP) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDVC02Y28"></script>
+<script src="js/main.js" defer></script>
+<!-- Analytics 鈥?lazy-loaded on first interaction or after 4s timeout, so LCP isn't blocked -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-YJDVC02Y28');
-</script>
-<script>window.addEventListener("load",function(){function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,o.onload=function(){window.trackingFunctions.onLoad({appId:"699435a6d52bb100156127ec"})},document.head.appendChild(o)}initApollo()});</script>
-</body>
+(function(){
+  if(window.__lazyAnalyticsLoaded)return;
+  function load(){
+    if(window.__lazyAnalyticsLoaded)return;
+    window.__lazyAnalyticsLoaded=true;
+    var g=document.createElement('script');
+    g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-YJDVC02Y28';
+    document.head.appendChild(g);
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());gtag('config','G-YJDVC02Y28');
+    var a=document.createElement('script');
+    a.async=true;a.defer=true;
+    a.src='https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache='+Math.random().toString(36).substring(7);
+    a.onload=function(){if(window.trackingFunctions)window.trackingFunctions.onLoad({appId:'699435a6d52bb100156127ec'});};
+    document.head.appendChild(a);
+  }
+  var evs=['scroll','touchstart','mousemove','keydown','click'];
+  var opts={once:true,passive:true,capture:true};
+  evs.forEach(function(e){window.addEventListener(e,load,opts);});
+  setTimeout(load,4000);
+})();
+</script></body>
 </html>
