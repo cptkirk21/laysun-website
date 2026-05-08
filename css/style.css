@@ -19,8 +19,8 @@
   --border:       #ddd5c2;
   --white:        #ffffff;
 
-  --font-serif:  'Playfair Display', Georgia, serif;
-  --font-sans:   'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif:  'Playfair Display', 'Playfair Display Fallback', Georgia, serif;
+  --font-sans:   'Inter', 'Inter Fallback', system-ui, -apple-system, sans-serif;
 
   --nav-h: 62px;
   --radius-s: 6px;

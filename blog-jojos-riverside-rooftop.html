@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A site visit to JoJo's Riverside Rooftop exploring lighting, faux greenery, and durable design for wind-exposed rooftop environments with skyline views.">
   <title>Elevating Outdoor Hospitality: A Site Visit to JoJo's Riverside Rooftop &mdash; LaySun Blog</title>
+    <!-- Critical font preloads -->
+  <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-400.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-700.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/Playfair-Display-700.woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
     .post-hero-img { width:100%; height:420px; object-fit:cover; border-radius:var(--radius-xl); margin-bottom:2.5rem; }
     @media(max-width:600px){ .post-hero-img { height:220px; } }
     .inline-img { width:100%; border-radius:var(--radius-lg); margin:2rem 0; }
-  </style>
-  <script>window.addEventListener("load",function(){function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,o.onload=function(){window.trackingFunctions.onLoad({appId:"699435a6d52bb100156127ec"})},document.head.appendChild(o)}initApollo()});</script>
-  <link rel="canonical" href="https://laysun.co/blog-jojos-riverside-rooftop">
+  </style><link rel="canonical" href="https://laysun.co/blog-jojos-riverside-rooftop">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="LaySun">
   <meta property="og:url" content="https://laysun.co/blog-jojos-riverside-rooftop">
@@ -198,5 +200,15 @@
 </footer>
 <button class="back-top" aria-label="Back to top">&#8593;</button>
 <script src="js/main.js"></script>
+
+<!-- Analytics (deferred to body bottom so they don't compete with LCP) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YJDVC02Y28"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YJDVC02Y28');
+</script>
+<script>window.addEventListener("load",function(){function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,o.onload=function(){window.trackingFunctions.onLoad({appId:"699435a6d52bb100156127ec"})},document.head.appendChild(o)}initApollo()});</script>
 </body>
 </html>
