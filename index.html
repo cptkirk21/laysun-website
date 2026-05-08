@@ -15,7 +15,47 @@
   <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-700.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/Playfair-Display-700.woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Critical CSS — above-the-fold styles inlined to eliminate render-blocking */
+    :root{--green-dark:#1e3520;--green:#2d5a3d;--green-mid:#3d6b4a;--tan:#b8936a;--tan-light:#d4b08a;--cream:#faf6ef;--cream-alt:#f0e9dc;--text:#1e1e1e;--text-muted:#5a6050;--border:#ddd5c2;--white:#fff;--font-serif:'Playfair Display','Playfair Display Fallback',Georgia,serif;--font-sans:'Inter','Inter Fallback',system-ui,-apple-system,sans-serif;--nav-h:62px;--radius-s:6px;--radius-pill:999px;--ease:.25s ease}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{font-family:var(--font-sans);background:var(--cream);color:var(--text);line-height:1.65;overflow-x:hidden}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit;text-decoration:none}
+    ul,ol{list-style:none}
+    button{cursor:pointer;border:none;background:none;font-family:var(--font-sans)}
+    h1,h2,h3{font-family:var(--font-serif);line-height:1.2;color:var(--green-dark)}
+    h1{font-size:clamp(2rem,5vw,3.6rem)}
+    p{color:var(--text-muted);line-height:1.8}
+    .container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.25rem}
+    .btn{display:inline-flex;align-items:center;gap:.45rem;padding:.85rem 1.9rem;border-radius:var(--radius-pill);font-size:.92rem;font-weight:600;letter-spacing:.02em;border:2px solid transparent;transition:all var(--ease);cursor:pointer}
+    .btn-tan{background:var(--tan);color:var(--white);border-color:var(--tan)}
+    .btn-white-outline{background:transparent;color:var(--white);border-color:rgba(255,255,255,.6)}
+    .btn-lg{padding:1.05rem 2.4rem;font-size:1rem}
+    .navbar{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:1000;background:rgba(250,246,239,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:100%;max-width:1200px;margin:0 auto;padding:0 1.25rem}
+    .nav-logo{display:flex;align-items:center;gap:.5rem}
+    .nav-logo img{height:38px;width:auto}
+    .nav-logo-text{font-family:var(--font-serif);font-size:1.55rem;font-weight:700;color:var(--green);letter-spacing:-.02em}
+    .nav-links{display:flex;align-items:center;gap:0}
+    .nav-links a{display:block;padding:.4rem .65rem;font-size:.82rem;font-weight:500;color:var(--text);border-radius:var(--radius-s);white-space:nowrap}
+    .nav-links .btn-nav{background:var(--green);color:var(--white)!important;padding:.28rem .85rem;border-radius:var(--radius-pill);margin-left:.5rem;font-size:.78rem!important;font-weight:600!important;line-height:1.2}
+    .nav-burger{display:none;flex-direction:column;gap:5px;padding:8px}
+    .nav-burger span{display:block;width:24px;height:2px;background:var(--text);border-radius:2px}
+    @media(max-width:1240px){.nav-burger{display:flex}.nav-links{position:fixed;top:var(--nav-h);left:0;right:0;height:calc(100vh - var(--nav-h));background:var(--cream);flex-direction:column;align-items:flex-start;padding:1.5rem 1.25rem;gap:.2rem;transform:translateX(110%);transition:transform .3s ease;overflow-y:auto;border-top:1px solid var(--border);z-index:999}.nav-links.open{transform:translateX(0)}.nav-links a{font-size:1.05rem;padding:.9rem 1rem;width:100%}.nav-links .btn-nav{display:inline-flex;width:auto;margin:.5rem 1rem 0}}
+    .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:var(--nav-h);background:linear-gradient(135deg,var(--green-dark) 0%,var(--green) 50%,#4a6640 80%,#8a7a5a 100%)}
+    .hero-overlay{position:absolute;inset:0;background:rgba(28,46,28,.25)}
+    .hero-content{position:relative;z-index:2;padding:5rem 0}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(184,147,106,.6);color:var(--tan-light);padding:.35rem .9rem;border-radius:var(--radius-pill);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.25rem}
+    .hero h1{color:var(--white);max-width:680px;margin-bottom:1.25rem;font-size:clamp(2.2rem,5vw,4rem);text-shadow:0 2px 30px rgba(0,0,0,.8),0 1px 6px rgba(0,0,0,.7)}
+    .hero h1 em{font-style:normal;color:var(--tan-light)}
+    .hero-content>p{color:rgba(255,255,255,.75);font-size:1.1rem;max-width:500px;margin-bottom:2.5rem;text-shadow:0 1px 12px rgba(0,0,0,.8)}
+    .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+    @media(max-width:768px){.hero-content{padding-top:5px}.hero-btns{flex-direction:column;align-items:flex-start}}
+  </style>
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 <!-- Canonical -->
   <link rel="canonical" href="https://laysun.co">
 
