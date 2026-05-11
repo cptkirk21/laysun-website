@@ -23,6 +23,7 @@
 
   <!-- Blog -->
   <url><loc>https://laysun.co/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://laysun.co/blog-the-silk-myth-pe-commercial-standard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://laysun.co/blog-nfpa701</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://laysun.co/blog-hotel-trends-2025</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://laysun.co/blog-restaurant-green-walls</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>

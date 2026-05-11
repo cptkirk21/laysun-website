@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "the-silk-myth-pe-commercial-standard",
+      "title": "The Silk Myth: Why PE Artificial Plants Are Now the Commercial Standard",
+      "description": "The silk era is over. PE artificial plants now dominate commercial specs — here's why polyethylene wins on UV resistance, fire safety, and total cost of ownership.",
+      "date": "10 May 2026",
+      "category": "Materials",
+      "readTime": "8 min read",
+      "image": "images/blog-silk-myth-hero.webp",
+      "featured": true
+    },
+    {
       "slug": "biophilic-office-design-artificial-plants-commercial",
       "title": "Biophilic Office Design: How Artificial Plants Transform Commercial Spaces in 2026",
       "description": "Discover how artificial plants and biophilic design create sustainable, low-maintenance commercial spaces. Learn about cost savings, aesthetic benefits, and implementation strategies for offices, lobbies, and corporate environments.",
