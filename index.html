@@ -14,7 +14,16 @@
   <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-400.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-700.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/Playfair-Display-700.woff2" crossorigin>
-  <link rel="stylesheet" href="css/fonts.css">
+  <style>
+/* Critical inline fonts - unblock LCP render. Fallbacks are metric-matched to minimize swap shift. */
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/Inter-400.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/Inter-700.woff2') format('woff2'); }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/Playfair-Display-700.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Fallback'; src: local('Arial'); size-adjust: 107.4%; ascent-override: 90%; descent-override: 22.43%; line-gap-override: 0%; }
+@font-face { font-family: 'Playfair Display Fallback'; src: local('Georgia'); size-adjust: 105%; ascent-override: 95%; descent-override: 25%; line-gap-override: 0%; }
+</style>
+<link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
   <style>
     /* Critical CSS — above-the-fold styles inlined to eliminate render-blocking */
     :root{--green-dark:#1e3520;--green:#2d5a3d;--green-mid:#3d6b4a;--tan:#b8936a;--tan-light:#d4b08a;--cream:#faf6ef;--cream-alt:#f0e9dc;--text:#1e1e1e;--text-muted:#5a6050;--border:#ddd5c2;--white:#fff;--font-serif:'Playfair Display','Playfair Display Fallback',Georgia,serif;--font-sans:'Inter','Inter Fallback',system-ui,-apple-system,sans-serif;--nav-h:62px;--radius-s:6px;--radius-pill:999px;--ease:.25s ease}

@@ -9,7 +9,16 @@
   <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-400.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-700.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/Playfair-Display-700.woff2" crossorigin>
-  <link rel="stylesheet" href="css/fonts.css">
+  <style>
+/* Critical inline fonts - unblock LCP render. Fallbacks are metric-matched to minimize swap shift. */
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/Inter-400.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/Inter-700.woff2') format('woff2'); }
+@font-face { font-family: 'Playfair Display'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/Playfair-Display-700.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Fallback'; src: local('Arial'); size-adjust: 107.4%; ascent-override: 90%; descent-override: 22.43%; line-gap-override: 0%; }
+@font-face { font-family: 'Playfair Display Fallback'; src: local('Georgia'); size-adjust: 105%; ascent-override: 95%; descent-override: 25%; line-gap-override: 0%; }
+</style>
+<link rel="preload" href="css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/fonts.css"></noscript>
   <link rel="stylesheet" href="css/style.css"><!-- Canonical -->
   <link rel="canonical" href="https://laysun.co/cookie-policy">
 
