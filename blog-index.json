@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "green-without-the-guilt-artificial-plants-office",
+      "title": "Green Without the Guilt: Why Commercial Artificial Plants Are Perfect for Your Office",
+      "description": "Why commercial artificial plants are the smart choice for modern offices — zero maintenance, allergy-free, design-flexible, and cost-effective. A practical buying guide for facility managers and designers.",
+      "date": "30 May 2026",
+      "category": "Office Design",
+      "readTime": "6 min read",
+      "image": "images/blog-green-without-guilt-hero.webp",
+      "featured": true
+    },
+    {
       "slug": "the-silk-myth-pe-commercial-standard",
       "title": "The Silk Myth: Why PE Artificial Plants Are Now the Commercial Standard",
       "description": "The silk era is over. PE artificial plants now dominate commercial specs — here's why polyethylene wins on UV resistance, fire safety, and total cost of ownership.",
