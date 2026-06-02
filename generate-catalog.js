@@ -512,6 +512,118 @@ const products = [
     keywords: 'artificial red cherry blossom tree, deep red sakura tree fake, Chinese New Year tree, bold flower tree commercial',
     url: `${BASE_URL}/artificial-flowering-trees`,
   },
+
+  // ── ARTIFICIAL GREEN WALLS ───────────────────────────────────────────────
+  {
+    sku: 'LS-GW-MOSS', collection: 'Artificial Green Walls',
+    name: 'Commercial Artificial Moss Green Wall Panel',
+    sizes: '60x40cm Panel', moq: 1, leadTime: '15–30 days',
+    p1: '28.00', p2: '22.00', p3: '17.00',
+    material: 'PE moss pile on a trimmable interlocking panel backing; 60×40 cm modular panel',
+    desc: 'Dense reindeer-moss-look panel with a flat, uniform pile — a tactile, sound-softening feature wall for reception desks, boutique retail and meeting rooms. Maintenance-free PE moss on a trimmable backing; no light or irrigation required. NFPA 701 fire-rated.',
+    image: `${BASE_URL}/images/prod-greenwall-moss.webp`,
+    keywords: 'artificial moss wall, moss green wall panel, reindeer moss wall, acoustic moss panel, commercial moss wall',
+    url: `${BASE_URL}/artificial-green-walls`,
+  },
+  {
+    sku: 'LS-GW-WOODLAND', collection: 'Artificial Green Walls',
+    name: 'Commercial Artificial Woodland Greens Living Wall',
+    sizes: '60x40cm Panel', moq: 1, leadTime: '15–30 days',
+    p1: '165.00', p2: '132.00', p3: '102.00',
+    material: 'UV-stabilised PE & PVC mixed foliage on a trimmable interlocking grid; 60×40 cm modular panel',
+    desc: 'Layered woodland foliage mix — ferns, ivy and broadleaf greens — for a deep, natural living-wall look indoors or out. High-density premium panel for hotel lobbies, restaurant features and exterior courtyards. UV-stable and NFPA 701 fire-rated.',
+    image: `${BASE_URL}/images/prod-greenwall-woodland.webp`,
+    keywords: 'artificial woodland green wall, mixed foliage living wall, fern ivy wall panel, outdoor green wall, commercial living wall',
+    url: `${BASE_URL}/artificial-green-walls`,
+  },
+  {
+    sku: 'LS-GW-VIBRANT-MEDLEY', collection: 'Artificial Green Walls',
+    name: 'Commercial Artificial Vibrant Medley Green Wall',
+    sizes: '60x40cm Panel', moq: 1, leadTime: '15–30 days',
+    p1: '24.00', p2: '19.00', p3: '15.00',
+    material: 'UV-stabilised PE & PVC mixed foliage on a trimmable interlocking grid; 60×40 cm modular panel',
+    desc: 'Bright multi-tone foliage blend with varied leaf shapes for a fresh, energetic feature wall. Interlocking panels clip together to cover any area — ideal for cafés, gyms and creative offices. NFPA 701 fire-rated.',
+    image: `${BASE_URL}/images/prod-greenwall-vibrant-medley.webp`,
+    keywords: 'vibrant artificial green wall, mixed foliage panel, café green wall, faux plant wall, commercial foliage panel',
+    url: `${BASE_URL}/artificial-green-walls`,
+  },
+  {
+    sku: 'LS-GW-GARDEN-FOLIAGE', collection: 'Artificial Green Walls',
+    name: 'Commercial Artificial Garden Foliage Living Wall',
+    sizes: '60x40cm Panel', moq: 1, leadTime: '15–30 days',
+    p1: '33.00', p2: '26.00', p3: '20.00',
+    material: 'UV-stabilised PE foliage mat on a trimmable interlocking grid; 60×40 cm modular panel',
+    desc: 'Classic garden-green foliage mat with a balanced mix of leaf textures — the versatile all-rounder for backdrops, planter tops and full wall coverage. Trim to fit and interlock for a seamless run. NFPA 701 fire-rated.',
+    image: `${BASE_URL}/images/prod-greenwall-garden-foliage.webp`,
+    keywords: 'artificial garden foliage wall, faux foliage mat, green wall panel, hedge mat panel, commercial foliage wall',
+    url: `${BASE_URL}/artificial-green-walls`,
+  },
+  {
+    sku: 'LS-GW-FERN', collection: 'Artificial Green Walls',
+    name: 'Commercial Artificial Fern Foliage Living Wall',
+    sizes: '60x40cm Panel', moq: 1, leadTime: '15–30 days',
+    p1: '20.00', p2: '16.00', p3: '12.00',
+    material: 'UV-stabilised PE fern foliage on a trimmable interlocking grid; 60×40 cm modular panel',
+    desc: 'Soft, layered fern fronds for a cool, shade-garden feel — popular for bathrooms, spas and humid-look interiors where live ferns struggle. Lightweight trimmable panels, no watering. NFPA 701 fire-rated.',
+    image: `${BASE_URL}/images/prod-greenwall-fern.webp`,
+    keywords: 'artificial fern wall, faux fern panel, fern green wall, spa green wall, commercial fern panel',
+    url: `${BASE_URL}/artificial-green-walls`,
+  },
+  {
+    sku: 'LS-GW-WILDFLOWER', collection: 'Artificial Green Walls',
+    name: 'Commercial Artificial Wildflower Green Wall',
+    sizes: '60x40cm Panel', moq: 1, leadTime: '15–30 days',
+    p1: '95.00', p2: '76.00', p3: '59.00',
+    material: 'PE & silk foliage and blooms on a trimmable interlocking grid; 60×40 cm modular panel',
+    desc: 'Foliage base scattered with mixed wildflower blooms for a meadow-inspired feature wall. A statement backdrop for event spaces, bridal suites, bars and retail windows. NFPA 701 fire-rated.',
+    image: `${BASE_URL}/images/prod-greenwall-wildflower.webp`,
+    keywords: 'artificial wildflower wall, flower green wall, floral feature wall, event backdrop wall, commercial flower panel',
+    url: `${BASE_URL}/artificial-green-walls`,
+  },
+  {
+    sku: 'LS-GW-MYSTIC-MEDLEY', collection: 'Artificial Green Walls',
+    name: 'Commercial Artificial Mystic Medley Green Wall',
+    sizes: '60x40cm Panel', moq: 1, leadTime: '15–30 days',
+    p1: '80.00', p2: '64.00', p3: '50.00',
+    material: 'UV-stabilised PE & PVC mixed foliage on a trimmable interlocking grid; 60×40 cm modular panel',
+    desc: 'Deep, dramatic foliage mix with dark greens, burgundy tones and trailing accents for a moody, high-end feature wall. Premium dense panels for luxury hospitality and statement reception areas. NFPA 701 fire-rated.',
+    image: `${BASE_URL}/images/prod-greenwall-mystic-medley.webp`,
+    keywords: 'mystic artificial green wall, dark foliage living wall, premium green wall panel, luxury feature wall, commercial foliage wall',
+    url: `${BASE_URL}/artificial-green-walls`,
+  },
+  {
+    sku: 'LS-GW-TROPICAL', collection: 'Artificial Green Walls',
+    name: 'Commercial Artificial Tropical Living Wall',
+    sizes: '60x40cm Panel', moq: 1, leadTime: '15–30 days',
+    p1: '125.00', p2: '100.00', p3: '78.00',
+    material: 'UV-stabilised PE & PVC tropical foliage on a trimmable interlocking grid; 60×40 cm modular panel',
+    desc: 'Lush tropical leaf mix — monstera-style, palm and broadleaf foliage with red flowering accents — for a resort-feel feature wall indoors or on a covered terrace. UV-stable for bright and exterior settings. NFPA 701 fire-rated.',
+    image: `${BASE_URL}/images/prod-greenwall-tropical.webp`,
+    keywords: 'artificial tropical green wall, tropical living wall, monstera leaf wall, resort green wall, outdoor foliage panel',
+    url: `${BASE_URL}/artificial-green-walls`,
+  },
+  {
+    sku: 'LS-GW-GALAXY', collection: 'Artificial Green Walls',
+    name: 'Commercial Artificial Galaxy Living Wall',
+    sizes: '60x40cm Panel', moq: 1, leadTime: '15–30 days',
+    p1: '139.00', p2: '111.00', p3: '86.00',
+    material: 'UV-stabilised PE & PVC mixed foliage on a trimmable interlocking grid; 60×40 cm modular panel',
+    desc: 'Rich, full-coverage foliage blend with mixed greens and floral pops for a premium, deep-pile feature wall. A flagship panel for hotel lobbies, restaurant backdrops and luxury retail. NFPA 701 fire-rated.',
+    image: `${BASE_URL}/images/prod-greenwall-galaxy.webp`,
+    keywords: 'galaxy artificial green wall, premium living wall, mixed foliage feature wall, hotel green wall, commercial living wall',
+    url: `${BASE_URL}/artificial-green-walls`,
+  },
+  {
+    sku: 'LS-GW-FOREST-GREENS', collection: 'Artificial Green Walls',
+    name: 'Commercial Artificial Forest Greens Living Wall',
+    sizes: '60x40cm Panel', moq: 1, leadTime: '15–30 days',
+    p1: '125.00', p2: '100.00', p3: '78.00',
+    material: 'UV-stabilised PE & PVC mixed foliage on a trimmable interlocking grid; 60×40 cm modular panel',
+    desc: 'Cool forest-toned foliage mix of ferns and broadleaf greens for a natural, calming wall — equally at home indoors or in a shaded exterior courtyard. High-density UV-stable panels. NFPA 701 fire-rated.',
+    image: `${BASE_URL}/images/prod-greenwall-forest-greens.webp`,
+    keywords: 'forest greens green wall, artificial forest living wall, fern broadleaf panel, outdoor green wall, commercial foliage wall',
+    url: `${BASE_URL}/artificial-green-walls`,
+  },
 ];
 
 // ── COLLECTION METADATA ───────────────────────────────────────────────────────
@@ -531,6 +643,10 @@ const collectionMeta = {
   'Artificial Flowering Trees': {
     alibabaCategory: 'Artificial Plant & Flower/Artificial Trees/Artificial Flower Trees',
     tags: 'artificial flowering tree, fake cherry blossom, artificial camellia, silk flower tree commercial',
+  },
+  'Artificial Green Walls': {
+    alibabaCategory: 'Artificial Plant & Flower/Artificial Green Wall',
+    tags: 'artificial green wall, living wall panel, vertical garden, faux foliage wall, commercial green wall',
   },
 };
 
@@ -646,6 +762,7 @@ const collectionDescriptions = {
   'Artificial Olive Trees': '20 olive tree styles from 3–10 ft. Standard, real wood trunk, spherical 3D, wide canopy, velvet flock and more. The most comprehensive commercial artificial olive tree range available factory-direct worldwide.',
   'Artificial Fiddle Leaf Fig & Ficus': '8 fiddle leaf fig and ficus varieties — curved trunk, real wood trunk, multi-branch and variegated styles. 4–8 ft. The top-specified artificial tree for hotel lobbies and corporate offices globally.',
   'Artificial Flowering Trees': '12 flowering tree varieties — camellia, hydrangea, bougainvillea and cherry blossom in multiple colours. 2.5–8 ft. Premium silk and PE blooms for events, hospitality and retail.',
+  'Artificial Green Walls': '10 modular foliage styles — moss, fern, tropical, wildflower and mixed medleys. Interlocking 60×40 cm UV-stable panels that trim to any dimension for feature walls, reception backdrops and exterior facades. NFPA 701 fire-rated.',
 };
 
 const sectionsHTML = collections.map((name, i) => `
@@ -669,7 +786,7 @@ const html = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LaySun 2026 Product Catalog — Artificial Plants &amp; Trees | B2B Factory Direct</title>
-<meta name="description" content="Browse all 44 products with full SKU variants, size options and volume pricing. Fire-rated artificial trees and green walls, factory-direct from Dongguan.">
+<meta name="description" content="Browse all ${products.length} products with full SKU variants, size options and volume pricing. Fire-rated artificial trees and green walls, factory-direct from Dongguan.">
 <link rel="canonical" href="https://laysun.co/laysun-catalog-2026">
 <style>
   /* ── Base ─────────────────────────────────────────────────── */
@@ -934,11 +1051,11 @@ const html = `<!DOCTYPE html>
   <div class="cover-divider"></div>
   <div class="cover-stats">
     <div>
-      <div class="cover-stat-num">44</div>
+      <div class="cover-stat-num">${products.length}</div>
       <div class="cover-stat-label">Products</div>
     </div>
     <div>
-      <div class="cover-stat-num">4</div>
+      <div class="cover-stat-num">${collections.length}</div>
       <div class="cover-stat-label">Collections</div>
     </div>
     <div>
