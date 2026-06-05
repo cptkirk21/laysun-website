@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "sustainable-commercial-plantscaping",
+      "title": "Sustainable Commercial Plantscaping: The Artificial Advantage",
+      "description": "Why artificial plantscaping is a smart sustainability strategy for commercial spaces. Cut water use, slash maintenance costs, earn LEED credits, and hit ESG goals without sacrificing biophilic beauty.",
+      "date": "5 Jun 2026",
+      "category": "Sustainability",
+      "readTime": "8 min read",
+      "image": "images/blog-sustainable-plantscaping-hero.webp",
+      "featured": true
+    },
+    {
       "slug": "green-without-the-guilt-artificial-plants-office",
       "title": "Green Without the Guilt: Why Commercial Artificial Plants Are Perfect for Your Office",
       "description": "Why commercial artificial plants are the smart choice for modern offices — zero maintenance, allergy-free, design-flexible, and cost-effective. A practical buying guide for facility managers and designers.",
