@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "the-healing-power-of-artificial-plants-healthcare",
+      "title": "The Healing Power of Artificial Plants: How Healthcare Facilities Are Embracing Biophilic Design in 2026",
+      "description": "How healthcare facilities use artificial plants to deliver biophilic design's healing benefits — stress reduction, faster recovery, better mood — without the infection-control and allergen risks of live plants.",
+      "date": "30 Jun 2026",
+      "category": "Healthcare",
+      "readTime": "9 min read",
+      "image": "images/blog-healthcare-hero.webp",
+      "featured": true
+    },
+    {
       "slug": "sustainable-commercial-plantscaping",
       "title": "Sustainable Commercial Plantscaping: The Artificial Advantage",
       "description": "Why artificial plantscaping is a smart sustainability strategy for commercial spaces. Cut water use, slash maintenance costs, earn LEED credits, and hit ESG goals without sacrificing biophilic beauty.",
