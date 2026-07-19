@@ -261,6 +261,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const json = await res.json();
 
         if (json.success) {
+          if (id === 'quote') {
+            window.location.assign('thank-you.html');
+            return;
+          }
           form.style.display = 'none';
           if (msg) msg.classList.add('show');
         } else {
