@@ -3,8 +3,8 @@
 <head><meta charset="UTF-8">
   <link rel="icon" href="images/logo.webp" type="image/webp">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Request a quote from LaySun — detailed form for commercial artificial plant projects. We respond within 24 hours.">
-  <title>Request a Quote — LaySun</title>
+  <meta name="description" content="Request a free material sample or custom quote from LaySun for your commercial artificial plant project.">
+  <title>Request a Free Sample or Custom Quote — LaySun</title>
     <!-- Critical font preloads -->
   <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-400.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-700.woff2" crossorigin>
@@ -26,24 +26,24 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LaySun">
   <meta property="og:url" content="https://laysun.co/quote">
-  <meta property="og:title" content="Request a Quote — LaySun">
-  <meta property="og:description" content="Request a quote from LaySun — detailed form for commercial artificial plant projects. We respond within 24 hours.">
+  <meta property="og:title" content="Request a Free Sample or Custom Quote — LaySun">
+  <meta property="og:description" content="Request a free material sample or custom quote for your commercial artificial plant project.">
   <meta property="og:image" content="https://laysun.co/images/hero-airport.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Request a Quote — LaySun">
-  <meta name="twitter:description" content="Request a quote from LaySun — detailed form for commercial artificial plant projects. We respond within 24 hours.">
+  <meta name="twitter:title" content="Request a Free Sample or Custom Quote — LaySun">
+  <meta name="twitter:description" content="Request a free material sample or custom quote for your commercial artificial plant project.">
   <meta name="twitter:image" content="https://laysun.co/images/hero-airport.webp">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "url": "https://laysun.co/quote",
-  "name": "Request a Quote — Commercial Artificial Plants | LaySun",
-  "description": "Request a quote for your commercial artificial plant project. We respond within 24 hours.",
+  "name": "Request a Free Sample or Custom Quote | LaySun",
+  "description": "Request a free material sample or custom quote for your commercial artificial plant project.",
   "publisher": {
     "@id": "https://laysun.co/#organization"
   },
@@ -93,9 +93,9 @@
 
 <header class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a> › <span>Request a Quote</span></div>
-    <h1>Get a Custom Quote</h1>
-    <p class="lead">Tell us a little about your project and we'll send personalized pricing and expert recommendations within 24 hours.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>Sample or Quote Request</span></div>
+    <h1>Request a Free Sample or Custom Quote</h1>
+    <p class="lead">Tell us what you need. We can send a complimentary material sample, prepare project pricing, or do both.</p>
   </div>
 </header>
 
@@ -106,7 +106,7 @@
     <div class="quote-trust-badges">
       <span class="quote-badge">🔒 Secure &amp; Private</span>
       <span class="quote-badge">⏱️ 24-Hour Response</span>
-      <span class="quote-badge">💬 No Sales Pressure</span>
+      <span class="quote-badge">🌿 Complimentary Material Sample</span>
     </div>
 
     <div class="quote-layout">
@@ -114,9 +114,19 @@
       <!-- Form column -->
       <div class="quote-form-col">
         <div class="form-card" data-a>
-          <p style="font-size:.95rem;color:var(--text-muted);margin-bottom:1.75rem;">Get personalized pricing and expert recommendations — just share a few details and we'll handle the rest.</p>
+          <p style="font-size:.95rem;color:var(--text-muted);margin-bottom:1.75rem;">Request a complimentary material sample to evaluate the quality, ask for project pricing, or select both. We will personally follow up within one business day.</p>
 
           <form data-form="quote" novalidate>
+
+            <div class="form-group">
+              <label for="q-request-type">What would you like? <span class="req">*</span></label>
+              <select id="q-request-type" name="request_type" required>
+                <option value="Free material sample" selected>Free material sample</option>
+                <option value="Custom project quote">Custom project quote</option>
+                <option value="Sample and custom quote">Both a sample and custom quote</option>
+                <option value="Product guidance">Product guidance</option>
+              </select>
+            </div>
 
             <div class="form-group">
               <label for="q-name">Full Name <span class="req">*</span></label>
@@ -139,13 +149,13 @@
             </div>
 
             <div class="form-group">
-              <label for="q-desc">Project Description</label>
+              <label for="q-desc">Project Details</label>
               <textarea id="q-desc" name="description" rows="4" placeholder="e.g. Hotel lobby with 3 large statement trees around 10ft tall, plus a green feature wall behind reception. Looking for fire-rated options for a UAE property."></textarea>
-              <p class="hint">No details yet? No problem — just submit and we'll ask the right questions.</p>
+              <p class="hint">No final specifications yet? No problem — share what you know and we will ask the right questions.</p>
             </div>
 
             <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;font-size:1.05rem;">
-              Get My Custom Quote →
+              Send My Request →
             </button>
 
             <p class="hint text-c mt-2" style="font-size:.8rem;">🔒 Your details are kept private and never shared with third parties.</p>
@@ -159,8 +169,8 @@
 
           <div class="form-success" data-success="quote">
             <div class="success-icon">🌿</div>
-            <h3>Quote Request Received!</h3>
-            <p>Thank you — our team will review your project and reply within 24 hours with recommendations and pricing.</p>
+            <h3>Request Received!</h3>
+            <p>Thank you — we will review your sample or quote request and personally reply within one business day with the next steps.</p>
             <p style="font-size:.9rem;margin-top:.5rem;">In the meantime, browse our <a href="projects.html" style="color:var(--green);font-weight:600;">project gallery</a> for inspiration.</p>
           </div>
         </div>
@@ -190,7 +200,7 @@
         </div>
 
         <div style="background:var(--cream-alt);border-radius:var(--radius-m);padding:1.25rem;margin-top:1.5rem;">
-          <p style="font-size:.85rem;margin:0;line-height:1.65;"><strong>What happens next?</strong> Our team reviews your request and replies within 24 hours (Mon–Fri) with product recommendations, images, and a detailed price quote. For larger projects we may suggest a brief call to ensure accuracy.</p>
+          <p style="font-size:.85rem;margin:0;line-height:1.65;"><strong>What happens next?</strong> We will review your request within one business day. For samples, we will confirm the most relevant material and delivery details. For quotes, we will follow up with product recommendations, images, and project pricing.</p>
         </div>
 
         <div style="background:var(--green-dark);border-radius:var(--radius-m);padding:1.5rem;margin-top:1.5rem;">
