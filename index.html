@@ -51,20 +51,16 @@
     @media(max-width:1240px){.nav-burger{display:flex}.nav-links{position:fixed;top:var(--nav-h);left:0;right:0;height:calc(100vh - var(--nav-h));background:var(--cream);flex-direction:column;align-items:flex-start;padding:1.5rem 1.25rem;gap:.2rem;transform:translateX(110%);transition:transform .3s ease;overflow-y:auto;border-top:1px solid var(--border);z-index:999}.nav-links.open{transform:translateX(0)}.nav-links a{font-size:1.05rem;padding:.9rem 1rem;width:100%}.nav-links .btn-nav{display:inline-flex;width:auto;margin:.5rem 1rem 0}}
     .hero.hero-image-only{min-height:0;display:block;margin-top:var(--nav-h);padding-top:0;background:#e9e2d7;overflow:hidden;position:relative}
     .hero.hero-image-only>img{width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover;object-position:center;display:block}
-    .hero-conversion{position:absolute;inset:0;display:flex;align-items:center;pointer-events:none}
-    .hero-conversion-inner{width:100%;max-width:1200px;margin:0 auto;padding:2rem 1.25rem}
-    .hero-card{width:min(470px,44vw);padding:clamp(1.35rem,2.6vw,2.5rem);border:1px solid rgba(255,255,255,.55);border-radius:18px;background:rgba(250,246,239,.92);box-shadow:0 22px 60px rgba(22,35,22,.24);backdrop-filter:blur(14px);pointer-events:auto}
-    .hero-card .eyebrow{display:block;margin-bottom:.7rem;color:var(--green);font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
-    .hero-card h1{margin:0 0 .85rem;color:var(--green-dark);font-size:clamp(1.75rem,3vw,3.15rem);line-height:1.06;text-shadow:none}
-    .hero-card>p{margin:0 0 1rem;color:#384338;font-size:clamp(.92rem,1.25vw,1.06rem);line-height:1.55;text-shadow:none}
-    .hero-proof{display:flex;flex-wrap:wrap;gap:.45rem 1rem;margin:0 0 1.35rem;color:#425345;font-size:.78rem;font-weight:600}
-    .hero-proof span::before{content:'✓';margin-right:.35rem;color:var(--green);font-weight:800}
-    .hero-actions{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap}
-    .hero-primary{display:inline-flex;align-items:center;justify-content:center;padding:.92rem 1.35rem;border-radius:999px;background:var(--green);color:#fff;font-size:.9rem;font-weight:700;box-shadow:0 8px 22px rgba(30,53,32,.22);transition:transform .2s ease,background .2s ease}
+    .hero-conversion{background:var(--cream);border-bottom:1px solid var(--border)}
+    .hero-conversion-inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;width:100%;max-width:1200px;margin:0 auto;padding:1rem 1.25rem}
+    .hero-message{display:flex;align-items:baseline;gap:.8rem;min-width:0}
+    .hero-message strong{color:var(--green-dark);font-family:var(--font-serif);font-size:clamp(1.05rem,1.6vw,1.35rem);line-height:1.2;white-space:nowrap}
+    .hero-message span{color:var(--text-muted);font-size:.86rem}
+    .hero-actions{display:flex;align-items:center;gap:1rem;flex-shrink:0}
+    .hero-primary{display:inline-flex;align-items:center;justify-content:center;padding:.72rem 1.2rem;border-radius:999px;background:var(--green);color:#fff;font-size:.84rem;font-weight:700;box-shadow:0 6px 16px rgba(30,53,32,.16);transition:transform .2s ease,background .2s ease;white-space:nowrap}
     .hero-primary:hover{background:#244b32;transform:translateY(-1px)}
-    .hero-secondary{padding:.65rem .2rem;color:var(--green-dark);font-size:.86rem;font-weight:700;border-bottom:1px solid rgba(30,53,32,.35)}
-    .hero-note{display:block;margin-top:.8rem;color:#677267;font-size:.72rem}
-    @media(max-width:760px){.hero.hero-image-only>img{aspect-ratio:4/3;object-position:62% center}.hero-conversion{position:relative}.hero-conversion-inner{padding:0}.hero-card{width:100%;border:0;border-radius:0;background:var(--cream);box-shadow:none;backdrop-filter:none;padding:1.5rem 1.25rem 1.75rem}.hero-card h1{font-size:2rem}.hero-actions{align-items:stretch}.hero-primary{width:100%}.hero-secondary{text-align:center;border:0}}
+    .hero-secondary{color:var(--green-dark);font-size:.8rem;font-weight:700;white-space:nowrap;border-bottom:1px solid rgba(30,53,32,.3)}
+    @media(max-width:760px){.hero.hero-image-only>img{aspect-ratio:4/3;object-position:62% center}.hero-conversion-inner{align-items:stretch;flex-direction:column;gap:.85rem;padding:1.15rem 1.25rem 1.35rem}.hero-message{display:block}.hero-message strong{display:block;margin-bottom:.25rem;white-space:normal}.hero-message span{display:block}.hero-actions{justify-content:space-between}.hero-primary{flex:1}.hero-secondary{text-align:center}}
   </style>
   <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/style.css"></noscript>
@@ -242,20 +238,13 @@
        width="1672" height="941">
   <div class="hero-conversion">
     <div class="hero-conversion-inner">
-      <div class="hero-card">
-        <span class="eyebrow">Commercial greenery, made project-ready</span>
-        <h1>Realistic greenery. Built for commercial spaces.</h1>
-        <p>See the material quality before you specify. Request a complimentary sample for your hotel, restaurant, office, or retail project.</p>
-        <div class="hero-proof" aria-label="Product benefits">
-          <span>Fire-rated options</span>
-          <span>Factory direct</span>
-          <span>Custom projects</span>
-        </div>
-        <div class="hero-actions">
-          <a href="quote.html" class="hero-primary">Request a Free Material Sample</a>
-          <a href="laysun-catalog-2026.html" class="hero-secondary">Browse the 2026 Catalog</a>
-        </div>
-        <small class="hero-note">No obligation. We’ll personally follow up about your project.</small>
+      <div class="hero-message">
+        <strong>See the quality before you specify.</strong>
+        <span>Complimentary material samples for commercial projects.</span>
+      </div>
+      <div class="hero-actions">
+        <a href="quote.html" class="hero-primary">Request a Free Sample</a>
+        <a href="laysun-catalog-2026.html" class="hero-secondary">View Catalog</a>
       </div>
     </div>
   </div>
