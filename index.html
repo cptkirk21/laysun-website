@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="NFPA 701 fire-rated artificial plants for hotels, restaurants & commercial spaces. Factory direct fire-safe plants with 15+ years experience. Zero maintenance. Request quote.">
   <title>Fire-Rated Artificial Plants for Hotels & Commercial Spaces | LaySun</title>
-  <link rel="preload" as="image"
-        href="images/hero-airport.webp"
-        imagesrcset="images/hero-airport-400w.webp 400w, images/hero-airport-800w.webp 800w, images/hero-airport.webp 1200w"
-        imagesizes="100vw"
-        fetchpriority="high">
+  <link rel="preload" as="image" href="images/hero-luxury-olive-lobby.webp" fetchpriority="high">
     <!-- Critical font preloads -->
   <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-400.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-700.woff2" crossorigin>
@@ -53,15 +49,8 @@
     .nav-burger{display:none;flex-direction:column;gap:5px;padding:8px}
     .nav-burger span{display:block;width:24px;height:2px;background:var(--text);border-radius:2px}
     @media(max-width:1240px){.nav-burger{display:flex}.nav-links{position:fixed;top:var(--nav-h);left:0;right:0;height:calc(100vh - var(--nav-h));background:var(--cream);flex-direction:column;align-items:flex-start;padding:1.5rem 1.25rem;gap:.2rem;transform:translateX(110%);transition:transform .3s ease;overflow-y:auto;border-top:1px solid var(--border);z-index:999}.nav-links.open{transform:translateX(0)}.nav-links a{font-size:1.05rem;padding:.9rem 1rem;width:100%}.nav-links .btn-nav{display:inline-flex;width:auto;margin:.5rem 1rem 0}}
-    .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:var(--nav-h);background:linear-gradient(135deg,var(--green-dark) 0%,var(--green) 50%,#4a6640 80%,#8a7a5a 100%)}
-    .hero-overlay{position:absolute;inset:0;background:rgba(28,46,28,.25)}
-    .hero-content{position:relative;z-index:2;padding:5rem 0}
-    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(184,147,106,.6);color:var(--tan-light);padding:.35rem .9rem;border-radius:var(--radius-pill);font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.25rem}
-    .hero h1{color:var(--white);max-width:680px;margin-bottom:1.25rem;font-size:clamp(2.2rem,5vw,4rem);text-shadow:0 2px 30px rgba(0,0,0,.8),0 1px 6px rgba(0,0,0,.7)}
-    .hero h1 em{font-style:normal;color:var(--tan-light)}
-    .hero-content>p{color:rgba(255,255,255,.75);font-size:1.1rem;max-width:500px;margin-bottom:2.5rem;text-shadow:0 1px 12px rgba(0,0,0,.8)}
-    .hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
-    @media(max-width:768px){.hero-content{padding-top:5px}.hero-btns{flex-direction:column;align-items:flex-start}}
+    .hero.hero-image-only{min-height:0;display:block;margin-top:var(--nav-h);padding-top:0;background:#e9e2d7;overflow:hidden}
+    .hero.hero-image-only img{width:100%;height:auto;aspect-ratio:1672/941;object-fit:cover;object-position:center;display:block}
   </style>
   <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/style.css"></noscript>
@@ -74,15 +63,15 @@
   <meta property="og:url" content="https://laysun.co">
   <meta property="og:title" content="Fire-Rated Artificial Plants for Hotels & Commercial Spaces | LaySun">
   <meta property="og:description" content="NFPA 701 fire-rated artificial plants for hotels, restaurants & commercial spaces. Factory direct fire-safe plants with 15+ years experience. Zero maintenance. Request quote.">
-  <meta property="og:image" content="https://laysun.co/images/hero-airport.webp">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://laysun.co/images/hero-luxury-olive-lobby.webp">
+  <meta property="og:image:width" content="1672">
+  <meta property="og:image:height" content="941">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Fire-Rated Artificial Plants for Hotels & Commercial Spaces | LaySun">
   <meta name="twitter:description" content="NFPA 701 fire-rated artificial plants for hotels, restaurants & commercial spaces. Factory direct fire-safe plants with 15+ years experience. Zero maintenance. Request quote.">
-  <meta name="twitter:image" content="https://laysun.co/images/hero-airport.webp">
+  <meta name="twitter:image" content="https://laysun.co/images/hero-luxury-olive-lobby.webp">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -231,27 +220,12 @@
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero hero-image-only">
   <img id="hero-lcp"
-       src="images/hero-airport.webp"
-       srcset="images/hero-airport-400w.webp 400w, images/hero-airport-800w.webp 800w, images/hero-airport.webp 1200w"
-       sizes="100vw"
-       alt="Grand airport terminal with tall artificial fiddle leaf fig trees and palm trees lining a sunlit concourse"
+       src="images/hero-luxury-olive-lobby.webp"
+       alt="Luxury hotel lobby featuring a statement artificial olive tree in a limestone planter"
        fetchpriority="high"
-       width="1200" height="800"
-       style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;">
-  <video id="hero-video" muted playsinline loop preload="none" poster="images/hero-airport.webp" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s ease;z-index:0;"></video>
-  <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <div class="hero-badge">🌿 Factory Direct · Fire-Rated · Worldwide</div>
-    <h1>Premium <em>Artificial Plants</em> for Commercial Spaces. Forever.</h1>
-    <p>Premium fire-rated artificial plants for hotels, restaurants, and corporate environments. Zero maintenance. Indistinguishable from real.</p>
-    <div class="hero-btns">
-      <a href="quote.html" class="btn btn-tan btn-lg">Request a Quote</a>
-      <a href="laysun-catalog-2026.html" class="btn btn-white-outline btn-lg">Browse 2026 Catalog</a>
-    </div>
-    <p style="margin-top:1rem;font-size:.85rem;"><a href="projects.html" style="color:rgba(255,255,255,.6);border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:1px;">View recent projects →</a></p>
-  </div>
+       width="1672" height="941">
 </section>
 
 <!-- STATS -->
@@ -599,20 +573,6 @@
 </div>
 
 <script src="js/main.js" defer></script>
-<script>
-  // Hero video — loads after page ready, skips mobile
-  window.addEventListener('load', function() {
-    if (window.innerWidth < 768) return;
-    var vid = document.getElementById('hero-video');
-    if (!vid) return;
-    vid.src = 'videos/hero-loop.mp4';
-    vid.load();
-    vid.addEventListener('canplay', function() {
-      vid.play().catch(function(){});
-      vid.style.opacity = '1';
-    }, { once: true });
-  });
-</script>
 <!-- Analytics 鈥?lazy-loaded on first interaction or after 4s timeout, so LCP isn't blocked -->
 <script>
 (function(){
