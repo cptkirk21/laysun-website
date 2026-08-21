@@ -151,9 +151,41 @@
             <div class="form-group">
               <label for="q-desc">Project Details</label>
               <textarea id="q-desc" name="description" rows="4" placeholder="e.g. Hotel lobby with 3 large statement trees around 10ft tall, plus a green feature wall behind reception. Looking for fire-rated options for a UAE property."></textarea>
-              <p class="hint">No final specifications yet? No problem — share what you know and we will ask the right questions.</p>
+              <p class="hint">No final specifications yet? No problem — share what you know and we will ask the right questions. If you are requesting certification for multiple SKUs, please list each SKU and quantity.</p>
             </div>
 
+            <div class="form-group">
+              <label for="q-fire-cert">Fire certification required? <span class="req">*</span></label>
+              <select id="q-fire-cert" name="fire_certification_required" required>
+                <option value="" selected disabled>Select one</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Not sure">Not sure</option>
+              </select>
+            </div>
+
+            <div class="form-group" id="q-fire-standard-group" hidden>
+              <label for="q-fire-standard">Which standard? <span class="req">*</span></label>
+              <select id="q-fire-standard" name="fire_certification_standard">
+                <option value="" selected disabled>Select one</option>
+                <option value="NFPA 701">NFPA 701</option>
+                <option value="EN 13501">EN 13501</option>
+                <option value="B1">B1</option>
+                <option value="Not sure">Not sure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="q-quantity">Estimated quantity (per SKU)</label>
+              <select id="q-quantity" name="estimated_quantity_per_sku">
+                <option value="" selected>Select a range</option>
+                <option value="1–2">1–2</option>
+                <option value="3–9">3–9</option>
+                <option value="10–24">10–24</option>
+                <option value="25+">25+</option>
+              </select>
+              <p class="hint">Fire-certified versions are produced as a custom specification and may require minimum production quantities. If multiple SKUs require certification, minimums may apply per SKU.</p>
+            </div>
             <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;font-size:1.05rem;">
               Send My Request →
             </button>
@@ -170,7 +202,7 @@
           <div class="form-success" data-success="quote">
             <div class="success-icon">🌿</div>
             <h3>Request Received!</h3>
-            <p>Thank you — we will review your sample or quote request and personally reply within one business day with the next steps.</p>
+            <p>Thank you—our team will reply within one business day with recommended SKUs, pricing tiers, lead time, and the applicable certification documentation options.</p>
             <p style="font-size:.9rem;margin-top:.5rem;">In the meantime, browse our <a href="projects.html" style="color:var(--green);font-weight:600;">project gallery</a> for inspiration.</p>
           </div>
         </div>
@@ -225,8 +257,8 @@
       </div>
       <div class="feat-card text-c" data-a>
         <div class="feat-icon" style="margin:0 auto 1rem;">🔥</div>
-        <h3>Fire Cert Included</h3>
-        <p>NFPA 701, EN 13501, or B1 documentation comes with your order.</p>
+        <h3>Fire Certification Available (NFPA 701 / EN 13501 / B1)</h3>
+        <p>Certification is available upon request for the specified product configuration and documentation is supplied for the certified build.</p>
       </div>
       <div class="feat-card text-c" data-a>
         <div class="feat-icon" style="margin:0 auto 1rem;">🏭</div>

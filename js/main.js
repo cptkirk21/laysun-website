@@ -186,6 +186,20 @@ document.addEventListener('DOMContentLoaded', () => {
     quote:   '541362ee-d784-449a-af0d-6a604fe8b0f7'
   };
 
+  const fireCertSelect = document.querySelector('#q-fire-cert');
+  const fireStandardGroup = document.querySelector('#q-fire-standard-group');
+  const fireStandardSelect = document.querySelector('#q-fire-standard');
+  if (fireCertSelect && fireStandardGroup && fireStandardSelect) {
+    const updateFireStandard = () => {
+      const isRequired = fireCertSelect.value === 'Yes';
+      fireStandardGroup.hidden = !isRequired;
+      fireStandardSelect.required = isRequired;
+      if (!isRequired) fireStandardSelect.value = '';
+    };
+    fireCertSelect.addEventListener('change', updateFireStandard);
+    updateFireStandard();
+  }
+
   document.querySelectorAll('form[data-form]').forEach(form => {
     const id  = form.getAttribute('data-form');
     const key = FORM_KEYS[id];
