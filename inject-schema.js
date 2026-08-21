@@ -15,7 +15,7 @@ const organization = {
     "width": 200,
     "height": 60
   },
-  "description": "Fire-rated artificial plants for commercial spaces. Factory-direct worldwide.",
+  "description": "Commercial artificial plants with special-order fire-rating options. Factory-direct worldwide.",
   "foundingDate": "2011",
   "email": "info@laysun.co",
   "telephone": "+12138298485",
@@ -54,7 +54,7 @@ const schemas = {
       "@id": `${BASE}/#webpage`,
       "url": BASE,
       "name": "LaySun — Commercial Artificial Plants & Trees | Factory Direct",
-      "description": "Fire-rated artificial plants for hotels, restaurants, and commercial spaces. Factory-direct worldwide.",
+      "description": "Commercial artificial plants with special-order fire-rated options for select products. Factory-direct worldwide.",
       "isPartOf": { "@id": `${BASE}/#website` },
       "about": { "@id": `${BASE}/#organization` },
       "breadcrumb": {
@@ -71,7 +71,7 @@ const schemas = {
       "@type": "AboutPage",
       "url": `${BASE}/about`,
       "name": "About LaySun — Commercial Artificial Plant Manufacturer",
-      "description": "Our story, values, and why we're the trusted choice for fire-rated artificial plants in commercial spaces worldwide.",
+      "description": "Our story, values, and our story, values, commercial artificial plants, and special-order fire-rated options for select products.",
       "publisher": { "@id": `${BASE}/#organization` },
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -144,8 +144,8 @@ const schemas = {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "url": `${BASE}/manufacturing`,
-      "name": "Manufacturing — Fire-Rated PE Artificial Plants | LaySun",
-      "description": "Fire-rated PE artificial plants engineered in our dedicated Dongguan facility. Materials, quality control, and certifications.",
+      "name": "Manufacturing Artificial Plants & Special-Order Fire Options | LaySun",
+      "description": "Artificial plants engineered in our dedicated Dongguan facility, with special-order fire-rated options for select products.",
       "publisher": { "@id": `${BASE}/#organization` },
       "breadcrumb": {
         "@type": "BreadcrumbList",

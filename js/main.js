@@ -200,6 +200,29 @@ document.addEventListener('DOMContentLoaded', () => {
     updateFireStandard();
   }
 
+  const quoteParams = new URLSearchParams(window.location.search);
+  const quoteSource = document.querySelector('#q-source');
+  if (quoteSource && quoteParams.get('source')) quoteSource.value = quoteParams.get('source');
+
+  const nfpaRequired = document.querySelector('#q-nfpa-required');
+  const nfpaDetails = document.querySelector('#q-nfpa-details');
+  const nfpaDetailFields = ['#q-application', '#q-ship-to', '#q-deadline', '#q-doc-format']
+    .map(selector => document.querySelector(selector)).filter(Boolean);
+  if (nfpaRequired && nfpaDetails) {
+    const updateNfpaDetails = () => {
+      nfpaDetails.hidden = !nfpaRequired.checked;
+      nfpaDetailFields.forEach(field => { field.required = nfpaRequired.checked; });
+    };
+    if (quoteParams.get('nfpa701') === 'yes') {
+      nfpaRequired.checked = true;
+      if (fireCertSelect) fireCertSelect.value = 'Yes';
+      if (fireStandardSelect) fireStandardSelect.value = 'NFPA 701';
+      if (fireCertSelect) fireCertSelect.dispatchEvent(new Event('change'));
+    }
+    nfpaRequired.addEventListener('change', updateNfpaDetails);
+    updateNfpaDetails();
+  }
+
   document.querySelectorAll('form[data-form]').forEach(form => {
     const id  = form.getAttribute('data-form');
     const key = FORM_KEYS[id];

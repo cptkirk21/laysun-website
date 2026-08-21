@@ -35,13 +35,13 @@ const replacements = [
 
   // ── blog-restaurant-green-walls.html ─────────────────────────────────────────
   ['blog-restaurant-green-walls.html',
-    "LaySun's modular living wall systems are fire-rated, zero maintenance, and installed in restaurants worldwide.",
-    "LaySun's modular artificial green wall systems are fire-rated, zero maintenance, and installed in restaurants worldwide."],
+    "LaySun's modular living wall systems are zero maintenance, with special-order fire-rated options available for select products, and installed in restaurants worldwide.",
+    "LaySun's modular artificial green wall systems are zero maintenance, with special-order fire-rated options available for select products, and installed in restaurants worldwide."],
 
   // ── blog-biophilic-design.html ───────────────────────────────────────────────
   ['blog-biophilic-design.html',
-    'LaySun supplies fire-rated artificial trees and living walls for corporate offices, atriums, and reception areas worldwide.',
-    'LaySun supplies fire-rated artificial trees and artificial green walls for corporate offices, atriums, and reception areas worldwide.'],
+    'LaySun supplies artificial trees and living walls with special-order fire-rated options for select products for corporate offices, atriums, and reception areas worldwide.',
+    'LaySun supplies artificial trees and artificial green walls with special-order fire-rated options for select products for corporate offices, atriums, and reception areas worldwide.'],
 ];
 
 let totalChanges = 0;

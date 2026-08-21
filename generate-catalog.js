@@ -39,7 +39,7 @@ const products = [
     sizes: '4 ft, 5 ft, 6 ft', moq: 1, leadTime: '15–30 days',
     p1: '119.00', p2: '95.00', p3: '74.00',
     material: 'Injection-moulded PE foliage, steel armature, fibreglass trunk, white ceramic-look pot',
-    desc: 'Contemporary white-pot Queen Palm for minimalist hotel lobbies and corporate reception areas. Same premium PE foliage and steel armature as our classic round-pot model. NFPA 701 certified.',
+    desc: 'Contemporary white-pot Queen Palm for minimalist hotel lobbies and corporate reception areas. Same premium PE foliage and steel armature as our classic round-pot model. Special-order NFPA 701 option available for select configurations.',
     image: `${BASE_URL}/images/prod-palm-queen-white.webp`,
     keywords: 'artificial queen palm white pot, contemporary artificial palm, minimalist palm tree, office lobby palm',
     url: `${BASE_URL}/artificial-palm-trees`,
@@ -50,7 +50,7 @@ const products = [
     sizes: '7 ft, 8 ft, 9 ft, 10 ft', moq: 1, leadTime: '20–35 days',
     p1: '199.00', p2: '159.00', p3: '122.00',
     material: 'PE fan fronds, steel armature, textured fibreglass trunk, weighted planter base',
-    desc: 'Large-format single-trunk fan palm for double-height atriums, airport lounges, casino floors and shopping centre food courts. Available 7–10 ft with UV-stabilised PE foliage for outdoor pool deck applications. NFPA 701 certified.',
+    desc: 'Large-format single-trunk fan palm for double-height atriums, airport lounges, casino floors and shopping centre food courts. Available 7–10 ft with UV-stabilised PE foliage for outdoor pool deck applications. Special-order NFPA 701 option available for select configurations.',
     image: `${BASE_URL}/images/prod-palm-fan-single.webp`,
     keywords: 'artificial fan palm tree, large indoor palm, washingtonia palm artificial, 10ft artificial palm, commercial fan palm',
     url: `${BASE_URL}/artificial-palm-trees`,
@@ -61,7 +61,7 @@ const products = [
     sizes: '8 ft, 9 ft', moq: 1, leadTime: '20–35 days',
     p1: '269.00', p2: '215.00', p3: '166.00',
     material: 'PE fan fronds, dual steel armature cores, textured fibreglass trunks, weighted base',
-    desc: 'Statement double-trunk fan palm for landmark hospitality installations — resort lobbies, casino atriums, luxury retail. Dual-trunk configuration adds dramatic visual impact at 8–9 ft. NFPA 701 certified.',
+    desc: 'Statement double-trunk fan palm for landmark hospitality installations — resort lobbies, casino atriums, luxury retail. Dual-trunk configuration adds dramatic visual impact at 8–9 ft. Special-order NFPA 701 option available for select configurations.',
     image: `${BASE_URL}/images/prod-palm-fan-double.webp`,
     keywords: 'double trunk artificial palm, twin trunk palm tree, large commercial palm, resort lobby palm',
     url: `${BASE_URL}/artificial-palm-trees`,
@@ -1045,7 +1045,7 @@ const html = `<!DOCTYPE html>
 <!-- COVER PAGE -->
 <div class="cover">
   <div class="cover-brand">LaySun</div>
-  <div class="cover-tagline">Fire-rated artificial plants — factory-direct worldwide</div>
+  <div class="cover-tagline">Commercial artificial plants with special-order fire-rated options — factory-direct worldwide</div>
   <div class="cover-title">Commercial Artificial Plants &amp; Trees</div>
   <div class="cover-subtitle">Product Catalogue 2026 &nbsp;·&nbsp; B2B Factory-Direct Pricing</div>
   <div class="cover-divider"></div>
