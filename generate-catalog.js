@@ -15,7 +15,7 @@ const BRAND     = 'LaySun';
 const PORT      = 'Guangzhou / Shenzhen';
 const PAYMENT   = 'T/T, L/C, Western Union, PayPal';
 const SUPPLY    = '2000 pcs/month';
-const CERTS     = 'NFPA 701, EN 13501, GB 8624 B1';
+const CERTS     = 'Special-order options for select products: NFPA 701, EN 13501, GB 8624 B1; confirm availability for the product and order';
 const PACKAGING = 'Individual export carton with foam padding; custom branding available';
 
 // ── PRODUCT DATA ─────────────────────────────────────────────────────────────
@@ -28,7 +28,7 @@ const products = [
     sizes: '5 ft, 6 ft, 7 ft', moq: 1, leadTime: '15–30 days',
     p1: '129.00', p2: '103.00', p3: '80.00',
     material: 'Injection-moulded PE foliage, steel armature, fibreglass trunk, round ceramic-look pot',
-    desc: 'Premium artificial Queen Palm purpose-built for hotel lobbies, resort pool areas and commercial atriums. Botanical-specimen PE fronds, individually hand-positioned for natural drape. Full NFPA 701 fire certification included. Factory-direct from Dongguan.',
+    desc: 'Premium artificial Queen Palm purpose-built for hotel lobbies, resort pool areas and commercial atriums. Botanical-specimen PE fronds, individually hand-positioned for natural drape. A special-order NFPA 701 option is available for select configurations; documentation is tied to the project or order.',
     image: `${BASE_URL}/images/prod-palm-queen-round.webp`,
     keywords: 'artificial queen palm tree, commercial artificial palm, hotel lobby palm, fake palm indoor, NFPA 701 palm tree',
     url: `${BASE_URL}/artificial-palm-trees`,
@@ -74,7 +74,7 @@ const products = [
     sizes: '4 ft, 5 ft, 6 ft, 7 ft', moq: 1, leadTime: '15–25 days',
     p1: '89.00', p2: '71.00', p3: '55.00',
     material: 'PE foliage with silk olive leaves, steel wire branches, fibreglass trunk, pot included',
-    desc: 'LaySun\'s flagship 2025 olive tree design with dense natural canopy and realistic gnarled trunk. Ideal for hotel lobbies, restaurant entrances and retail spaces. NFPA 701 fire-rated.',
+    desc: 'LaySun\'s flagship 2025 olive tree design with dense natural canopy and realistic gnarled trunk. Ideal for hotel lobbies, restaurant entrances and retail spaces. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-olive-ls-new.webp`,
     keywords: 'artificial olive tree commercial, fake olive tree indoor, hotel olive tree, restaurant olive tree, NFPA 701 olive tree',
     url: `${BASE_URL}/artificial-olive-trees`,
@@ -296,7 +296,7 @@ const products = [
     sizes: '5 ft, 6 ft, 7 ft', moq: 1, leadTime: '15–25 days',
     p1: '79.00', p2: '63.00', p3: '49.00',
     material: 'Large PE fiddle leaf fig leaves, curved steel armature trunk, weighted planter base',
-    desc: 'The most-specified artificial fiddle leaf fig for interior designers — curved trunk, large dramatic leaves, ideal for hotel lobbies, corporate offices and residential commercial. NFPA 701 fire-rated.',
+    desc: 'The most-specified artificial fiddle leaf fig for interior designers — curved trunk, large dramatic leaves, ideal for hotel lobbies, corporate offices and residential commercial. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-flfig-curved.webp`,
     keywords: 'artificial fiddle leaf fig, fake fiddle leaf fig commercial, curved trunk fiddle leaf, hotel fiddle leaf fig, NFPA 701 fiddle leaf',
     url: `${BASE_URL}/artificial-fiddle-leaf-fig`,
@@ -513,6 +513,121 @@ const products = [
     url: `${BASE_URL}/artificial-flowering-trees`,
   },
 
+  // ── ARTIFICIAL DRACAENA TREES ────────────────────────────────────────────
+  {
+    sku: 'LS-DRACAENA-TWO-TRUNK', collection: 'Artificial Dracaena Trees', name: 'Commercial Artificial Two-trunk Dracaena',
+    sizes: '4 ft, 6 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic foliage, wire-reinforced branches, dual trunk structure and planter base; configuration varies by size',
+    desc: 'Two-trunk Dracaena with layered foliage for offices, reception areas, hospitality interiors and commercial planters. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-dracaena-two-trunk.webp`, keywords: 'artificial two trunk dracaena, commercial dracaena tree, office artificial plant, hotel dracaena', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-DRACAENA-LARGE-LEAF', collection: 'Artificial Dracaena Trees', name: 'Commercial Artificial Large-leaf Dracaena',
+    sizes: '5 ft, 6 ft, 7 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Large synthetic foliage, wire-reinforced branches, trunk structure and planter base; configuration varies by size',
+    desc: 'Large-leaf Dracaena designed to provide broad tropical foliage in hotel, restaurant, retail and workplace interiors. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-dracaena-large-leaf.webp`, keywords: 'artificial large leaf dracaena, tropical artificial tree, commercial indoor plant, hotel dracaena', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-DRACAENA-MULTI-TRUNK', collection: 'Artificial Dracaena Trees', name: 'Commercial Artificial Multi-trunk Dracaena',
+    sizes: '5 ft, 5.5 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic foliage, wire-reinforced branches, multi-trunk structure and planter base; configuration varies by size',
+    desc: 'Multi-trunk Dracaena with a full, layered silhouette for reception spaces, offices and hospitality projects. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-dracaena-multi-trunk.webp`, keywords: 'artificial multi trunk dracaena, commercial dracaena plant, office artificial tree, hospitality plant', url: `${BASE_URL}/products`,
+  },
+
+  // ── SPECIALTY ARTIFICIAL TREES & PLANTS ─────────────────────────────────
+  {
+    sku: 'LS-SPECIALTY-LEMON', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Lemon Tree',
+    sizes: '4 ft, 5 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic foliage and fruit, wire-reinforced branches, trunk and planter base; configuration varies by size',
+    desc: 'Artificial lemon tree for restaurants, retail displays, hospitality interiors and Mediterranean-inspired projects. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-lemon.webp`, keywords: 'artificial lemon tree, fake fruit tree, restaurant decor tree, commercial lemon tree', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-APPLE', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Apple Tree',
+    sizes: '5 ft, 6 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic foliage and fruit, wire-reinforced branches, trunk and planter base; configuration varies by size',
+    desc: 'Artificial apple tree for retail, foodservice, event and themed commercial interiors. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-apple.webp`, keywords: 'artificial apple tree, fake fruit tree, retail display tree, commercial apple tree', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-MONEY-SPIRAL', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Spiral Trunk Money Tree',
+    sizes: '4 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic foliage, spiral trunk structure and planter base; configuration confirmed with quote',
+    desc: 'Spiral trunk money tree for offices, reception desks, hotel rooms and compact commercial interiors. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-money-spiral.webp`, keywords: 'artificial money tree, spiral trunk money tree, office artificial plant, commercial pachira', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-MONEY-MULTI', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Multi-branch Money Tree',
+    sizes: '4 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic foliage, wire-reinforced multi-branch structure, trunk and planter base; configuration confirmed with quote',
+    desc: 'Full multi-branch money tree for offices, hospitality spaces and commercial planters. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-money-multi.webp`, keywords: 'artificial money tree, multi branch money tree, office artificial tree, commercial pachira', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-MAPLE-GREEN', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Green Maple Tree',
+    sizes: '6 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic green maple foliage, wire-reinforced branches, trunk and planter base; configuration confirmed with quote',
+    desc: 'Green maple tree for hospitality, retail, restaurant and seasonal commercial installations. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-maple-green.webp`, keywords: 'artificial green maple tree, fake maple tree, commercial maple tree, hospitality decor tree', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-MAPLE-AUTUMN', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Autumn Yellow Maple Tree',
+    sizes: '6 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic autumn-yellow maple foliage, wire-reinforced branches, trunk and planter base; configuration confirmed with quote',
+    desc: 'Autumn yellow maple tree for seasonal displays, hospitality, retail and event environments. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-maple-yellow.webp`, keywords: 'artificial autumn maple tree, yellow maple tree, seasonal display tree, commercial maple tree', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-ANDROMEDA', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Andromeda (Pieris)',
+    sizes: '2.5 ft, 3 ft, 3.5 ft, 5 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic Pieris foliage, wire-reinforced branches, trunk and planter base; configuration varies by size',
+    desc: 'Artificial Andromeda, also known as Pieris, for layered commercial planters, reception areas and hospitality interiors. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-andromeda.webp`, keywords: 'artificial andromeda, artificial pieris, commercial shrub tree, hospitality artificial plant', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-EUCALYPTUS', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Eucalyptus Tree',
+    sizes: '6 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic eucalyptus foliage, wire-reinforced branches, trunk and planter base; configuration confirmed with quote',
+    desc: 'Artificial eucalyptus tree with a light, open canopy for offices, hospitality and contemporary retail interiors. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-eucalyptus.webp`, keywords: 'artificial eucalyptus tree, commercial eucalyptus, office artificial tree, hotel eucalyptus tree', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-TRAVELERS-PALM', collection: 'Specialty Artificial Trees & Plants', name: "Commercial Artificial Traveler's Palm",
+    sizes: '5 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Broad synthetic foliage, wire-reinforced stems and planter base; configuration confirmed with quote',
+    desc: "Artificial Traveler's Palm for tropical hospitality, restaurant, spa and retail interiors. Product details, pricing and any special-order fire-rating option are confirmed with the quote.",
+    image: `${BASE_URL}/images/prod-other-travelers-palm.webp`, keywords: "artificial traveler's palm, tropical artificial plant, hotel palm plant, commercial tropical plant", url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-CANNA', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Canna (Indian Shot)',
+    sizes: '4 ft, 6 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic Canna foliage and blooms, wire-reinforced stems and planter base; configuration varies by size',
+    desc: 'Artificial Canna, also known as Indian Shot, for tropical planters, hospitality and commercial interiors. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-canna.webp`, keywords: 'artificial canna plant, artificial Indian shot, tropical commercial plant, hotel planter foliage', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-BEGONIA', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Begonia Flowering Tree',
+    sizes: '6 ft, 7 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic Begonia foliage and blooms, wire-reinforced branches, trunk and planter base; configuration varies by size',
+    desc: 'Begonia flowering tree for hospitality, retail, events and colorful commercial interiors. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-begonia.webp`, keywords: 'artificial begonia tree, flowering commercial tree, hotel flower tree, event artificial tree', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-SPIDER', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Hanging Spider Plant Tree',
+    sizes: '3 ft, 4 ft, 5 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic trailing spider-plant foliage, wire-reinforced structure, trunk and planter base; configuration varies by size',
+    desc: 'Hanging spider plant tree with cascading foliage for layered planters, reception areas and hospitality interiors. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-spider-plant.webp`, keywords: 'artificial spider plant tree, hanging foliage tree, commercial planter plant, hospitality artificial plant', url: `${BASE_URL}/products`,
+  },
+  {
+    sku: 'LS-SPECIALTY-AGAPANTHUS', collection: 'Specialty Artificial Trees & Plants', name: 'Commercial Artificial Agapanthus (Sword Lily)',
+    sizes: '2.5 ft, 4 ft, 5 ft', moq: 1, leadTime: 'Confirm with quote', p1: '', p2: '', p3: '',
+    material: 'Synthetic Agapanthus foliage and blooms, wire-reinforced stems and planter base; configuration varies by size',
+    desc: 'Artificial Agapanthus, also known as Sword Lily, for hospitality planters, reception areas and commercial interiors. Product details, pricing and any special-order fire-rating option are confirmed with the quote.',
+    image: `${BASE_URL}/images/prod-other-agapanthus.webp`, keywords: 'artificial agapanthus, artificial sword lily, commercial flowering plant, hotel planter plant', url: `${BASE_URL}/products`,
+  },
   // ── ARTIFICIAL GREEN WALLS ───────────────────────────────────────────────
   {
     sku: 'LS-GW-MOSS', collection: 'Artificial Green Walls',
@@ -520,7 +635,7 @@ const products = [
     sizes: '100x100cm Panel', moq: 1, leadTime: '15–30 days',
     p1: '28.00', p2: '22.00', p3: '17.00',
     material: 'PE moss pile on a trimmable interlocking panel backing; 100 × 100 cm modular panel',
-    desc: 'Dense reindeer-moss-look panel with a flat, uniform pile — a tactile, sound-softening feature wall for reception desks, boutique retail and meeting rooms. Maintenance-free PE moss on a trimmable backing; no light or irrigation required. NFPA 701 fire-rated.',
+    desc: 'Dense reindeer-moss-look panel with a flat, uniform pile — a tactile, sound-softening feature wall for reception desks, boutique retail and meeting rooms. Maintenance-free PE moss on a trimmable backing; no light or irrigation required. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-greenwall-moss.webp`,
     keywords: 'artificial moss wall, moss green wall panel, reindeer moss wall, acoustic moss panel, commercial moss wall',
     url: `${BASE_URL}/artificial-green-walls`,
@@ -531,7 +646,7 @@ const products = [
     sizes: '100x100cm Panel', moq: 1, leadTime: '15–30 days',
     p1: '165.00', p2: '132.00', p3: '102.00',
     material: 'UV-stabilised PE & PVC mixed foliage on a trimmable interlocking grid; 100 × 100 cm modular panel',
-    desc: 'Layered woodland foliage mix — ferns, ivy and broadleaf greens — for a deep, natural living-wall look indoors or out. High-density premium panel for hotel lobbies, restaurant features and exterior courtyards. UV-stable and NFPA 701 fire-rated.',
+    desc: 'Layered woodland foliage mix — ferns, ivy and broadleaf greens — for a deep, natural living-wall look indoors or out. High-density premium panel for hotel lobbies, restaurant features and exterior courtyards. UV-stable and A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-greenwall-woodland.webp`,
     keywords: 'artificial woodland green wall, mixed foliage living wall, fern ivy wall panel, outdoor green wall, commercial living wall',
     url: `${BASE_URL}/artificial-green-walls`,
@@ -542,7 +657,7 @@ const products = [
     sizes: '100x100cm Panel', moq: 1, leadTime: '15–30 days',
     p1: '24.00', p2: '19.00', p3: '15.00',
     material: 'UV-stabilised PE & PVC mixed foliage on a trimmable interlocking grid; 100 × 100 cm modular panel',
-    desc: 'Bright multi-tone foliage blend with varied leaf shapes for a fresh, energetic feature wall. Interlocking panels clip together to cover any area — ideal for cafés, gyms and creative offices. NFPA 701 fire-rated.',
+    desc: 'Bright multi-tone foliage blend with varied leaf shapes for a fresh, energetic feature wall. Interlocking panels clip together to cover any area — ideal for cafés, gyms and creative offices. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-greenwall-vibrant-medley.webp`,
     keywords: 'vibrant artificial green wall, mixed foliage panel, café green wall, faux plant wall, commercial foliage panel',
     url: `${BASE_URL}/artificial-green-walls`,
@@ -553,7 +668,7 @@ const products = [
     sizes: '100x100cm Panel', moq: 1, leadTime: '15–30 days',
     p1: '33.00', p2: '26.00', p3: '20.00',
     material: 'UV-stabilised PE foliage mat on a trimmable interlocking grid; 100 × 100 cm modular panel',
-    desc: 'Classic garden-green foliage mat with a balanced mix of leaf textures — the versatile all-rounder for backdrops, planter tops and full wall coverage. Trim to fit and interlock for a seamless run. NFPA 701 fire-rated.',
+    desc: 'Classic garden-green foliage mat with a balanced mix of leaf textures — the versatile all-rounder for backdrops, planter tops and full wall coverage. Trim to fit and interlock for a seamless run. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-greenwall-garden-foliage.webp`,
     keywords: 'artificial garden foliage wall, faux foliage mat, green wall panel, hedge mat panel, commercial foliage wall',
     url: `${BASE_URL}/artificial-green-walls`,
@@ -564,7 +679,7 @@ const products = [
     sizes: '100x100cm Panel', moq: 1, leadTime: '15–30 days',
     p1: '20.00', p2: '16.00', p3: '12.00',
     material: 'UV-stabilised PE fern foliage on a trimmable interlocking grid; 100 × 100 cm modular panel',
-    desc: 'Soft, layered fern fronds for a cool, shade-garden feel — popular for bathrooms, spas and humid-look interiors where live ferns struggle. Lightweight trimmable panels, no watering. NFPA 701 fire-rated.',
+    desc: 'Soft, layered fern fronds for a cool, shade-garden feel — popular for bathrooms, spas and humid-look interiors where live ferns struggle. Lightweight trimmable panels, no watering. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-greenwall-fern.webp`,
     keywords: 'artificial fern wall, faux fern panel, fern green wall, spa green wall, commercial fern panel',
     url: `${BASE_URL}/artificial-green-walls`,
@@ -575,7 +690,7 @@ const products = [
     sizes: '100x100cm Panel', moq: 1, leadTime: '15–30 days',
     p1: '95.00', p2: '76.00', p3: '59.00',
     material: 'PE & silk foliage and blooms on a trimmable interlocking grid; 100 × 100 cm modular panel',
-    desc: 'Foliage base scattered with mixed wildflower blooms for a meadow-inspired feature wall. A statement backdrop for event spaces, bridal suites, bars and retail windows. NFPA 701 fire-rated.',
+    desc: 'Foliage base scattered with mixed wildflower blooms for a meadow-inspired feature wall. A statement backdrop for event spaces, bridal suites, bars and retail windows. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-greenwall-wildflower.webp`,
     keywords: 'artificial wildflower wall, flower green wall, floral feature wall, event backdrop wall, commercial flower panel',
     url: `${BASE_URL}/artificial-green-walls`,
@@ -586,7 +701,7 @@ const products = [
     sizes: '100x100cm Panel', moq: 1, leadTime: '15–30 days',
     p1: '80.00', p2: '64.00', p3: '50.00',
     material: 'UV-stabilised PE & PVC mixed foliage on a trimmable interlocking grid; 100 × 100 cm modular panel',
-    desc: 'Deep, dramatic foliage mix with dark greens, burgundy tones and trailing accents for a moody, high-end feature wall. Premium dense panels for luxury hospitality and statement reception areas. NFPA 701 fire-rated.',
+    desc: 'Deep, dramatic foliage mix with dark greens, burgundy tones and trailing accents for a moody, high-end feature wall. Premium dense panels for luxury hospitality and statement reception areas. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-greenwall-mystic-medley.webp`,
     keywords: 'mystic artificial green wall, dark foliage living wall, premium green wall panel, luxury feature wall, commercial foliage wall',
     url: `${BASE_URL}/artificial-green-walls`,
@@ -597,7 +712,7 @@ const products = [
     sizes: '100x100cm Panel', moq: 1, leadTime: '15–30 days',
     p1: '125.00', p2: '100.00', p3: '78.00',
     material: 'UV-stabilised PE & PVC tropical foliage on a trimmable interlocking grid; 100 × 100 cm modular panel',
-    desc: 'Lush tropical leaf mix — monstera-style, palm and broadleaf foliage with red flowering accents — for a resort-feel feature wall indoors or on a covered terrace. UV-stable for bright and exterior settings. NFPA 701 fire-rated.',
+    desc: 'Lush tropical leaf mix — monstera-style, palm and broadleaf foliage with red flowering accents — for a resort-feel feature wall indoors or on a covered terrace. UV-stable for bright and exterior settings. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-greenwall-tropical.webp`,
     keywords: 'artificial tropical green wall, tropical living wall, monstera leaf wall, resort green wall, outdoor foliage panel',
     url: `${BASE_URL}/artificial-green-walls`,
@@ -608,7 +723,7 @@ const products = [
     sizes: '100x100cm Panel', moq: 1, leadTime: '15–30 days',
     p1: '139.00', p2: '111.00', p3: '86.00',
     material: 'UV-stabilised PE & PVC mixed foliage on a trimmable interlocking grid; 100 × 100 cm modular panel',
-    desc: 'Rich, full-coverage foliage blend with mixed greens and floral pops for a premium, deep-pile feature wall. A flagship panel for hotel lobbies, restaurant backdrops and luxury retail. NFPA 701 fire-rated.',
+    desc: 'Rich, full-coverage foliage blend with mixed greens and floral pops for a premium, deep-pile feature wall. A flagship panel for hotel lobbies, restaurant backdrops and luxury retail. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-greenwall-galaxy.webp`,
     keywords: 'galaxy artificial green wall, premium living wall, mixed foliage feature wall, hotel green wall, commercial living wall',
     url: `${BASE_URL}/artificial-green-walls`,
@@ -619,7 +734,7 @@ const products = [
     sizes: '100x100cm Panel', moq: 1, leadTime: '15–30 days',
     p1: '125.00', p2: '100.00', p3: '78.00',
     material: 'UV-stabilised PE & PVC mixed foliage on a trimmable interlocking grid; 100 × 100 cm modular panel',
-    desc: 'Cool forest-toned foliage mix of ferns and broadleaf greens for a natural, calming wall — equally at home indoors or in a shaded exterior courtyard. High-density UV-stable panels. NFPA 701 fire-rated.',
+    desc: 'Cool forest-toned foliage mix of ferns and broadleaf greens for a natural, calming wall — equally at home indoors or in a shaded exterior courtyard. High-density UV-stable panels. A special-order NFPA 701 option is available for select configurations.',
     image: `${BASE_URL}/images/prod-greenwall-forest-greens.webp`,
     keywords: 'forest greens green wall, artificial forest living wall, fern broadleaf panel, outdoor green wall, commercial foliage wall',
     url: `${BASE_URL}/artificial-green-walls`,
@@ -644,7 +759,14 @@ const collectionMeta = {
     alibabaCategory: 'Artificial Plant & Flower/Artificial Trees/Artificial Flower Trees',
     tags: 'artificial flowering tree, fake cherry blossom, artificial camellia, silk flower tree commercial',
   },
-  'Artificial Green Walls': {
+  'Artificial Dracaena Trees': {
+    alibabaCategory: 'Artificial Plant & Flower/Artificial Trees/Artificial Dracaena Trees',
+    tags: 'artificial dracaena tree, commercial dracaena, office artificial plant, hotel artificial tree',
+  },
+  'Specialty Artificial Trees & Plants': {
+    alibabaCategory: 'Artificial Plant & Flower/Artificial Trees/Other Artificial Trees',
+    tags: 'specialty artificial tree, commercial artificial plant, hospitality artificial tree, retail artificial plant',
+  },  'Artificial Green Walls': {
     alibabaCategory: 'Artificial Plant & Flower/Artificial Green Wall',
     tags: 'artificial green wall, living wall panel, vertical garden, faux foliage wall, commercial green wall',
   },
@@ -731,12 +853,13 @@ function productGrid(collectionName) {
             <thead><tr><th>Size</th><th>SKU</th></tr></thead>
             <tbody>${skuRows}</tbody>
           </table>
-          <div class="price-line">From <strong>$${p.p3}</strong> / unit (100+ units)</div>
+          ${p.p3 ? `<div class="price-line">From <strong>$${p.p3}</strong> / unit (100+ units)</div>
           <div class="price-tiers">
             <span>1–9: $${p.p1}</span>
             <span>10–99: $${p.p2}</span>
             <span>100+: $${p.p3}</span>
-          </div>
+          </div>` : `<div class="price-line"><strong>Request quote</strong></div>
+          <div class="price-tiers"><span>Pricing confirmed by product, size and order quantity</span></div>`}
         </div>
       </div>`;
     }).join('');
@@ -745,6 +868,7 @@ function productGrid(collectionName) {
 function pricingTable(name) {
   const sample = products.find(p => p.collection === name);
   if (!sample) return '';
+  if (!sample.p1) return '<p class="price-note"><strong>Pricing available by quote.</strong> Final pricing, product specifications, lead time and any special-order fire-rating option are confirmed for the selected product and order.</p>';
   return `
     <table class="price-table">
       <thead><tr><th>Order Quantity</th><th>Unit Price (USD, FOB Dongguan)</th></tr></thead>
@@ -758,11 +882,13 @@ function pricingTable(name) {
 }
 
 const collectionDescriptions = {
-  'Artificial Palm Trees': '4 palm varieties — Queen Palms and Fan Palms — purpose-built for hotel lobbies, resort pool areas and large commercial atriums. Available 4–10 ft. NFPA 701, EN 13501 and GB 8624 B1 fire certified.',
+  'Artificial Palm Trees': '4 palm varieties — Queen Palms and Fan Palms — purpose-built for hotel lobbies, resort pool areas and large commercial atriums. Available 4–10 ft. Special-order fire-rating options are available for select products and configurations.',
   'Artificial Olive Trees': '20 olive tree styles from 3–10 ft. Standard, real wood trunk, spherical 3D, wide canopy, velvet flock and more. The most comprehensive commercial artificial olive tree range available factory-direct worldwide.',
   'Artificial Fiddle Leaf Fig & Ficus': '8 fiddle leaf fig and ficus varieties — curved trunk, real wood trunk, multi-branch and variegated styles. 4–8 ft. The top-specified artificial tree for hotel lobbies and corporate offices globally.',
   'Artificial Flowering Trees': '12 flowering tree varieties — camellia, hydrangea, bougainvillea and cherry blossom in multiple colours. 2.5–8 ft. Premium silk and PE blooms for events, hospitality and retail.',
-  'Artificial Green Walls': '10 modular foliage styles — moss, fern, tropical, wildflower and mixed medleys. Interlocking 100 × 100 cm UV-stable panels that trim to any dimension for feature walls, reception backdrops and exterior facades. NFPA 701 fire-rated.',
+  'Artificial Dracaena Trees': '3 Dracaena styles from 4–7 ft. Product specifications, pricing and any special-order fire-rating option are confirmed for the selected product and order.',
+  'Specialty Artificial Trees & Plants': '13 specialty products including fruit trees, money trees, maples, Eucalyptus, tropical foliage and flowering plants. Product specifications, pricing and any special-order fire-rating option are confirmed with the quote.',
+  'Artificial Green Walls': '10 modular foliage styles — moss, fern, tropical, wildflower and mixed medleys. Interlocking 100 × 100 cm UV-stable panels that trim to any dimension for feature walls, reception backdrops and exterior facades. A special-order NFPA 701 option is available for select configurations.',
 };
 
 const sectionsHTML = collections.map((name, i) => `
@@ -776,7 +902,7 @@ const sectionsHTML = collections.map((name, i) => `
     </div>
     ${pricingTable(name)}
     <div class="prod-grid">
-      ${productGrid(name)}
+${productGrid(name)}
     </div>
   </section>`).join('');
 
@@ -786,7 +912,7 @@ const html = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LaySun 2026 Product Catalog — Artificial Plants &amp; Trees | B2B Factory Direct</title>
-<meta name="description" content="Browse all ${products.length} products with full SKU variants, size options and volume pricing. Fire-rated artificial trees and green walls, factory-direct from Dongguan.">
+<meta name="description" content="Browse all ${products.length} products with SKU variants and size options. Special-order fire-rated options are available for select products; documentation is tied to the project or order.">
 <link rel="canonical" href="https://laysun.co/laysun-catalog-2026">
 <style>
   /* ── Base ─────────────────────────────────────────────────── */
@@ -1060,7 +1186,7 @@ const html = `<!DOCTYPE html>
     </div>
     <div>
       <div class="cover-stat-num">3</div>
-      <div class="cover-stat-label">Fire Certifications</div>
+      <div class="cover-stat-label">Special-Order Fire Standards</div>
     </div>
     <div>
       <div class="cover-stat-num">15+</div>
@@ -1077,14 +1203,19 @@ const html = `<!DOCTYPE html>
 
 <!-- SPECS BAR -->
 <div class="specs-bar">
-  <div class="spec-item"><strong>Fire Certifications</strong>NFPA 701 · EN 13501 · GB 8624 B1</div>
+  <div class="spec-item"><strong>Special-Order Fire-Rating Options</strong>NFPA 701 · EN 13501 · GB 8624 B1 — select products only</div>
   <div class="spec-item"><strong>Foliage Material</strong>Injection-moulded PE &amp; Silk</div>
   <div class="spec-item"><strong>MOQ</strong>1 unit (no minimum order)</div>
   <div class="spec-item"><strong>Lead Time</strong>15–40 days (custom: +1–2 weeks)</div>
   <div class="spec-item"><strong>Supply Ability</strong>2,000 pcs / month</div>
   <div class="spec-item"><strong>Port</strong>Guangzhou / Shenzhen</div>
   <div class="spec-item"><strong>Payment</strong>T/T · L/C · PayPal · Western Union</div>
-  <div class="spec-item"><strong>Customisation</strong>OEM/ODM — pot, size, colour, fire rating</div>
+  <div class="spec-item"><strong>Customisation</strong>OEM/ODM — pot, size, colour; fire-rating options by special order</div>
+</div>
+
+<div style="margin:24px 54px;padding:18px 22px;border-left:4px solid #b8936a;background:#f4ede2;color:#444;line-height:1.7;">
+  <strong style="color:#1e3520;">Fire-rating availability</strong><br>
+  NFPA 701 (National Fire Protection Association 701) fire-rated options are available as a special order for select products. Testing is performed by an independent laboratory accepted by the U.S. Consumer Product Safety Commission (CPSC) in the Textiles and Films category. Documentation is available upon request and is provided for the project or order.
 </div>
 
 ${sectionsHTML}
