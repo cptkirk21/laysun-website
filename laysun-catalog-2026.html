@@ -245,7 +245,48 @@
   .catalog-footer p { font-size: 11px; color: rgba(255,255,255,0.5); }
   .catalog-footer a { color: #b8936a; }
 
-  /* ── Print ────────────────────────────────────────────────── */
+
+  /* ── Responsive screen layout ─────────────────────────────── */
+  @media screen and (max-width: 760px) {
+    .cover { min-height: auto; padding: 48px 20px; page-break-after: auto; }
+    .cover-brand { font-size: 40px; }
+    .cover-tagline { font-size: 16px; margin-bottom: 32px; }
+    .cover-title { font-size: 28px; }
+    .cover-subtitle { margin-bottom: 36px; letter-spacing: .05em; }
+    .cover-divider { margin-bottom: 32px; }
+    .cover-stats { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); width: 100%; gap: 24px 18px; margin-bottom: 40px; }
+    .cover-stat-num { font-size: 30px; }
+    .cover-contact { display: grid; grid-template-columns: 1fr; gap: 14px; padding-top: 24px; }
+    .cover-contact-item { overflow-wrap: anywhere; }
+    .specs-bar { padding: 24px 20px; display: grid; grid-template-columns: 1fr; gap: 16px; page-break-after: auto; }
+    .collection-section { padding: 36px 16px 32px; }
+    .section-header { gap: 12px; margin-bottom: 22px; }
+    .section-number { font-size: 34px; }
+    .section-header h2 { font-size: 22px; line-height: 1.2; overflow-wrap: anywhere; }
+    .section-desc { font-size: 12px; }
+    .price-table { table-layout: fixed; }
+    .price-table th,.price-table td { padding: 8px 10px; overflow-wrap: anywhere; }
+    .prod-grid { grid-template-columns: 1fr; gap: 16px; }
+    .prod-body { padding: 14px; }
+    .prod-body h3 { font-size: 14px; }
+    .sku-variants { table-layout: fixed; font-size: 10px; }
+    .sku-variants th:first-child,.sku-variants td:first-child { width: 38%; }
+    .sku-size { white-space: normal; }
+    .sku-code { overflow-wrap: anywhere; word-break: break-word; letter-spacing: 0; }
+    .catalog-footer { padding: 24px 20px; align-items: flex-start; }
+    .catalog-footer > div { width: 100%; min-width: 0; }
+    .catalog-footer > div:last-child { text-align: left !important; }
+    .catalog-footer p,.catalog-footer a { overflow-wrap: anywhere; }
+    #lb-prev { left: 6px !important; }
+    #lb-next { right: 6px !important; }
+  }
+
+  @media screen and (min-width: 761px) and (max-width: 980px) {
+    .cover,.collection-section { padding-left: 36px; padding-right: 36px; }
+    .specs-bar,.catalog-footer { padding-left: 36px; padding-right: 36px; }
+    .prod-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .sku-code { overflow-wrap: anywhere; word-break: break-word; }
+  }  /* ── Print ────────────────────────────────────────────────── */
   @media print {
     body { background: #fff; font-size: 12px; }
     .cover { min-height: 297mm; padding: 60px 54px; }

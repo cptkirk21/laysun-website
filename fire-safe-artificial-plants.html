@@ -320,7 +320,27 @@
       .contact-grid { grid-template-columns:1fr; }
       .wizard-wrap { padding:1.75rem 1.25rem; }
     }
-  </style>
+
+    /* Mobile overflow fixes */
+    @media(max-width:560px){
+      .calc-wrap,.calc-inputs,.calc-output,.calc-field,.calc-panel,.calc-placeholder,#calc-results { min-width:0; width:100%; max-width:100%; }
+      .calc-inputs { padding:1.5rem 1rem; }
+      .calc-output { padding:1.5rem 1rem; }
+      .calc-select,.calc-range,.calc-btn,.calc-download { max-width:100%; }
+      .calc-label { overflow-wrap:anywhere; }
+      .region-detected { display:flex; flex-wrap:wrap; max-width:100%; }
+      .calc-tabs { width:100%; max-width:100%; }
+      .calc-tab { padding:.55rem .7rem; }
+      .wizard-progress { width:100%; justify-content:space-between; }
+      .wp-step,.wp-step:last-child { flex:0 0 auto; gap:0; min-width:32px; }
+      .wp-label { display:none; }
+      .wp-line { min-width:12px; margin:0 .35rem; }
+      .wizard-wrap { min-width:0; width:100%; }
+      .wizard-footer { flex-wrap:wrap; }
+      .wizard-footer .btn,.wizard-footer .btn-back { max-width:100%; }
+      .lab-process { padding:1rem; }
+      .report-card figcaption,.test-video-copy { overflow-wrap:anywhere; }
+    }  </style>
 </head>
 <body>
 
