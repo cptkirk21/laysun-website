@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "how-to-read-nfpa-701-test-report",
+      "title": "How to Read an NFPA 701 Test Report Before Approving an Order",
+      "description": "A practical guide to matching an NFPA 701 laboratory report to the exact special-order products, materials, and project documentation you are approving.",
+      "date": "22 Aug 2026",
+      "category": "Fire Safety",
+      "readTime": "8 min read",
+      "image": "images/nfpa-701-sample-report-redacted-02.webp",
+      "featured": true
+    },
+    {
       "slug": "how-to-evaluate-artificial-plants-commercial-project",
       "title": "How to Evaluate Artificial Plants Before Specifying a Commercial Project",
       "description": "A practical checklist for evaluating realism, materials, fire documentation, UV suitability, construction, samples, and supplier support before specifying commercial artificial greenery.",
@@ -73,7 +83,7 @@
     {
       "slug": "nfpa701",
       "title": "NFPA 701 Explained: What Hotel Designers Need to Know About Artificial Plant Fire Codes",
-      "description": "If you're specifying artificial plants for a hotel or commercial property in the United States, NFPA 701 is non-negotiable. Here's what it means, how to verify compliance, and what questions to ask your supplier.",
+      "description": "If a US hotel or commercial project references NFPA 701, learn what the standard covers, how to review documentation, and what questions to ask before ordering.",
       "date": "14 Jan 2025",
       "category": "Fire Safety",
       "readTime": "8 min read",

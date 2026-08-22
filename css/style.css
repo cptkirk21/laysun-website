@@ -169,6 +169,11 @@ p { color: var(--text-muted); line-height: 1.8; }
 .hero h1 em { font-style: normal; color: var(--tan-light); }
 .hero > .container p,.hero-content > p { color: rgba(255,255,255,.75); font-size: 1.1rem; max-width: 500px; margin-bottom: 2.5rem; text-shadow: 0 1px 12px rgba(0,0,0,.8); }
 .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+.collection-hero-actions { display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1.35rem; }
+.collection-hero-actions .btn { min-height:46px; }
+.collection-hero-proof { display:flex; flex-wrap:wrap; gap:.55rem; margin-top:1rem; }
+.collection-hero-proof span { display:inline-flex; align-items:center; gap:.35rem; padding:.35rem .65rem; border:1px solid rgba(255,255,255,.3); border-radius:999px; background:rgba(15,42,33,.42); color:#fff; font-size:.75rem; font-weight:600; backdrop-filter:blur(4px); }
+@media(max-width:560px){ .collection-hero-actions .btn { width:100%; justify-content:center; } .collection-hero-proof { gap:.4rem; } .collection-hero-proof span { font-size:.7rem; } }
 
 /* --- PAGE HERO (inner pages) --- */
 .page-hero {

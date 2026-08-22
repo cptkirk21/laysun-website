@@ -56,7 +56,7 @@ function cta(heading, text, links) {
 const blogCTAs = {
   'blog-hotel-trends-2025.html': cta(
     'Ready to bring these trends to your hotel?',
-    'LaySun supplies oversized palms, custom olive trees, and bespoke sculptural installations — factory direct, fire-rated, worldwide.',
+    'LaySun supplies oversized palms, custom olive trees, and bespoke sculptural installations worldwide, with special-order fire-rating options available for select products.',
     [
       { href: 'solutions.html#hotels', label: 'Hotel Solutions' },
       { href: 'systems.html', label: 'Explore Systems' },
@@ -65,7 +65,7 @@ const blogCTAs = {
   ),
   'blog-restaurant-green-walls.html': cta(
     'Transform your restaurant with an artificial green wall',
-    'LaySun\'s modular living wall systems are fire-rated, zero maintenance, and installed in restaurants worldwide.',
+    'LaySun\'s modular living wall systems are zero maintenance, with special-order fire-rating options available for select products.',
     [
       { href: 'systems.html#green-walls', label: 'Green Wall Systems' },
       { href: 'solutions.html#restaurants', label: 'Restaurant Solutions' },
@@ -74,7 +74,7 @@ const blogCTAs = {
   ),
   'blog-pe-vs-pvc.html': cta(
     'Every LaySun product uses premium PE foliage',
-    'Browse our full catalogue of commercial artificial trees — all manufactured in our own facility with PE foliage and fire-rated finishes.',
+    'Browse our commercial artificial tree catalog, with factory-direct PE foliage and special-order fire-rating options available for select products.',
     [
       { href: 'products.html', label: 'View Product Catalogue' },
       { href: 'manufacturing.html', label: 'Our Manufacturing Process' },
@@ -83,7 +83,7 @@ const blogCTAs = {
   ),
   'blog-biophilic-design.html': cta(
     'Add biophilic greenery to your office — zero maintenance',
-    'LaySun supplies fire-rated artificial trees and living walls for corporate offices, atriums, and reception areas worldwide.',
+    'LaySun supplies artificial trees and living walls for corporate offices, atriums, and reception areas worldwide, with special-order fire-rating options available for select products.',
     [
       { href: 'solutions.html#corporate', label: 'Corporate Solutions' },
       { href: 'systems.html', label: 'Explore Systems' },
@@ -110,7 +110,7 @@ const blogCTAs = {
   ),
   'blog-nfpa701.html': cta(
     'Need NFPA 701-compliant artificial plants?',
-    'Every LaySun product is fire-treated and supplied with certification documentation for US, EU, and international compliance.',
+    'Special-order fire-rating options are available for select products, with documentation supplied for the specified project or order.',
     [
       { href: 'manufacturing.html', label: 'Fire-Rating Process' },
       { href: 'products.html', label: 'View Product Catalogue' },
