@@ -257,6 +257,11 @@
     .lab-process { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr); gap:1.5rem; align-items:center; margin-top:3rem; padding:1.5rem; background:var(--white); border:1px solid var(--border); border-radius:var(--radius-l); }
     .lab-video { position:relative; aspect-ratio:16/9; overflow:hidden; border-radius:var(--radius-m); background:#111; }
     .lab-video iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+    .lab-video-launch { position:absolute; inset:0; width:100%; height:100%; padding:0; border:0; background:#111; color:#fff; cursor:pointer; overflow:hidden; }
+    .lab-video-launch img { width:100%; height:100%; object-fit:cover; opacity:.82; transition:transform .25s ease,opacity .25s ease; }
+    .lab-video-launch:hover img,.lab-video-launch:focus-visible img { transform:scale(1.02); opacity:.68; }
+    .lab-video-play { position:absolute; inset:50% auto auto 50%; transform:translate(-50%,-50%); display:flex; align-items:center; gap:.65rem; padding:.8rem 1rem; border-radius:999px; background:rgba(20,55,43,.94); color:#fff; font-weight:700; box-shadow:0 8px 24px rgba(0,0,0,.28); white-space:nowrap; }
+    .lab-video-play::before { content:'▶'; font-size:1rem; }
     .report-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.25rem; margin-top:1.5rem; }
     .report-card { background:var(--white); border:1px solid var(--border); border-radius:var(--radius-l); overflow:hidden; box-shadow:var(--shadow-s); }
     .report-card img { display:block; width:100%; aspect-ratio:3/2; object-fit:contain; background:#f4f4f2; }
@@ -799,21 +804,21 @@
     </div>
     <div class="test-video-grid">
       <article class="test-video-card" data-a>
-        <video controls preload="metadata" playsinline poster="/images/nfpa-701-test-video-1-poster.jpg" aria-label="Fire-performance testing footage, clip one">
+        <video controls preload="none" playsinline poster="/images/nfpa-701-test-video-1-poster.jpg" aria-label="Fire-performance testing footage, clip one">
           <source src="/videos/nfpa-fire-testing-01-v2.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
         <div class="test-video-copy"><h3>Factory Screening — Clip 1</h3><p>UGC-style factory footage showing an informal flame-propagation screening before laboratory submission.</p></div>
       </article>
       <article class="test-video-card" data-a>
-        <video controls preload="metadata" playsinline poster="/images/nfpa-701-test-video-2-poster.jpg" aria-label="Fire-performance testing footage, clip two">
+        <video controls preload="none" playsinline poster="/images/nfpa-701-test-video-2-poster.jpg" aria-label="Fire-performance testing footage, clip two">
           <source src="/videos/nfpa-fire-testing-02-v2.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
         <div class="test-video-copy"><h3>Factory Screening — Clip 2</h3><p>In-house material screening used to evaluate a foliage sample before requesting an official third-party test.</p></div>
       </article>
       <article class="test-video-card" data-a>
-        <video controls preload="metadata" playsinline poster="/images/nfpa-701-test-video-3-poster.jpg" aria-label="Fire-performance testing footage, clip three">
+        <video controls preload="none" playsinline poster="/images/nfpa-701-test-video-3-poster.jpg" aria-label="Fire-performance testing footage, clip three">
           <source src="/videos/nfpa-fire-testing-03-v2.mp4" type="video/mp4">
           Your browser does not support HTML5 video.
         </video>
@@ -824,7 +829,10 @@
 
     <div class="lab-process" data-a>
       <div class="lab-video">
-        <iframe src="https://www.youtube-nocookie.com/embed/F-eho5CqyEw" title="SGS demonstration of NFPA 701 Test Method 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <button type="button" class="lab-video-launch" aria-label="Play the official SGS NFPA 701 Test Method 1 demonstration" data-youtube-id="F-eho5CqyEw">
+          <img src="/images/sgs-nfpa-701-video-poster.jpg" loading="lazy" width="480" height="360" alt="SGS NFPA 701 Test Method 1 laboratory demonstration video">
+          <span class="lab-video-play">Watch SGS demonstration</span>
+        </button>
       </div>
       <div>
         <span class="eyebrow">Independent Lab Demonstration</span>
@@ -1493,7 +1501,18 @@
 
 })();
 </script>
-<!-- Analytics 鈥?lazy-loaded on first interaction or after 4s timeout, so LCP isn't blocked -->
+<script>
+document.querySelectorAll('.lab-video-launch').forEach(function(button){
+  button.addEventListener('click',function(){
+    var iframe=document.createElement('iframe');
+    iframe.src='https://www.youtube.com/embed/'+button.dataset.youtubeId+'?autoplay=1&rel=0';
+    iframe.title='SGS demonstration of NFPA 701 Test Method 1';
+    iframe.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen=true;
+    button.replaceWith(iframe);
+  });
+});
+</script><!-- Analytics 鈥?lazy-loaded on first interaction or after 4s timeout, so LCP isn't blocked -->
 <script>
 (function(){
   if(window.__lazyAnalyticsLoaded)return;
