@@ -56,11 +56,11 @@
     .hero-message{display:flex;align-items:baseline;gap:.8rem;min-width:0}
     .hero-message strong{color:var(--green-dark);font-family:var(--font-serif);font-size:clamp(1.05rem,1.6vw,1.35rem);line-height:1.2;white-space:nowrap}
     .hero-message span{color:var(--text-muted);font-size:.86rem}
-    .hero-actions{display:flex;align-items:center;gap:1rem;flex-shrink:0}
+    .hero-actions{display:flex;align-items:center;gap:1rem;flex-shrink:0;flex-wrap:wrap}.hero-business-line{display:inline-flex;align-items:center;gap:.3rem;color:var(--text-muted);font-size:.78rem;font-weight:650;white-space:nowrap}.hero-business-line a{color:var(--green-dark);border-bottom:1px solid rgba(30,53,32,.28)}.hero-business-line a:hover{color:var(--green)}
     .hero-primary{display:inline-flex;align-items:center;justify-content:center;padding:.72rem 1.2rem;border-radius:999px;background:var(--green);color:#fff;font-size:.84rem;font-weight:700;box-shadow:0 6px 16px rgba(30,53,32,.16);transition:transform .2s ease,background .2s ease;white-space:nowrap}
     .hero-primary:hover{background:#244b32;transform:translateY(-1px)}
     .hero-secondary{color:var(--green-dark);font-size:.8rem;font-weight:700;white-space:nowrap;border-bottom:1px solid rgba(30,53,32,.3)}
-    @media(max-width:760px){.hero.hero-image-only>img{aspect-ratio:4/3;object-position:62% center}.hero-conversion-inner{align-items:stretch;flex-direction:column;gap:.85rem;padding:1.15rem 1.25rem 1.35rem}.hero-message{display:block}.hero-message strong{display:block;margin-bottom:.25rem;white-space:normal}.hero-message span{display:block}.hero-actions{justify-content:space-between}.hero-primary{flex:1}.hero-secondary{text-align:center}}
+    @media(max-width:760px){.hero.hero-image-only>img{aspect-ratio:4/3;object-position:62% center}.hero-conversion-inner{align-items:stretch;flex-direction:column;gap:.85rem;padding:1.15rem 1.25rem 1.35rem}.hero-message{display:block}.hero-message strong{display:block;margin-bottom:.25rem;white-space:normal}.hero-message span{display:block}.hero-actions{justify-content:space-between}.hero-primary{flex:1}.hero-business-line{width:100%;justify-content:center;order:3}.hero-secondary{text-align:center}}
   </style>
   <link rel="preload" href="css/style.css?v=20260822-contact" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/style.css?v=20260822-contact"></noscript>
@@ -244,6 +244,7 @@
       </div>
       <div class="hero-actions">
         <a href="quote.html" class="hero-primary">Request a Free Sample</a>
+        <span class="hero-business-line"><a href="https://wa.me/12138298485" target="_blank" rel="noopener">WhatsApp</a><span>/</span><a href="tel:+12138298485">Mobile +1 213-829-8485</a></span>
         <a href="laysun-catalog-2026.html" class="hero-secondary">View Catalog</a>
       </div>
     </div>
