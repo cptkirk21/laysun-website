@@ -13,7 +13,7 @@ const BASE_URL  = 'https://laysun.co';
 const ORIGIN    = 'Dongguan, Guangdong, China';
 const BRAND     = 'LaySun';
 const PORT      = 'Guangzhou / Shenzhen';
-const PAYMENT   = 'T/T, L/C, Western Union, PayPal';
+const PAYMENT   = 'Bank wire transfer (T/T); other methods confirmed in writing';
 const SUPPLY    = '2000 pcs/month';
 const CERTS     = 'Special-order options for select products: NFPA 701, EN 13501, GB 8624 B1; confirm availability for the product and order';
 const PACKAGING = 'Individual export carton with foam padding; custom branding available';
@@ -1209,7 +1209,7 @@ const html = `<!DOCTYPE html>
   <div class="spec-item"><strong>Lead Time</strong>15–40 days (custom: +1–2 weeks)</div>
   <div class="spec-item"><strong>Supply Ability</strong>2,000 pcs / month</div>
   <div class="spec-item"><strong>Port</strong>Guangzhou / Shenzhen</div>
-  <div class="spec-item"><strong>Payment</strong>T/T · L/C · PayPal · Western Union</div>
+  <div class="spec-item"><strong>Payment</strong>Bank wire transfer (T/T); other methods confirmed in writing</div>
   <div class="spec-item"><strong>Customisation</strong>OEM/ODM — pot, size, colour; fire-rating options by special order</div>
 </div>
 
