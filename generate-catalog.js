@@ -845,7 +845,7 @@ function productGrid(collectionName) {
       return `
       <div class="prod-card" data-sku="${firstSku}">
         <div class="prod-img-wrap">
-          <img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'">
+          <img src="${p.image.replace(/\.webp$/, '-400w.webp')}" data-full-src="${p.image}" alt="${p.name}" loading="lazy" decoding="async" fetchpriority="low" width="400" onerror="this.style.display='none'">
         </div>
         <div class="prod-body">
           <h3>${p.name}</h3>
@@ -1255,7 +1255,7 @@ ${sectionsHTML}
     var img = card.querySelector('img');
     var name = card.querySelector('h3') ? card.querySelector('h3').textContent : '';
     var sku = card.dataset.sku || '';
-    lbImg.src = img ? img.src : '';
+    lbImg.src = img ? (img.dataset.fullSrc || img.src) : '';
     lbImg.alt = name;
     lbCaption.innerHTML = '<strong>' + name + '</strong>' + (sku ? '<br><span style="font-family:monospace;color:#b8936a;font-size:12px;">' + sku + '</span>' : '');
     overlay.style.display = 'flex';
