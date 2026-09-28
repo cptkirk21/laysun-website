@@ -2,39 +2,7 @@ const fs = require('fs');
 
 const BASE = 'https://laysun.co';
 
-// ── 1. REVIEW SCHEMA on index.html ──────────────────────────────────────────
-
-const reviewSchema = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": `${BASE}/#organization`,
-  "name": "LaySun",
-  "review": [
-    {
-      "@type": "Review",
-      "reviewBody": "We installed LaySun olive trees in our lobby 18 months ago. They still look exactly like day one. Zero maintenance. Our guests constantly ask if they're real.",
-      "author": { "@type": "Person", "name": "General Manager" },
-      "publisher": { "@type": "Organization", "name": "Luxury Hotel, Los Angeles" }
-    },
-    {
-      "@type": "Review",
-      "reviewBody": "The green wall in our main dining room transformed the entire atmosphere. Customers choose that side of the room every time. Incredible product.",
-      "author": { "@type": "Person", "name": "Head of Design" },
-      "publisher": { "@type": "Organization", "name": "Restaurant Group, Dubai" }
-    },
-    {
-      "@type": "Review",
-      "reviewBody": "Factory-direct pricing saved us 40% versus our previous supplier. Quality is noticeably better. LaySun is now our go-to for every project.",
-      "author": { "@type": "Person", "name": "Procurement Director" },
-      "publisher": { "@type": "Organization", "name": "Interior Design Firm, Singapore" }
-    }
-  ]
-};
-
-let idx = fs.readFileSync('index.html', 'utf8');
-idx = idx.replace('</head>', `  <script type="application/ld+json">\n${JSON.stringify(reviewSchema, null, 2)}\n  </script>\n</head>`);
-fs.writeFileSync('index.html', idx);
-console.log('✓ Added Review schema to index.html');
+// Homepage review/rating schema is omitted until verified review data is available.
 
 
 // ── 2. INTERNAL CTAs in blog posts ──────────────────────────────────────────

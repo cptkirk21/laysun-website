@@ -1206,6 +1206,7 @@ const html = `<!DOCTYPE html>
     a { color: #b8936a !important; }
   }
 </style>
+  <script src="js/analytics.js?v=20260927" defer></script>
 </head>
 <body>
 

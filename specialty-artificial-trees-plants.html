@@ -186,6 +186,7 @@
   "url": "https://laysun.co/specialty-artificial-trees-plants",
   "@context": "https://schema.org"
 }</script>
+  <script src="js/analytics.js?v=20260927" defer></script>
 </head>
 <body>
 
@@ -304,20 +305,14 @@
 </div>
 
 <button class="back-top" aria-label="Back to top">↑</button>
-<script src="js/main.js" defer></script>
-<!-- Analytics 鈥?lazy-loaded on first interaction or after 4s timeout, so LCP isn't blocked -->
+<script src="js/main.js?v=20260927" defer></script>
+<!-- Apollo visitor tracker remains lazy-loaded; GA4 initializes in the head. -->
 <script>
 (function(){
   if(window.__lazyAnalyticsLoaded)return;
   function load(){
     if(window.__lazyAnalyticsLoaded)return;
     window.__lazyAnalyticsLoaded=true;
-    var g=document.createElement('script');
-    g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-YJDVC02Y28';
-    document.head.appendChild(g);
-    window.dataLayer=window.dataLayer||[];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js',new Date());gtag('config','G-YJDVC02Y28');
     var a=document.createElement('script');
     a.async=true;a.defer=true;
     a.src='https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache='+Math.random().toString(36).substring(7);

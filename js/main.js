@@ -269,6 +269,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     form.addEventListener('submit', async e => {
       e.preventDefault();
+      if (form.dataset.submitting === 'true') return;
+      if (!form.reportValidity()) return;
+      form.dataset.submitting = 'true';
       const btn     = form.querySelector('[type=submit]');
       const msg     = document.querySelector(`[data-success="${id}"]`);
       const origTxt = btn.textContent;
@@ -297,17 +300,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         const json = await res.json();
 
-        if (json.success) {
+        if (res.ok && json.success) {
           if (id === 'quote') {
-            window.location.assign('thank-you.html');
+            const next = () => window.location.assign('thank-you.html');
+            if (window.laysunTrack) {
+              window.laysunTrack('generate_lead', { form_id: id, lead_type: 'quote' }, next);
+            } else {
+              next();
+            }
             return;
           }
+          window.laysunTrack?.('generate_lead', { form_id: id, lead_type: 'contact' });
           form.style.display = 'none';
           if (msg) msg.classList.add('show');
         } else {
           throw new Error(json.message || 'Submission failed');
         }
       } catch {
+        delete form.dataset.submitting;
         btn.textContent = origTxt;
         btn.disabled = false;
         alert('Sorry, something went wrong. Please email us directly at info@laysun.co');

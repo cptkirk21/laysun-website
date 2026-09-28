@@ -508,6 +508,14 @@
       .guide-unlocked-header { padding-top: 0; }
     }
   </style>
+  <script src="js/analytics.js?v=20260927" defer></script>
+  <style>
+    .flower-faq summary { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:1.1rem 1.4rem; background:var(--white); cursor:pointer; font-size:.95rem; font-weight:600; color:var(--text); }
+    .flower-faq summary::-webkit-details-marker { display:none; }
+    .flower-faq summary:hover { background:var(--cream-alt); }
+    .flower-faq summary:focus-visible { outline:2px solid var(--green); outline-offset:-3px; }
+    .flower-faq details[open] .accordion-ic { transform:rotate(45deg); }
+  </style>
 </head>
 <body>
 
@@ -538,8 +546,8 @@
 <header class="page-hero">
   <div class="container">
     <div class="breadcrumb"><a href="index.html">Home</a> › <a href="#">Resources</a> › <span>UV Protection Guide</span></div>
-    <h1>UV Protection Guide for Outdoor Commercial Plants</h1>
-    <p class="lead">Visual proof of what UV exposure does to unprotected artificial plants — and how the right materials prevent it. Free guide for hotels, restaurants, and commercial outdoor spaces.</p>
+    <h1>UV Protection Guide for Outdoor Commercial Plants, Artificial Flowers &amp; Outdoor Floral Arrangements</h1>
+    <p class="lead">Visual proof of what UV exposure does to unprotected artificial plants — and how the right materials prevent it. Free guide for hotels, restaurants, and commercial outdoor spaces. Also includes guidance for artificial flowers and outdoor floral arrangements used in events, weddings, venues, patios, and hospitality installations.</p>
   </div>
 </header>
 
@@ -640,6 +648,27 @@
   </div>
 </section>
 
+<!-- ARTIFICIAL FLOWERS AND OUTDOOR ARRANGEMENTS -->
+<section class="section" aria-labelledby="flower-uv-heading">
+  <div class="container" style="max-width:860px;">
+    <div class="section-hd">
+      <span class="eyebrow">Artificial Flowers &amp; Arrangements</span>
+      <h2 id="flower-uv-heading">UV Protection for Artificial Flowers &amp; Outdoor Floral Arrangements (What Actually Fades First)</h2>
+    </div>
+    <p>Outdoor faux flowers don’t usually “fail” overnight — they slowly start looking tired. The first signs are subtle: bright petals lose their punch, whites look dusty, and the whole arrangement starts reading more “plastic” than “premium.”</p>
+    <p class="mt-3">That matters whether you’re designing a hotel entrance that needs to look sharp year-round, or planning event and wedding florals where everything is photographed up close.</p>
+    <h3 class="mt-3">What fades first (real-world pattern)</h3>
+    <ul style="list-style:disc;padding-left:1.5rem;margin:1rem 0;">
+      <li>Reds / pinks / purples typically shift earliest in direct sun</li>
+      <li>Light tones can turn chalky (especially on glossy finishes)</li>
+      <li>Heat + wind expose weak construction: petals loosen, edges curl, stems warp</li>
+      <li>Coastal installs fade faster because salt + sun + frequent cleaning is a rough combo</li>
+    </ul>
+    <h3 class="mt-3">Spray-on UV protectant vs inherently UV-resistant materials</h3>
+    <p>We can offer a <strong>spray-on application of UV protectant</strong>, which can be helpful in certain situations. But for long-term outdoor installations, <strong>inherently UV-stabilized materials</strong> (UV resistance built into the material, not just applied on the surface) are generally preferred for longer lifespan and more consistent color stability.</p>
+  </div>
+</section>
+
 <!-- REGIONAL UV EXPOSURE -->
 <section class="section">
   <div class="container">
@@ -672,20 +701,42 @@
   </div>
 </section>
 
+<section class="section section--alt flower-faq" aria-labelledby="flower-faq-heading">
+  <div class="container" style="max-width:860px;">
+    <div class="section-hd"><h2 id="flower-faq-heading">Artificial Flowers &amp; Outdoor Floral Arrangements FAQs</h2></div>
+    <details class="accordion-item">
+      <summary>Do UV resistant artificial flowers really last outside? <span class="accordion-ic" aria-hidden="true">+</span></summary>
+      <div class="accordion-body-inner"><p>They can, but performance depends on exposure and material choice. UV-stabilized materials generally hold up better long-term than standard plastics.</p></div>
+    </details>
+    <details class="accordion-item">
+      <summary>What colors fade fastest in outdoor floral arrangements? <span class="accordion-ic" aria-hidden="true">+</span></summary>
+      <div class="accordion-body-inner"><p>Brighter reds, pinks, and purples usually shift first in direct sun.</p></div>
+    </details>
+    <details class="accordion-item">
+      <summary>Is spray-on UV protectant enough for outdoor weddings/events? <span class="accordion-ic" aria-hidden="true">+</span></summary>
+      <div class="accordion-body-inner"><p>It can help for short-term use, but for repeated outdoor use or permanent installs, inherently UV-stabilized materials are usually the safer choice.</p></div>
+    </details>
+    <details class="accordion-item">
+      <summary>How do you keep outdoor faux flowers looking premium in photos? <span class="accordion-ic" aria-hidden="true">+</span></summary>
+      <div class="accordion-body-inner"><p>Choose realistic finishes (matte over glossy), plan exposure, and avoid materials that only look great on day one.</p></div>
+    </details>
+  </div>
+</section>
+
 <!-- EMAIL GATE -->
 <section class="section gate-section">
   <div class="container">
     <div class="gate-card" data-a>
       <span class="eyebrow">Free Download</span>
       <h2>Get the Complete UV Protection Guide</h2>
-      <p>Unlock our full guide including installation best practices, regional climate analysis, maintenance protocols, and ROI case studies with before/after visual evidence.</p>
+      <p>Unlock our full guide including installation best practices, regional climate analysis, maintenance protocols, and ROI case studies with before/after visual evidence. Includes guidance for artificial flowers and outdoor floral arrangements, including exposure planning and color selection for high-UV locations.</p>
 
       <form data-form="subscribe" novalidate>
         <div class="form-group">
           <label for="ck-email">Work Email</label>
           <input type="email" id="ck-email" name="email" placeholder="you@company.com" required>
         </div>
-        <button type="submit" class="btn btn-tan btn-lg" style="width:100%;">Send Me the Guide →</button>
+        <button type="submit" class="btn btn-tan btn-lg" style="width:100%;">Send Me the UV Guide →</button>
       </form>
 
       <p class="privacy-note">Your email is safe. We'll send occasional industry updates and resources.</p>
@@ -901,20 +952,14 @@
   </div>
 </div>
 
-<script src="js/main.js" defer></script>
-<!-- Analytics 鈥?lazy-loaded on first interaction or after 4s timeout, so LCP isn't blocked -->
+<script src="js/main.js?v=20260927" defer></script>
+<!-- Apollo visitor tracker remains lazy-loaded; GA4 initializes in the head. -->
 <script>
 (function(){
   if(window.__lazyAnalyticsLoaded)return;
   function load(){
     if(window.__lazyAnalyticsLoaded)return;
     window.__lazyAnalyticsLoaded=true;
-    var g=document.createElement('script');
-    g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id=G-YJDVC02Y28';
-    document.head.appendChild(g);
-    window.dataLayer=window.dataLayer||[];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js',new Date());gtag('config','G-YJDVC02Y28');
     var a=document.createElement('script');
     a.async=true;a.defer=true;
     a.src='https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache='+Math.random().toString(36).substring(7);

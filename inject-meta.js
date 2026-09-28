@@ -9,7 +9,7 @@ const pages = {
     slug: '',
     type: 'website',
     image: `${BASE_URL}/images/hero-airport.webp`,
-    titleOverride: 'LaySun — Commercial Artificial Plants & Trees | Factory Direct',
+    titleOverride: 'Commercial Artificial Plants for Hotels & Offices | LaySun',
   },
   'about': {
     slug: '/about',
@@ -33,7 +33,7 @@ const pages = {
     slug: '/manufacturing',
     type: 'website',
     image: `${BASE_URL}/images/factory-production-floor.webp`,
-    titleOverride: 'Manufacturing — Fire-Rated PE Artificial Plants | LaySun',
+    titleOverride: 'Artificial Plant Manufacturer | Custom PE Trees | LaySun',
   },
   'projects': {
     slug: '/projects',
