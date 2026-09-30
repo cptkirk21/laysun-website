@@ -5,6 +5,17 @@ const path=require('node:path');
 const root=path.join(__dirname,'..');
 const slug='uv-protection-outdoor-artificial-plants';
 const html=fs.readFileSync(path.join(root,'blog-'+slug+'.html'),'utf8');
+test('UV article has Disqus and reciprocal contextual links',()=>{
+ assert.equal((html.match(/id="disqus_thread"/g)||[]).length,1);
+ assert.equal((html.match(/src="js\/comments.js"/g)||[]).length,1);
+ assert.ok(html.includes('id="comments-status"'));
+ for(const file of ['index.html','manufacturing.html','solutions.html','artificial-green-walls.html','blog-outdoor-uv-guide.html','uv-protection-guide.html']) {
+  const page=fs.readFileSync(path.join(root,file),'utf8');
+  assert.ok(page.includes('href="blog-'+slug+'.html"'),file);
+  if(file!=='uv-protection-guide.html') assert.ok(page.includes('href="uv-protection-guide.html"'),file);
+ }
+ for(const file of ['manufacturing.html','solutions.html','artificial-green-walls.html','uv-protection-guide.html']) assert.ok(html.includes('href="'+file+'"'));
+});
 test('UV article contains placed visuals, guide CTA, and valid schema',()=>{
  assert.ok(html.indexOf('blog-uv-material-intact-800w.webp')>html.indexOf('id="material-comparison"'));
  assert.ok(html.indexOf('blog-uv-material-intact-800w.webp')<html.indexOf('id="spray-on"'));
