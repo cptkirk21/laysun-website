@@ -1,11 +1,18 @@
 <?xml version="1.0" ?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>LaySun Blog - Commercial Artificial Plants & Trees</title>
+    <title>LaySun Blog - Commercial Artificial Plants &amp; Trees</title>
     <link>https://laysun.co/blog</link>
     <description>Insights on artificial plants for commercial spaces — design trends, fire safety, material guides, and installation advice.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2026 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 12:00:00 +0000</lastBuildDate>
+    <item>
+      <title>UV Protection for Outdoor Artificial Plants: What Actually Works (and What Fails Fast)</title>
+      <link>https://laysun.co/blog-uv-protection-outdoor-artificial-plants</link>
+      <description>Compare built-in UV stabilization and spray-on protectants for commercial outdoor artificial plants. Learn what fades first and what to ask before buying.</description>
+      <pubDate>Wed, 30 Sep 2026 12:00:00 +0000</pubDate>
+      <guid isPermaLink="true">https://laysun.co/blog-uv-protection-outdoor-artificial-plants</guid>
+    </item>
     <atom:link href="https://laysun.co/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
       <title>How to Evaluate Artificial Plants Before Specifying a Commercial Project</title>
@@ -47,7 +54,7 @@
       <guid isPermaLink="true"/>
     </item>
     <item>
-      <title>Commercial Artificial Plant Trends 2026: What Hotels, Offices, & Restaurants Are Asking For</title>
+      <title>Commercial Artificial Plant Trends 2026: What Hotels, Offices, &amp; Restaurants Are Asking For</title>
       <link>https://laysun.co/blog-commercial-artificial-plant-trends-2026</link>
       <description>Discover the top commercial artificial plant trends for 2026. From biophilic design integration to custom green walls, learn what hotels, offices, and restaurants are demanding this year.</description>
       <pubDate>Fri, 01 May 2026 11:33:16 +0000</pubDate>

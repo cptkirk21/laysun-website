@@ -1,6 +1,19 @@
 {
   "posts": [
     {
+      "slug": "uv-protection-outdoor-artificial-plants",
+      "title": "UV Protection for Outdoor Artificial Plants: What Actually Works (and What Fails Fast)",
+      "description": "Compare built-in UV stabilization and spray-on protectants for commercial outdoor artificial plants. Learn what fades first and what to ask before buying.",
+      "date": "30 Sep 2026",
+      "category": "Outdoor Plants",
+      "readTime": "5 min read",
+      "image": "images/blog-uv-commercial-hero-800w.webp",
+      "imageSrcset": "images/blog-uv-commercial-hero-400w.webp 400w, images/blog-uv-commercial-hero-800w.webp 800w, images/blog-uv-commercial-hero-1200w.webp 1200w",
+      "imageWidth": 1200,
+      "imageHeight": 800,
+      "featured": true
+    },
+    {
       "slug": "how-to-read-nfpa-701-test-report",
       "title": "How to Read an NFPA 701 Test Report Before Approving an Order",
       "description": "A practical guide to matching an NFPA 701 laboratory report to the exact special-order products, materials, and project documentation you are approving.",
